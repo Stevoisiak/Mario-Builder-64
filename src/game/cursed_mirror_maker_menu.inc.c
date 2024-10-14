@@ -3,7 +3,7 @@ extern u8 gDialogCharWidths[256];
 u8 cmm_ascii_lut[] = {
     0,0,0,0,0,0,0,0, // 0 - 7
     0,0,0xFE,0,0,0,0,0, // 8 - 15
-    0x54,0x55,0x57,0x58,0,0,0,0, // 16 - 23
+    0x54,0x55,0x57,0x58,0x56,0,0,0, // 16 - 23
     0,0,0,0,0,0,0,0, // 24 - 31
     0x9E, /* */ 0xF2, /*!*/ 0x00, /*"*/ 0x00, /*#*/
     0x00, /*$*/ 0x71, /*%*/ 0xE5, /*&*/ 0x3E, /*'*/
@@ -29,6 +29,35 @@ u8 cmm_ascii_lut[] = {
     0x37, /*t*/ 0x38, /*u*/ 0x39, /*v*/ 0x3A, /*w*/
     0x3B, /*x*/ 0x3C, /*y*/ 0x3D, /*z*/ 0x00, /*{*/
     0x51, /*|*/ 0x00, /*}*/ 0x00, /*~*/
+};
+
+struct mb64_credits_entry {
+    char * text;
+    u32 color;
+};
+
+struct mb64_credits_entry cmm_editor_controls[] = {
+    {"Navigation Controls",1},
+    {"",0},
+    {"  Analog Stick:  Move cursor horizontally",0},
+    {"  \x14 ^ / |:  Move cursor vertically",0},
+    {"  \x14 < / >:  Rotate camera",0},
+    {"  D-Pad |:  Change camera zoom",0},
+    {"",0},
+    {"Building Controls",1},
+    {"",0},
+    {"  \x10:  Place tile",0},
+    {"  \x11:  Delete tile(s)",0},
+    {"  \x12:  Rotate tile",0},
+    {"  D-Pad < / >:  Change object parameters",0},
+    {"  D-Pad ^:  Flip tile vertically",0},
+    {"",0},
+    {"Toolbar Controls",1},
+    {"",0},
+    {"  L / R:  Navigate hotbar",0},
+    {"  L & R:  Sample tile",0},
+    {"  START:  Open toolbox",0},
+    {NULL, 0},
 };
 
 // Position, velocity, acceleration
@@ -1469,7 +1498,6 @@ char *cmm_mm_help_btns[] = {
 };
 
 u8 cmm_mm_help_page1[] = {TXT_MM_HELP_PAGE_1};
-u8 cmm_mm_help_page2[] = {TXT_MM_HELP_PAGE_2};
 u8 cmm_mm_help_page3[] = {TXT_MM_HELP_PAGE_3};
 u8 cmm_mm_help_page4[] = {TXT_MM_HELP_PAGE_4};
 
@@ -1986,7 +2014,8 @@ s32 cmm_main_menu(void) {
                             cmm_mm_help_ptr = cmm_mm_help_page1;
                         break;
                         case 1:
-                            cmm_mm_help_ptr = cmm_mm_help_page2;
+                            cmm_mm_state = MM_CREDITS;
+                            cmm_mm_help_ptr = cmm_editor_controls;
                         break;
                         case 2:
                             cmm_mm_help_ptr = cmm_mm_help_page3;
