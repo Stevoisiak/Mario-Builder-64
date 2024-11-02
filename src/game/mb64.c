@@ -121,7 +121,7 @@ s8 mb64_uv_offset = -16;
 u8 mb64_render_flip_normals = FALSE; // Used for drawing water tiles
 u8 mb64_render_vertical = FALSE; // Used for prioritizing vertical UVs over horizontal ones
 u8 mb64_render_culling_off = FALSE; // Used for drawing preview blocks in custom theme menu
-u8 mb64_growth_render_type = 0; // 0 - normal, 1 - grass top, 2 - grass side, 3 - fence or pole
+u8 mb64_growth_render_type = 0; // 0 - normal, 1 - grass top, 2 - grass side, 3 - fence, 4 - pole
 u8 mb64_curr_mat_has_topside = FALSE;
 u8 mb64_curr_poly_vert_count = 4; // 3 = tri, 4 = quad
 u8 mb64_curr_boundary = 0;
@@ -826,15 +826,16 @@ void render_poly(struct mb64_terrain_poly *poly, s8 pos[3], u32 rot) {
             v = 16 - newVtx[i][vAxis];
         }
 
-        s32 upos = (flipU ? 31 - pos[uAxis] : pos[uAxis] - 32);
-        if (mb64_growth_render_type == 3) upos *= 2; // fences
-        s32 vpos = pos[vAxis] - 32;
+        s32 upos = (flipU ? 64-pos[uAxis] : pos[uAxis]);
+        s32 vpos = pos[vAxis];
+        if (mb64_growth_render_type == 3) {
+            upos *= 2; // fences
+        } else if (mb64_growth_render_type == 4) {
+            vpos *= 2; // poles
+        }
 
-        // cursed code to avoid messed up UVs due to overflow.
-        // the place to wrap changes depending on point filtering (mb64_uv_offset)
-        s32 overflowThreshold = mb64_uv_offset ? -32 : -31;
-        if (upos == overflowThreshold) upos += 63;
-        if (vpos == overflowThreshold) vpos += 63;
+        upos = (upos % 48) - 24;
+        vpos = (vpos % 48) - 24;
 
         u -= upos * 16;
         if (!clampV) v -= vpos * 16;
@@ -1104,11 +1105,6 @@ u32 should_render_grass_side(s8 pos[3], u32 direction, u32 faceshape, u32 rot, u
 
 void process_poly_with_growth(s8 pos[3], struct mb64_terrain_poly *poly, u32 rot) {
     switch (mb64_growth_render_type) {
-        case 0: // regular tex
-        case 3:
-            if (mb64_curr_mat_has_topside && (poly->growthType == MB64_GROWTH_FULL)) return;
-            if (should_cull(pos, poly->faceDir, poly->faceshape, rot)) return;
-            break;
         case 1: // grass top
             if (poly->growthType != MB64_GROWTH_FULL) return;
             if (should_cull(pos, poly->faceDir, poly->faceshape, rot)) return;
@@ -1116,6 +1112,10 @@ void process_poly_with_growth(s8 pos[3], struct mb64_terrain_poly *poly, u32 rot
         case 2: // grass decal
             if (poly->growthType == MB64_GROWTH_FULL || poly->growthType == MB64_GROWTH_NONE) return;
             if (!should_render_grass_side(pos, poly->faceDir, poly->faceshape, rot, poly->growthType)) return;
+            break;
+        default:
+            if (mb64_curr_mat_has_topside && (poly->growthType == MB64_GROWTH_FULL)) return;
+            if (should_cull(pos, poly->faceDir, poly->faceshape, rot)) return;
             break;
     }
     process_poly(pos, poly, rot);
@@ -1421,7 +1421,7 @@ void process_tiles(u32 processTileRenderMode) {
     u8 poleMatType = mb64_mat_table[mb64_theme_table[mb64_lopt_theme].pole].type;
     if (do_process(&poleMatType, processTileRenderMode)) {
         mb64_use_alt_uvs = TRUE;
-        mb64_growth_render_type = 3; // poles
+        mb64_growth_render_type = 4; // poles
         startIndex = mb64_tile_data_indices[POLE_TILETYPE_INDEX];
         endIndex = mb64_tile_data_indices[POLE_TILETYPE_INDEX+1];
         set_render_mode( poleMatType, FALSE);
@@ -1912,7 +1912,6 @@ void generate_terrain_gfx(void) {
     osViSetSpecialFeatures(OS_VI_DITHER_FILTER_OFF);
     osViSetSpecialFeatures(OS_VI_DIVOT_OFF);
 
-
     if (mb64_vtx_total >= MB64_VTX_SIZE) {
         mb64_show_error_message("CRITICAL WARNING: Vertex limit exceeded.");
     } else if (mb64_vtx_total >= MB64_VTX_SIZE - 30) {
@@ -2063,7 +2062,7 @@ Gfx *mb64_append(s32 callContext, UNUSED struct GraphNode *node, UNUSED Mat4 mtx
                 mat = mb64_theme_table[mb64_lopt_theme].pole;
                 topmat = mat;
                 mb64_use_alt_uvs = TRUE;
-                mb64_growth_render_type = 3; // pole
+                mb64_growth_render_type = 4; // pole
             }
 
             if (terrain) {

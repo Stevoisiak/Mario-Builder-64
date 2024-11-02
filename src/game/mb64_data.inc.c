@@ -453,10 +453,10 @@ struct mb64_terrain mb64_terrain_fence_col = {
 };
 
 
-s8 pole_uvs1[4][2] = {{16, 0}, {16, 32}, {12, 0}, {12, 32}};
-s8 pole_uvs2[4][2] = {{12, 0}, {12, 32}, {8, 0}, {8, 32}};
-s8 pole_uvs3[4][2] = {{8, 0}, {8, 32}, {4, 0}, {4, 32}};
-s8 pole_uvs4[4][2] = {{4, 0}, {4, 32}, {0, 0}, {0, 32}};
+s8 pole_uvs1[4][2] = {{16, 32}, {16, 0}, {12, 32}, {12, 0}};
+s8 pole_uvs2[4][2] = {{12, 32}, {12, 0}, {8, 32}, {8, 0}};
+s8 pole_uvs3[4][2] = {{8, 32}, {8, 0}, {4, 32}, {4, 0}};
+s8 pole_uvs4[4][2] = {{4, 32}, {4, 0}, {0, 32}, {0, 0}};
 struct mb64_terrain_poly mb64_terrain_pole_quads[] = {
     {{{8, 16, 9}, {8, 0, 9}, {9, 16, 8}, {9, 0, 8}}, MB64_DIRECTION_POS_Z, MB64_FACESHAPE_EMPTY, 0, &pole_uvs1}, // Diagonal 1
     {{{9, 16, 8}, {9, 0, 8}, {8, 16, 7}, {8, 0, 7}}, MB64_DIRECTION_POS_X, MB64_FACESHAPE_EMPTY, 0, &pole_uvs2}, // Diagonal 2
