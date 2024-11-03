@@ -14,6 +14,7 @@ static struct ObjectHitbox sCapHitbox = {
 
 s32 cap_set_hitbox(void) {
     obj_set_hitbox(o, &sCapHitbox);
+    o->oWallHitboxRadius = 80.f;
 
     if (o->oInteractStatus & INT_STATUS_INTERACTED) {
         o->activeFlags = ACTIVE_FLAG_DEACTIVATED;

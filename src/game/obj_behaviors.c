@@ -130,8 +130,8 @@ s8 obj_find_wall(f32 objNewX, f32 objY, f32 objNewZ, f32 objVelX, f32 objVelZ) {
     hitbox.x = objNewX;
     hitbox.y = objY;
     hitbox.z = objNewZ;
-    hitbox.offsetY = o->hitboxRadius + 1.f;
-    hitbox.radius = o->hitboxRadius;
+    hitbox.offsetY = o->oWallHitboxRadius + 1.f;
+    hitbox.radius = o->oWallHitboxRadius;
 
     if (find_wall_collisions(&hitbox) != 0) {
         o->oPosX = hitbox.x;

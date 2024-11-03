@@ -28,6 +28,7 @@ s32 coin_step(s16 *collisionFlagsPtr) {
     if (save_file_get_badge_equip() & (1<<BADGE_MAGNET)) {
         o->oMoveAngleYaw = obj_angle_to_object(o,gMarioObject);
     }
+    o->oWallHitboxRadius = 100.f;
     *collisionFlagsPtr = object_step();
 
     obj_check_floor_death(*collisionFlagsPtr, sObjFloor);

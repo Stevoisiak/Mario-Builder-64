@@ -28,6 +28,7 @@ void bhv_moneybag_init(void) {
     o->oGravity = 3.0f;
     o->oFriction = 1.0f;
     o->oBuoyancy = 2.0f;
+    o->oWallHitboxRadius = 120.0f;
     cur_obj_init_animation(0);
     o->oOpacity = 0;
 }
@@ -294,6 +295,7 @@ void bhv_moneybag_hidden_loop(void) {
     o->oGravity = 3.0f;
     o->oFriction = 1.0f;
     o->oBuoyancy = 2.0f;
+    o->oWallHitboxRadius = 120.0f;
     object_step();
     cur_obj_set_home_if_safe();
 

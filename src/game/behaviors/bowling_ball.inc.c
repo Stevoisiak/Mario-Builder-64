@@ -43,6 +43,7 @@ void bhv_bowling_ball_init(void) {
     o->oGravity = 5.5f;
     o->oFriction = 1.0f;
     o->oBuoyancy = 2.0f;
+    o->oWallHitboxRadius = 100.0f;
 }
 
 void bowling_ball_set_hitbox(void) {

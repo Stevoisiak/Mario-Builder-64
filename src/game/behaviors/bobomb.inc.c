@@ -16,6 +16,7 @@ void bhv_bobomb_init(void) {
     o->oGravity = 2.5f;
     o->oFriction = 0.8f;
     o->oBuoyancy = 1.3f;
+    o->oWallHitboxRadius = 65.f;
     o->oInteractionSubtype = INT_SUBTYPE_KICKABLE;
     o->oQuicksandDepthToDie = 55;
     create_respawner(MODEL_BLACK_BOBOMB, bhvBobomb, MB64_RESPAWN_DIST);
