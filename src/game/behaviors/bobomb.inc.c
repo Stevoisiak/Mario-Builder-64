@@ -41,16 +41,21 @@ void bobomb_spawn_coin(s32 lava) {
 void bobomb_act_explode(void) {
     if (o->oTimer < 5) {
         cur_obj_scale(1.0f + ((f32) o->oTimer / 5.0f));
-    } else {
+    } else if (o->oTimer == 5) {
         cur_obj_set_home_if_safe_landed();
 
         struct Object *explosion = spawn_object(o, MODEL_EXPLOSION, bhvExplosion);
         explosion->oGraphYOffset += 100.0f;
 
         bobomb_spawn_coin(FALSE);
-        cur_obj_trigger_respawner();
-
-        o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
+    } else { // respawn after 5 seconds
+        o->oBobombFuseLit = FALSE;
+        cur_obj_become_intangible();
+        cur_obj_hide();
+        if (o->oTimer > 5*30) {
+            cur_obj_trigger_respawner();
+            o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
+        }
     }
 }
 

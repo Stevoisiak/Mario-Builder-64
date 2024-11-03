@@ -1065,15 +1065,14 @@ void obj_become_tangible(struct Object *obj) {
 }
 
 void cur_obj_update_floor_height(void) {
-    struct Surface *floor;
     f32 floorBuffer = 0.f;//(o->oFlags & OBJ_FLAG_SIMPLE_WALL_CHECKS) ? 0.f : MAX(o->oWallHitboxRadius-FIND_FLOOR_BUFFER, 0);
-    o->oFloorHeight = find_floor(o->oPosX, o->oPosY + floorBuffer, o->oPosZ, &floor);
+    o->oFloorHeight = find_floor_height_short(o->oPosX, o->oPosY + floorBuffer, o->oPosZ);
 }
 
 struct Surface *cur_obj_update_floor_height_and_get_floor(void) {
     struct Surface *floor;
     f32 floorBuffer = 0.f;//(o->oFlags & OBJ_FLAG_SIMPLE_WALL_CHECKS) ? 0.f : MAX(o->oWallHitboxRadius-FIND_FLOOR_BUFFER, 0);
-    o->oFloorHeight = find_floor(o->oPosX, o->oPosY + floorBuffer, o->oPosZ, &floor);
+    o->oFloorHeight = find_floor_short(o->oPosX, o->oPosY + floorBuffer, o->oPosZ, &floor);
     return floor;
 }
 

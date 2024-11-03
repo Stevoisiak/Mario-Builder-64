@@ -60,9 +60,9 @@ void small_breakable_box_act_move(void) {
         o->header.gfx.node.flags |= GRAPH_RENDER_INVISIBLE;
         o->oBreakableBoxSmallReleased = TRUE;
         o->oBreakableBoxSmallFramesSinceReleased = 900 - (5 * 30); // respawn after 5 seconds
-        o->oIntangibleTimer = -1;
         o->oAction = 1; // empty action
         SET_BPARAM3(o->oBehParams, 1);
+        cur_obj_become_intangible();
     }
 
     obj_check_floor_death(collisionFlags, sObjFloor);

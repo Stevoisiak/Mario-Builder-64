@@ -5804,7 +5804,6 @@ const BehaviorScript bhvBreakableBoxSmall[] = {
     CALL_NATIVE(bhv_breakable_box_small_init),
     SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_MEDIUM),
     BEGIN_LOOP(),
-        SET_INT(oIntangibleTimer, 0),
         CALL_NATIVE(bhv_breakable_box_small_loop),
     END_LOOP(),
 };
