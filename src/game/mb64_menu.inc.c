@@ -2043,6 +2043,7 @@ s32 mb64_main_menu(void) {
                         mb64_mm_state = MM_HELP_MODE;
                         break;
                     case 2:
+                        info_y_offset = 0;
                         mb64_mm_state = MM_INFO;
                         mb64_mm_page_data = mb64_credits;
                         break;
@@ -2185,6 +2186,7 @@ s32 mb64_main_menu(void) {
                     mb64_mm_state = mb64_mm_main_state;
                     mb64_menu_index = 2;
                 } else {
+                    info_y_offset = 0;
                     mb64_mm_state = MM_INFO;
                     switch(mb64_menu_index) {
                         case 0:
