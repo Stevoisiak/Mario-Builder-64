@@ -3831,7 +3831,7 @@ const BehaviorScript bhvSmallWhomp[] = {
     SET_FLOAT(oCollisionDistance, 1000),
     LOAD_COLLISION_DATA(whomp_seg6_collision_06020A0C),
     ANIMATE(WHOMP_ANIM_WALK),
-    SET_OBJ_PHYSICS(/*Wall hitbox radius*/ 0, /*Gravity*/ -400, /*Bounciness*/ -50, /*Drag strength*/ 0, /*Friction*/ 0, /*Buoyancy*/ 200, /*Unused*/ 0, 0),
+    SET_OBJ_PHYSICS(/*Wall hitbox radius*/ 60, /*Gravity*/ -400, /*Bounciness*/ -50, /*Drag strength*/ 0, /*Friction*/ 0, /*Buoyancy*/ 200, /*Unused*/ 0, 0),
     SET_HOME(),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_whomp_loop),

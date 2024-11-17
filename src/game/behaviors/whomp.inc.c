@@ -283,7 +283,7 @@ void bhv_whomp_loop(void) {
     cur_obj_update_floor_and_walls();
     cur_obj_set_home_if_safe();
     cur_obj_call_action_function(sWhompActions);
-    cur_obj_move_standard(-20);
+    cur_obj_move_standard(-78);
     if (o->oAction != 9) {
         load_object_collision_model();
     }
