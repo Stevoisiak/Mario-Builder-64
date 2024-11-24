@@ -474,10 +474,6 @@
 #define /*0x0F4*/ oBreakableBoxSmallReleased            OBJECT_FIELD_S32(0x1B)
 #define /*0x0FC*/ oBreakableBoxSmallFramesSinceReleased OBJECT_FIELD_S32(0x1D)
 
-/* Jumping Box (Crazy Box) */
-#define /*0x0F4*/ oJumpingBoxUnusedTimerMin OBJECT_FIELD_S32(0x1B)
-#define /*0x0F8*/ oJumpingBoxRandomTimer    OBJECT_FIELD_S32(0x1C)
-
 /* RR Cruiser Wing */
 #define /*0x0F4*/ oRRCruiserWingInitYaw   OBJECT_FIELD_S32(0x1B)
 #define /*0x0F8*/ oRRCruiserWingInitPitch OBJECT_FIELD_S32(0x1C)

@@ -901,12 +901,6 @@ void initiate_delayed_warp(void) {
     struct ObjectWarpNode *warpNode;
     s32 destWarpNode;
 
-#ifdef PUPPYPRINT_DEBUG
-    if (gPuppyWarp) {
-        initiate_warp(gPuppyWarp, gPuppyWarpArea, 0x0A, 0);
-    }
-#endif
-
     if (sDelayedWarpOp != WARP_OP_NONE && --sDelayedWarpTimer == 0) {
         reset_dialog_render_state();
 

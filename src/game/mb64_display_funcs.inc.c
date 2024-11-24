@@ -74,6 +74,33 @@ void df_corkbox(s32 context) {
     if (context == MB64_DF_CONTEXT_INIT) o->oAnimState = 1;
 }
 
+// overengineered again
+void df_crazybox(s32 context) {
+    if (context == MB64_DF_CONTEXT_INIT) {
+        o->oHomeY = o->oPosY;
+        o->oVelY = 10.f;
+        o->oSubAction = 0;
+        return;
+    }
+    int onground = FALSE;
+    o->oVelY -= 4.f;
+    o->oPosY += o->oVelY;
+    if (o->oPosY < o->oHomeY && o->oVelY < 0.f) {
+        o->oPosY = o->oHomeY;
+        o->oVelY = 0.f;
+        if (o->oSubAction == 1) onground = TRUE;
+        o->oSubAction = TRUE;
+    }
+
+    if (o->oAction == 0) {
+        o->oVelY = random_float() * 5.0f + 15.0f;
+        o->oAction++;
+    } else if (onground) {
+        o->oAction = 0;
+        o->oSubAction = 0;
+    }
+}
+
 void df_reds_marker(s32 context) {
     if (context == MB64_DF_CONTEXT_INIT) {
         o->oFaceAnglePitch = 0x4000;
