@@ -300,7 +300,7 @@ void showrunner_battle_function(void) {
         break;
         case 1://init
             if (o->oDistanceToMario < MB64_BOSS_TRIGGER_DIST) {
-                play_mb64_extra_music(2);
+                o->oPlayingBossMusic = TRUE;
                 o->oHealth = 3;
                 o->oAction = 2;
             }
@@ -421,7 +421,7 @@ void showrunner_battle_function(void) {
         break;
         case 14://drop items
             cur_obj_drop_imbued_object(MB64_STAR_HEIGHT);
-            stop_mb64_extra_music(2);
+            o->oPlayingBossMusic = FALSE;
             o->oAction = 15;
             o->header.gfx.scale[0] = 1.0f;
         break;

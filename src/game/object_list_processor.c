@@ -642,6 +642,7 @@ void clear_dynamic_surface_references(void) {
  * and object surface management.
  */
 u8 collision_load_total = 0;
+u8 playing_boss_music = FALSE;
 void update_objects(UNUSED s32 unused) {
 
     gTimeStopState &= ~TIME_STOP_MARIO_OPENED_DOOR;
@@ -652,6 +653,9 @@ void update_objects(UNUSED s32 unused) {
 
     reset_debug_objectinfo();
     stub_debug_control();
+
+    int was_playing_boss_music = playing_boss_music;
+    playing_boss_music = FALSE;
 
     gObjectLists = gObjectListArray;
     clear_dynamic_surfaces();
@@ -694,6 +698,8 @@ void update_objects(UNUSED s32 unused) {
     } else {
         gTimeStopState &= ~TIME_STOP_ACTIVE;
     }
+
+    update_boss_music(was_playing_boss_music);
 
     gPrevFrameObjectCount = gObjectCounter;
     // Set the recorded behaviour time, minus the difference between the snapshotted collision time and the actual collision time.

@@ -3004,3 +3004,19 @@ void add_obj_to_physics_list(struct Object *obj) {
     }
 }
 
+// Handle boss music playback for multiple active bosses at once
+extern u8 playing_boss_music;
+void cur_obj_update_boss_music(void) {
+    if (o->oPlayingBossMusic) {
+        playing_boss_music = TRUE;
+    }
+}
+
+void update_boss_music(int was_playing_boss_music) {
+    if (playing_boss_music && !was_playing_boss_music) {
+        play_mb64_extra_music(2);
+    } else if (!playing_boss_music && was_playing_boss_music) {
+        stop_mb64_extra_music(2);
+    }
+}
+

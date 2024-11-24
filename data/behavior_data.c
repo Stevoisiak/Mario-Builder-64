@@ -503,6 +503,7 @@ const BehaviorScript bhvKingBobomb[] = {
     SET_INT(oDamageOrCoinValue, 1),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_king_bobomb_loop),
+        CALL_NATIVE(cur_obj_update_boss_music),
     END_LOOP(),
 };
 
@@ -1387,7 +1388,7 @@ const BehaviorScript bhvFlame[] = {
     SCALE(/*Unused*/ 0, /*Field*/ 700),
     SET_INTERACT_TYPE(INTERACT_FLAME),
     SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_LOW),
-    SET_HITBOX_WITH_OFFSET(/*Radius*/ 50, /*Height*/ 25, /*Downwards offset*/ 25),
+    SET_HITBOX_WITH_OFFSET(/*Radius*/ 75, /*Height*/ 25, /*Downwards offset*/ 25),
     SET_INT(oIntangibleTimer, 0),
     //CALL_NATIVE(bhv_init_room),
     BEGIN_LOOP(),
@@ -2274,6 +2275,7 @@ const BehaviorScript bhvBowser[] = {
     CALL_NATIVE(bhv_bowser_init),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_bowser_loop),
+        CALL_NATIVE(cur_obj_update_boss_music),
     END_LOOP(),
 };
 
@@ -3835,6 +3837,7 @@ const BehaviorScript bhvSmallWhomp[] = {
     SET_HOME(),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_whomp_loop),
+        CALL_NATIVE(cur_obj_update_boss_music),
     END_LOOP(),
 };
 
@@ -4044,7 +4047,6 @@ const BehaviorScript bhvMario[] = {
     BEGIN(OBJ_LIST_PLAYER),
     SET_INT(oIntangibleTimer, 0),
     OR_LONG(oFlags, (OBJ_FLAG_PLAYER | OBJ_FLAG_SILHOUETTE)),
-    OR_INT(oUnk94, 0x0001),
     SET_HITBOX(/*Radius*/ 37, /*Height*/ 160),
     BEGIN_LOOP(),
 #ifdef VANILLA_DEBUG
@@ -8204,6 +8206,7 @@ const BehaviorScript bhvShowrunner[] = {
     SET_HOME(),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_Showrunner),
+        CALL_NATIVE(cur_obj_update_boss_music),
     END_LOOP(),
 };
 

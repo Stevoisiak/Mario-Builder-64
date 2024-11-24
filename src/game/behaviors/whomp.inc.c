@@ -33,7 +33,7 @@ void whomp_init(void) {
             }
         } else if (1) {
             o->oAction = 2;
-            play_mb64_extra_music(2);
+            o->oPlayingBossMusic = TRUE;
         }
     } else {
         o->oWhompHomeX = o->oPosX;
@@ -108,7 +108,7 @@ void king_whomp_chase(void) {
     if (o->oDistanceToMario > MB64_BOSS_DETRIGGER_DIST) {
         o->oAction = 0;
         o->oForwardVel = 0.f;
-        stop_mb64_extra_music(2);
+        o->oPlayingBossMusic = FALSE;
     }
 }
 
@@ -262,7 +262,8 @@ void whomp_die(void) {
 
 void king_whomp_stop_music(void) {
     if (o->oTimer == 60) {
-        stop_mb64_extra_music(2);
+        o->oPlayingBossMusic = FALSE;
+        obj_mark_for_deletion(o);
     }
 }
 

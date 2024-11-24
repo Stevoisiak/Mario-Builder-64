@@ -1465,6 +1465,7 @@ struct mb64_info_entry mb64_v1_1_changelog[] = {
     {"- Fixed BTCM templates selecting the wrong music tracks", 0},
     {"- Fixed infinite flight time bug with the Bullet Bill Mask", 0},
     {"- Fixed fire spinners having the incorrect rotation ingame",0},
+    {"- Fixed broken boss music with multiple bosses",0},
     {"- Countless minor physics and AI fixes", 0},
     {NULL, 0},
 };
@@ -1518,7 +1519,7 @@ struct mb64_info_entry mb64_setup_guide[] = {
     {"Use the GlideN64 graphics plugin. Make sure that",0},
     {"FBE (Framebuffer Emulation) is enabled.",0},
     {"",0},
-    {"For Parallel Launcher, make sure 'Overclock CPU' is ticked,",0},
+    {"For Parallel Launcher, make sure 'Overclock VI' is ticked,",0},
     {"and the setting 'Emulate SummerCart64 SD card interface'",0},
     {"is enabled.",0},
     {"",0},
