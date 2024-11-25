@@ -292,25 +292,51 @@ void bhv_coin_formation_loop(void) {
     set_object_respawn_info_bits(o, o->oCoinRespawnBits & RESPAWN_INFO_DONT_RESPAWN);
 }
 
+// model, billboard, shrink, move, scale, spin
+struct imbue_model imbue_model_data[] = {
+    /* IMBUE_NONE */ {MODEL_NONE, FALSE, FALSE, FALSE, 1.f, 0},
+    /* IMBUE_STAR */ {MODEL_STAR, FALSE, FALSE, TRUE, 0.6f, 0x800},
+    /* IMBUE_THREE_COINS */ {MODEL_YELLOW_COIN, TRUE, FALSE, FALSE, 1.f, 0},
+    /* IMBUE_ONE_COIN */ {MODEL_YELLOW_COIN, TRUE, FALSE, FALSE, 1.f, 0},
+    /* IMBUE_GREEN_COIN */ {MODEL_GREEN_COIN, TRUE, FALSE, FALSE, 1.f, 0},
+    /* IMBUE_BLUE_COIN */ {MODEL_BLUE_COIN, TRUE, FALSE, FALSE, 0.7f, 0},
+    /* IMBUE_RED_SWITCH */ {MODEL_MAKER_BUTTON, FALSE, TRUE, FALSE, 0.4f, 0},
+    /* IMBUE_BLUE_SWITCH */ {MODEL_MAKER_BUTTON, FALSE, TRUE, FALSE, 0.4f, 0},
+    /* IMBUE_RED_COIN */ {MODEL_RED_COIN, TRUE, FALSE, FALSE, 1.f, 0},
+    /* IMBUE_TRIGGER */ {MODEL_NONE, FALSE, FALSE, FALSE, 1.f, 0},
+    /* IMBUE_CROWBAR*/  {MODEL_MAKER_CROWBAR, FALSE, TRUE, TRUE, 0.5f, 0x400},
+    /* IMBUE_BULLET_MASK*/ {MODEL_MAKER_MASK, FALSE, TRUE, TRUE, 0.4f, 0x400},
+    /* IMBUE_BADGE_BASE */ {MODEL_BADGE, TRUE, TRUE, TRUE, 0.5f, 0},
+};
+
 
 void coin_inside_boo_act_carried(void) {
     struct Object *parent = o->parentObj;
+    s32 imbue = parent->oImbue;
+    if (imbue >= IMBUE_BADGE_BASE) {
+        imbue = IMBUE_BADGE_BASE;
+    }
 
     cur_obj_become_intangible();
 
 
     obj_copy_pos(o, parent);
 
+    if (imbue_model_data[imbue].spin != 0) {
+        o->oFaceAngleYaw += imbue_model_data[imbue].spin;
+    } else {
+        o->oFaceAngleYaw = parent->oFaceAngleYaw;
+    }
+
     if (parent->oImbue == IMBUE_STAR) {
-        o->oFaceAngleYaw += 0x800;
         o->oPosY += 30.f;
     } else if (parent->oImbue >= IMBUE_BADGE_BASE) {
         o->oPosY += 30.f;
         if (save_file_get_badge_equip() & (1 << (parent->oImbue - IMBUE_BADGE_BASE))) {
             mark_obj_for_deletion(o);
         }
-    } else {
-        o->oFaceAngleYaw = parent->oFaceAngleYaw;
+    } else if (parent->oImbue == IMBUE_CROWBAR) {
+        o->oPosY += 30.f;
     }
     if (o->parentObj->behavior == segmented_to_virtual(bhvBalconyBigBoo)) {
         o->oPosY += 150.f;
@@ -324,22 +350,6 @@ void coin_inside_boo_act_carried(void) {
 ObjActionFunc sCoinInsideBooActions[] = {
     coin_inside_boo_act_carried,
     //coin_inside_boo_act_dropped
-};
-
-struct imbue_model imbue_model_data[] = {
-    /* IMBUE_NONE */ {MODEL_NONE, FALSE, 1.f},
-    /* IMBUE_STAR */ {MODEL_STAR, FALSE, 0.6f},
-    /* IMBUE_THREE_COINS */ {MODEL_YELLOW_COIN, TRUE, 1.f},
-    /* IMBUE_ONE_COIN */ {MODEL_YELLOW_COIN, TRUE, 1.f},
-    /* IMBUE_GREEN_COIN */ {MODEL_GREEN_COIN, TRUE, 1.f},
-    /* IMBUE_BLUE_COIN */ {MODEL_BLUE_COIN, TRUE, 0.7f},
-    /* IMBUE_RED_SWITCH */ {MODEL_MAKER_BUTTON, FALSE, 0.4f},
-    /* IMBUE_BLUE_SWITCH */ {MODEL_MAKER_BUTTON, FALSE, 0.4f},
-    /* IMBUE_RED_COIN */ {MODEL_RED_COIN, TRUE, 1.f},
-    /* IMBUE_TRIGGER */ {MODEL_NONE, FALSE, 1.f},
-    /* IMBUE_CROWBAR*/  {MODEL_MAKER_CROWBAR, FALSE, 0.5f},
-    /* IMBUE_BULLET_MASK*/ {MODEL_MAKER_MASK, FALSE, 0.5f},
-    /* IMBUE_BADGE_BASE */ {MODEL_BADGE, TRUE, 0.5f},
 };
 
 void bhv_coin_inside_boo_init(void) {
@@ -356,6 +366,9 @@ void bhv_coin_inside_boo_init(void) {
 
     if (imbue == IMBUE_BLUE_SWITCH) {
         o->oAnimState = 1;
+    }
+    if (imbue == IMBUE_CROWBAR || imbue == IMBUE_BULLET_MASK) {
+        o->oFaceAnglePitch = 0x1A00;
     }
 }
 

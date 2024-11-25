@@ -2928,6 +2928,18 @@ s32 cur_obj_drop_imbued_object(s32 y_offset) {
             dropobj->oBehParams2ndByte = badgeID;
             spawn_mist_at_obj(dropobj);
             break;
+        case IMBUE_CROWBAR:
+            dropobj = spawn_object(o,MODEL_MAKER_CROWBAR,bhvCrowbarPower);
+            vec3f_copy(&dropobj->oPosVec,&o->oHomeVec);
+            dropobj->oPosY += 128.f;
+            spawn_mist_at_obj(dropobj);
+            break;
+        case IMBUE_BULLET_MASK:
+            dropobj = spawn_object(o,MODEL_MAKER_MASK,bhvBMask);
+            vec3f_copy(&dropobj->oPosVec,&o->oHomeVec);
+            dropobj->oPosY += 128.f;
+            spawn_mist_at_obj(dropobj);
+            break;
     }
     if (dropobj) {
         dropobj->oFaceAnglePitch = 0;

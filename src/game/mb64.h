@@ -466,8 +466,11 @@ enum imbue {
 
 struct imbue_model {
     s16 model;
-    u8 billboarded;
+    u8 billboarded:1;
+    u8 doShrink:1;
+    u8 doMove:1;
     f32 scale;
+    s16 spin;
 };
 
 extern s32 mb64_min_coord;

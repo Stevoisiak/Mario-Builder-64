@@ -356,7 +356,7 @@ void bhv_crowbar_power_loop() {
     if (!(gMarioState->powerup & power) && sp1C == NULL && !(o->activeFlags & ACTIVE_FLAG_FAR_AWAY)) {
         if (!(gGlobalTimer & 3)) spawn_object(o, MODEL_NONE, bhvSparkleSpawn);
         o->header.gfx.node.flags &= ~GRAPH_RENDER_INVISIBLE;
-        o->oFaceAngleYaw += 1000;
+        o->oFaceAngleYaw += 0x400;
         o->oFaceAnglePitch = 0x1A00;
     
         if (obj_check_if_collided_with_object(o, gMarioObject) == 1) {

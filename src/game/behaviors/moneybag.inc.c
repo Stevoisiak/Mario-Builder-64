@@ -241,19 +241,26 @@ void bhv_moneybag_hidden_init(void) {
     // Billboard coins
     if (imbue_model_data[imbue].billboarded) o->header.gfx.node.flags |= GRAPH_RENDER_BILLBOARD;
     // Set blue switch to blue
-    if ((imbue == IMBUE_BLUE_SWITCH) || (imbue == IMBUE_RED_SWITCH) || (imbue == IMBUE_BADGE_BASE)) {
+    if (imbue == IMBUE_BLUE_SWITCH) o->oAnimState = 1;
+    if (imbue_model_data[imbue].doShrink) {
         if (o->prevObj) o->oMoneybagHiddenScale = 0.1f;
-        if (imbue == IMBUE_BLUE_SWITCH) o->oAnimState = 1;
         o->oFaceAngleYaw = 0;
     }
     // Set star height
-    if (!o->prevObj && (imbue == IMBUE_STAR || imbue >= IMBUE_BADGE_BASE)) o->oGraphYOffset = 128.f;
+    if (!o->prevObj && imbue_model_data[imbue].doMove) o->oGraphYOffset = 128.f;
+    if (imbue == IMBUE_BULLET_MASK) o->oGraphYOffset -= 80.f;
 
     if (o->prevObj) vec3_copy(&o->oHomeVec, &o->prevObj->oHomeVec);
 }
 
 void bhv_moneybag_hidden_loop(void) {
     obj_set_hitbox(o, &sMoneybagHiddenHitbox);
+    s32 imbue = o->oImbue;
+    if (imbue >= IMBUE_BADGE_BASE) {
+        imbue = IMBUE_BADGE_BASE;
+    }
+    f32 graphythreshold = (imbue == IMBUE_BULLET_MASK ? 128.f - 80.f : 128.f);
+
 
     switch (o->oAction) {
         case FAKE_MONEYBAG_COIN_ACT_IDLE:
@@ -271,15 +278,15 @@ void bhv_moneybag_hidden_loop(void) {
             break;
     }
 
-    if (o->oImbue == IMBUE_STAR || o->oImbue >= IMBUE_BADGE_BASE) {
-        o->oFaceAngleYaw += 0x800;
+    o->oFaceAngleYaw += imbue_model_data[imbue].spin;
+    if (imbue_model_data[imbue].doMove) {
         if (o->oAction == FAKE_MONEYBAG_COIN_ACT_TRANSFORM) {
             o->oGraphYOffset -= 4.f;
-        } else if (o->oGraphYOffset < 128.f) {
+        } else if (o->oGraphYOffset < graphythreshold) {
             o->oGraphYOffset += 4.f;
         }
     }
-    if ((o->oImbue == IMBUE_RED_SWITCH) || (o->oImbue == IMBUE_BLUE_SWITCH) || (o->oImbue >= IMBUE_BADGE_BASE)) {
+    if (imbue_model_data[imbue].doShrink) {
         if (o->oAction == FAKE_MONEYBAG_COIN_ACT_TRANSFORM) {
             approach_f32_symmetric_bool(&o->oMoneybagHiddenScale, 0.1f, 0.03f);
         } else {
@@ -287,6 +294,13 @@ void bhv_moneybag_hidden_loop(void) {
         }
     } else {
         o->oAnimState += 1;
+    }
+    if (o->oImbue == IMBUE_CROWBAR || o->oImbue == IMBUE_BULLET_MASK) {
+        o->oFaceAnglePitch = 0x1A00;
+        if (!(gGlobalTimer & 3)) {
+            struct Object *obj = spawn_object(o, MODEL_NONE, bhvSparkleSpawn);
+            obj->oPosY += 128.f;
+        }
     }
 
     cur_obj_scale(o->oMoneybagHiddenScale);
@@ -297,6 +311,7 @@ void bhv_moneybag_hidden_loop(void) {
     o->oBuoyancy = 2.0f;
     o->oWallHitboxRadius = 120.0f;
     object_step();
+    o->header.gfx.throwMatrix = NULL;
     cur_obj_set_home_if_safe();
 
     if (is_cur_obj_interact_with_lava(1)) {
