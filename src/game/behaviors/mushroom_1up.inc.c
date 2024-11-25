@@ -346,28 +346,29 @@
 extern u8 bullet_fuel;
 void bhv_crowbar_power_loop() {
     struct Object *sp1C;
-    u8 power = o->oBehParams2ndByte+1;
+    u8 power = (1 << o->oBehParams2ndByte);
     sp1C = cur_obj_nearest_object_with_behavior(bhvCrowbarThrow);
 
-    if (power == 3) {
+    if (power == 2) {
         sp1C = NULL;
     }
 
-    if (gMarioState->powerup != power && sp1C == NULL && !(o->activeFlags & ACTIVE_FLAG_FAR_AWAY)) {
-        spawn_object(o, MODEL_NONE, bhvSparkleSpawn);
+    if (!(gMarioState->powerup & power) && sp1C == NULL && !(o->activeFlags & ACTIVE_FLAG_FAR_AWAY)) {
+        if (!(gGlobalTimer & 3)) spawn_object(o, MODEL_NONE, bhvSparkleSpawn);
         o->header.gfx.node.flags &= ~GRAPH_RENDER_INVISIBLE;
         o->oFaceAngleYaw += 1000;
         o->oFaceAnglePitch = 0x1A00;
     
         if (obj_check_if_collided_with_object(o, gMarioObject) == 1) {
             play_sound(SOUND_MENU_EXIT_PIPE, gGlobalSoundSource);
-            gMarioState->powerup = power;
+            gMarioState->powerup |= power;
             bullet_fuel = 60;
 
-            gMarioState->flags &= ~MARIO_METAL_CAP;
-            gMarioState->flags &= ~MARIO_VANISH_CAP;
-            gMarioState->flags &= ~MARIO_WING_CAP;
-            gMarioState->RFuel = 0;
+            // Crowbar and rocket boots incompatible
+            if (power == 1) {
+                gMarioState->flags &= ~MARIO_WING_CAP;
+                gMarioState->RFuel = 0;
+            }
         }
     }
     else
@@ -377,6 +378,7 @@ void bhv_crowbar_power_loop() {
 }
 
 void bhv_crowbar_attack_loop() {
+    o->oWallHitboxRadius = 80.f;
         s16 sp1E = object_step_without_floor_orient();
         struct Object *sp1C;
         //sp1C = cur_obj_nearest_object_with_behavior(bhvMetalCrate);
@@ -447,46 +449,44 @@ void bhv_crowbar_attack_loop() {
 
             //DIE
             if (o->oDistanceToMario < 200.0f || o->oTimer > 120) {
-                if (gMarioState->powerup == 0) {
-                    gMarioState->powerup = 1;
-                    }
+                gMarioState->powerup |= 1;
                 mark_obj_for_deletion(o);
-                }
+            }
 
             }
     }
 
 //>forwardVel mario
 
-void bhv_zipline_loop() {
-    if (o->oAction == 0) {
-        if ((o->oDistanceToMario < 200.0f)&&(gMarioState->powerup == 1)) {
-            gMarioState->faceAngle[0] = o->oFaceAngleYaw;
-            gMarioObject->header.gfx.angle[1] = o->oFaceAngleYaw;
-            set_mario_action(gMarioState, ACT_ZIPLINE, 0);
-            o->oAction = 1;
-            o->oForwardVel = 20;
-            o->oHomeY = gMarioState->forwardVel;
-            }
-        }
-    if (o->oAction == 1) {
-            o->oForwardVel += o->oHomeY;
-            if (o->oHomeY < 40.0f) {
-                o->oHomeY += 1.0f;
-                }
-            gMarioState->pos[0] = o->oPosX + o->oForwardVel * sins(o->oFaceAngleYaw);
-            gMarioState->pos[1] = o->oPosY + o->oForwardVel * -sins(o->oFaceAnglePitch);
-            gMarioState->pos[2] = o->oPosZ + o->oForwardVel * coss(o->oFaceAngleYaw);
-            gMarioState->faceAngle[0] = o->oFaceAngleYaw;
-            gMarioObject->header.gfx.angle[1] = o->oFaceAngleYaw;
+// void bhv_zipline_loop() {
+//     if (o->oAction == 0) {
+//         if ((o->oDistanceToMario < 200.0f)&&(gMarioState->powerup == 1)) {
+//             gMarioState->faceAngle[0] = o->oFaceAngleYaw;
+//             gMarioObject->header.gfx.angle[1] = o->oFaceAngleYaw;
+//             set_mario_action(gMarioState, ACT_ZIPLINE, 0);
+//             o->oAction = 1;
+//             o->oForwardVel = 20;
+//             o->oHomeY = gMarioState->forwardVel;
+//             }
+//         }
+//     if (o->oAction == 1) {
+//             o->oForwardVel += o->oHomeY;
+//             if (o->oHomeY < 40.0f) {
+//                 o->oHomeY += 1.0f;
+//                 }
+//             gMarioState->pos[0] = o->oPosX + o->oForwardVel * sins(o->oFaceAngleYaw);
+//             gMarioState->pos[1] = o->oPosY + o->oForwardVel * -sins(o->oFaceAnglePitch);
+//             gMarioState->pos[2] = o->oPosZ + o->oForwardVel * coss(o->oFaceAngleYaw);
+//             gMarioState->faceAngle[0] = o->oFaceAngleYaw;
+//             gMarioObject->header.gfx.angle[1] = o->oFaceAngleYaw;
 
-            if (o->oForwardVel > o->oBehParams2ndByte*100.0f) {
-                o->oAction = 0;
-                gMarioState->forwardVel = o->oHomeY;
-                set_mario_action(gMarioState, ACT_FREEFALL, 0);
-                }
-        }
-    }
+//             if (o->oForwardVel > o->oBehParams2ndByte*100.0f) {
+//                 o->oAction = 0;
+//                 gMarioState->forwardVel = o->oHomeY;
+//                 set_mario_action(gMarioState, ACT_FREEFALL, 0);
+//                 }
+//         }
+//     }
 
 
 

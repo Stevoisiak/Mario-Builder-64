@@ -1610,14 +1610,15 @@ void update_mario_health(struct MarioState *m) {
 
             m->hurtCounter--;
 
-            //don't.
-            //GET RID OF ANY POWERUP ON HEALTH LOSS
-            /*
-            if (gMarioState->powerup != 0) {
+            // Delete current powerup on getting hurt
+            if (gMarioState->powerup) {
                 gMarioState->powerup = 0;
                 play_sound(SOUND_MENU_ENTER_PIPE, gGlobalSoundSource);
             }
-            */
+            struct Object * sp1C = cur_obj_nearest_object_with_behavior(bhvCrowbarThrow);
+            if (sp1C) {
+                mark_obj_for_deletion(sp1C);
+            }
         }
 
         if (mb64_lopt_game == MB64_GAME_BTCM) {
@@ -2322,7 +2323,7 @@ s32 execute_mario_action(UNUSED struct Object *obj) {
         }
 
         //CROWBAR
-        if (gMarioState->powerup == 1) {
+        if (gMarioState->powerup & 1) {
             if (gMarioState->input & INPUT_B_PRESSED) {
                 switch(gMarioState->action) {
                     case ACT_IDLE:
@@ -2336,7 +2337,7 @@ s32 execute_mario_action(UNUSED struct Object *obj) {
                         sp1C->oForwardVel = 50.0f;
                         sp1C->oPosY += 50.0f;
                         sp1C->oFriction = 1.0f;
-                        gMarioState->powerup = 0;
+                        gMarioState->powerup &= ~1;
                         sp1C->oFaceAnglePitch = 0x4000;
                     break;
                 }

@@ -693,7 +693,7 @@ Gfx *geo_switch_mario_hand(s32 callContext, struct GraphNode *node, UNUSED Mat4 
         if ((bodyState->handState == MARIO_HAND_PEACE_SIGN)&&(mb64_lopt_game == MB64_GAME_VANILLA)) {
             switchCase->selectedCase = 2;
         }
-        if (gMarioState->powerup == 1) {
+        if (gMarioState->powerup & 1) {
             switchCase->selectedCase = MARIO_HAND_RIGHT_CROWBAR;
         }
         if ((mb64_lopt_game == MB64_GAME_BTCM)&&(gMarioState->flags & MARIO_WING_CAP)&&(gCurGraphNodeObject == &gMarioObject->header.gfx)) {
@@ -842,11 +842,11 @@ Gfx *geo_switch_mario_cap_on_off(s32 callContext, struct GraphNode *node, UNUSED
 
         //POWERUP
         //Majora's Mask
-        if (gMarioState->powerup == 2) {
-            switchCase->selectedCase = 5;
-            }
+        // if (gMarioState->powerup == 2) {
+        //     switchCase->selectedCase = 5;
+        //     }
 
-        if (gMarioState->powerup == 3) {
+        if (gMarioState->powerup & 2) {
             switchCase->selectedCase = 8;
             }
     }

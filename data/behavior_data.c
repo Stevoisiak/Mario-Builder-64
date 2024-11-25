@@ -1947,7 +1947,7 @@ const BehaviorScript bhvPiranhaPlantBubble[] = {
 const BehaviorScript bhvPiranhaPlantWakingBubbles[] = {
     BEGIN(OBJ_LIST_UNIMPORTANT),
     BILLBOARD(),
-    OR_INT(oFlags, (OBJ_FLAG_ACTIVE_FROM_AFAR | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
     BEGIN_REPEAT(10),
         CALL_NATIVE(bhv_piranha_plant_waking_bubbles_loop),
     END_REPEAT(),
@@ -2142,9 +2142,10 @@ const BehaviorScript bhvCcmTouchedStarSpawn[] = {
 
 const BehaviorScript bhvJumpingBox[] = {
     BEGIN(OBJ_LIST_GENACTOR),
-    OR_INT(oFlags, (OBJ_FLAG_HOLDABLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO  | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    OR_LONG(oFlags, (OBJ_FLAG_HOLDABLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO  | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_ACTIVATES_FLOOR_SWITCH)),
     SET_OBJ_PHYSICS(/*Wall hitbox radius*/ 30, /*Gravity*/ -400, /*Bounciness*/ -50, /*Drag strength*/ 1000, /*Friction*/ 1000, /*Buoyancy*/ 600, /*Unused*/ 0, 0),
     SET_HOME(),
+    SET_FLOAT(oWallHitboxRadius, 50),
     SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_MEDIUM),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_jumping_box_loop),
@@ -3752,18 +3753,18 @@ const BehaviorScript bhvCrablet[] = {
     END_LOOP(),
 };
 
-const BehaviorScript bhvCrabletSpawned[] = {
-    BEGIN(OBJ_LIST_GENACTOR),
-    OR_INT(oFlags, (OBJ_FLAG_ACTIVE_FROM_AFAR | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
-    //LOAD_ANIMATIONS(oAnimations, crab_anims_anims),
-    ANIMATE(0),
-    SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_LOW),
-    SET_OBJ_PHYSICS(/*Wall hitbox radius*/ 80, /*Gravity*/ -400, /*Bounciness*/ -50, /*Drag strength*/ 0, /*Friction*/ 0, /*Buoyancy*/ 200, /*Unused*/ 0, 0),
-    SET_HOME(),
-    BEGIN_LOOP(),
-        CALL_NATIVE(bhv_scuttlebug_loop),
-    END_LOOP(),
-};
+// const BehaviorScript bhvCrabletSpawned[] = {
+//     BEGIN(OBJ_LIST_GENACTOR),
+//     OR_INT(oFlags, (OBJ_FLAG_ACTIVE_FROM_AFAR | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+//     //LOAD_ANIMATIONS(oAnimations, crab_anims_anims),
+//     ANIMATE(0),
+//     SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_LOW),
+//     SET_OBJ_PHYSICS(/*Wall hitbox radius*/ 80, /*Gravity*/ -400, /*Bounciness*/ -50, /*Drag strength*/ 0, /*Friction*/ 0, /*Buoyancy*/ 200, /*Unused*/ 0, 0),
+//     SET_HOME(),
+//     BEGIN_LOOP(),
+//         CALL_NATIVE(bhv_scuttlebug_loop),
+//     END_LOOP(),
+// };
 
 // const BehaviorScript bhvEvilCobie[] = {
 //     BEGIN(OBJ_LIST_GENACTOR),
@@ -5682,7 +5683,8 @@ const BehaviorScript bhvHiddenStar[] = {
 
 const BehaviorScript bhvBMask[] = {
     BEGIN(OBJ_LIST_LEVEL),
-    SET_INT(oBehParams2ndByte, 2),
+    SET_INT(oBehParams2ndByte, 1),
+    SET_FLOAT(oGraphYOffset, -80),
     GOTO(bhvCrowbarPower + 1),
 };
 
@@ -5690,7 +5692,6 @@ const BehaviorScript bhvCrowbarPower[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO ),
     SET_HITBOX_WITH_OFFSET(/*Radius*/ 80, /*Height*/ 160, /*Downwards offset*/ 80),
-    SET_FLOAT(oGraphYOffset, 40),
     SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_MEDIUM),
     //CALL_NATIVE(bhv_1up_init),
     BEGIN_LOOP(),
@@ -5802,7 +5803,7 @@ const BehaviorScript bhvCrowbarThrow[] = {
 
 const BehaviorScript bhvBreakableBoxSmall[] = {
     BEGIN(OBJ_LIST_DESTRUCTIVE),
-    OR_LONG(oFlags, (OBJ_FLAG_ACTIVE_FROM_AFAR | OBJ_FLAG_HOLDABLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_ACTIVATES_FLOOR_SWITCH)),
+    OR_LONG(oFlags, (OBJ_FLAG_HOLDABLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_ACTIVATES_FLOOR_SWITCH)),
     SET_HOME(),
     CALL_NATIVE(bhv_breakable_box_small_init),
     SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_MEDIUM),

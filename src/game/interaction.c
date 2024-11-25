@@ -1620,12 +1620,6 @@ u32 interact_cap(struct MarioState *m, UNUSED u32 interactType, struct Object *o
     if (mb64_lopt_game == MB64_GAME_BTCM) {
         //BEYOND THE CURSED MIRROR INTERACTION
         if (m->action != ACT_GETTING_BLOWN && capFlag != 0) {
-            gMarioState->powerup = 0;
-            struct Object * sp1C = cur_obj_nearest_object_with_behavior(bhvCrowbarThrow);
-            if (sp1C) {
-                mark_obj_for_deletion(sp1C);
-            }
-
             m->interactObj = obj;
             obj->oInteractStatus = INT_STATUS_INTERACTED;
 
@@ -1640,12 +1634,15 @@ u32 interact_cap(struct MarioState *m, UNUSED u32 interactType, struct Object *o
                         m->capTimer = capTime;
                     }
                     break;
-                case MARIO_METAL_CAP:
-                    capTime =  600;
-                    break;
                 case MARIO_WING_CAP:
                     m->flags |= MARIO_WING_CAP;
                     gMarioState->RFuel = 100;
+
+                    gMarioState->powerup &= ~1;
+                    struct Object *thrownCrowbar = cur_obj_nearest_object_with_behavior(bhvCrowbarThrow);
+                    if (thrownCrowbar) {
+                        mark_obj_for_deletion(thrownCrowbar);
+                    }
                     break;
             }
             m->flags |= MARIO_CAP_ON_HEAD;

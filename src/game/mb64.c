@@ -2879,18 +2879,7 @@ void imbue_action(void) {
                         imbue_success = TRUE;
                     }
                     break;
-                case OBJECT_TYPE_RED_COIN:
-                    mb64_object_data[i].imbue = IMBUE_RED_COIN;
-                    imbue_success = TRUE;
-                    break;
-                case OBJECT_TYPE_TRIGGER:
-                    mb64_object_data[i].imbue = IMBUE_TRIGGER;
-                    imbue_success = TRUE;
-                    break;
-                case OBJECT_TYPE_GREEN_COIN:
-                    mb64_object_data[i].imbue = IMBUE_GREEN_COIN;
-                    imbue_success = TRUE;
-                    break;
+
                 case OBJECT_TYPE_BUTTON:
                     mb64_object_data[i].imbue = IMBUE_RED_SWITCH;
                     if (mb64_param_selection == 1) {
@@ -2898,10 +2887,19 @@ void imbue_action(void) {
                     }
                     imbue_success = TRUE;
                     break;
-                case OBJECT_TYPE_BADGE:
-                    mb64_object_data[i].imbue = IMBUE_BADGE_BASE + mb64_param_selection;
-                    imbue_success = TRUE;
+
+#define generic_imbue(obj, imbueType) \
+                case obj: \
+                    mb64_object_data[i].imbue = imbueType; \
+                    imbue_success = TRUE; \
                     break;
+
+                generic_imbue(OBJECT_TYPE_RED_COIN, IMBUE_RED_COIN);
+                generic_imbue(OBJECT_TYPE_TRIGGER, IMBUE_TRIGGER);
+                generic_imbue(OBJECT_TYPE_CROWBAR, IMBUE_CROWBAR);
+                generic_imbue(OBJECT_TYPE_MASK, IMBUE_BULLET_MASK);
+                generic_imbue(OBJECT_TYPE_GREEN_COIN, IMBUE_GREEN_COIN);
+                generic_imbue(OBJECT_TYPE_BADGE, IMBUE_BADGE_BASE + mb64_param_selection);
             }
 
             if (imbue_success && (oldImbue != mb64_object_data[i].imbue)) {
