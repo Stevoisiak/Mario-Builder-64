@@ -510,6 +510,7 @@ s32 check_ground_dive_or_punch(struct MarioState *m) {
             return set_mario_action(m, ACT_DIVE, 1);
         }
 
+        throw_crowbar();
         return set_mario_action(m, ACT_MOVE_PUNCHING, 0);
     }
 
@@ -843,6 +844,7 @@ s32 act_move_punching(struct MarioState *m) {
     }
 
     if (m->actionState == ACT_STATE_MOVE_PUNCHING_CAN_JUMP_KICK && (m->input & INPUT_A_DOWN)) {
+        throw_crowbar();
         return set_mario_action(m, ACT_JUMP_KICK, 0);
     }
 
@@ -1062,8 +1064,7 @@ s32 act_braking(struct MarioState *m) {
     }
 
     if (m->input & INPUT_B_PRESSED) {
-        //    struct Object *sp1C = spawn_object(o, MODEL_NONE, bhvSparkleSpawn);
-    //sp1C->oPosY += a;
+        throw_crowbar();
         return set_mario_action(m, ACT_MOVE_PUNCHING, 0);
     }
 
@@ -1497,6 +1498,7 @@ s32 act_crouch_slide(struct MarioState *m) {
         if (m->forwardVel >= 10.0f) {
             return set_mario_action(m, ACT_SLIDE_KICK, 0);
         } else {
+            throw_crowbar();
             return set_mario_action(m, ACT_MOVE_PUNCHING, 0x9);
         }
     }

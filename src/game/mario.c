@@ -951,6 +951,7 @@ u32 set_mario_action_airborne(struct MarioState *m, u32 action, u32 actionArg) {
             break;
 
         case ACT_JUMP_KICK:
+            throw_crowbar();
             m->vel[1] = 20.0f;
             break;
     }
@@ -2096,6 +2097,18 @@ s32 mario_update_star_radar(void) {
     }
 }
 
+void throw_crowbar(void) {
+    if (gMarioState->powerup & 1) {
+        play_sound(SOUND_ACTION_SIDE_FLIP_UNK, gMarioState->marioObj->header.gfx.cameraToObject);
+        struct Object *crowbar = spawn_object(o, MODEL_MAKER_CROWBAR, bhvCrowbarThrow);
+        crowbar->oForwardVel = 50.0f;
+        crowbar->oPosY += 50.0f;
+        crowbar->oFriction = 1.0f;
+        gMarioState->powerup &= ~1;
+        crowbar->oFaceAnglePitch = 0x4000;
+    }
+}
+
 u16 mario_decay;
 s32 execute_mario_action(UNUSED struct Object *obj) {
     s32 inLoop = TRUE;
@@ -2320,28 +2333,6 @@ s32 execute_mario_action(UNUSED struct Object *obj) {
         // If Mario is OOB, stop executing actions.
         if (gMarioState->floor == NULL) {
             return ACTIVE_PARTICLE_NONE;
-        }
-
-        //CROWBAR
-        if (gMarioState->powerup & 1) {
-            if (gMarioState->input & INPUT_B_PRESSED) {
-                switch(gMarioState->action) {
-                    case ACT_IDLE:
-                    case ACT_BRAKING:
-                    case ACT_WALKING:
-                    case ACT_JUMP:
-                    case ACT_DOUBLE_JUMP:
-                    case ACT_WALL_KICK_AIR:
-                        play_sound(SOUND_ACTION_SIDE_FLIP_UNK, gMarioState->marioObj->header.gfx.cameraToObject);
-                        sp1C = spawn_object(o, MODEL_MAKER_CROWBAR, bhvCrowbarThrow);
-                        sp1C->oForwardVel = 50.0f;
-                        sp1C->oPosY += 50.0f;
-                        sp1C->oFriction = 1.0f;
-                        gMarioState->powerup &= ~1;
-                        sp1C->oFaceAnglePitch = 0x4000;
-                    break;
-                }
-            }
         }
 
         // The function can loop through many action shifts in one frame,

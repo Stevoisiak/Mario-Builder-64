@@ -370,10 +370,8 @@ void bhv_crowbar_power_loop() {
                 gMarioState->RFuel = 0;
             }
         }
-    }
-    else
-    {
-    o->header.gfx.node.flags |= GRAPH_RENDER_INVISIBLE;
+    } else {
+        o->header.gfx.node.flags |= GRAPH_RENDER_INVISIBLE;
     }
 }
 
@@ -395,29 +393,15 @@ void bhv_crowbar_attack_loop() {
         }
 
         if (o->oAction == 0) {
-            //DESTROY METAL CRATE
-            // if (sp1C != 0) {
-            //     if (dist_between_objects(o,sp1C) < 250.0f) {
-            //         sp1C->oHealth --;
-            //         sp1C->oPosY += 10.0f;
-            //         sp1C->oVelY -= 20.0f;
-            //         cur_obj_play_sound_2(SOUND_ACTION_METAL_STEP);
-            //         o->oAction = 1;
-            //         o->oTimer = 0;
-            //         o->oMoveAngleYaw += 0x8000;
-            //         cur_obj_become_intangible();
-            //         }
-            //     }
-            //KILL ENEMIES
             obj_attack_collided_from_other_object(o, ATTACK_FAST_ATTACK);
 
             if (o->oTimer > 5) {
                 cur_obj_become_tangible();
-                }
+            }
 
             if (sp1E & 2) {
                 cur_obj_play_sound_2(SOUND_ACTION_METAL_STEP);
-                }
+            }
 
             o->oForwardVel --;
 
@@ -426,15 +410,8 @@ void bhv_crowbar_attack_loop() {
                 o->oTimer = 0;
                 o->oMoveAngleYaw += 0x8000;
                 cur_obj_become_intangible();
-                }
-            
-            if (o->numCollidedObjs > 0) {
-                o->oAction = 1;
-                o->oTimer = 0;
-                o->oMoveAngleYaw += 0x8000;
-                cur_obj_become_intangible();
-                }
             }
+        }
         
         if (o->oAction == 1) {
             f32 sp34 = gMarioObject->header.gfx.pos[0] - o->oPosX;

@@ -1437,6 +1437,7 @@ struct mb64_info_entry mb64_v1_1_changelog[] = {
     {"- Collecting a Power Star now fully heals Mario", 0},
     {"- Bowser no longer instantly dies to lava", 0},
     {"- BTCM Powerups can now be used together",0},
+    {"- The Crowbar can now hit multiple objects at once", 0},
     {"- Heavily improved Thwomp physics and interactions", 0},
     {"- Physics given to Mr. Blizzard and Piranha Plants", 0},
     {"- AI and physics improvements for all enemies", 0},

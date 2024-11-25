@@ -154,6 +154,7 @@ s32 act_punching(struct MarioState *m) {
     }
 
     if (m->actionState == ACT_STATE_PUNCHING_CAN_JUMP_KICK && (m->input & INPUT_A_DOWN)) {
+        throw_crowbar();
         return set_mario_action(m, ACT_JUMP_KICK, 0);
     }
 

@@ -311,7 +311,7 @@ You'll need a bullet-bill\n\
 mask to get through here."))
 
 DEFINE_DIALOG(DIALOG_038, 1, 2, 95, 180, _("\
-You'll need a pipebar\n\
+You'll need a crowbar\n\
 to get through here."))
 
 DEFINE_DIALOG(DIALOG_039, 1, 1, 95, 180, _("\
@@ -656,7 +656,7 @@ all, but you'll burn\n\
 your hands without a\n\
 proper ziplining tool.\n\
 \n\
-A pipebar would\n\
+A crowbar would\n\
 definitely help.\n\
 Hold on tight though!\n\
 You wouldn't want to\n\
@@ -1086,13 +1086,13 @@ strangers bothering us.\n\
 Take a stroll.\n\
 Wait a min. That uh,\n\
 tool you're holding.\n\
-That pipebar. Hey, you\n\
+That crowbar. Hey, you\n\
 could be useful to us!\n\
 We need to steal the\n\
 highcane from those\n\
 land fools who love to\n\
 grow it so much.\n\
-Use that pipebar of\n\
+Use that crowbar of\n\
 yours and harvest all\n\
 the highcane for us.\n\
 \n\
