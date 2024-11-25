@@ -1211,6 +1211,7 @@ u32 interact_flame(struct MarioState *m, UNUSED u32 interactType, struct Object 
             play_sound(SOUND_GENERAL_FLAME_OUT, m->marioObj->header.gfx.cameraToObject);
         } else {
             m->marioObj->oMarioBurnTimer = 0;
+            mario_remove_powerup();
             update_mario_sound_and_camera(m);
             play_sound(SOUND_MARIO_ON_FIRE, m->marioObj->header.gfx.cameraToObject);
 

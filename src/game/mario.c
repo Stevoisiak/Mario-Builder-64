@@ -1550,6 +1550,18 @@ void set_submerged_cam_preset_and_spawn_bubbles(struct MarioState *m) {
     }
 }
 
+void mario_remove_powerup(void) {
+    // Delete current powerup on getting hurt
+    if (gMarioState->powerup) {
+        gMarioState->powerup = 0;
+        play_sound(SOUND_MENU_ENTER_PIPE, gGlobalSoundSource);
+    }
+    struct Object * sp1C = cur_obj_nearest_object_with_behavior(bhvCrowbarThrow);
+    if (sp1C) {
+        mark_obj_for_deletion(sp1C);
+    }
+}
+
 /**
  * Both increments and decrements Mario's HP.
  */
@@ -1611,15 +1623,7 @@ void update_mario_health(struct MarioState *m) {
 
             m->hurtCounter--;
 
-            // Delete current powerup on getting hurt
-            if (gMarioState->powerup) {
-                gMarioState->powerup = 0;
-                play_sound(SOUND_MENU_ENTER_PIPE, gGlobalSoundSource);
-            }
-            struct Object * sp1C = cur_obj_nearest_object_with_behavior(bhvCrowbarThrow);
-            if (sp1C) {
-                mark_obj_for_deletion(sp1C);
-            }
+            mario_remove_powerup();
         }
 
         if (mb64_lopt_game == MB64_GAME_BTCM) {
