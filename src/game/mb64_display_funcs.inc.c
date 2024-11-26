@@ -166,6 +166,41 @@ void df_ktq(s32 context) {
     }
 }
 
+void df_piranha_bubble(s32 context) {
+    struct Object *parent = o->parentObj; // the Piranha Plant
+    f32 scale = 0;
+    s32 animFrame = parent->header.gfx.animInfo.animFrame;
+    s32 lastFrame = parent->header.gfx.animInfo.curAnim->loopEnd - 2;
+
+    df_follow_parent(context);
+
+    f32 doneShrinkingFrame = lastFrame / 2.0f - 4.0f;
+    f32 beginGrowingFrame = lastFrame / 2.0f + 4.0f;
+
+    if (animFrame < doneShrinkingFrame) {
+        scale = coss(animFrame / doneShrinkingFrame * 0x4000) * 4.0f + 1.0f;
+    } else if (animFrame > beginGrowingFrame) {
+        scale = sins((
+                    (animFrame - (lastFrame / 2.0f + 4.0f)) / beginGrowingFrame
+                    ) * 0x4000) * 4.0f + 1.0f;
+    } else {
+        scale = 1.0f;
+    }
+
+    cur_obj_scale(scale);
+}
+void df_piranha(s32 context) {
+    if (context == MB64_DF_CONTEXT_INIT) {
+        super_cum_working(o, 8);
+        struct Object *bubble = spawn_object(o,MODEL_BUBBLE, VIRTUAL_TO_PHYSICAL(o->behavior));
+        bubble->oPreviewObjDisplayFunc = (void *)df_piranha_bubble;
+        bubble->oParentRelativePosZ = 180.0f;
+        bubble->oParentRelativePosX = 0.0f;
+        bubble->oParentRelativePosY = 72.0f;
+        obj_set_billboard(bubble);
+    }
+}
+
 void df_chuckya(s32 context) {
     if (context == MB64_DF_CONTEXT_INIT) super_cum_working(o, 4);
 }
