@@ -41,7 +41,6 @@
 // #include "dcoin/geo.inc.c"
 //#include "wallet/geo.inc.c"
 #include "noteblock/geo.inc.c"
-//#include "billmask/geo.inc.c"
 //#include "spotlight/geo.inc.c"
 
 //#include "tvhead/geo.inc.c"

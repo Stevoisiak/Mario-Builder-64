@@ -1,4 +1,4 @@
-extern const GeoLayout crowbar3_geo[];
+extern const GeoLayout crowbar_geo[];
 extern Lights1 crowbar3_Pipe2_001_lights;
 extern Lights1 crowbar3_Pipe1_001_lights;
 extern u8 crowbar3_Pipe_ci8[];

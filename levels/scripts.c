@@ -52,8 +52,6 @@ const LevelScript level_main_scripts_entry[] = {
     LOAD_RAW_WITH_CODE( /*seg*/ SEGMENT_BEHAVIOR_DATA,    _behaviorSegmentRomStart,     _behaviorSegmentRomEnd,   _behaviorSegmentBssStart,     _behaviorSegmentBssEnd),
     ALLOC_LEVEL_POOL(),
     LOAD_MODEL_FROM_GEO(MODEL_SMOKE,                   smoke_geo),
-
-    //LOAD_MODEL_FROM_GEO(0xF0,                   crowbar2_geo),
     
     //LOAD_MODEL_FROM_GEO(MODEL_TV_CORPSE, tvcorpse_geo),
 
@@ -296,8 +294,8 @@ const LevelScript script_func_mb64_theme_btcm[] = {
     LOAD_MODEL_FROM_GEO(MODEL_MAKER_SHOWRUNNER_BALL,  srball_1_geo),
     LOAD_MODEL_FROM_GEO(MODEL_MAKER_SHOWRUNNER_BALL_2,  srball_2_geo),
     LOAD_MODEL_FROM_GEO(MODEL_MAKER_SHOWRUNNER_SPIKE,  srspike_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_MAKER_CROWBAR, crowbar3_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_MAKER_MASK, billmask2_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_MAKER_CROWBAR, crowbar_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_MAKER_MASK, billmask_geo),
     LOAD_MODEL_FROM_GEO(MODEL_MAKER_MOLEMAN, moleman3_geo),
     LOAD_MODEL_FROM_GEO(MODEL_MAKER_COBIE, cobie2_geo),
     LOAD_MODEL_FROM_GEO(MODEL_MAKER_IMBUE_BADGE, imbue_badge_geo),

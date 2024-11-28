@@ -3,10 +3,13 @@
 const GeoLayout billmask_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_OPAQUE, billmask_skinnedbill_mesh_layer_1),
-		GEO_DISPLAY_LIST(LAYER_ALPHA, billmask_skinnedbill_mesh_layer_4),
-		GEO_DISPLAY_LIST(LAYER_OPAQUE, billmask_material_revert_render_settings),
-		GEO_DISPLAY_LIST(LAYER_ALPHA, billmask_material_revert_render_settings),
+		GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 0x96, 100),
+		GEO_OPEN_NODE(),
+			GEO_DISPLAY_LIST(LAYER_OPAQUE, billmask2_skinnedbill_mesh_layer_1),
+			GEO_DISPLAY_LIST(LAYER_ALPHA, billmask2_skinnedbill_mesh_layer_4),
+			GEO_DISPLAY_LIST(LAYER_OPAQUE, billmask2_material_revert_render_settings),
+			GEO_DISPLAY_LIST(LAYER_ALPHA, billmask2_material_revert_render_settings),
+		GEO_CLOSE_NODE(),
 	GEO_CLOSE_NODE(),
 	GEO_END(),
 };

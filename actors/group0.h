@@ -203,18 +203,6 @@ extern const Gfx spiny_egg_seg5_dl_05015368[];
 extern const Gfx spiny_egg_seg5_dl_05015740[];
 extern const struct Animation *const spiny_egg_seg5_anims_050157E4[];
 
-/*
-//Crowbar
-extern Vtx Crowbar_Crowbar_Mesh_mesh_vtx_0[496];
-extern Gfx Crowbar_Crowbar_Mesh_mesh_tri_0[];
-extern Vtx Crowbar_Crowbar_Mesh_mesh_vtx_1[40];
-extern Gfx Crowbar_Crowbar_Mesh_mesh_tri_1[];
-
-extern Gfx Crowbar_Crowbar_Mesh_mesh[];
-
-extern GeoLayout crowbar_geo[];
-*/
-
 //extern const Lights1 mario_button_v4_lights;
 //extern const Lights1 mario_hat_v4_lights;
 //extern const Lights1 mario_skin_v4_lights;
@@ -383,8 +371,6 @@ extern const Gfx monty_mole_hole_seg5_dl_05000840[];
 // #include "null_anims/anim_header.h"
 // #include "ico_heart/header.h"
 
-
-//#include "billmask/geo_header.h"
 
 #include "gradibox/header.h"
 

@@ -1,8 +1,6 @@
 
-
-
-Gfx billmask_rgba16_anonmoose_envmap_silver1_i8_aligner[] = {gsSPEndDisplayList()};
-u8 billmask_rgba16_anonmoose_envmap_silver1_i8[] = {
+Gfx billmask2_rgba16_anonmoose_envmap_silver1_i8_aligner[] = {gsSPEndDisplayList()};
+u8 billmask2_rgba16_anonmoose_envmap_silver1_i8[] = {
 	0x72, 0x74, 0x75, 0x76, 0x77, 0x78, 0x79, 0x7a, 
 	0x7a, 0x7b, 0x7c, 0x7c, 0x7c, 0x7d, 0x7d, 0x7e, 
 	0x7e, 0x7e, 0x7e, 0x7f, 0x7f, 0x80, 0x80, 0x7f, 
@@ -262,8 +260,8 @@ u8 billmask_rgba16_anonmoose_envmap_silver1_i8[] = {
 	
 };
 
-Gfx billmask_BULLET_BILL_EYE_ia8_aligner[] = {gsSPEndDisplayList()};
-u8 billmask_BULLET_BILL_EYE_ia8[] = {
+Gfx billmask2_BULLET_BILL_EYE_ia8_aligner[] = {gsSPEndDisplayList()};
+u8 billmask2_BULLET_BILL_EYE_ia8[] = {
 	0xf0, 0xf0, 0xf0, 0xf0, 0xf0, 0xf0, 0xf0, 0xf0, 
 	0xf0, 0xf0, 0xf0, 0xf0, 0xf0, 0xf0, 0xf0, 0xf0, 
 	0xf0, 0xf0, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -523,8 +521,8 @@ u8 billmask_BULLET_BILL_EYE_ia8[] = {
 	
 };
 
-Gfx billmask_BULLET_BILL_MOUTH_ci8_aligner[] = {gsSPEndDisplayList()};
-u8 billmask_BULLET_BILL_MOUTH_ci8[] = {
+Gfx billmask2_BULLET_BILL_MOUTH_ci8_aligner[] = {gsSPEndDisplayList()};
+u8 billmask2_BULLET_BILL_MOUTH_ci8[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -784,8 +782,8 @@ u8 billmask_BULLET_BILL_MOUTH_ci8[] = {
 	
 };
 
-Gfx billmask_BULLET_BILL_MOUTH_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 billmask_BULLET_BILL_MOUTH_ci8_pal_rgba16[] = {
+Gfx billmask2_BULLET_BILL_MOUTH_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 billmask2_BULLET_BILL_MOUTH_pal_rgba16[] = {
 	0xf7, 0xbc, 0xf7, 0x7a, 0xf7, 0xbd, 0xee, 0xb4, 
 	0xe9, 0x84, 0xf0, 0x81, 0xf1, 0x41, 0xef, 0x79, 
 	0xf7, 0x7b, 0xf1, 0x84, 0xee, 0xf8, 0xef, 0xbc, 
@@ -833,109 +831,109 @@ u8 billmask_BULLET_BILL_MOUTH_ci8_pal_rgba16[] = {
 	
 };
 
-Vtx billmask_skinnedbill_mesh_layer_1_vtx_cull[8] = {
-	{{{-45, -26, -38},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{-45, 156, -38},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{-45, 156, -161},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{-45, -26, -161},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{45, -26, -38},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{45, 156, -38},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{45, 156, -161},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{45, -26, -161},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
+Vtx billmask2_skinnedbill_mesh_layer_1_vtx_cull[8] = {
+	{{ {-45, -26, -38}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {-45, 156, -38}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {-45, 156, -161}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {-45, -26, -161}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {45, -26, -38}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {45, 156, -38}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {45, 156, -161}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {45, -26, -161}, 0, {-16, -16}, {0, 0, 0, 0} }},
 };
 
-Vtx billmask_skinnedbill_mesh_layer_1_vtx_0[87] = {
-	{{{-45, 11, -135},0, {325, 496},{0x92, 0x0, 0xC0, 0xFF}}},
-	{{{0, 106, -161},0, {-16, -16},{0x0, 0x22, 0x86, 0xFF}}},
-	{{{0, 11, -161},0, {-16, 496},{0x0, 0x0, 0x81, 0xFF}}},
-	{{{-45, 106, -135},0, {325, -16},{0x96, 0x22, 0xC3, 0xFF}}},
-	{{{-45, 11, -84},0, {667, 496},{0x92, 0x0, 0x3F, 0xFF}}},
-	{{{-45, 106, -84},0, {667, -16},{0x96, 0x22, 0x3D, 0xFF}}},
-	{{{0, 11, -58},0, {1008, 496},{0x0, 0x0, 0x7F, 0xFF}}},
-	{{{0, 106, -58},0, {1008, -16},{0x0, 0x22, 0x7A, 0xFF}}},
-	{{{45, 11, -84},0, {1349, 496},{0x6E, 0x0, 0x40, 0xF3}}},
-	{{{45, 106, -84},0, {1349, -16},{0x6A, 0x22, 0x3D, 0xE7}}},
-	{{{45, 11, -135},0, {1691, 496},{0x6E, 0x0, 0xC0, 0xF3}}},
-	{{{45, 106, -135},0, {1691, -16},{0x6A, 0x22, 0xC3, 0xC0}}},
-	{{{0, 11, -161},0, {2032, 496},{0x0, 0x0, 0x81, 0xFF}}},
-	{{{0, 106, -161},0, {2032, -16},{0x0, 0x22, 0x86, 0xFF}}},
-	{{{0, 141, -138},0, {2032, -16},{0x0, 0x68, 0xB7, 0xFF}}},
-	{{{24, 141, -124},0, {1691, -16},{0x3F, 0x68, 0xDC, 0xFF}}},
-	{{{24, 141, -95},0, {1349, -16},{0x3F, 0x68, 0x24, 0xFF}}},
-	{{{0, 141, -81},0, {1008, -16},{0x0, 0x68, 0x49, 0xFF}}},
-	{{{-24, 141, -95},0, {667, -16},{0xC1, 0x68, 0x24, 0xFF}}},
-	{{{-24, 141, -124},0, {325, -16},{0xC1, 0x68, 0xDC, 0xFF}}},
-	{{{0, 141, -138},0, {-16, -16},{0x0, 0x68, 0xB7, 0xFF}}},
-	{{{24, 141, -95},0, {922, 875},{0x3F, 0x68, 0x24, 0xFF}}},
-	{{{24, 141, -124},0, {922, 629},{0x3F, 0x68, 0xDC, 0xFF}}},
-	{{{0, 141, -138},0, {496, 506},{0x0, 0x68, 0xB7, 0xFF}}},
-	{{{-24, 141, -95},0, {70, 875},{0xC1, 0x68, 0x24, 0xFF}}},
-	{{{-24, 141, -124},0, {70, 629},{0xC1, 0x68, 0xDC, 0xFF}}},
-	{{{0, 141, -81},0, {496, 998},{0x0, 0x68, 0x49, 0xFF}}},
-	{{{-45, -26, -135},0, {1094, 629},{0xA9, 0xB2, 0xCE, 0x0}}},
-	{{{0, -26, -161},0, {1520, 506},{0x0, 0xB2, 0x9B, 0x0}}},
-	{{{45, -26, -135},0, {1946, 629},{0x57, 0xB2, 0xCE, 0x0}}},
-	{{{0, -26, -58},0, {1520, 998},{0x0, 0xB2, 0x65, 0x0}}},
-	{{{45, -26, -84},0, {1946, 875},{0x57, 0xB2, 0x32, 0x0}}},
-	{{{0, -26, -58},0, {1520, 998},{0x0, 0xB2, 0x65, 0x0}}},
-	{{{-45, -26, -84},0, {1094, 875},{0xA9, 0xB2, 0x32, 0x0}}},
-	{{{-45, -26, -135},0, {1094, 629},{0xA9, 0xB2, 0xCE, 0x0}}},
-	{{{0, 11, -161},0, {2032, 496},{0x0, 0x0, 0x81, 0x57}}},
-	{{{45, -26, -135},0, {1691, 496},{0x57, 0xB2, 0xCE, 0xFF}}},
-	{{{0, -26, -161},0, {2032, 496},{0x0, 0xB2, 0x9B, 0xFF}}},
-	{{{45, 11, -135},0, {1691, 496},{0x6E, 0x0, 0xC0, 0x57}}},
-	{{{45, -26, -84},0, {1349, 496},{0x57, 0xB2, 0x32, 0xFF}}},
-	{{{45, 11, -84},0, {1349, 496},{0x6E, 0x0, 0x40, 0x57}}},
-	{{{0, -26, -58},0, {1008, 496},{0x0, 0xB2, 0x65, 0xFF}}},
-	{{{0, 11, -58},0, {1008, 496},{0x0, 0x0, 0x7F, 0x57}}},
-	{{{-45, -26, -84},0, {667, 496},{0xA9, 0xB2, 0x32, 0xFF}}},
-	{{{-45, 11, -84},0, {667, 496},{0x92, 0x0, 0x3F, 0x9}}},
-	{{{-45, -26, -135},0, {325, 496},{0xA9, 0xB2, 0xCE, 0xFF}}},
-	{{{-45, 11, -135},0, {325, 496},{0x92, 0x0, 0xC0, 0x50}}},
-	{{{0, -26, -161},0, {-16, 496},{0x0, 0xB2, 0x9B, 0xFF}}},
-	{{{0, 11, -161},0, {-16, 496},{0x0, 0x0, 0x81, 0x57}}},
-	{{{25, 83, -38},0, {752, 496},{0x49, 0x49, 0x49, 0xFF}}},
-	{{{25, 83, -51},0, {940, 496},{0x5A, 0x5A, 0x0, 0x57}}},
-	{{{-25, 83, -51},0, {940, 240},{0xA6, 0x5A, 0x0, 0x57}}},
-	{{{-25, 83, -38},0, {752, 240},{0xB7, 0x49, 0x49, 0xFF}}},
-	{{{-25, 83, -38},0, {1264, 496},{0xB7, 0x49, 0x49, 0xFF}}},
-	{{{-25, 83, -51},0, {1452, 496},{0xA6, 0x5A, 0x0, 0x57}}},
-	{{{-25, 33, -51},0, {1452, 240},{0xA6, 0xA6, 0x0, 0x57}}},
-	{{{-25, 33, -38},0, {1264, 240},{0xB7, 0xB7, 0x49, 0xFF}}},
-	{{{25, 33, -38},0, {752, 240},{0x49, 0xB7, 0x49, 0xFF}}},
-	{{{25, 33, -51},0, {940, 240},{0x5A, 0xA6, 0x0, 0x57}}},
-	{{{25, 83, -51},0, {940, -16},{0x5A, 0x5A, 0x0, 0x57}}},
-	{{{25, 83, -38},0, {752, -16},{0x49, 0x49, 0x49, 0xFF}}},
-	{{{-25, 33, -38},0, {752, 752},{0xB7, 0xB7, 0x49, 0x0}}},
-	{{{25, 33, -38},0, {1264, 752},{0x49, 0xB7, 0x49, 0x0}}},
-	{{{25, 83, -38},0, {1264, 496},{0x49, 0x49, 0x49, 0x0}}},
-	{{{-25, 33, -38},0, {752, 752},{0xB7, 0xB7, 0x49, 0x0}}},
-	{{{25, 83, -38},0, {1264, 496},{0x49, 0x49, 0x49, 0x0}}},
-	{{{-25, 83, -38},0, {752, 496},{0xB7, 0x49, 0x49, 0x0}}},
-	{{{25, 83, -51},0, {940, 496},{0x5A, 0x5A, 0x0, 0xFF}}},
-	{{{25, 83, -74},0, {1264, 496},{0x5A, 0x5A, 0x0, 0x95}}},
-	{{{-25, 83, -74},0, {1264, 240},{0xA6, 0x5A, 0x0, 0x95}}},
-	{{{-25, 83, -51},0, {940, 240},{0xA6, 0x5A, 0x0, 0xFF}}},
-	{{{-25, 33, -38},0, {240, 496},{0xB7, 0xB7, 0x49, 0xFF}}},
-	{{{-25, 33, -51},0, {428, 496},{0xA6, 0xA6, 0x0, 0x57}}},
-	{{{25, 33, -51},0, {428, 240},{0x5A, 0xA6, 0x0, 0x57}}},
-	{{{25, 33, -38},0, {240, 240},{0x49, 0xB7, 0x49, 0xFF}}},
-	{{{25, 33, -51},0, {940, 240},{0x5A, 0xA6, 0x0, 0xFF}}},
-	{{{25, 33, -74},0, {1264, 240},{0x5A, 0xA6, 0x0, 0x95}}},
-	{{{25, 83, -74},0, {1264, -16},{0x5A, 0x5A, 0x0, 0x95}}},
-	{{{25, 83, -51},0, {940, -16},{0x5A, 0x5A, 0x0, 0xFF}}},
-	{{{-25, 33, -51},0, {428, 496},{0xA6, 0xA6, 0x0, 0xFF}}},
-	{{{-25, 33, -74},0, {752, 496},{0xA6, 0xA6, 0x0, 0x95}}},
-	{{{25, 33, -74},0, {752, 240},{0x5A, 0xA6, 0x0, 0x95}}},
-	{{{25, 33, -51},0, {428, 240},{0x5A, 0xA6, 0x0, 0xFF}}},
-	{{{-25, 83, -51},0, {1452, 496},{0xA6, 0x5A, 0x0, 0xFF}}},
-	{{{-25, 83, -74},0, {1776, 496},{0xA6, 0x5A, 0x0, 0x95}}},
-	{{{-25, 33, -74},0, {1776, 240},{0xA6, 0xA6, 0x0, 0x95}}},
-	{{{-25, 33, -51},0, {1452, 240},{0xA6, 0xA6, 0x0, 0xFF}}},
+Vtx billmask2_skinnedbill_mesh_layer_1_vtx_0[87] = {
+	{{ {-45, 11, -135}, 0, {81, -17}, {146, 0, 193, 255} }},
+	{{ {0, 106, -161}, 0, {-260, -529}, {0, 34, 134, 255} }},
+	{{ {0, 11, -161}, 0, {-260, -17}, {0, 0, 129, 255} }},
+	{{ {-45, 106, -135}, 0, {81, -529}, {150, 34, 195, 255} }},
+	{{ {-45, 11, -84}, 0, {423, -17}, {146, 0, 63, 255} }},
+	{{ {-45, 106, -84}, 0, {423, -529}, {150, 34, 61, 255} }},
+	{{ {0, 11, -58}, 0, {764, -17}, {0, 0, 127, 255} }},
+	{{ {0, 106, -58}, 0, {764, -529}, {0, 34, 122, 255} }},
+	{{ {45, 11, -84}, 0, {1105, -17}, {110, 0, 64, 243} }},
+	{{ {45, 106, -84}, 0, {1105, -529}, {106, 34, 61, 231} }},
+	{{ {45, 11, -135}, 0, {1447, -17}, {110, 0, 193, 243} }},
+	{{ {45, 106, -135}, 0, {1447, -529}, {106, 34, 195, 192} }},
+	{{ {0, 11, -161}, 0, {1788, -17}, {0, 0, 129, 255} }},
+	{{ {0, 106, -161}, 0, {1788, -529}, {0, 34, 134, 255} }},
+	{{ {0, 141, -138}, 0, {1788, -529}, {0, 104, 183, 255} }},
+	{{ {24, 141, -124}, 0, {1447, -529}, {63, 104, 220, 255} }},
+	{{ {24, 141, -95}, 0, {1105, -529}, {63, 104, 36, 255} }},
+	{{ {0, 141, -81}, 0, {764, -529}, {0, 104, 73, 255} }},
+	{{ {-24, 141, -95}, 0, {423, -529}, {193, 104, 36, 255} }},
+	{{ {-24, 141, -124}, 0, {81, -529}, {193, 104, 220, 255} }},
+	{{ {0, 141, -138}, 0, {-260, -529}, {0, 104, 183, 255} }},
+	{{ {24, 141, -95}, 0, {678, 362}, {63, 104, 36, 255} }},
+	{{ {24, 141, -124}, 0, {678, 117}, {63, 104, 220, 255} }},
+	{{ {0, 141, -138}, 0, {252, -6}, {0, 104, 183, 255} }},
+	{{ {-24, 141, -95}, 0, {-174, 362}, {193, 104, 36, 255} }},
+	{{ {-24, 141, -124}, 0, {-174, 117}, {193, 104, 220, 255} }},
+	{{ {0, 141, -81}, 0, {252, 485}, {0, 104, 73, 255} }},
+	{{ {-45, -26, -135}, 0, {850, 117}, {169, 178, 206, 0} }},
+	{{ {0, -26, -161}, 0, {1276, -6}, {0, 178, 155, 0} }},
+	{{ {45, -26, -135}, 0, {1702, 117}, {87, 178, 206, 0} }},
+	{{ {0, -26, -58}, 0, {1276, 485}, {0, 178, 101, 0} }},
+	{{ {45, -26, -84}, 0, {1702, 362}, {87, 178, 50, 0} }},
+	{{ {0, -26, -58}, 0, {1276, 485}, {0, 178, 101, 0} }},
+	{{ {-45, -26, -84}, 0, {850, 362}, {169, 178, 50, 0} }},
+	{{ {-45, -26, -135}, 0, {850, 117}, {169, 178, 206, 0} }},
+	{{ {0, 11, -161}, 0, {1788, -17}, {0, 0, 129, 87} }},
+	{{ {45, -26, -135}, 0, {1447, -17}, {87, 178, 206, 255} }},
+	{{ {0, -26, -161}, 0, {1788, -17}, {0, 178, 155, 255} }},
+	{{ {45, 11, -135}, 0, {1447, -17}, {110, 0, 193, 87} }},
+	{{ {45, -26, -84}, 0, {1105, -17}, {87, 178, 50, 255} }},
+	{{ {45, 11, -84}, 0, {1105, -17}, {110, 0, 64, 87} }},
+	{{ {0, -26, -58}, 0, {764, -17}, {0, 178, 101, 255} }},
+	{{ {0, 11, -58}, 0, {764, -17}, {0, 0, 127, 87} }},
+	{{ {-45, -26, -84}, 0, {423, -17}, {169, 178, 50, 255} }},
+	{{ {-45, 11, -84}, 0, {423, -17}, {146, 0, 63, 9} }},
+	{{ {-45, -26, -135}, 0, {81, -17}, {169, 178, 206, 255} }},
+	{{ {-45, 11, -135}, 0, {81, -17}, {146, 0, 193, 80} }},
+	{{ {0, -26, -161}, 0, {-260, -17}, {0, 178, 155, 255} }},
+	{{ {0, 11, -161}, 0, {-260, -17}, {0, 0, 129, 87} }},
+	{{ {25, 83, -38}, 0, {508, -17}, {73, 73, 73, 255} }},
+	{{ {25, 83, -51}, 0, {696, -17}, {90, 90, 0, 87} }},
+	{{ {-25, 83, -51}, 0, {696, -273}, {166, 90, 0, 87} }},
+	{{ {-25, 83, -38}, 0, {508, -273}, {183, 73, 73, 255} }},
+	{{ {-25, 83, -38}, 0, {1020, -17}, {183, 73, 73, 255} }},
+	{{ {-25, 83, -51}, 0, {1208, -17}, {166, 90, 0, 87} }},
+	{{ {-25, 33, -51}, 0, {1208, -273}, {166, 166, 0, 87} }},
+	{{ {-25, 33, -38}, 0, {1020, -273}, {183, 183, 73, 255} }},
+	{{ {25, 33, -38}, 0, {508, -273}, {73, 183, 73, 255} }},
+	{{ {25, 33, -51}, 0, {696, -273}, {90, 166, 0, 87} }},
+	{{ {25, 83, -51}, 0, {696, -529}, {90, 90, 0, 87} }},
+	{{ {25, 83, -38}, 0, {508, -529}, {73, 73, 73, 255} }},
+	{{ {-25, 33, -38}, 0, {508, 239}, {183, 183, 73, 0} }},
+	{{ {25, 33, -38}, 0, {1020, 239}, {73, 183, 73, 0} }},
+	{{ {25, 83, -38}, 0, {1020, -17}, {73, 73, 73, 0} }},
+	{{ {-25, 33, -38}, 0, {508, 239}, {183, 183, 73, 0} }},
+	{{ {25, 83, -38}, 0, {1020, -17}, {73, 73, 73, 0} }},
+	{{ {-25, 83, -38}, 0, {508, -17}, {183, 73, 73, 0} }},
+	{{ {25, 83, -51}, 0, {696, -17}, {90, 90, 0, 255} }},
+	{{ {25, 83, -74}, 0, {1020, -17}, {90, 90, 0, 149} }},
+	{{ {-25, 83, -74}, 0, {1020, -273}, {166, 90, 0, 149} }},
+	{{ {-25, 83, -51}, 0, {696, -273}, {166, 90, 0, 255} }},
+	{{ {-25, 33, -38}, 0, {-4, -17}, {183, 183, 73, 255} }},
+	{{ {-25, 33, -51}, 0, {184, -17}, {166, 166, 0, 87} }},
+	{{ {25, 33, -51}, 0, {184, -273}, {90, 166, 0, 87} }},
+	{{ {25, 33, -38}, 0, {-4, -273}, {73, 183, 73, 255} }},
+	{{ {25, 33, -51}, 0, {696, -273}, {90, 166, 0, 255} }},
+	{{ {25, 33, -74}, 0, {1020, -273}, {90, 166, 0, 149} }},
+	{{ {25, 83, -74}, 0, {1020, -529}, {90, 90, 0, 149} }},
+	{{ {25, 83, -51}, 0, {696, -529}, {90, 90, 0, 255} }},
+	{{ {-25, 33, -51}, 0, {184, -17}, {166, 166, 0, 255} }},
+	{{ {-25, 33, -74}, 0, {508, -17}, {166, 166, 0, 149} }},
+	{{ {25, 33, -74}, 0, {508, -273}, {90, 166, 0, 149} }},
+	{{ {25, 33, -51}, 0, {184, -273}, {90, 166, 0, 255} }},
+	{{ {-25, 83, -51}, 0, {1208, -17}, {166, 90, 0, 255} }},
+	{{ {-25, 83, -74}, 0, {1532, -17}, {166, 90, 0, 149} }},
+	{{ {-25, 33, -74}, 0, {1532, -273}, {166, 166, 0, 149} }},
+	{{ {-25, 33, -51}, 0, {1208, -273}, {166, 166, 0, 255} }},
 };
 
-Gfx billmask_skinnedbill_mesh_layer_1_tri_0[] = {
-	gsSPVertex(billmask_skinnedbill_mesh_layer_1_vtx_0 + 0, 32, 0),
+Gfx billmask2_skinnedbill_mesh_layer_1_tri_0[] = {
+	gsSPVertex(billmask2_skinnedbill_mesh_layer_1_vtx_0 + 0, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(4, 3, 0, 0, 4, 5, 3, 0),
 	gsSP2Triangles(6, 5, 4, 0, 6, 7, 5, 0),
@@ -952,7 +950,7 @@ Gfx billmask_skinnedbill_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(23, 25, 24, 0, 24, 26, 21, 0),
 	gsSP2Triangles(27, 28, 29, 0, 29, 30, 27, 0),
 	gsSP1Triangle(29, 31, 30, 0),
-	gsSPVertex(billmask_skinnedbill_mesh_layer_1_vtx_0 + 32, 32, 0),
+	gsSPVertex(billmask2_skinnedbill_mesh_layer_1_vtx_0 + 32, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 3, 4, 5, 0),
 	gsSP2Triangles(3, 6, 4, 0, 6, 7, 4, 0),
 	gsSP2Triangles(6, 8, 7, 0, 8, 9, 7, 0),
@@ -963,7 +961,7 @@ Gfx billmask_skinnedbill_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(17, 19, 20, 0, 21, 22, 23, 0),
 	gsSP2Triangles(21, 23, 24, 0, 25, 26, 27, 0),
 	gsSP2Triangles(25, 27, 28, 0, 29, 30, 31, 0),
-	gsSPVertex(billmask_skinnedbill_mesh_layer_1_vtx_0 + 64, 23, 0),
+	gsSPVertex(billmask2_skinnedbill_mesh_layer_1_vtx_0 + 64, 23, 0),
 	gsSP2Triangles(0, 1, 2, 0, 3, 4, 5, 0),
 	gsSP2Triangles(3, 5, 6, 0, 7, 8, 9, 0),
 	gsSP2Triangles(7, 9, 10, 0, 11, 12, 13, 0),
@@ -973,71 +971,68 @@ Gfx billmask_skinnedbill_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx billmask_skinnedbill_mesh_layer_4_vtx_cull[8] = {
-	{{{-45, -26, -38},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{-45, 156, -38},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{-45, 156, -161},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{-45, -26, -161},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{45, -26, -38},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{45, 156, -38},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{45, 156, -161},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
-	{{{45, -26, -161},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
+Vtx billmask2_skinnedbill_mesh_layer_4_vtx_cull[8] = {
+	{{ {-45, -26, -38}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {-45, 156, -38}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {-45, 156, -161}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {-45, -26, -161}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {45, -26, -38}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {45, 156, -38}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {45, 156, -161}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {45, -26, -161}, 0, {-16, -16}, {0, 0, 0, 0} }},
 };
 
-Vtx billmask_skinnedbill_mesh_layer_4_vtx_0[8] = {
-	{{{-37, 145, -113},0, {-16, 1008},{0xFF, 0xFF, 0xFF, 0xFF}}},
-	{{{-11, 156, -113},0, {2032, 1008},{0xFF, 0xFF, 0xFF, 0xFF}}},
-	{{{-11, 156, -133},0, {2032, -16},{0xFF, 0xFF, 0xFF, 0xFF}}},
-	{{{-37, 145, -133},0, {-16, -16},{0xFF, 0xFF, 0xFF, 0xFF}}},
-	{{{37, 145, -113},0, {-16, 1008},{0xFF, 0xFF, 0xFF, 0xFF}}},
-	{{{37, 145, -133},0, {-16, -16},{0xFF, 0xFF, 0xFF, 0xFF}}},
-	{{{11, 156, -133},0, {2032, -16},{0xFF, 0xFF, 0xFF, 0xFF}}},
-	{{{11, 156, -113},0, {2032, 1008},{0xFF, 0xFF, 0xFF, 0xFF}}},
+Vtx billmask2_skinnedbill_mesh_layer_4_vtx_0[8] = {
+	{{ {-37, 145, -113}, 0, {-16, 1008}, {255, 255, 255, 255} }},
+	{{ {-11, 156, -113}, 0, {2032, 1008}, {255, 255, 255, 255} }},
+	{{ {-11, 156, -133}, 0, {2032, -16}, {255, 255, 255, 255} }},
+	{{ {-37, 145, -133}, 0, {-16, -16}, {255, 255, 255, 255} }},
+	{{ {37, 145, -113}, 0, {-16, 1008}, {255, 255, 255, 255} }},
+	{{ {37, 145, -133}, 0, {-16, -16}, {255, 255, 255, 255} }},
+	{{ {11, 156, -133}, 0, {2032, -16}, {255, 255, 255, 255} }},
+	{{ {11, 156, -113}, 0, {2032, 1008}, {255, 255, 255, 255} }},
 };
 
-Gfx billmask_skinnedbill_mesh_layer_4_tri_0[] = {
-	gsSPVertex(billmask_skinnedbill_mesh_layer_4_vtx_0 + 0, 8, 0),
+Gfx billmask2_skinnedbill_mesh_layer_4_tri_0[] = {
+	gsSPVertex(billmask2_skinnedbill_mesh_layer_4_vtx_0 + 0, 8, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx billmask_skinnedbill_mesh_layer_4_vtx_1[4] = {
-	{{{-23, 152, -86},0, {-16, 1008},{0xFF, 0xFF, 0xFF, 0xFF}}},
-	{{{23, 152, -86},0, {2032, 1008},{0xFF, 0xFF, 0xFF, 0xFF}}},
-	{{{23, 152, -106},0, {2032, -16},{0xFF, 0xFF, 0xFF, 0xFF}}},
-	{{{-23, 152, -106},0, {-16, -16},{0xFF, 0xFF, 0xFF, 0xFF}}},
+Vtx billmask2_skinnedbill_mesh_layer_4_vtx_1[4] = {
+	{{ {-23, 152, -86}, 0, {-16, 1008}, {255, 255, 255, 255} }},
+	{{ {23, 152, -86}, 0, {2032, 1008}, {255, 255, 255, 255} }},
+	{{ {23, 152, -106}, 0, {2032, -16}, {255, 255, 255, 255} }},
+	{{ {-23, 152, -106}, 0, {-16, -16}, {255, 255, 255, 255} }},
 };
 
-Gfx billmask_skinnedbill_mesh_layer_4_tri_1[] = {
-	gsSPVertex(billmask_skinnedbill_mesh_layer_4_vtx_1 + 0, 4, 0),
+Gfx billmask2_skinnedbill_mesh_layer_4_tri_1[] = {
+	gsSPVertex(billmask2_skinnedbill_mesh_layer_4_vtx_1 + 0, 4, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSPEndDisplayList(),
 };
 
 
-Gfx mat_billmask_bill_layer1[] = {
+Gfx mat_billmask2_bill_layer1[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE_ALPHA, 0, 0, 0, 0, 0, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, 1),
 	gsSPGeometryMode(0, G_TEXTURE_GEN),
 	gsDPSetCycleType(G_CYC_2CYCLE),
 	gsDPSetRenderMode(G_RM_NOOP, G_RM_AA_ZB_OPA_SURF2),
-	gsSPTexture(4031, 1983, 0, 0, 1),
-	gsDPTileSync(),
-	gsDPSetTextureImage(G_IM_FMT_I, G_IM_SIZ_8b_LOAD_BLOCK, 1, billmask_rgba16_anonmoose_envmap_silver1_i8),
-	gsDPSetTile(G_IM_FMT_I, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0),
-	gsDPLoadSync(),
+	gsSPTexture(4032, 1984, 0, 0, 1),
+	gsDPSetPrimColor(0, 0, 255, 91, 101, 255),
+    gsSPLightColor(LIGHT_1, 0xffffffff),
+    gsSPLightColor(LIGHT_2, 0x7f7f7fff),
+	gsDPSetTextureImage(G_IM_FMT_I, G_IM_SIZ_8b_LOAD_BLOCK, 1, billmask2_rgba16_anonmoose_envmap_silver1_i8),
+	gsDPSetTile(G_IM_FMT_I, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
-	gsDPPipeSync(),
 	gsDPSetTile(G_IM_FMT_I, G_IM_SIZ_8b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0),
 	gsDPSetTileSize(0, 0, 0, 252, 124),
-	gsDPSetPrimColor(0, 0, 254, 91, 101, 255),
-    gsSPLightColor(LIGHT_1, 0xfefefeff),
-    gsSPLightColor(LIGHT_2, 0x7f7f7fff),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_billmask_bill_layer1[] = {
+Gfx mat_revert_billmask2_bill_layer1[] = {
 	gsDPPipeSync(),
 	gsSPGeometryMode(G_TEXTURE_GEN, 0),
 	gsDPSetCycleType(G_CYC_1CYCLE),
@@ -1045,88 +1040,75 @@ Gfx mat_revert_billmask_bill_layer1[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_billmask_Bill_Eye[] = {
+Gfx mat_billmask2_Bill_Eye[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0),
 	gsSPGeometryMode(G_LIGHTING, 0),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPTileSync(),
-	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, billmask_BULLET_BILL_EYE_ia8),
-	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0),
-	gsDPLoadSync(),
+	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, billmask2_BULLET_BILL_EYE_ia8),
+	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
-	gsDPPipeSync(),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0),
 	gsDPSetTileSize(0, 0, 0, 252, 124),
-    gsSPLightColor(LIGHT_1, 0xfefefeff),
-    gsSPLightColor(LIGHT_2, 0x7f7f7fff),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_billmask_Bill_Eye[] = {
+Gfx mat_revert_billmask2_Bill_Eye[] = {
 	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_LIGHTING),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_billmask_Bill_Mouth[] = {
+Gfx mat_billmask2_Bill_Mouth[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0),
 	gsSPGeometryMode(G_LIGHTING, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, billmask_BULLET_BILL_MOUTH_ci8_pal_rgba16),
-	gsDPTileSync(),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadSync(),
-	gsDPLoadTLUTCmd(7, 175),
-	gsDPPipeSync(),
-	gsDPTileSync(),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, billmask_BULLET_BILL_MOUTH_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, billmask2_BULLET_BILL_MOUTH_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 175),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, billmask2_BULLET_BILL_MOUTH_ci8),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
-	gsDPPipeSync(),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0),
 	gsDPSetTileSize(0, 0, 0, 252, 124),
-    gsSPLightColor(LIGHT_1, 0xfefefeff),
-    gsSPLightColor(LIGHT_2, 0x7f7f7fff),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_billmask_Bill_Mouth[] = {
+Gfx mat_revert_billmask2_Bill_Mouth[] = {
 	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_LIGHTING),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx billmask_skinnedbill_mesh_layer_1[] = {
+Gfx billmask2_skinnedbill_mesh_layer_1[] = {
 	gsSPClearGeometryMode(G_LIGHTING),
-	gsSPVertex(billmask_skinnedbill_mesh_layer_1_vtx_cull + 0, 8, 0),
+	gsSPVertex(billmask2_skinnedbill_mesh_layer_1_vtx_cull + 0, 8, 0),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPCullDisplayList(0, 7),
-	gsSPDisplayList(mat_billmask_bill_layer1),
-	gsSPDisplayList(billmask_skinnedbill_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_billmask_bill_layer1),
+	gsSPDisplayList(mat_billmask2_bill_layer1),
+	gsSPDisplayList(billmask2_skinnedbill_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_billmask2_bill_layer1),
 	gsSPEndDisplayList(),
 };
 
-Gfx billmask_skinnedbill_mesh_layer_4[] = {
+Gfx billmask2_skinnedbill_mesh_layer_4[] = {
 	gsSPClearGeometryMode(G_LIGHTING),
-	gsSPVertex(billmask_skinnedbill_mesh_layer_4_vtx_cull + 0, 8, 0),
+	gsSPVertex(billmask2_skinnedbill_mesh_layer_4_vtx_cull + 0, 8, 0),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPCullDisplayList(0, 7),
-	gsSPDisplayList(mat_billmask_Bill_Eye),
-	gsSPDisplayList(billmask_skinnedbill_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_billmask_Bill_Eye),
-	gsSPDisplayList(mat_billmask_Bill_Mouth),
-	gsSPDisplayList(billmask_skinnedbill_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_billmask_Bill_Mouth),
+	gsSPDisplayList(mat_billmask2_Bill_Eye),
+	gsSPDisplayList(billmask2_skinnedbill_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_billmask2_Bill_Eye),
+	gsSPDisplayList(mat_billmask2_Bill_Mouth),
+	gsSPDisplayList(billmask2_skinnedbill_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_billmask2_Bill_Mouth),
 	gsSPEndDisplayList(),
 };
 
-Gfx billmask_material_revert_render_settings[] = {
+Gfx billmask2_material_revert_render_settings[] = {
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPClearGeometryMode(G_TEXTURE_GEN),
