@@ -28,7 +28,6 @@ void breakable_box_init(void) {
 
 void bhv_hidden_object_loop(void) {
     obj_set_hitbox(o, &sBreakableBoxHitbox);
-    cur_obj_set_model(MODEL_BREAKABLE_BOX);
     switch (o->oAction) {
         case BREAKABLE_BOX_ACT_HIDDEN:
             cur_obj_disable_rendering();

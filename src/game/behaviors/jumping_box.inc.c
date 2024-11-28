@@ -21,7 +21,7 @@ void jumping_box_begin_respawn(void) {
 }
 
 void jumping_box_respawn(void) {
-    struct Object *newbox = spawn_object(o, MODEL_BREAKABLE_BOX, bhvJumpingBox);
+    struct Object *newbox = spawn_object(o, MODEL_BREAKABLE_BOX_SMALL, bhvJumpingBox);
     newbox->oPosX = o->oHomeX;
     newbox->oPosY = o->oHomeY;
     newbox->oPosZ = o->oHomeZ;

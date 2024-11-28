@@ -69,7 +69,7 @@ void small_breakable_box_act_move(void) {
 }
 
 void breakable_box_small_respawn(void) {
-    struct Object *newbox = spawn_object(o, MODEL_BREAKABLE_BOX, bhvBreakableBoxSmall);
+    struct Object *newbox = spawn_object(o, MODEL_BREAKABLE_BOX_SMALL, bhvBreakableBoxSmall);
     newbox->oPosX = o->oHomeX;
     newbox->oPosY = o->oHomeY;
     newbox->oPosZ = o->oHomeZ;
