@@ -1614,9 +1614,11 @@ void cur_obj_update_ceiling(void) {
             if (targetYPos > o->oFloorHeight) { // dont move into a floor
                 o->oPosY = targetYPos;
             }
-            o->oMoveFlags |= OBJ_MOVE_HIT_WALL;
+            o->oMoveFlags |= OBJ_MOVE_HIT_EDGE;
+            if (o->oVelY <= 4.f) {
+                o->oForwardVel = 0.f;
+            }
             o->oVelY = 0.f;
-            o->oForwardVel = 0.f;
         }
     }
 }

@@ -80,7 +80,7 @@ void bullet_bill_act_2(void) {
             spawn_mist_particles();
         }
 
-        if (o->oMoveFlags & (OBJ_MOVE_HIT_WALL | OBJ_MOVE_ON_GROUND)) {
+        if (o->oMoveFlags & (OBJ_MOVE_HIT_WALL | OBJ_MOVE_ON_GROUND | OBJ_MOVE_HIT_EDGE)) {
             o->oAction = 4;
         }
     }
