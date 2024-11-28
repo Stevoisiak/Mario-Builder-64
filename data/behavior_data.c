@@ -5692,7 +5692,7 @@ const BehaviorScript bhvCrowbarPower[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO ),
     SET_HITBOX_WITH_OFFSET(/*Radius*/ 80, /*Height*/ 160, /*Downwards offset*/ 80),
-    SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_MEDIUM),
+    SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_HIGH),
     //CALL_NATIVE(bhv_1up_init),
     BEGIN_LOOP(),
         SET_INT(oIntangibleTimer, 0),

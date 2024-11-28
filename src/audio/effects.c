@@ -65,8 +65,7 @@ static void sequence_channel_process_sound(struct SequenceChannel *seqChannel) {
     }
 
     if (!(mb64_sram_configuration.option_flags & (1<<OPT_MUSIC))) {
-        if (seqChannel->seqPlayer == &gSequencePlayers[SEQ_PLAYER_LEVEL]
-            || seqChannel->seqPlayer == &gSequencePlayers[SEQ_PLAYER_ENV]) {
+        if (seqChannel->seqPlayer == &gSequencePlayers[SEQ_PLAYER_LEVEL]) {
             channelVolume = 0.0f;
         }
     }

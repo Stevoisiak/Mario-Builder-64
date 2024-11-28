@@ -392,9 +392,8 @@ void bhv_crowbar_attack_loop() {
             cur_obj_play_sound_2(SOUND_ACTION_METAL_STEP);
         }
 
+        obj_attack_collided_from_other_object(o, ATTACK_FAST_ATTACK);
         if (o->oAction == 0) {
-            obj_attack_collided_from_other_object(o, ATTACK_FAST_ATTACK);
-
             if (o->oTimer > 5) {
                 cur_obj_become_tangible();
             }
@@ -409,7 +408,6 @@ void bhv_crowbar_attack_loop() {
                 o->oAction = 1;
                 o->oTimer = 0;
                 o->oMoveAngleYaw += 0x8000;
-                cur_obj_become_intangible();
             }
         }
         
@@ -425,7 +423,7 @@ void bhv_crowbar_attack_loop() {
             o->oForwardVel = coss(o->oMoveAnglePitch) * 80.0f;
 
             //DIE
-            if (o->oDistanceToMario < 200.0f || o->oTimer > 120) {
+            if (o->oDistanceToMario < 200.0f) {
                 gMarioState->powerup |= 1;
                 mark_obj_for_deletion(o);
             }
