@@ -3892,26 +3892,22 @@ void sb_loop(void) {
                 }
             }
 
-            u8 at_spawn_point = FALSE;
-
             //Single A press
             if (gPlayer1Controller->buttonPressed & A_BUTTON || 
                 ((gPlayer1Controller->buttonPressed & START_BUTTON) && (mb64_toolbar_index >= 7))) {
                 switch(mb64_toolbar_index) {
                     case 7: // save and test
-
-                        for (u32 i=0;i<mb64_object_count;i++) {
-                            if ((mb64_object_data[i].x == mb64_cursor_pos[0])&&(mb64_object_data[i].y == mb64_cursor_pos[1])&&(mb64_object_data[i].z == mb64_cursor_pos[2])) {
-                                if (mb64_object_data[i].type == OBJECT_TYPE_MARIO_SPAWN) {
-                                    at_spawn_point = TRUE;
-                                    break;
-                                }
+                        // Tile Check
+                        u32 type = get_grid_tile(mb64_cursor_pos)->type;
+                        if (type != TILE_TYPE_EMPTY && type != TILE_TYPE_WATER) {
+                            u32 tileFlags = get_tile_occupy_flags(type);
+                            if (tileFlags & OBJ_OCCUPY_INNER) {
+                                mb64_show_error_message("Cannot start test inside a tile!");
                                 break;
                             }
                         }
-
-                        if (!can_place(mb64_cursor_pos, OBJ_OCCUPY_INNER) && !at_spawn_point) {
-                            mb64_show_error_message("Cannot start test inside another tile or object!");
+                        if ((!can_place(mb64_cursor_pos, OBJ_OCCUPY_INNER)) && !can_place(mb64_cursor_pos, OBJ_OCCUPY_OUTER)) {
+                            mb64_show_error_message("Cannot start test here!");
                             break;
                         }
                         if (!gWarpTransition.isActive && sDelayedWarpOp == WARP_OP_NONE) {
