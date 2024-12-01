@@ -1164,9 +1164,13 @@ static void cur_obj_move_update_underwater_flags(void) {
     } else {
         o->oVelY += decelY;
     }
+    f32 floorOffset = ((o->oMoveFlags & OBJ_MOVE_UNDERWATER_ON_GROUND && (o->oVelY < 5.f)) ? 100.f : 0.f);
 
-    if (o->oPosY < o->oFloorHeight) {
+    if (o->oPosY < (o->oFloorHeight + floorOffset)) {
         o->oPosY = o->oFloorHeight;
+        if (o->oVelY < 0.0f) {
+            o->oVelY = 0.f;
+        }
         o->oMoveFlags |= OBJ_MOVE_UNDERWATER_ON_GROUND;
     } else {
         o->oMoveFlags |= OBJ_MOVE_UNDERWATER_OFF_GROUND;
