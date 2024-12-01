@@ -229,6 +229,8 @@ void display_air(void) {
     //bubble_seg4_dl_0401DD60
     Mtx *mtx;
     Mtx *smtx;
+
+    f32 xpos = (gMarioState->RFuel > 0 ? 70.f : 35.f);
     
     mtx = alloc_display_list(sizeof(*mtx));
 
@@ -242,7 +244,7 @@ void display_air(void) {
         return;
     }
 
-    guTranslate(mtx, 35.0f, 40.0f, 0);
+    guTranslate(mtx, xpos, 40.0f, 0);
     guScale(smtx, (f32)gMarioState->numAir*.0014, (f32) gMarioState->numAir*.0014, 0);
 
     gDPSetRenderMode(gDisplayListHead++,G_RM_TEX_EDGE, G_RM_TEX_EDGE2);
@@ -1064,20 +1066,11 @@ void render_hud(void) {
 
             if (gMarioState->numAir < 700) {
                 display_air();
-                }
-                else
-                {
-                if (gMarioState->BossHealth > 0) {
-                        // display_boss();
-                        // display_boss_bar();
-                    } else {//only display rocket boot bar if not fighting boss
-                        if (gMarioState->RFuel > 0) {
-                            display_rocket_boot();
-                            display_rocket_boot_bar();
-                        }
-                    }
-                }
-
+            }
+            if (gMarioState->RFuel > 0) {
+                display_rocket_boot();
+                display_rocket_boot_bar();
+            }
 
 #ifdef BREATH_METER
             if (hudDisplayFlags & HUD_DISPLAY_FLAG_BREATH_METER) render_hud_breath_meter();

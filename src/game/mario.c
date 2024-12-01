@@ -1650,6 +1650,8 @@ void update_mario_health(struct MarioState *m) {
                         gMarioState->numAir = 700;
                     }
                 }
+            } else {
+                gMarioState->numAir = 700;
             }
 
             // Play a noise to alert the player when Mario is close to drowning.
