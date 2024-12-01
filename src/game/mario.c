@@ -2456,6 +2456,7 @@ void init_mario(void) {
     gMarioState->marioObj->header.gfx.animInfo.animID = -1;
     vec3s_copy(gMarioState->faceAngle, gMarioSpawnInfo->startAngle);
     vec3_zero(gMarioState->angleVel);
+    vec3_zero(sMarioAmountDisplaced);
     vec3s_to_vec3f(gMarioState->pos, gMarioSpawnInfo->startPos);
     vec3f_copy(gMarioState->prevPos, gMarioState->pos);
     vec3_zero(gMarioState->vel);

@@ -1473,6 +1473,7 @@ struct mb64_info_entry mb64_v1_1_changelog[] = {
     {"- Infinite flight time bug with the Bullet Bill Mask", 0},
     {"- Fire spinners having the incorrect rotation ingame",0},
     {"- Broken boss music with multiple bosses",0},
+    {"- Exiting on a moving platform not resetting inertia",0},
     {"- Countless minor physics and AI fixes", 0},
     {NULL, 0},
 };
