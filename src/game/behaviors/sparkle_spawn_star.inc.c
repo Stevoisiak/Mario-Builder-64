@@ -101,8 +101,15 @@ void bhv_spawned_star_loop(void) {
         }
         cur_obj_play_sound_1(SOUND_ENV_STAR);
         spawn_object(o, MODEL_NONE, bhvSparkleSpawn);
+        if (abs_angle_diff(cur_obj_angle_to_home(), o->oMoveAngleYaw) > 0x2000) {
+            o->oPosX = o->oHomeX;
+            o->oPosZ = o->oHomeZ;
+            o->oForwardVel = 0;
+        }
         if (o->oVelY < 0 && o->oPosY < o->oHomeY) {
             o->oAction++; // SPAWN_STAR_POS_CUTSCENE_ACT_BOUNCE
+            o->oPosX = o->oHomeX;
+            o->oPosZ = o->oHomeZ;
             o->oForwardVel = 0;
             o->oVelY = 20.0f;
             o->oGravity = -1.0f;

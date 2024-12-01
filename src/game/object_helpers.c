@@ -2604,7 +2604,7 @@ void cur_obj_spawn_loot_blue_coin(void) {
 
 void cur_obj_spawn_star_at_y_offset(f32 targetX, f32 targetY, f32 targetZ, f32 offsetY) {
     f32 objectPosY = o->oPosY;
-    o->oPosY += offsetY + gDebugInfo[DEBUG_PAGE_ENEMYINFO][0];
+    o->oPosY += offsetY;
     spawn_default_star(targetX, targetY, targetZ);
     o->oPosY = objectPosY;
 }
