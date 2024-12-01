@@ -5701,7 +5701,7 @@ const BehaviorScript bhvCrowbarPower[] = {
 };
 
 const BehaviorScript bhvCrowbarThrow[] = {
-    BEGIN(OBJ_LIST_DESTRUCTIVE),
+    BEGIN(OBJ_LIST_PLAYER),
     SET_INTERACT_TYPE(INTERACT_NONE),
     OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO ),
 

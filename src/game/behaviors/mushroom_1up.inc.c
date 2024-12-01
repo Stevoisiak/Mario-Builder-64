@@ -393,6 +393,7 @@ void bhv_crowbar_attack_loop() {
         }
 
         obj_attack_collided_from_other_object(o, ATTACK_FAST_ATTACK);
+        obj_coin_collected_by_other_object(o);
         if (o->oAction == 0) {
             if (o->oTimer > 5) {
                 cur_obj_become_tangible();

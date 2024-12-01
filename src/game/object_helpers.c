@@ -2490,6 +2490,21 @@ s32 obj_attack_collided_from_other_object(struct Object *obj, s32 attackType) {
     return ret;
 }
 
+// for crowbar
+s32 obj_coin_collected_by_other_object(struct Object *obj) {
+    s32 ret = FALSE;
+    for (s32 i = 0; i < obj->numCollidedObjs; i++) {
+        struct Object *other = obj->collidedObjs[i];
+
+        if (other->oInteractType == INTERACT_COIN) {
+            interact_coin(gMarioState, 0, other);
+            ret = TRUE;
+        }
+    }
+
+    return ret;
+}
+
 s32 cur_obj_was_attacked_or_ground_pounded(void) {
     s32 attacked = FALSE;
 
