@@ -754,9 +754,9 @@ u32 interact_coin(struct MarioState *m, UNUSED u32 interactType, struct Object *
             gMarioState->numBadgePoints --;
         }
     }
+
     m->numCoins += obj->oDamageOrCoinValue;
     obj->oInteractStatus = INT_STATUS_INTERACTED;
-    obj->oIntangibleTimer = -1;
 
 #ifdef X_COIN_STAR
     if (COURSE_IS_MAIN_COURSE(gCurrCourseNum) && X_COIN_STAR != 0 && m->numCoins - obj->oDamageOrCoinValue < X_COIN_STAR
