@@ -345,33 +345,32 @@
 
 extern u8 bullet_fuel;
 void bhv_crowbar_power_loop() {
-    struct Object *sp1C;
     u8 power = (1 << o->oBehParams2ndByte);
-    sp1C = cur_obj_nearest_object_with_behavior(bhvCrowbarThrow);
 
-    if (power == 2) {
-        sp1C = NULL;
-    }
-
-    if (!(gMarioState->powerup & power) && sp1C == NULL && !(o->activeFlags & ACTIVE_FLAG_FAR_AWAY)) {
+    if (o->oAction == 0) {
         if (!(gGlobalTimer & 3)) spawn_object(o, MODEL_NONE, bhvSparkleSpawn);
-        o->header.gfx.node.flags &= ~GRAPH_RENDER_INVISIBLE;
         o->oFaceAngleYaw += 0x400;
         o->oFaceAnglePitch = 0x1A00;
     
-        if (obj_check_if_collided_with_object(o, gMarioObject) == 1) {
+        if (obj_check_if_collided_with_object(o, gMarioObject)) {
             play_sound(SOUND_MENU_EXIT_PIPE, gGlobalSoundSource);
             gMarioState->powerup |= power;
-            bullet_fuel = 60;
 
             // Crowbar and rocket boots incompatible
             if (power == 1) {
                 gMarioState->flags &= ~MARIO_WING_CAP;
                 gMarioState->RFuel = 0;
+            } else {
+                bullet_fuel = 60;
             }
+            o->header.gfx.node.flags |= GRAPH_RENDER_INVISIBLE;
+            o->oAction = 1;
         }
-    } else {
-        o->header.gfx.node.flags |= GRAPH_RENDER_INVISIBLE;
+    } else if (o->oAction == 1) {
+        if (o->oTimer > 30 * 5) {
+            o->oAction = 0;
+            o->header.gfx.node.flags &= ~GRAPH_RENDER_INVISIBLE;
+        }
     }
 }
 
