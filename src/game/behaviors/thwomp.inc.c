@@ -90,7 +90,7 @@ void bhv_grindel_thwomp_loop(void) {
     Vec3f oldPos;
     vec3f_copy(oldPos, &o->prevObj->oPosVec);
     vec3f_copy(&o->prevObj->oPosVec,&o->oPosVec);
-    vec3f_copy(&o->header.gfx.pos,oldPos);
+    vec3f_copy(o->header.gfx.pos,oldPos);
 }
 
 // void bhv_lava_spewer_loop(void) {

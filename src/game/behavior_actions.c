@@ -40,6 +40,7 @@
 #include "spawn_sound.h"
 #include "rumble_init.h"
 #include "puppylights.h"
+#include "object_collision.h"
 #include "rovent.h"
 #include "mb64.h"
 

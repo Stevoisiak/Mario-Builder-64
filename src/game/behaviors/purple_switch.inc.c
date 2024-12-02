@@ -8,7 +8,6 @@
  */
 
 void bhv_purple_switch_loop(void) {
-    struct Object *crate;
     u8 crateon = FALSE;
     s32 behparam1 = (gCurrentObject->oBehParams >> 24) & 0xFF;
 
@@ -163,7 +162,7 @@ void bhv_coin_ring_loop(void) {
     }
 
 void bhv_purple_switch_loop_vanilla(void) {
-    u32 time = (save_file_get_badge_equip() & (1<<BADGE_TIME)) ? 800 : 400;
+    s32 time = (save_file_get_badge_equip() & (1<<BADGE_TIME)) ? 800 : 400;
     switch (o->oAction) {
         /**
          * Set the switch's model and scale. If Mario is standing near the

@@ -49,7 +49,7 @@ void bhv_cosmic_phantasm(void) {
     struct Surface *ptr;
 
     Vec3f previous;
-    vec3f_copy(&previous,&o->oPosVec); //record position before moving step
+    vec3f_copy(previous,&o->oPosVec); //record position before moving step
     f32 old_floor_height = find_floor(o->oPosX, o->oPosY, o->oPosZ, &ptr);
 
     cur_obj_update_floor_and_walls();
@@ -249,7 +249,7 @@ void bhv_cosmic_phantasm(void) {
     f32 current_floor_height = find_floor(o->oPosX, o->oPosY, o->oPosZ, &ptr);
 
     if (current_floor_height < old_floor_height-300.0f) {
-        vec3f_copy(&o->oPosVec,&previous);//Prevent him from going off the ledge
+        vec3f_copy(&o->oPosVec,previous);//Prevent him from going off the ledge
         o->oPosY = kept_new_y;//this is a little cringe, but who cares
         o->oForwardVel = 0.f;
     }

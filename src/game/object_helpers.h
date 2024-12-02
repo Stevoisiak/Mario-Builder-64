@@ -210,7 +210,14 @@ void cur_obj_set_pos_via_transform(void);
 void cur_obj_spawn_particles(struct SpawnParticlesInfo *info);
 s32 cur_obj_reflect_move_angle_off_wall(void);
 s32 is_cur_obj_interact_with_lava(u8 move_standard_or_object_step);
+void obj_drop_mario(void);
+void cur_obj_set_home_if_safe_held(void);
+void cur_obj_set_home_if_safe_landed(void);
+void cur_obj_set_home_if_safe(void);
+s32 cur_obj_die_if_on_death_barrier(s32 offset);
+void spawn_mist_at_obj(struct Object *obj);
 s32 cur_obj_drop_imbued_object(s32 y_offset);
+s32 cur_obj_drop_imbued_object_lava(s32 y_offset);
 struct Object *cur_obj_nearest_object_with_imbue(f32 *dist, s32 imbue);
 
 #define WAYPOINT_FLAGS_END -1
@@ -292,6 +299,7 @@ s32 is_obj_interacting_with_noteblock(u8 move_standard_or_object_step);
 s32 cur_obj_should_load_collision(void);
 void add_obj_to_physics_list(struct Object *obj);
 void cur_obj_update_boss_music(void);
+void update_boss_music(int was_playing_boss_music);
 
 void cur_obj_spawn_star_at_y_offset(f32 targetX, f32 targetY, f32 targetZ, f32 offsetY);
 

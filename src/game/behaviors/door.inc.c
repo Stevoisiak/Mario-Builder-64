@@ -90,24 +90,6 @@ void bhv_door_loop(void) {
 }
 
 void bhv_door_init(void) {
-    const f32 checkDist = 200.0f;
-
-    f32 x = o->oPosX;
-    f32 y = o->oPosY;
-    f32 z = o->oPosZ;
-
-    // o->oDoorSelfRoom = get_room_at_pos(x, y, z);
-
-    x = o->oPosX + (sins(o->oMoveAngleYaw) *  checkDist);
-    z = o->oPosZ + (coss(o->oMoveAngleYaw) *  checkDist);
-
-    // o->oDoorForwardRoom = get_room_at_pos(x, y, z);
-
-    x = o->oPosX + (sins(o->oMoveAngleYaw) * -checkDist);
-    z = o->oPosZ + (coss(o->oMoveAngleYaw) * -checkDist);
-
-    // o->oDoorBackwardRoom = get_room_at_pos(x, y, z);
-
     if (
         // Ensure the room number is in bounds.
         o->oDoorSelfRoom > 0 && o->oDoorSelfRoom < ARRAY_COUNT(gDoorAdjacentRooms)

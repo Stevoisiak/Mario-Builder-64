@@ -19,6 +19,7 @@ enum ObjCollisionFlags {
 void spawn_orange_number(s8 behParam, s16 relX, s16 relY, s16 relZ);
 s32 obj_check_if_facing_toward_angle(u32 base, u32 goal, s16 range);
 void obj_spawn_yellow_coins(struct Object *obj, s8 nCoins);
+s32 obj_lava_death(void);
 
 //! Lots of these are duplicates
 void set_yoshi_as_not_dead(void);

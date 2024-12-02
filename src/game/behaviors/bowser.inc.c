@@ -59,8 +59,6 @@ ObjActionFunc sBowserTailAnchorActions[] = {
  * Bowser's tail main loop
  */
 void bhv_bowser_tail_anchor_loop(void) {
-    struct Object *bowser = o->parentObj;
-
     // Call its actions
     cur_obj_call_action_function(sBowserTailAnchorActions);
     // Position the tail
@@ -440,6 +438,21 @@ void bowser_bitdw_actions(void) {
 // }
 
 /**
+ * Check if Bowser is offstage from a large distance or landed on a lethal floor
+ */
+s32 bowser_check_fallen_off_stage(void) {
+    if (!((o->oAction == BOWSER_ACT_JUMP_ONTO_STAGE) && (o->oSubAction != BOWSER_SUB_ACT_JUMP_ON_STAGE_LAND))) {
+        if (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) {
+            // Check for Dark World - Sky
+            if (o->oFloorType == SURFACE_DEATH_PLANE || SURFACE_IS_BURNING(o->oFloorType)) {
+                return TRUE;
+            }
+        }
+    }
+    return FALSE;
+}
+
+/**
  * Reset Bowser position and speed if he wasn't able to land properly on stage
  */
 void bowser_reset_fallen_off_stage(void) {
@@ -581,8 +594,8 @@ void bowser_act_teleport(void) {
 
             o->oFloorHeight = find_floor_height(o->oPosX, o->oPosY, o->oPosZ);
             if ((abs_angle_diff(o->oMoveAngleYaw, o->oAngleToMario) > 0x4000) && // Passed Mario
-                (o->oDistanceToMario > 500.0f || o->oFloorHeight < o->oPosY - 1000.f) // Passed enough, or no longer over a floor
-                || o->oFloorHeight <= -10000.f) { // OoB
+                (o->oDistanceToMario > 500.0f || o->oFloorHeight < o->oPosY - 1000.f // Passed enough, or no longer over a floor
+                    || o->oFloorHeight <= -10000.f)) { // OoB
                 o->oPosX -= o->oVelX;
                 o->oPosZ -= o->oVelZ;
                 o->oSubAction = BOWSER_SUB_ACT_TELEPORT_STOP;
@@ -949,6 +962,13 @@ s32 bowser_check_hit_mine(void) {
     return FALSE;
 }
 
+void bowser_reflect_walls(void) {
+    if ((o->oMoveFlags & OBJ_MOVE_HIT_WALL) && (o->oForwardVel > 0.f)) {
+        o->oMoveAngleYaw = cur_obj_reflect_move_angle_off_wall();
+        o->oForwardVel *= 0.3f;
+    }
+}
+
 /**
  * Bowser's thrown act that gets called after Mario releases him
  */
@@ -997,8 +1017,6 @@ void bowser_set_goal_invisible(void) {
  * Makes Bowser jump back on stage after falling
  */
 void bowser_act_jump_onto_stage(void) {
-    struct Surface *floor = o->oFloor;
-
     // Set dynamic floor check (Object platforms)
     s32 onDynamicFloor = FALSE;//floor != NULL && floor->flags & SURFACE_FLAG_DYNAMIC;
     // Set status Jump
@@ -1414,21 +1432,6 @@ struct BowserTiltPlatformInfo sBowsertiltPlatformData[] = {
 // }
 
 /**
- * Check if Bowser is offstage from a large distance or landed on a lethal floor
- */
-s32 bowser_check_fallen_off_stage(void) {
-    if (!((o->oAction == BOWSER_ACT_JUMP_ONTO_STAGE) && (o->oSubAction != BOWSER_SUB_ACT_JUMP_ON_STAGE_LAND))) {
-        if (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) {
-            // Check for Dark World - Sky
-            if (o->oFloorType == SURFACE_DEATH_PLANE || SURFACE_IS_BURNING(o->oFloorType)) {
-                return TRUE;
-            }
-        }
-    }
-    return FALSE;
-}
-
-/**
  * Set Bowser's actions
  */
 ObjActionFunc sBowserActions[] = {
@@ -1486,13 +1489,6 @@ struct SoundState sBowserSoundStates[] = {
     { 1, 0, -1, SOUND_OBJ_BOWSER_TAIL_PICKUP },
     { 1, 0, -1, SOUND_OBJ2_BOWSER_ROAR },
 };
-
-void bowser_reflect_walls(void) {
-    if ((o->oMoveFlags & OBJ_MOVE_HIT_WALL) && (o->oForwardVel > 0.f)) {
-        o->oMoveAngleYaw = cur_obj_reflect_move_angle_off_wall();
-        o->oForwardVel *= 0.3f;
-    }
-}
 
 /**
  * Update Bowser's actions when he's hands free
@@ -1598,13 +1594,11 @@ void bowser_thrown_dropped_update(void) {
  */
 void bhv_bowser_loop(void) {
     s16 angleToMario;  // AngleToMario from Bowser's perspective
-    s16 angleToCenter; // AngleToCenter from Bowser's perspective
 
     // Set distance/angle values
     o->oBowserDistToCenter = cur_obj_lateral_dist_to_home();
     o->oBowserAngleToCenter = cur_obj_angle_to_home();
     angleToMario = abs_angle_diff(o->oMoveAngleYaw, o->oAngleToMario);
-    angleToCenter = abs_angle_diff(o->oMoveAngleYaw, o->oBowserAngleToCenter);
 
     // Reset Status
     o->oBowserStatus &= ~0xFF;
@@ -1656,7 +1650,6 @@ void bhv_bowser_loop(void) {
  * Bowser's initial values and actions
  */
 void bhv_bowser_init(void) {
-    s32 level;
     o->oQuicksandDepthToDie = 0;
     // Set "reaction" value
     // It goes true when Bowser is a non-walking state
@@ -1680,7 +1673,6 @@ void bhv_bowser_init(void) {
 Gfx *geo_update_body_rot_from_parent(s32 callContext, UNUSED struct GraphNode *node, Mat4 mtx) {
     if (callContext == GEO_CONTEXT_RENDER) {
         struct Object *obj = (struct Object *) gCurGraphNodeObject;
-        Mat4 mtx2;
         if (obj->prevObj != NULL) {
             obj_update_pos_from_parent_transformation(mtx, obj->prevObj);
             obj_set_gfx_pos_from_pos(obj->prevObj);
@@ -1902,7 +1894,7 @@ Gfx *geo_bowser_transparency_and_rainbow(s32 callContext, struct GraphNode *node
 /**
  * Reverts the render mode used for transparent bowser.
  */
-Gfx *geo_bowser_revert_rendermode(s32 callContext, struct GraphNode *node, UNUSED void *context) {
+Gfx *geo_bowser_revert_rendermode(s32 callContext, UNUSED struct GraphNode *node, UNUSED void *context) {
     if (callContext == GEO_CONTEXT_RENDER) {
         struct Object *obj = (struct Object *) gCurGraphNodeObject;
 
