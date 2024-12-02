@@ -35,6 +35,8 @@ s32 draw_mb64_pause_menu(void);
 void mb64_init_pause_menu(void);
 void play_mb64_extra_music(u8 index);
 void stop_mb64_extra_music(u8 index);
+void mb64_set_data_overrides(void);
+void animate_list_reset(void);
 
 extern u8 mb64_level_action;
 extern u8 mb64_mode;

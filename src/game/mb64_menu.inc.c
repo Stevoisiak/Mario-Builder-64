@@ -84,10 +84,10 @@ u8 string_runoff(s32 x, char *str) {
 void print_maker_string_ascii_alpha(s32 x, s32 y, char *str, s32 color, s32 alpha) {
     gSPDisplayList(gDisplayListHead++, dl_ia_text_begin);
     gDPSetEnvColor(gDisplayListHead++, 0, 0, 0, alpha);
-    print_generic_string_ascii(x-1, y-1, (u8 *)str);
+    print_generic_string_ascii(x-1, y-1, str);
     if (mb64_greyed_text) color += 2;
     gDPSetEnvColor(gDisplayListHead++, mb64_text_colors[color][0], mb64_text_colors[color][1], mb64_text_colors[color][2], alpha);
-    print_generic_string_ascii(x, y, (u8 *)str);
+    print_generic_string_ascii(x, y, str);
     gSPDisplayList(gDisplayListHead++, dl_ia_text_end);
 }
 
@@ -98,10 +98,10 @@ void print_maker_string_ascii(s32 x, s32 y, char *str, s32 color) {
 void print_maker_string_ascii_nofileext(s32 x, s32 y, char *str, s32 color) {
     gSPDisplayList(gDisplayListHead++, dl_ia_text_begin);
     gDPSetEnvColor(gDisplayListHead++, 0, 0, 0, 255);
-    print_generic_string_ascii_nofileext(x-1, y-1, (u8 *)str);
+    print_generic_string_ascii_nofileext(x-1, y-1, str);
     if (mb64_greyed_text) color += 2;
     gDPSetEnvColor(gDisplayListHead++, mb64_text_colors[color][0], mb64_text_colors[color][1], mb64_text_colors[color][2], 255);
-    print_generic_string_ascii_nofileext(x, y, (u8 *)str);
+    print_generic_string_ascii_nofileext(x, y, str);
     gSPDisplayList(gDisplayListHead++, dl_ia_text_end);
 }
 
@@ -147,10 +147,10 @@ void animate_list_offset_reset(f32 offsets[], s32 length) {
         offsets[i] = 0.f;
     }
 }
-void animate_list_reset() {
+void animate_list_reset(void) {
     animate_list_offset_reset(mb64_menu_list_offsets, ARRAY_COUNT(mb64_menu_list_offsets));
 }
-void animate_toolbar_reset() {
+void animate_toolbar_reset(void) {
     animate_list_offset_reset(mb64_menu_toolbar_offsets, ARRAY_COUNT(mb64_menu_toolbar_offsets));
 }
 
@@ -277,7 +277,7 @@ void animate_menu_ease_in(f32 vels[3], f32 beginPos, f32 targetPos, f32 multipli
 // Returns -1 if option was scrolled right, 1 if scrolled left, 0 if not changed
 s32 mb64_menu_option_sidescroll(s32 x, s32 y, s32 width,
                                 char *prev, char *cur, char *next,
-                                s8 scroll[2], u32 color, u32 dir) {
+                                s8 scroll[2], u32 color, s32 dir) {
     s32 leftX = x - width * 2;
     s32 rightX = x + width * 2;
     s32 xOffset = 0;
@@ -495,22 +495,6 @@ void get_category_and_mat_from_mat(u8 *category, u8 *matIndex, u8 mat) {
     } while (++i < ARRAY_COUNT(mb64_matlist));
 }
 
-void music_type_changed(void) {
-    mb64_set_data_overrides();
-    stop_background_music(get_current_background_music());
-    play_music(SEQ_PLAYER_LEVEL, SEQUENCE_ARGS(4, seq_musicmenu_array[mb64_lopt_seq[mb64_lopt_seq_seqtype]]), 0);
-}
-void music_category_changed(void) {
-    mb64_lopt_seq_song = 0;
-    song_changed();
-    mb64_set_data_overrides();
-}
-void song_changed(void) {
-    set_seq_from_album_and_song(mb64_lopt_seq_seqtype);
-    stop_background_music(get_current_background_music());
-    play_music(SEQ_PLAYER_LEVEL, SEQUENCE_ARGS(4, seq_musicmenu_array[mb64_lopt_seq[mb64_lopt_seq_seqtype]]), 0);
-}
-
 void mb64_set_data_overrides(void) {
     // Music options
     set_album_and_song_from_seq(mb64_lopt_seq_seqtype);
@@ -546,6 +530,22 @@ void mb64_set_data_overrides(void) {
             mb64_settings_menus[SETTINGS_MISC_INDEX] = draw_mb64_settings_misc_vanilla;
             break;
     }
+}
+
+void music_type_changed(void) {
+    mb64_set_data_overrides();
+    stop_background_music(get_current_background_music());
+    play_music(SEQ_PLAYER_LEVEL, SEQUENCE_ARGS(4, seq_musicmenu_array[mb64_lopt_seq[mb64_lopt_seq_seqtype]]), 0);
+}
+void music_category_changed(void) {
+    mb64_lopt_seq_song = 0;
+    song_changed();
+    mb64_set_data_overrides();
+}
+void song_changed(void) {
+    set_seq_from_album_and_song(mb64_lopt_seq_seqtype);
+    stop_background_music(get_current_background_music());
+    play_music(SEQ_PLAYER_LEVEL, SEQUENCE_ARGS(4, seq_musicmenu_array[mb64_lopt_seq[mb64_lopt_seq_seqtype]]), 0);
 }
 
 #define SCROLL_CUSTOM_TABS 12
@@ -610,7 +610,6 @@ s32 env_menu_handle_scroll() {
 }
 
 void prepare_block_draw(f32 xpos, f32 ypos) {
-    u16 perspNorm;
     Mat4 mtx1, mtx2;
     Vec3f pos;
     Vec3s rot;
@@ -873,7 +872,6 @@ void draw_mb64_settings_custom_theme(f32 yoff) {
 
 void draw_mb64_settings_env(f32 xoff, f32 yoff) {
     s32 oldtheme = mb64_lopt_theme;
-    u8 beginScrollAnim = FALSE;
 
     if (mb64_custom_theme_menu_open) {
         mb64_menu_index += CUSTOM_INDEX_OFFSET;
@@ -1379,10 +1377,10 @@ struct mb64_info_entry mb64_v1_1_changelog[] = {
     {"", 0},
     {"Conveyors", 1},
     {"", 0},
-    {"- Added thin and sloped conveyors"},
-    {"- Added red/blue on-off conveyors"},
-    {"- The underside of conveyors are now hangable"},
-    {"- Improved conveyor physics"},
+    {"- Added thin and sloped conveyors", 0},
+    {"- Added red/blue on-off conveyors", 0},
+    {"- The underside of conveyors are now hangable", 0},
+    {"- Improved conveyor physics", 0},
     {"", 0},
     {"Imbuing System", 1},
     {"", 0},
@@ -1983,7 +1981,7 @@ s32 mb64_main_menu(void) {
 
                     //check for rhdc username
                     if (gSupportsLibpl) {
-                        char * rhdc_username = libpl_get_my_rhdc_username();
+                        const char *rhdc_username = libpl_get_my_rhdc_username();
                         if (rhdc_username) {
                             while ((rhdc_username[mb64_mm_keyboard_input_index] != 0)&&(mb64_mm_keyboard_input_index < MAX_USERNAME_SIZE - 1)) {
                                 mb64_mm_keyboard_input[mb64_mm_keyboard_input_index] = rhdc_username[mb64_mm_keyboard_input_index];

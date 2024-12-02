@@ -54,10 +54,12 @@
 #include "mario_actions_automatic.h"
 #include "levels/scripts.h"
 #include "emutest.h"
+#include "print.h"
 #include "puppyprint.h"
 
 #include "libcart/include/cart.h"
 #include "libcart/ff/ff.h"
+#include "libpl/libpl-rhdc.h"
 
 extern void super_cum_working(struct Object *obj, s32 animIndex);
 
@@ -1225,8 +1227,6 @@ void render_bars_side(s8 pos[3], u8 connections[5]) {
 
 void render_bars_top(s8 pos[3], u8 connections[5]) {
     for (u32 rot = 0; rot < 4; rot++) {
-        u32 leftRot = (rot + 3) % 4;
-        u32 rightRot = (rot + 1) % 4;
         if (BAR_CONNECTED_SIDE(connections[rot])) {
             if (!BAR_CONNECTED_TOP(connections[rot])) {
                 process_poly(pos, &mb64_terrain_bars_connected_quads[2], rot);
@@ -1288,8 +1288,6 @@ u32 get_water_side_render(s8 pos[3], u32 dir, u32 isFullblock) {
         return ((mb64_curr_boundary & MB64_BOUNDARY_INNER_WALLS) && (pos[1] < mb64_lopt_boundary_height)) ? 0 : type;
     }
     if (adjTile->type == TILE_TYPE_CULL) return 0;
-
-    struct mb64_grid_obj *tile = get_grid_tile(pos);
 
     s32 mat = get_mat(pos);
     s32 adjMat = get_mat(adjacentPos);
@@ -2145,7 +2143,7 @@ void scan_fences(s8 pos[3]) {
     }
 }
 
-s32 generate_block_collision(s8 pos[3]) {
+void generate_block_collision(s8 pos[3]) {
     if (!coords_in_range(pos)) return;
     s32 tileType = get_grid_tile(pos)->type;
 
@@ -2715,7 +2713,7 @@ void remove_trajectory(u32 index) {
 }
 
 
-void delete_object(s8 pos[3], s32 index) {
+void delete_object(s32 index) {
     if (mb64_object_type_list[mb64_object_data[index].type].flags & OBJ_TYPE_TRAJECTORY) { 
         remove_trajectory(mb64_object_data[index].bparam);
     }
@@ -2766,7 +2764,7 @@ void place_object(s8 pos[3]) {
             if (mb64_object_data[i].type == OBJECT_TYPE_MARIO_SPAWN) {
                 s8 pos[3];
                 vec3_set(pos, mb64_object_data[i].x, mb64_object_data[i].y, mb64_object_data[i].z);
-                delete_object(pos, i);
+                delete_object(i);
                 break;
             }
         }
@@ -3007,7 +3005,7 @@ void delete_tile_action(s8 pos[3]) {
                 mb64_show_error_message("Cannot delete spawn point!");
                 break;
             }
-            delete_object(pos, i);
+            delete_object(i);
             i--;
             play_place_sound(SOUND_GENERAL_DOOR_INSERT_KEY | SOUND_VIBRATO);
         }
@@ -3364,9 +3362,6 @@ void load_level(void) {
 
     mb64_trajectories_used = 0;
     for (i = 0; i < mb64_object_count; i++) {
-        //bcopy(&mb64_save.objects[i],&mb64_object_data[i],sizeof(mb64_object_data[i]));
-        s8 pos[3];
-        vec3_set(pos, mb64_object_data[i].x, mb64_object_data[i].y, mb64_object_data[i].z)
         if (mb64_object_type_list[mb64_object_data[i].type].flags & OBJ_TYPE_TRAJECTORY) {
             mb64_trajectories_used++;
         }
@@ -3615,7 +3610,6 @@ void reload_theme(void) {
 }
 
 void reload_bg(void) {
-    void *dest = NULL;
     void *srcStart = mb64_skybox_table[mb64_lopt_bg*2];
     void *srcEnd = mb64_skybox_table[mb64_lopt_bg*2+1];
 
@@ -3625,9 +3619,6 @@ void reload_bg(void) {
 
     u32 compSize = ALIGN16(srcEnd - srcStart);
     u8 *compressed = main_pool_alloc(compSize, MEMORY_POOL_RIGHT);
-
-    // Decompressed size from header (This works for non-mio0 because they also have the size in same place)
-    u32 *size = (u32 *) (compressed + 4);
 
     if (compressed != NULL) {
         dma_read(compressed, srcStart, srcEnd);
@@ -3771,7 +3762,7 @@ Gfx *get_button_tex(u32 buttonId, u32 objIndex) {
     return mb64_terrain_info_list[mb64_ui_buttons[buttonId].id].button;
 }
 
-Gfx *get_button_str(u32 buttonId) {
+char *get_button_str(u32 buttonId) {
     if (mb64_ui_buttons[buttonId].placeMode == MB64_PM_OBJ) {
         if (mb64_ui_buttons[buttonId].multiObj) {
             return mb64_ui_buttons[buttonId].name;
