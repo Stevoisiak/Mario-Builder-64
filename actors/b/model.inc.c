@@ -131,8 +131,8 @@ u8 b_Checkmark2_ci8[] = {
 	
 };
 
-Gfx b_Checkmark2_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_Checkmark2_ci8_pal_rgba16[] = {
+Gfx b_Checkmark2_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_Checkmark2_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0xb5, 
 	0x94, 0xa5, 0x19, 0x07, 0xbd, 0xef, 0x4a, 0x53, 
@@ -287,8 +287,8 @@ u8 b_save2_ci8[] = {
 	
 };
 
-Gfx b_save2_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_save2_ci8_pal_rgba16[] = {
+Gfx b_save2_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_save2_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0x84, 0x21, 0x00, 0x01, 0xc6, 0x31, 0x3a, 0x11, 
@@ -432,8 +432,8 @@ u8 b_settings_ci8[] = {
 	
 };
 
-Gfx b_settings_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_settings_ci8_pal_rgba16[] = {
+Gfx b_settings_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_settings_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xa5, 0x29, 
 	0x00, 0x01, 0x7b, 0xdf, 0x73, 0x9d, 0x8c, 0x63, 
@@ -578,8 +578,8 @@ u8 b_new_slope_ci8[] = {
 	
 };
 
-Gfx b_new_slope_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_slope_ci8_pal_rgba16[] = {
+Gfx b_new_slope_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_slope_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0xb5, 
 	0xce, 0x73, 0x21, 0x09, 0x84, 0x21, 0xb5, 0xad, 
@@ -723,8 +723,8 @@ u8 b_intangible_tile_ci8[] = {
 	
 };
 
-Gfx b_intangible_tile_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_intangible_tile_ci8_pal_rgba16[] = {
+Gfx b_intangible_tile_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_intangible_tile_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x63, 0x19, 
 	0xa5, 0x29, 0x52, 0x95, 0xce, 0x73, 0x7b, 0xdf, 
@@ -868,8 +868,8 @@ u8 b_star_ci8[] = {
 	
 };
 
-Gfx b_star_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_star_ci8_pal_rgba16[] = {
+Gfx b_star_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_star_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0xa5, 0x29, 0x6b, 0x5b, 0x52, 0x41, 0xd6, 0xb5, 
@@ -1020,8 +1020,8 @@ u8 b_goombutton_ci8[] = {
 	
 };
 
-Gfx b_goombutton_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_goombutton_ci8_pal_rgba16[] = {
+Gfx b_goombutton_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_goombutton_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0xa5, 0x29, 0x21, 0x09, 0x00, 0x01, 0x4a, 0x53, 
@@ -1175,8 +1175,8 @@ u8 b_coin_ci8[] = {
 	
 };
 
-Gfx b_coin_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_coin_ci8_pal_rgba16[] = {
+Gfx b_coin_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_coin_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xb5, 0xad, 
 	0x8c, 0x1b, 0x5a, 0x81, 0x31, 0x41, 0xbd, 0xef, 
@@ -1325,8 +1325,8 @@ u8 b_ButtonRLI_ci8[] = {
 	
 };
 
-Gfx b_ButtonRLI_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_ButtonRLI_ci8_pal_rgba16[] = {
+Gfx b_ButtonRLI_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_ButtonRLI_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xb5, 0xad, 
 	0xbd, 0xef, 0x9c, 0xe7, 0xce, 0x73, 0x9c, 0xe6, 
@@ -1466,8 +1466,8 @@ u8 b_new_slope_corner_ci8[] = {
 	
 };
 
-Gfx b_new_slope_corner_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_slope_corner_ci8_pal_rgba16[] = {
+Gfx b_new_slope_corner_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_slope_corner_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0x52, 0x95, 0x10, 0x85, 0x6b, 0x5b, 0xad, 0x6b, 
@@ -1611,8 +1611,8 @@ u8 b_icorner_ci8[] = {
 	
 };
 
-Gfx b_icorner_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_icorner_ci8_pal_rgba16[] = {
+Gfx b_icorner_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_icorner_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0xa5, 0x29, 0x10, 0x85, 0x63, 0x19, 0x52, 0x95, 
@@ -1756,8 +1756,8 @@ u8 b_green_coin_ci8[] = {
 	
 };
 
-Gfx b_green_coin_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_green_coin_ci8_pal_rgba16[] = {
+Gfx b_green_coin_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_green_coin_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xb5, 0xad, 
 	0x6c, 0x5b, 0x0a, 0xc1, 0x01, 0x81, 0xbd, 0xef, 
@@ -1904,8 +1904,8 @@ u8 b_blue_coin_ci8[] = {
 	
 };
 
-Gfx b_blue_coin_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_blue_coin_ci8_pal_rgba16[] = {
+Gfx b_blue_coin_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_blue_coin_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xb5, 0xad, 
 	0x6b, 0x63, 0x10, 0x17, 0x08, 0x0d, 0xbd, 0xef, 
@@ -2053,8 +2053,8 @@ u8 b_bcs_ci8[] = {
 	
 };
 
-Gfx b_bcs_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_bcs_ci8_pal_rgba16[] = {
+Gfx b_bcs_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_bcs_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0xa5, 0x29, 0x63, 0x19, 0x5a, 0xd7, 0xa5, 0x2b, 
@@ -2204,8 +2204,8 @@ u8 b_red_coin_ci8[] = {
 	
 };
 
-Gfx b_red_coin_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_red_coin_ci8_pal_rgba16[] = {
+Gfx b_red_coin_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_red_coin_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xb5, 0xad, 
 	0x8b, 0x5b, 0x58, 0x01, 0x30, 0x01, 0xbd, 0xef, 
@@ -2352,8 +2352,8 @@ u8 b_redcoinstar_ci8[] = {
 	
 };
 
-Gfx b_redcoinstar_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_redcoinstar_ci8_pal_rgba16[] = {
+Gfx b_redcoinstar_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_redcoinstar_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0xa5, 0x29, 0x6b, 0x5b, 0x52, 0x41, 0xd6, 0xb5, 
@@ -2505,8 +2505,8 @@ u8 b_noteblock_ci8[] = {
 	
 };
 
-Gfx b_noteblock_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_noteblock_ci8_pal_rgba16[] = {
+Gfx b_noteblock_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_noteblock_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0x84, 0x21, 0x39, 0xcf, 0x00, 0x01, 0x52, 0x95, 
@@ -2650,8 +2650,8 @@ u8 b_cull2_ci8[] = {
 	
 };
 
-Gfx b_cull2_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_cull2_ci8_pal_rgba16[] = {
+Gfx b_cull2_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_cull2_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0xa5, 0x29, 0x10, 0x85, 0xad, 0x6b, 0x18, 0x85, 
@@ -2802,8 +2802,8 @@ u8 b_podoboo_ci8[] = {
 	
 };
 
-Gfx b_podoboo_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_podoboo_ci8_pal_rgba16[] = {
+Gfx b_podoboo_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_podoboo_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0xb5, 
 	0xbd, 0xef, 0x94, 0xa5, 0x21, 0x09, 0x00, 0x01, 
@@ -2956,8 +2956,8 @@ u8 b_rex_ci8[] = {
 	
 };
 
-Gfx b_rex_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_rex_ci8_pal_rgba16[] = {
+Gfx b_rex_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_rex_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xbd, 0xef, 0xc6, 0x31, 
 	0xef, 0x7b, 0x73, 0x9d, 0x00, 0x01, 0x21, 0x09, 
@@ -3114,8 +3114,8 @@ u8 b_bully_ci8[] = {
 	
 };
 
-Gfx b_bully_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_bully_ci8_pal_rgba16[] = {
+Gfx b_bully_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_bully_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x29, 0x4b, 
 	0x18, 0xc7, 0xb5, 0xad, 0x73, 0x9d, 0x08, 0x43, 
@@ -3265,8 +3265,8 @@ u8 b_tree_ci8[] = {
 	
 };
 
-Gfx b_tree_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_tree_ci8_pal_rgba16[] = {
+Gfx b_tree_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_tree_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0xbd, 0xef, 0x9c, 0xe7, 0x00, 0x01, 0x2a, 0x0b, 
@@ -3423,8 +3423,8 @@ u8 b_bobomb_ci8[] = {
 	
 };
 
-Gfx b_bobomb_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_bobomb_ci8_pal_rgba16[] = {
+Gfx b_bobomb_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_bobomb_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x9c, 0xe7, 
 	0x6b, 0x5b, 0x7b, 0xdf, 0x00, 0x01, 0x18, 0xc7, 
@@ -3572,8 +3572,8 @@ u8 b_excla_ci8[] = {
 	
 };
 
-Gfx b_excla_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_excla_ci8_pal_rgba16[] = {
+Gfx b_excla_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_excla_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x00, 0x01, 
 	0xfd, 0xc1, 0xb5, 0xad, 0xbd, 0xef, 0x9c, 0xe7, 
@@ -3713,8 +3713,8 @@ u8 b_chuckya_ci8[] = {
 	
 };
 
-Gfx b_chuckya_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_chuckya_ci8_pal_rgba16[] = {
+Gfx b_chuckya_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_chuckya_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0xb5, 
 	0x93, 0x5b, 0x50, 0x01, 0xb8, 0x01, 0xe8, 0x01, 
@@ -3871,8 +3871,8 @@ u8 b_spawn_location_2_ci8[] = {
 	
 };
 
-Gfx b_spawn_location_2_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_spawn_location_2_ci8_pal_rgba16[] = {
+Gfx b_spawn_location_2_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_spawn_location_2_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0x73, 
 	0xde, 0x31, 0xe6, 0x31, 0xd6, 0xb5, 0xd5, 0xad, 
@@ -4025,8 +4025,8 @@ u8 b_new_phantasm_ci8[] = {
 	
 };
 
-Gfx b_new_phantasm_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_phantasm_ci8_pal_rgba16[] = {
+Gfx b_new_phantasm_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_phantasm_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0xb5, 
 	0x7b, 0xdf, 0x52, 0x95, 0x31, 0x8d, 0x4a, 0x53, 
@@ -4190,8 +4190,8 @@ u8 b_pipe_ci8[] = {
 	
 };
 
-Gfx b_pipe_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_pipe_ci8_pal_rgba16[] = {
+Gfx b_pipe_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_pipe_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xc6, 0x31, 
 	0x5a, 0xd7, 0x00, 0x01, 0x63, 0x19, 0x2c, 0x81, 
@@ -4332,8 +4332,8 @@ u8 b_badge_ci8[] = {
 	
 };
 
-Gfx b_badge_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_badge_ci8_pal_rgba16[] = {
+Gfx b_badge_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_badge_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xde, 0x73, 
 	0xe5, 0x6b, 0xe3, 0xdf, 0xe2, 0xd7, 0xe1, 0xd1, 
@@ -4485,8 +4485,8 @@ u8 b_water2_ci8[] = {
 	
 };
 
-Gfx b_water2_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_water2_ci8_pal_rgba16[] = {
+Gfx b_water2_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_water2_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x00, 0x01, 
 	0x21, 0x09, 0x4a, 0x53, 0xd6, 0xb5, 0x7b, 0xdf, 
@@ -4634,8 +4634,8 @@ u8 b_fence_ci8[] = {
 	
 };
 
-Gfx b_fence_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_fence_ci8_pal_rgba16[] = {
+Gfx b_fence_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_fence_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x42, 0x11, 
 	0x00, 0x01, 0xbd, 0xef, 0xce, 0x73, 0x10, 0x85, 
@@ -4786,8 +4786,8 @@ u8 b_cheker_ci8[] = {
 	
 };
 
-Gfx b_cheker_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_cheker_ci8_pal_rgba16[] = {
+Gfx b_cheker_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_cheker_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xc6, 0x31, 
 	0x31, 0x8d, 0x00, 0x01, 0x4a, 0x53, 0x4a, 0xd7, 
@@ -4937,8 +4937,8 @@ u8 b_bbal_ci8[] = {
 	
 };
 
-Gfx b_bbal_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_bbal_ci8_pal_rgba16[] = {
+Gfx b_bbal_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_bbal_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x9c, 0xe7, 
 	0x52, 0x95, 0x21, 0x09, 0x08, 0x43, 0x18, 0xc7, 
@@ -5082,8 +5082,8 @@ u8 b_kuppa_ci8[] = {
 	
 };
 
-Gfx b_kuppa_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_kuppa_ci8_pal_rgba16[] = {
+Gfx b_kuppa_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_kuppa_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xb5, 0xad, 
 	0x84, 0x21, 0x9c, 0xe7, 0x5a, 0xd7, 0x00, 0x01, 
@@ -5237,157 +5237,14 @@ u8 b_new_vertical_slope_ci8[] = {
 	
 };
 
-Gfx b_new_vertical_slope_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_vertical_slope_ci8_pal_rgba16[] = {
+Gfx b_new_vertical_slope_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_vertical_slope_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xbd, 0xef, 
 	0x84, 0x21, 0x18, 0xc7, 0xb5, 0xad, 0xce, 0x73, 
 	0x9c, 0xe7, 0x4a, 0x53, 0x6b, 0x5b, 0xd6, 0xb5, 
 	0x39, 0xcf, 0xad, 0x6b, 0x00, 0x01, 0x5a, 0xd7, 
 	0x7b, 0xdf, 0x94, 0xa5, 0x9c, 0xe6, 
-};
-
-Gfx b_purpleswitch_ci8_aligner[] = {gsSPEndDisplayList()};
-u8 b_purpleswitch_ci8[] = {
-	0x00, 0x00, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 
-	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
-	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
-	0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
-	0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x04, 0x06, 
-	0x03, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 
-	0x01, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x06, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x03, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x06, 0x05, 0x05, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x04, 0x05, 0x05, 0x07, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x09, 
-	0x09, 0x09, 0x09, 0x09, 0x0a, 0x0a, 0x0a, 0x0a, 
-	0x0a, 0x0a, 0x09, 0x09, 0x09, 0x09, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
-	0x0b, 0x0b, 0x0b, 0x0b, 0x0c, 0x0c, 0x0c, 0x0c, 
-	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
-	0x0b, 0x0b, 0x0b, 0x0b, 0x0d, 0x0e, 0x0e, 0x0d, 
-	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
-	0x0b, 0x0b, 0x0b, 0x0b, 0x0e, 0x02, 0x02, 0x0e, 
-	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
-	0x0b, 0x0b, 0x0b, 0x0b, 0x0e, 0x02, 0x02, 0x0e, 
-	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
-	0x0b, 0x0b, 0x0b, 0x0b, 0x0e, 0x02, 0x02, 0x0e, 
-	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
-	0x0b, 0x0b, 0x0b, 0x0b, 0x0e, 0x02, 0x02, 0x0e, 
-	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
-	0x0b, 0x0b, 0x0b, 0x0b, 0x0e, 0x02, 0x02, 0x0e, 
-	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
-	0x0b, 0x0b, 0x0b, 0x0b, 0x0e, 0x02, 0x02, 0x0e, 
-	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
-	0x0b, 0x0b, 0x0b, 0x0b, 0x0d, 0x0e, 0x0e, 0x0d, 
-	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x0a, 0x0c, 
-	0x0c, 0x0c, 0x0c, 0x0c, 0x0f, 0x0f, 0x0f, 0x0f, 
-	0x0f, 0x0f, 0x0c, 0x0c, 0x0c, 0x0a, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x0a, 0x0c, 
-	0x0c, 0x0c, 0x0c, 0x0c, 0x0d, 0x0e, 0x0e, 0x0d, 
-	0x0f, 0x0f, 0x0c, 0x0c, 0x0c, 0x0a, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x0a, 0x0c, 
-	0x0c, 0x0c, 0x0c, 0x0c, 0x0e, 0x02, 0x02, 0x10, 
-	0x0f, 0x0f, 0x0c, 0x0c, 0x0c, 0x0a, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
-	0x0b, 0x0b, 0x0b, 0x0b, 0x0d, 0x0e, 0x0e, 0x11, 
-	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
-	0x0b, 0x0b, 0x0b, 0x0b, 0x0c, 0x0c, 0x0c, 0x0c, 
-	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x09, 
-	0x09, 0x09, 0x09, 0x09, 0x0a, 0x0a, 0x0a, 0x0a, 
-	0x0a, 0x0a, 0x09, 0x09, 0x09, 0x09, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x07, 
-	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x04, 0x05, 0x05, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x05, 0x05, 0x06, 0x03, 0x00, 0x00, 0x00, 0x00, 
-	0x04, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x03, 0x04, 0x00, 0x00, 0x00, 0x00, 
-	0x10, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x06, 0x02, 0x12, 0x00, 0x00, 0x00, 0x00, 
-	0x13, 0x14, 0x02, 0x03, 0x06, 0x04, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x04, 
-	0x03, 0x02, 0x14, 0x13, 0x00, 0x00, 0x00, 0x00, 
-	0x13, 0x13, 0x12, 0x04, 0x03, 0x02, 0x02, 0x02, 
-	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
-	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x03, 
-	0x04, 0x10, 0x13, 0x13, 0x00, 0x00, 0x00, 0x00, 
-	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
-	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
-	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
-	0x13, 0x13, 0x13, 0x13, 0x00, 0x00, 0x00, 0x00, 
-	0x15, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
-	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
-	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
-	0x13, 0x13, 0x13, 0x15, 0x00, 0x00, 0x00, 0x00, 
-	0x00, 0x15, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
-	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
-	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
-	0x13, 0x13, 0x15, 0x00, 0x00, 0x00, 0x00, 0x00, 
-	0x00, 0x00, 0x15, 0x13, 0x13, 0x13, 0x13, 0x13, 
-	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
-	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
-	0x13, 0x15, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
-	
-};
-
-Gfx b_purpleswitch_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_purpleswitch_ci8_pal_rgba16[] = {
-	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
-	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x00, 0x01, 
-	0x94, 0x01, 0xe6, 0x41, 0xee, 0x41, 0x38, 0x4b, 
-	0x40, 0x4b, 0x8c, 0x21, 0xbd, 0xad, 0x40, 0x4d, 
-	0xb5, 0xad, 0x83, 0xe1, 0xbd, 0xef, 0x9c, 0xe7, 
-	0xce, 0x73, 0x9c, 0xe6, 
 };
 
 Gfx b_corkbox_ci8_aligner[] = {gsSPEndDisplayList()};
@@ -5523,8 +5380,8 @@ u8 b_corkbox_ci8[] = {
 	
 };
 
-Gfx b_corkbox_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_corkbox_ci8_pal_rgba16[] = {
+Gfx b_corkbox_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_corkbox_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x00, 0x01, 
 	0xdc, 0x81, 0x9b, 0x41, 0xcc, 0x41, 0x9b, 0x01, 
@@ -5532,6 +5389,149 @@ u8 b_corkbox_ci8_pal_rgba16[] = {
 	0xc4, 0x01, 0xab, 0x41, 0xbb, 0xc1, 0xcc, 0x01, 
 	0xb3, 0xc1, 0xd4, 0x81, 0xb5, 0xad, 0xbd, 0xef, 
 	0x9c, 0xe7, 0xce, 0x73, 0x9c, 0xe6, 
+};
+
+Gfx b_purpleswitch_ci8_aligner[] = {gsSPEndDisplayList()};
+u8 b_purpleswitch_ci8[] = {
+	0x00, 0x00, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x04, 0x06, 
+	0x03, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x01, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x06, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x03, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x06, 0x05, 0x05, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x04, 0x05, 0x05, 0x07, 0x08, 0x08, 0x08, 
+	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
+	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x09, 
+	0x09, 0x09, 0x09, 0x09, 0x0a, 0x0a, 0x0a, 0x0a, 
+	0x0a, 0x0a, 0x09, 0x09, 0x09, 0x09, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0c, 0x0c, 0x0c, 0x0c, 
+	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0d, 0x0e, 0x0e, 0x0d, 
+	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0e, 0x02, 0x02, 0x0e, 
+	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0e, 0x02, 0x02, 0x0e, 
+	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0e, 0x02, 0x02, 0x0e, 
+	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0e, 0x02, 0x02, 0x0e, 
+	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0e, 0x02, 0x02, 0x0e, 
+	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0e, 0x02, 0x02, 0x0e, 
+	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0d, 0x0e, 0x0e, 0x0d, 
+	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x0a, 0x0c, 
+	0x0c, 0x0c, 0x0c, 0x0c, 0x0f, 0x0f, 0x0f, 0x0f, 
+	0x0f, 0x0f, 0x0c, 0x0c, 0x0c, 0x0a, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x0a, 0x0c, 
+	0x0c, 0x0c, 0x0c, 0x0c, 0x0d, 0x0e, 0x0e, 0x0d, 
+	0x0f, 0x0f, 0x0c, 0x0c, 0x0c, 0x0a, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x0a, 0x0c, 
+	0x0c, 0x0c, 0x0c, 0x0c, 0x0e, 0x02, 0x02, 0x10, 
+	0x0f, 0x0f, 0x0c, 0x0c, 0x0c, 0x0a, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0d, 0x0e, 0x0e, 0x11, 
+	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0c, 0x0c, 0x0c, 0x0c, 
+	0x0c, 0x0c, 0x0b, 0x0b, 0x0b, 0x09, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x09, 
+	0x09, 0x09, 0x09, 0x09, 0x0a, 0x0a, 0x0a, 0x0a, 
+	0x0a, 0x0a, 0x09, 0x09, 0x09, 0x09, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x08, 0x08, 0x08, 
+	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
+	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x07, 
+	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x04, 0x05, 0x05, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x05, 0x05, 0x06, 0x03, 0x00, 0x00, 0x00, 0x00, 
+	0x04, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x03, 0x04, 0x00, 0x00, 0x00, 0x00, 
+	0x10, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x06, 0x02, 0x12, 0x00, 0x00, 0x00, 0x00, 
+	0x13, 0x14, 0x02, 0x03, 0x06, 0x04, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x04, 
+	0x03, 0x02, 0x14, 0x13, 0x00, 0x00, 0x00, 0x00, 
+	0x13, 0x13, 0x12, 0x04, 0x03, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x03, 
+	0x04, 0x10, 0x13, 0x13, 0x00, 0x00, 0x00, 0x00, 
+	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
+	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
+	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
+	0x13, 0x13, 0x13, 0x13, 0x00, 0x00, 0x00, 0x00, 
+	0x15, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
+	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
+	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
+	0x13, 0x13, 0x13, 0x15, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x15, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
+	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
+	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
+	0x13, 0x13, 0x15, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x15, 0x13, 0x13, 0x13, 0x13, 0x13, 
+	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
+	0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 0x13, 
+	0x13, 0x15, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	
+};
+
+Gfx b_purpleswitch_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_purpleswitch_pal_rgba16[] = {
+	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
+	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x00, 0x01, 
+	0x94, 0x01, 0xe6, 0x41, 0xee, 0x41, 0x38, 0x4b, 
+	0x40, 0x4b, 0x8c, 0x21, 0xbd, 0xad, 0x40, 0x4d, 
+	0xb5, 0xad, 0x83, 0xe1, 0xbd, 0xef, 0x9c, 0xe7, 
+	0xce, 0x73, 0x9c, 0xe6, 
 };
 
 Gfx b_slab_ci8_aligner[] = {gsSPEndDisplayList()};
@@ -5667,8 +5667,8 @@ u8 b_slab_ci8[] = {
 	
 };
 
-Gfx b_slab_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_slab_ci8_pal_rgba16[] = {
+Gfx b_slab_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_slab_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0xa5, 0x29, 0x63, 0x19, 0x52, 0x95, 0x9c, 0xe7, 
@@ -5812,8 +5812,8 @@ u8 b_full_tile_ci8[] = {
 	
 };
 
-Gfx b_full_tile_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_full_tile_ci8_pal_rgba16[] = {
+Gfx b_full_tile_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_full_tile_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0xa5, 0x29, 0x63, 0x19, 0x52, 0x95, 0x9c, 0xe7, 
@@ -5958,8 +5958,8 @@ u8 b_vertical_slab_ci8[] = {
 	
 };
 
-Gfx b_vertical_slab_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_vertical_slab_ci8_pal_rgba16[] = {
+Gfx b_vertical_slab_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_vertical_slab_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0xa5, 0x29, 0x63, 0x19, 0xd6, 0xb5, 0x52, 0x95, 
@@ -6104,8 +6104,8 @@ u8 b_heart_ci8[] = {
 	
 };
 
-Gfx b_heart_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_heart_ci8_pal_rgba16[] = {
+Gfx b_heart_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_heart_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0x8c, 0x63, 0x39, 0xcf, 0x94, 0xa5, 0xad, 0x6b, 
@@ -6253,8 +6253,8 @@ u8 b_coin_formation_new_ci8[] = {
 	
 };
 
-Gfx b_coin_formation_new_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_coin_formation_new_ci8_pal_rgba16[] = {
+Gfx b_coin_formation_new_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_coin_formation_new_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xb5, 0xad, 
 	0x8c, 0x1b, 0x5a, 0x81, 0x31, 0x41, 0xbd, 0xef, 
@@ -6405,8 +6405,8 @@ u8 b_bars_ci8[] = {
 	
 };
 
-Gfx b_bars_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_bars_ci8_pal_rgba16[] = {
+Gfx b_bars_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_bars_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x00, 0x01, 
 	0x5a, 0xd7, 0xb5, 0xad, 0xbd, 0xef, 0x9c, 0xe7, 
@@ -6546,8 +6546,8 @@ u8 b_new_thwomp_ci8[] = {
 	
 };
 
-Gfx b_new_thwomp_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_thwomp_ci8_pal_rgba16[] = {
+Gfx b_new_thwomp_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_thwomp_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xa5, 0x29, 
 	0x00, 0x01, 0x22, 0x19, 0x13, 0xf3, 0x1b, 0xf5, 
@@ -6694,8 +6694,8 @@ u8 b_pole_ci8[] = {
 	
 };
 
-Gfx b_pole_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_pole_ci8_pal_rgba16[] = {
+Gfx b_pole_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_pole_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x00, 0x01, 
 	0xac, 0x81, 0xfe, 0xc1, 0xb5, 0xad, 0xbd, 0xef, 
@@ -6835,8 +6835,8 @@ u8 b_whomp_ci8[] = {
 	
 };
 
-Gfx b_whomp_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_whomp_ci8_pal_rgba16[] = {
+Gfx b_whomp_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_whomp_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x84, 0x21, 
 	0x00, 0x01, 0xb5, 0xb1, 0x29, 0x4b, 0x31, 0x8f, 
@@ -6989,8 +6989,8 @@ u8 b_new_bullet_ci8[] = {
 	
 };
 
-Gfx b_new_bullet_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_bullet_ci8_pal_rgba16[] = {
+Gfx b_new_bullet_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_bullet_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0xb5, 
 	0xb5, 0xad, 0x94, 0xa5, 0x6b, 0x5b, 0x10, 0x85, 
@@ -7147,8 +7147,8 @@ u8 b_lakitu_ci8[] = {
 	
 };
 
-Gfx b_lakitu_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_lakitu_ci8_pal_rgba16[] = {
+Gfx b_lakitu_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_lakitu_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xb5, 0xad, 
 	0xad, 0x6b, 0xc6, 0x31, 0x00, 0x01, 0x29, 0x47, 
@@ -7299,8 +7299,8 @@ u8 b_new_flyguy_ci8[] = {
 	
 };
 
-Gfx b_new_flyguy_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_flyguy_ci8_pal_rgba16[] = {
+Gfx b_new_flyguy_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_flyguy_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xce, 0x73, 0xc6, 0x31, 
 	0xef, 0x7b, 0x39, 0xcf, 0x00, 0x01, 0x52, 0x95, 
@@ -7455,8 +7455,8 @@ u8 b_new_snuffit_ci8[] = {
 	
 };
 
-Gfx b_new_snuffit_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_snuffit_ci8_pal_rgba16[] = {
+Gfx b_new_snuffit_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_snuffit_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x00, 0x01, 
 	0x94, 0xa5, 0xbd, 0xef, 0x5a, 0xd7, 0xce, 0x73, 
@@ -7607,8 +7607,8 @@ u8 b_boo_ci8[] = {
 	
 };
 
-Gfx b_boo_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_boo_ci8_pal_rgba16[] = {
+Gfx b_boo_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_boo_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xc6, 0x31, 
 	0x94, 0xa5, 0x6b, 0x5b, 0x39, 0xcf, 0xce, 0x73, 
@@ -7755,8 +7755,8 @@ u8 b_mri_ci8[] = {
 	
 };
 
-Gfx b_mri_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_mri_ci8_pal_rgba16[] = {
+Gfx b_mri_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_mri_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xc6, 0x31, 
 	0x94, 0xa5, 0x6b, 0x5b, 0x39, 0xcf, 0xce, 0x73, 
@@ -7899,8 +7899,8 @@ u8 b_deeplant_ci8[] = {
 	
 };
 
-Gfx b_deeplant_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_deeplant_ci8_pal_rgba16[] = {
+Gfx b_deeplant_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_deeplant_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xc6, 0x31, 
 	0xa5, 0x29, 0xad, 0x6b, 0x63, 0x19, 0x18, 0xc7, 
@@ -8062,8 +8062,8 @@ u8 b_spindrift_ci8[] = {
 	
 };
 
-Gfx b_spindrift_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_spindrift_ci8_pal_rgba16[] = {
+Gfx b_spindrift_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_spindrift_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x4a, 0x11, 
 	0x00, 0x01, 0x6b, 0x5b, 0xc6, 0x31, 0x5a, 0xd7, 
@@ -8233,8 +8233,8 @@ u8 b_mrblizzard_ci8[] = {
 	
 };
 
-Gfx b_mrblizzard_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_mrblizzard_ci8_pal_rgba16[] = {
+Gfx b_mrblizzard_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_mrblizzard_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0xb5, 
 	0x9c, 0xe7, 0x5b, 0x19, 0x29, 0x4d, 0xc6, 0x31, 
@@ -8385,8 +8385,8 @@ u8 b_heaveho_ci8[] = {
 	
 };
 
-Gfx b_heaveho_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_heaveho_ci8_pal_rgba16[] = {
+Gfx b_heaveho_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_heaveho_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x8c, 0x63, 
 	0x21, 0x09, 0x18, 0xc7, 0x42, 0x11, 0x84, 0x21, 
@@ -8544,8 +8544,8 @@ u8 b_bomb_ci8[] = {
 	
 };
 
-Gfx b_bomb_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_bomb_ci8_pal_rgba16[] = {
+Gfx b_bomb_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_bomb_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x00, 0x01, 
 	0x8c, 0x63, 0x39, 0xcf, 0xc6, 0x31, 0xd6, 0x41, 
@@ -8694,8 +8694,8 @@ u8 b_grindel_ci8[] = {
 	
 };
 
-Gfx b_grindel_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_grindel_ci8_pal_rgba16[] = {
+Gfx b_grindel_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_grindel_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x00, 0x01, 
 	0x42, 0x11, 0xde, 0xa7, 0x6b, 0x53, 0xa4, 0xdd, 
@@ -8841,8 +8841,8 @@ u8 b_moneybag_ci8[] = {
 	
 };
 
-Gfx b_moneybag_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_moneybag_ci8_pal_rgba16[] = {
+Gfx b_moneybag_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_moneybag_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0xb5, 
 	0x73, 0x9d, 0x18, 0xc7, 0x00, 0x01, 0x08, 0x43, 
@@ -9007,8 +9007,8 @@ u8 b_scuttlebug_ci8[] = {
 	
 };
 
-Gfx b_scuttlebug_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_scuttlebug_ci8_pal_rgba16[] = {
+Gfx b_scuttlebug_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_scuttlebug_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xa5, 0x29, 
 	0x4a, 0x53, 0x20, 0x41, 0x73, 0x9d, 0xb5, 0xad, 
@@ -9179,8 +9179,8 @@ u8 b_crablet_ci8[] = {
 	
 };
 
-Gfx b_crablet_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_crablet_ci8_pal_rgba16[] = {
+Gfx b_crablet_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_crablet_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xbd, 0xef, 
 	0xce, 0x73, 0x42, 0x11, 0x00, 0x01, 0x6b, 0x5b, 
@@ -9203,8 +9203,8 @@ u8 b_crablet_ci8_pal_rgba16[] = {
 	0x7b, 0xdf, 0x9c, 0xe7, 0x9c, 0xe6, 
 };
 
-Gfx b_firebar_ci8_aligner[] = {gsSPEndDisplayList()};
-u8 b_firebar_ci8[] = {
+Gfx b_firespinner2_ci8_aligner[] = {gsSPEndDisplayList()};
+u8 b_firespinner2_ci8[] = {
 	0x00, 0x00, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 
 	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
 	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
@@ -9217,140 +9217,145 @@ u8 b_firebar_ci8[] = {
 	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
 	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
 	0x05, 0x06, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x02, 0x03, 0x05, 0x05, 0x05, 0x07, 0x05, 0x05, 
 	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
 	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
 	0x05, 0x05, 0x03, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x02, 0x06, 0x05, 0x05, 0x05, 0x08, 0x09, 0x05, 
 	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
 	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
 	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x04, 0x05, 0x05, 0x0a, 0x0b, 0x0c, 0x07, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x0d, 0x0e, 0x0f, 0x10, 0x08, 
+	0x09, 0x05, 0x11, 0x12, 0x07, 0x07, 0x07, 0x07, 
+	0x13, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x14, 0x15, 0x16, 0x0a, 0x0b, 
+	0x0c, 0x14, 0x07, 0x17, 0x18, 0x19, 0x19, 0x18, 
+	0x12, 0x07, 0x13, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x0d, 0x1a, 0x0d, 0x0e, 0x0f, 
+	0x1b, 0x1c, 0x1d, 0x19, 0x19, 0x19, 0x19, 0x19, 
+	0x19, 0x18, 0x1c, 0x1e, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x09, 0x14, 0x15, 0x16, 
+	0x1f, 0x20, 0x21, 0x18, 0x19, 0x19, 0x19, 0x19, 
+	0x19, 0x22, 0x23, 0x24, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x0d, 0x1a, 0x25, 
+	0x26, 0x12, 0x1c, 0x20, 0x20, 0x20, 0x20, 0x20, 
+	0x20, 0x20, 0x27, 0x13, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x09, 0x28, 
+	0x29, 0x13, 0x19, 0x19, 0x1d, 0x2a, 0x2b, 0x2c, 
+	0x19, 0x19, 0x13, 0x2d, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x21, 0x2a, 0x19, 0x19, 0x19, 0x19, 0x18, 0x12, 
+	0x1c, 0x12, 0x2b, 0x21, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x07, 0x18, 0x19, 0x19, 0x19, 0x18, 0x2d, 0x2e, 
+	0x24, 0x2e, 0x07, 0x07, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x07, 0x18, 0x19, 0x19, 0x19, 0x12, 0x2e, 0x2f, 
+	0x20, 0x23, 0x08, 0x30, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x21, 0x2a, 0x19, 0x19, 0x19, 0x1c, 0x24, 0x20, 
+	0x20, 0x0a, 0x0b, 0x31, 0x32, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x2d, 0x13, 0x19, 0x19, 0x19, 0x12, 0x2e, 0x33, 
+	0x0d, 0x34, 0x35, 0x36, 0x37, 0x20, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x13, 0x17, 0x19, 0x19, 0x19, 0x18, 0x2d, 0x2e, 
+	0x14, 0x38, 0x39, 0x39, 0x38, 0x3a, 0x07, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x3b, 0x3c, 0x19, 0x19, 0x19, 0x19, 0x18, 0x12, 
+	0x0d, 0x37, 0x3d, 0x3d, 0x3e, 0x3f, 0x08, 0x30, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x1e, 0x1c, 0x1d, 0x19, 0x19, 0x19, 0x19, 0x19, 
+	0x19, 0x09, 0x40, 0x3e, 0x14, 0x0a, 0x0b, 0x31, 
+	0x32, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x41, 0x07, 0x17, 0x18, 0x19, 0x19, 0x18, 
+	0x12, 0x07, 0x13, 0x05, 0x0d, 0x34, 0x35, 0x36, 
+	0x37, 0x20, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x11, 0x12, 0x07, 0x07, 0x07, 0x07, 
+	0x13, 0x05, 0x05, 0x05, 0x14, 0x38, 0x39, 0x39, 
+	0x38, 0x3a, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x0d, 0x37, 0x3d, 0x3d, 
+	0x3e, 0x3f, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
 	0x02, 0x04, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
 	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x07, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x08, 0x09, 0x09, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x0a, 0x0b, 0x09, 0x09, 0x0b, 
-	0x0a, 0x05, 0x05, 0x05, 0x05, 0x0c, 0x05, 0x05, 
-	0x09, 0x0d, 0x09, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x0b, 0x09, 0x0e, 0x0e, 0x0e, 0x0e, 
-	0x09, 0x0b, 0x05, 0x08, 0x09, 0x09, 0x0f, 0x10, 
-	0x11, 0x12, 0x11, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x0a, 0x09, 0x13, 0x14, 0x13, 0x15, 0x13, 
-	0x13, 0x09, 0x0a, 0x09, 0x16, 0x09, 0x05, 0x09, 
-	0x17, 0x18, 0x09, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x19, 0x19, 0x0a, 0x15, 0x13, 0x14, 0x13, 
-	0x0a, 0x1a, 0x09, 0x11, 0x1b, 0x11, 0x05, 0x09, 
-	0x1c, 0x1c, 0x09, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x1d, 0x09, 0x09, 0x09, 0x09, 0x09, 0x09, 0x09, 
-	0x09, 0x09, 0x09, 0x1e, 0x18, 0x09, 0x10, 0x09, 
-	0x18, 0x1c, 0x09, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x08, 0x09, 
-	0x09, 0x19, 0x13, 0x1d, 0x13, 0x13, 0x13, 0x13, 
-	0x0c, 0x1f, 0x19, 0x20, 0x21, 0x22, 0x09, 0x23, 
-	0x09, 0x09, 0x09, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x0c, 0x05, 0x05, 0x09, 0x16, 
-	0x09, 0x0e, 0x13, 0x0c, 0x13, 0x15, 0x13, 0x13, 
-	0x0c, 0x1f, 0x0e, 0x24, 0x21, 0x25, 0x09, 0x05, 
-	0x26, 0x14, 0x27, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x08, 0x09, 0x09, 0x0f, 0x10, 0x11, 0x1b, 
-	0x28, 0x23, 0x13, 0x13, 0x29, 0x0f, 0x13, 0x13, 
-	0x13, 0x13, 0x23, 0x09, 0x09, 0x09, 0x0a, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x09, 0x0d, 0x09, 0x05, 0x09, 0x2a, 0x18, 
-	0x09, 0x0b, 0x13, 0x13, 0x13, 0x13, 0x13, 0x2b, 
-	0x08, 0x13, 0x2c, 0x09, 0x14, 0x27, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x11, 0x12, 0x11, 0x05, 0x09, 0x2d, 0x21, 
-	0x22, 0x09, 0x13, 0x2b, 0x14, 0x13, 0x13, 0x07, 
-	0x13, 0x13, 0x13, 0x09, 0x2b, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x09, 0x18, 0x09, 0x29, 0x09, 0x18, 0x21, 
-	0x2e, 0x09, 0x13, 0x1f, 0x13, 0x13, 0x13, 0x13, 
-	0x13, 0x13, 0x0a, 0x09, 0x27, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x09, 0x1c, 0x2f, 0x09, 0x23, 0x09, 0x09, 
-	0x09, 0x09, 0x19, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 
-	0x0b, 0x30, 0x09, 0x23, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x09, 0x1c, 0x25, 0x09, 0x05, 0x26, 0x14, 
-	0x27, 0x27, 0x2c, 0x0e, 0x0b, 0x0e, 0x0b, 0x0b, 
-	0x0e, 0x2c, 0x27, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x09, 0x09, 0x09, 0x0a, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x26, 0x14, 0x27, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x04, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x06, 0x03, 0x00, 0x00, 0x00, 0x00, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x09, 0x40, 0x3e, 
+	0x14, 0x05, 0x06, 0x03, 0x00, 0x00, 0x00, 0x00, 
 	0x04, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
 	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
 	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
 	0x05, 0x05, 0x03, 0x04, 0x00, 0x00, 0x00, 0x00, 
-	0x0c, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x42, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
 	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
 	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x06, 0x02, 0x07, 0x00, 0x00, 0x00, 0x00, 
-	0x08, 0x2b, 0x02, 0x03, 0x06, 0x04, 0x05, 0x05, 
+	0x05, 0x06, 0x02, 0x1e, 0x00, 0x00, 0x00, 0x00, 
+	0x43, 0x11, 0x02, 0x03, 0x06, 0x04, 0x05, 0x05, 
 	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
 	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x04, 
-	0x03, 0x02, 0x2b, 0x08, 0x00, 0x00, 0x00, 0x00, 
-	0x08, 0x08, 0x07, 0x04, 0x03, 0x02, 0x02, 0x02, 
+	0x03, 0x02, 0x11, 0x43, 0x00, 0x00, 0x00, 0x00, 
+	0x43, 0x43, 0x1e, 0x04, 0x03, 0x02, 0x02, 0x02, 
 	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
 	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x03, 
-	0x04, 0x0c, 0x08, 0x08, 0x00, 0x00, 0x00, 0x00, 
-	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x08, 0x00, 0x00, 0x00, 0x00, 
-	0x31, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x31, 0x00, 0x00, 0x00, 0x00, 
-	0x00, 0x31, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x31, 0x00, 0x00, 0x00, 0x00, 0x00, 
-	0x00, 0x00, 0x31, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 
-	0x08, 0x31, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x04, 0x42, 0x43, 0x43, 0x00, 0x00, 0x00, 0x00, 
+	0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 
+	0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 
+	0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 
+	0x43, 0x43, 0x43, 0x43, 0x00, 0x00, 0x00, 0x00, 
+	0x44, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 
+	0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 
+	0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 
+	0x43, 0x43, 0x43, 0x44, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x44, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 
+	0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 
+	0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 
+	0x43, 0x43, 0x44, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x44, 0x43, 0x43, 0x43, 0x43, 0x43, 
+	0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 
+	0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 0x43, 
+	0x43, 0x44, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	
 };
 
-Gfx b_firebar_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_firebar_ci8_pal_rgba16[] = {
+Gfx b_firespinner2_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_firespinner2_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
-	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xbd, 0xef, 
-	0x9c, 0xe7, 0x00, 0x01, 0x4a, 0x53, 0x21, 0x09, 
-	0xb5, 0xad, 0x38, 0x81, 0x29, 0x4b, 0xa5, 0x29, 
-	0x63, 0x19, 0x18, 0x85, 0x60, 0xc1, 0x5a, 0xd7, 
-	0xad, 0x6b, 0x94, 0xa5, 0x40, 0x81, 0x79, 0x01, 
-	0xe2, 0x41, 0x10, 0x85, 0x18, 0xc7, 0x69, 0x01, 
-	0xf2, 0x41, 0x8c, 0x63, 0x58, 0xc1, 0x7b, 0xdf, 
-	0x48, 0xc1, 0xfa, 0x81, 0x99, 0x81, 0x42, 0x11, 
-	0x08, 0x01, 0xa1, 0x81, 0xd6, 0xb5, 0xc6, 0x31, 
-	0x18, 0x01, 0x6b, 0x5b, 0x79, 0x41, 0xce, 0x73, 
-	0x52, 0x95, 0xf2, 0x81, 0xa9, 0x81, 0x91, 0x41, 
-	0x08, 0x43, 0x9c, 0xe6, 
+	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x10, 0x85, 
+	0x68, 0x01, 0x40, 0x01, 0x80, 0x01, 0xe8, 0x01, 
+	0xf1, 0x01, 0x08, 0x01, 0xf1, 0xc1, 0xf1, 0x81, 
+	0xf2, 0x81, 0xce, 0x73, 0x39, 0xcf, 0x52, 0x95, 
+	0x20, 0x01, 0xf4, 0x81, 0xf5, 0x81, 0x4a, 0x11, 
+	0x6b, 0x19, 0x7b, 0x9d, 0xf4, 0x01, 0xd2, 0x41, 
+	0x18, 0xc7, 0x73, 0x5b, 0xbd, 0xef, 0x93, 0x41, 
+	0x00, 0x01, 0x21, 0x09, 0x41, 0xcf, 0x08, 0x43, 
+	0x7b, 0xdf, 0xf6, 0x81, 0x5a, 0x81, 0x20, 0xc7, 
+	0xf4, 0x41, 0x38, 0xc1, 0x62, 0xd7, 0x52, 0x53, 
+	0x5a, 0x95, 0x31, 0x8d, 0x6b, 0x5b, 0x42, 0x11, 
+	0x48, 0x01, 0xf9, 0x01, 0x60, 0xc7, 0x29, 0x4b, 
+	0xf9, 0xc1, 0xf9, 0x81, 0xfa, 0x81, 0xfc, 0x01, 
+	0xfc, 0x81, 0xfd, 0x81, 0x70, 0x01, 0x84, 0x21, 
+	0x39, 0x8d, 0xfe, 0x81, 0xfb, 0xc1, 0x18, 0x43, 
+	0xfc, 0x41, 0x4a, 0x53, 0xb5, 0xad, 0x9c, 0xe7, 
+	0x9c, 0xe6, 
 };
 
 Gfx b_new_amp_ci8_aligner[] = {gsSPEndDisplayList()};
@@ -9486,8 +9491,8 @@ u8 b_new_amp_ci8[] = {
 	
 };
 
-Gfx b_new_amp_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_amp_ci8_pal_rgba16[] = {
+Gfx b_new_amp_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_amp_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xee, 0xdf, 
 	0xfe, 0xc5, 0xe6, 0xef, 0xde, 0xf3, 0xf6, 0xcf, 
@@ -9658,8 +9663,8 @@ u8 b_firespitter_new_ci8[] = {
 	
 };
 
-Gfx b_firespitter_new_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_firespitter_new_ci8_pal_rgba16[] = {
+Gfx b_firespitter_new_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_firespitter_new_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xc6, 0x31, 
 	0x84, 0x21, 0x42, 0x11, 0x18, 0xc7, 0x10, 0x85, 
@@ -9806,8 +9811,8 @@ u8 b_new_flamethrower_ci8[] = {
 	
 };
 
-Gfx b_new_flamethrower_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_flamethrower_ci8_pal_rgba16[] = {
+Gfx b_new_flamethrower_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_flamethrower_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xa5, 0x29, 
 	0x00, 0x01, 0x39, 0xcf, 0xad, 0x69, 0xce, 0x2f, 
@@ -9958,8 +9963,8 @@ u8 b_new_hammer_bro_ci8[] = {
 	
 };
 
-Gfx b_new_hammer_bro_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_hammer_bro_ci8_pal_rgba16[] = {
+Gfx b_new_hammer_bro_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_hammer_bro_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x9c, 0xe7, 
 	0x63, 0x19, 0x31, 0x8d, 0x21, 0x09, 0x00, 0x01, 
@@ -10118,8 +10123,8 @@ u8 b_camera_ci8[] = {
 	
 };
 
-Gfx b_camera_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_camera_ci8_pal_rgba16[] = {
+Gfx b_camera_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_camera_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x73, 0x9d, 
 	0x10, 0x87, 0x00, 0x03, 0x00, 0x01, 0x29, 0x0b, 
@@ -10272,8 +10277,8 @@ u8 b_portrait_motos_ci8[] = {
 	
 };
 
-Gfx b_portrait_motos_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_portrait_motos_ci8_pal_rgba16[] = {
+Gfx b_portrait_motos_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_portrait_motos_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xbd, 0xef, 
 	0x52, 0x95, 0x00, 0x01, 0x10, 0x85, 0x21, 0x09, 
@@ -10423,8 +10428,8 @@ u8 b_skeeter_ci8[] = {
 	
 };
 
-Gfx b_skeeter_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_skeeter_ci8_pal_rgba16[] = {
+Gfx b_skeeter_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_skeeter_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0xb5, 
 	0x82, 0x53, 0x38, 0x01, 0xce, 0x73, 0xa5, 0x29, 
@@ -10580,8 +10585,8 @@ u8 b_chicken_ci8[] = {
 	
 };
 
-Gfx b_chicken_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_chicken_ci8_pal_rgba16[] = {
+Gfx b_chicken_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_chicken_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x39, 0xcf, 
 	0x00, 0x01, 0x94, 0xa5, 0x21, 0x09, 0x10, 0x01, 
@@ -10739,8 +10744,8 @@ u8 b_flame_red_ci8[] = {
 	
 };
 
-Gfx b_flame_red_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_flame_red_ci8_pal_rgba16[] = {
+Gfx b_flame_red_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_flame_red_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x94, 0xa5, 
 	0xa5, 0x29, 0x10, 0x85, 0x21, 0x09, 0xd6, 0xb5, 
@@ -10895,8 +10900,8 @@ u8 b_flame_blue_ci8[] = {
 	
 };
 
-Gfx b_flame_blue_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_flame_blue_ci8_pal_rgba16[] = {
+Gfx b_flame_blue_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_flame_blue_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x94, 0xa5, 
 	0xa5, 0x29, 0x10, 0x85, 0x21, 0x09, 0xd6, 0xb5, 
@@ -11053,8 +11058,8 @@ u8 b_flippedslope_ci8[] = {
 	
 };
 
-Gfx b_flippedslope_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_flippedslope_ci8_pal_rgba16[] = {
+Gfx b_flippedslope_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_flippedslope_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x94, 0xa5, 
 	0x21, 0x09, 0xa5, 0x29, 0xce, 0x73, 0x84, 0x21, 
@@ -11198,8 +11203,8 @@ u8 b_uslab_ci8[] = {
 	
 };
 
-Gfx b_uslab_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_uslab_ci8_pal_rgba16[] = {
+Gfx b_uslab_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_uslab_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0x9c, 0xe7, 0x63, 0x19, 0x52, 0x95, 0xc6, 0x31, 
@@ -11343,8 +11348,8 @@ u8 b_ucorner_ci8[] = {
 	
 };
 
-Gfx b_ucorner_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_ucorner_ci8_pal_rgba16[] = {
+Gfx b_ucorner_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_ucorner_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x21, 0x09, 
 	0x94, 0xa5, 0x7b, 0xdf, 0x73, 0x9d, 0xd6, 0xb5, 
@@ -11488,8 +11493,8 @@ u8 b_uicorner_ci8[] = {
 	
 };
 
-Gfx b_uicorner_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_uicorner_ci8_pal_rgba16[] = {
+Gfx b_uicorner_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_uicorner_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xc6, 0x31, 
 	0x6b, 0x5b, 0x10, 0x85, 0xb5, 0xad, 0x73, 0x9d, 
@@ -11633,8 +11638,8 @@ u8 b_goomba_small_ci8[] = {
 	
 };
 
-Gfx b_goomba_small_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_goomba_small_ci8_pal_rgba16[] = {
+Gfx b_goomba_small_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_goomba_small_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0xa5, 0x29, 0x21, 0x09, 0x00, 0x01, 0x4a, 0x53, 
@@ -11788,8 +11793,8 @@ u8 b_goomba_big_ci8[] = {
 	
 };
 
-Gfx b_goomba_big_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_goomba_big_ci8_pal_rgba16[] = {
+Gfx b_goomba_big_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_goomba_big_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0xa5, 0x29, 0x21, 0x09, 0x00, 0x01, 0x4a, 0x53, 
@@ -11943,8 +11948,8 @@ u8 b_plant_big_ci8[] = {
 	
 };
 
-Gfx b_plant_big_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_plant_big_ci8_pal_rgba16[] = {
+Gfx b_plant_big_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_plant_big_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xc6, 0x31, 
 	0xa5, 0x29, 0xad, 0x6b, 0x63, 0x19, 0x18, 0xc7, 
@@ -12107,8 +12112,8 @@ u8 b_plant_small_ci8[] = {
 	
 };
 
-Gfx b_plant_small_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_plant_small_ci8_pal_rgba16[] = {
+Gfx b_plant_small_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_plant_small_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xc6, 0x31, 
 	0xa5, 0x29, 0xad, 0x6b, 0x63, 0x19, 0x18, 0xc7, 
@@ -12271,8 +12276,8 @@ u8 b_kingbobomb_ci8[] = {
 	
 };
 
-Gfx b_kingbobomb_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_kingbobomb_ci8_pal_rgba16[] = {
+Gfx b_kingbobomb_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_kingbobomb_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x9c, 0xe7, 
 	0xb5, 0xad, 0xd6, 0xb5, 0x84, 0x21, 0xc6, 0x31, 
@@ -12431,8 +12436,8 @@ u8 b_whomp_boss_ci8[] = {
 	
 };
 
-Gfx b_whomp_boss_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_whomp_boss_ci8_pal_rgba16[] = {
+Gfx b_whomp_boss_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_whomp_boss_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x84, 0x21, 
 	0x00, 0x01, 0xb5, 0xb1, 0x29, 0x4b, 0x31, 0x8f, 
@@ -12591,8 +12596,8 @@ u8 b_boo_boss_ci8[] = {
 	
 };
 
-Gfx b_boo_boss_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_boo_boss_ci8_pal_rgba16[] = {
+Gfx b_boo_boss_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_boo_boss_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xc6, 0x31, 
 	0x94, 0xa5, 0x6b, 0x5b, 0x39, 0xcf, 0xce, 0x73, 
@@ -12746,8 +12751,8 @@ u8 b_bully_boss_ci8[] = {
 	
 };
 
-Gfx b_bully_boss_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_bully_boss_ci8_pal_rgba16[] = {
+Gfx b_bully_boss_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_bully_boss_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x29, 0x4b, 
 	0x18, 0xc7, 0xb5, 0xad, 0x73, 0x9d, 0x08, 0x43, 
@@ -12903,8 +12908,8 @@ u8 b_bowser_ci8[] = {
 	
 };
 
-Gfx b_bowser_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_bowser_ci8_pal_rgba16[] = {
+Gfx b_bowser_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_bowser_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xbd, 0xef, 
 	0x5a, 0xd7, 0x39, 0xcf, 0x31, 0x8d, 0x21, 0x09, 
@@ -12937,165 +12942,6 @@ u8 b_bowser_ci8_pal_rgba16[] = {
 	0xa8, 0x43, 0x50, 0x43, 0xc8, 0x01, 0xa0, 0x43, 
 	0x51, 0xcd, 0x9c, 0x1b, 0x62, 0xd7, 0xb5, 0xad, 
 	0x9c, 0xe7, 0x9c, 0xe6, 
-};
-
-Gfx b_new_pokey_ci8_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_pokey_ci8[] = {
-	0x00, 0x00, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 
-	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
-	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
-	0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
-	0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x04, 0x06, 
-	0x03, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 
-	0x01, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x06, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x03, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x04, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x05, 0x07, 0x08, 0x08, 0x07, 
-	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x09, 0x0a, 0x0a, 0x0a, 0x0b, 
-	0x0c, 0x05, 0x07, 0x0a, 0x0a, 0x0d, 0x0d, 0x0a, 
-	0x0a, 0x07, 0x05, 0x0c, 0x0b, 0x0a, 0x0a, 0x0a, 
-	0x09, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x0e, 0x0f, 0x10, 0x11, 0x12, 
-	0x0a, 0x0e, 0x0a, 0x13, 0x10, 0x10, 0x14, 0x10, 
-	0x13, 0x0a, 0x0e, 0x0a, 0x12, 0x15, 0x10, 0x0f, 
-	0x0e, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x16, 0x17, 0x10, 0x10, 0x10, 
-	0x0b, 0x0a, 0x18, 0x10, 0x10, 0x14, 0x19, 0x10, 
-	0x10, 0x18, 0x0a, 0x0b, 0x10, 0x1a, 0x1b, 0x17, 
-	0x16, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x0a, 0x1c, 0x10, 0x1d, 
-	0x1e, 0x1f, 0x10, 0x1f, 0x20, 0x1f, 0x10, 0x1f, 
-	0x20, 0x1f, 0x1f, 0x10, 0x10, 0x10, 0x1c, 0x0a, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x21, 0x0a, 0x22, 0x23, 
-	0x24, 0x10, 0x25, 0x0a, 0x0a, 0x0a, 0x10, 0x0a, 
-	0x0a, 0x0a, 0x25, 0x10, 0x10, 0x22, 0x0a, 0x21, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x26, 0x0a, 0x27, 
-	0x10, 0x10, 0x0a, 0x0a, 0x28, 0x29, 0x10, 0x29, 
-	0x28, 0x0a, 0x0a, 0x10, 0x27, 0x0a, 0x26, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x0a, 0x2a, 0x10, 
-	0x2b, 0x10, 0x0a, 0x0a, 0x2c, 0x2d, 0x10, 0x2d, 
-	0x2c, 0x0a, 0x0a, 0x2b, 0x2e, 0x2a, 0x0a, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x0c, 0x0a, 0x10, 0x10, 
-	0x24, 0x10, 0x0a, 0x0a, 0x2c, 0x2f, 0x10, 0x2f, 
-	0x2c, 0x0a, 0x0a, 0x10, 0x19, 0x30, 0x0a, 0x0c, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x09, 0x0a, 0x10, 0x31, 
-	0x19, 0x10, 0x0a, 0x0a, 0x0a, 0x32, 0x10, 0x32, 
-	0x0a, 0x0a, 0x0a, 0x10, 0x10, 0x10, 0x0a, 0x09, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x09, 0x0a, 0x10, 0x25, 
-	0x0a, 0x10, 0x32, 0x33, 0x1f, 0x10, 0x10, 0x10, 
-	0x1f, 0x33, 0x32, 0x10, 0x0a, 0x25, 0x0a, 0x09, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x09, 0x0a, 0x10, 0x10, 
-	0x0a, 0x0a, 0x25, 0x34, 0x10, 0x10, 0x10, 0x10, 
-	0x10, 0x10, 0x25, 0x0a, 0x0a, 0x10, 0x0a, 0x09, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x35, 0x0a, 0x10, 0x36, 
-	0x10, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 
-	0x0a, 0x0a, 0x0a, 0x0a, 0x36, 0x10, 0x0a, 0x35, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x0a, 0x37, 0x38, 
-	0x39, 0x18, 0x0a, 0x3a, 0x3b, 0x3b, 0x3b, 0x3b, 
-	0x3b, 0x3a, 0x0a, 0x10, 0x10, 0x3c, 0x0a, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x3d, 0x0a, 0x3e, 
-	0x3f, 0x17, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 
-	0x0a, 0x0a, 0x0a, 0x18, 0x40, 0x0a, 0x3d, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x26, 0x0a, 
-	0x27, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 
-	0x10, 0x10, 0x10, 0x41, 0x0a, 0x26, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x26, 
-	0x0a, 0x42, 0x10, 0x10, 0x10, 0x43, 0x10, 0x43, 
-	0x1a, 0x1b, 0x42, 0x0a, 0x26, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x44, 0x0a, 0x0a, 0x45, 0x46, 0x47, 0x47, 0x46, 
-	0x48, 0x0a, 0x0a, 0x44, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
-	0x02, 0x04, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
-	0x49, 0x4a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 
-	0x0a, 0x0a, 0x4a, 0x49, 0x05, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x06, 0x03, 0x00, 0x00, 0x00, 0x00, 
-	0x04, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x4b, 
-	0x0a, 0x4c, 0x4d, 0x34, 0x34, 0x10, 0x10, 0x34, 
-	0x34, 0x4d, 0x4c, 0x0a, 0x4b, 0x05, 0x05, 0x05, 
-	0x05, 0x05, 0x03, 0x04, 0x00, 0x00, 0x00, 0x00, 
-	0x21, 0x02, 0x06, 0x05, 0x05, 0x05, 0x48, 0x0a, 
-	0x24, 0x4e, 0x10, 0x1a, 0x4f, 0x10, 0x10, 0x10, 
-	0x10, 0x31, 0x10, 0x10, 0x0a, 0x48, 0x05, 0x05, 
-	0x05, 0x06, 0x02, 0x0c, 0x00, 0x00, 0x00, 0x00, 
-	0x07, 0x50, 0x02, 0x03, 0x06, 0x04, 0x4b, 0x51, 
-	0x52, 0x24, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 
-	0x10, 0x53, 0x30, 0x10, 0x22, 0x4b, 0x05, 0x04, 
-	0x03, 0x02, 0x50, 0x07, 0x00, 0x00, 0x00, 0x00, 
-	0x07, 0x07, 0x0c, 0x04, 0x03, 0x02, 0x02, 0x02, 
-	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
-	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x03, 
-	0x04, 0x21, 0x07, 0x07, 0x00, 0x00, 0x00, 0x00, 
-	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x07, 0x00, 0x00, 0x00, 0x00, 
-	0x54, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x54, 0x00, 0x00, 0x00, 0x00, 
-	0x00, 0x54, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x54, 0x00, 0x00, 0x00, 0x00, 0x00, 
-	0x00, 0x00, 0x54, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
-	0x07, 0x54, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
-	
-};
-
-Gfx b_new_pokey_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_pokey_ci8_pal_rgba16[] = {
-	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
-	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x9c, 0xe7, 
-	0x5a, 0xd7, 0xad, 0x6b, 0x00, 0x01, 0x31, 0x8d, 
-	0xbd, 0xef, 0x21, 0x05, 0x42, 0x11, 0x29, 0x01, 
-	0xfe, 0x4b, 0xbc, 0x89, 0x31, 0x45, 0x5a, 0x47, 
-	0xfe, 0x9f, 0xc5, 0x5d, 0x52, 0x95, 0x18, 0xc1, 
-	0xc4, 0xc9, 0xff, 0x75, 0xff, 0x71, 0xfe, 0xe5, 
-	0x5a, 0x45, 0xfe, 0xa3, 0xfe, 0x4f, 0xf6, 0x0b, 
-	0x21, 0x01, 0xb5, 0xad, 0x52, 0x03, 0xff, 0x31, 
-	0xfe, 0xe3, 0x72, 0xc5, 0x4a, 0x53, 0xd5, 0x49, 
-	0xc2, 0xc5, 0xd2, 0xc5, 0xa4, 0x07, 0xfe, 0x51, 
-	0xe3, 0x45, 0xd3, 0x05, 0xfe, 0xa1, 0x92, 0x03, 
-	0xfe, 0x9d, 0xfe, 0x9b, 0xdd, 0x89, 0x7b, 0x05, 
-	0xee, 0x0b, 0xc6, 0x31, 0xfe, 0x4d, 0x62, 0x89, 
-	0xfe, 0xe1, 0xff, 0x2b, 0x20, 0xc1, 0x9b, 0xc1, 
-	0x62, 0x87, 0x94, 0xa5, 0xdd, 0xdd, 0xfe, 0xe7, 
-	0xdd, 0x49, 0x18, 0x81, 0x62, 0x45, 0xed, 0xc9, 
-	0x8c, 0x63, 0x10, 0x81, 0x39, 0x41, 0x41, 0x81, 
-	0x73, 0x9d, 0x84, 0x21, 0x10, 0x85, 0x21, 0x09, 
-	0x62, 0x85, 0xcd, 0x09, 0xfe, 0x55, 0xfe, 0xeb, 
-	0xce, 0x73, 0x52, 0x05, 0xff, 0x2f, 0xff, 0xb7, 
-	0x9c, 0xe6, 
 };
 
 Gfx b_wigger_ci8_aligner[] = {gsSPEndDisplayList()};
@@ -13231,8 +13077,8 @@ u8 b_wigger_ci8[] = {
 	
 };
 
-Gfx b_wigger_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_wigger_ci8_pal_rgba16[] = {
+Gfx b_wigger_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_wigger_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0x8c, 0x63, 0x42, 0x11, 
 	0xef, 0x7b, 0x94, 0xa5, 0xa5, 0x29, 0x52, 0x95, 
@@ -13254,6 +13100,165 @@ u8 b_wigger_ci8_pal_rgba16[] = {
 	0x10, 0x01, 0x52, 0x11, 0xa8, 0x43, 0x50, 0x43, 
 	0xc8, 0x01, 0xa0, 0x43, 0x51, 0xcf, 0xb5, 0xad, 
 	0xbd, 0xef, 0x9c, 0xe6, 
+};
+
+Gfx b_new_pokey_ci8_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_pokey_ci8[] = {
+	0x00, 0x00, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x04, 0x06, 
+	0x03, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x01, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x06, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x03, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x04, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x07, 0x08, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x09, 0x0a, 0x0a, 0x0a, 0x0b, 
+	0x0c, 0x05, 0x07, 0x0a, 0x0a, 0x0d, 0x0d, 0x0a, 
+	0x0a, 0x07, 0x05, 0x0c, 0x0b, 0x0a, 0x0a, 0x0a, 
+	0x09, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x0e, 0x0f, 0x10, 0x11, 0x12, 
+	0x0a, 0x0e, 0x0a, 0x13, 0x10, 0x10, 0x14, 0x10, 
+	0x13, 0x0a, 0x0e, 0x0a, 0x12, 0x15, 0x10, 0x0f, 
+	0x0e, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x16, 0x17, 0x10, 0x10, 0x10, 
+	0x0b, 0x0a, 0x18, 0x10, 0x10, 0x14, 0x19, 0x10, 
+	0x10, 0x18, 0x0a, 0x0b, 0x10, 0x1a, 0x1b, 0x17, 
+	0x16, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x0a, 0x1c, 0x10, 0x1d, 
+	0x1e, 0x1f, 0x10, 0x1f, 0x20, 0x1f, 0x10, 0x1f, 
+	0x20, 0x1f, 0x1f, 0x10, 0x10, 0x10, 0x1c, 0x0a, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x21, 0x0a, 0x22, 0x23, 
+	0x24, 0x10, 0x25, 0x0a, 0x0a, 0x0a, 0x10, 0x0a, 
+	0x0a, 0x0a, 0x25, 0x10, 0x10, 0x22, 0x0a, 0x21, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x26, 0x0a, 0x27, 
+	0x10, 0x10, 0x0a, 0x0a, 0x28, 0x29, 0x10, 0x29, 
+	0x28, 0x0a, 0x0a, 0x10, 0x27, 0x0a, 0x26, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x0a, 0x2a, 0x10, 
+	0x2b, 0x10, 0x0a, 0x0a, 0x2c, 0x2d, 0x10, 0x2d, 
+	0x2c, 0x0a, 0x0a, 0x2b, 0x2e, 0x2a, 0x0a, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x0c, 0x0a, 0x10, 0x10, 
+	0x24, 0x10, 0x0a, 0x0a, 0x2c, 0x2f, 0x10, 0x2f, 
+	0x2c, 0x0a, 0x0a, 0x10, 0x19, 0x30, 0x0a, 0x0c, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x09, 0x0a, 0x10, 0x31, 
+	0x19, 0x10, 0x0a, 0x0a, 0x0a, 0x32, 0x10, 0x32, 
+	0x0a, 0x0a, 0x0a, 0x10, 0x10, 0x10, 0x0a, 0x09, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x09, 0x0a, 0x10, 0x25, 
+	0x0a, 0x10, 0x32, 0x33, 0x1f, 0x10, 0x10, 0x10, 
+	0x1f, 0x33, 0x32, 0x10, 0x0a, 0x25, 0x0a, 0x09, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x09, 0x0a, 0x10, 0x10, 
+	0x0a, 0x0a, 0x25, 0x34, 0x10, 0x10, 0x10, 0x10, 
+	0x10, 0x10, 0x25, 0x0a, 0x0a, 0x10, 0x0a, 0x09, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x35, 0x0a, 0x10, 0x36, 
+	0x10, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 
+	0x0a, 0x0a, 0x0a, 0x0a, 0x36, 0x10, 0x0a, 0x35, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x0a, 0x37, 0x38, 
+	0x39, 0x18, 0x0a, 0x3a, 0x3b, 0x3b, 0x3b, 0x3b, 
+	0x3b, 0x3a, 0x0a, 0x10, 0x10, 0x3c, 0x0a, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x3d, 0x0a, 0x3e, 
+	0x3f, 0x17, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 
+	0x0a, 0x0a, 0x0a, 0x18, 0x40, 0x0a, 0x3d, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x26, 0x0a, 
+	0x27, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 
+	0x10, 0x10, 0x10, 0x41, 0x0a, 0x26, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x26, 
+	0x0a, 0x42, 0x10, 0x10, 0x10, 0x43, 0x10, 0x43, 
+	0x1a, 0x1b, 0x42, 0x0a, 0x26, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x44, 0x0a, 0x0a, 0x45, 0x46, 0x47, 0x47, 0x46, 
+	0x48, 0x0a, 0x0a, 0x44, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x04, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x49, 0x4a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 
+	0x0a, 0x0a, 0x4a, 0x49, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x06, 0x03, 0x00, 0x00, 0x00, 0x00, 
+	0x04, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x4b, 
+	0x0a, 0x4c, 0x4d, 0x34, 0x34, 0x10, 0x10, 0x34, 
+	0x34, 0x4d, 0x4c, 0x0a, 0x4b, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x03, 0x04, 0x00, 0x00, 0x00, 0x00, 
+	0x21, 0x02, 0x06, 0x05, 0x05, 0x05, 0x48, 0x0a, 
+	0x24, 0x4e, 0x10, 0x1a, 0x4f, 0x10, 0x10, 0x10, 
+	0x10, 0x31, 0x10, 0x10, 0x0a, 0x48, 0x05, 0x05, 
+	0x05, 0x06, 0x02, 0x0c, 0x00, 0x00, 0x00, 0x00, 
+	0x07, 0x50, 0x02, 0x03, 0x06, 0x04, 0x4b, 0x51, 
+	0x52, 0x24, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 
+	0x10, 0x53, 0x30, 0x10, 0x22, 0x4b, 0x05, 0x04, 
+	0x03, 0x02, 0x50, 0x07, 0x00, 0x00, 0x00, 0x00, 
+	0x07, 0x07, 0x0c, 0x04, 0x03, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x03, 
+	0x04, 0x21, 0x07, 0x07, 0x00, 0x00, 0x00, 0x00, 
+	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x07, 0x00, 0x00, 0x00, 0x00, 
+	0x54, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x54, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x54, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x54, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x54, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 
+	0x07, 0x54, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	
+};
+
+Gfx b_new_pokey_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_pokey_pal_rgba16[] = {
+	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
+	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x9c, 0xe7, 
+	0x5a, 0xd7, 0xad, 0x6b, 0x00, 0x01, 0x31, 0x8d, 
+	0xbd, 0xef, 0x21, 0x05, 0x42, 0x11, 0x29, 0x01, 
+	0xfe, 0x4b, 0xbc, 0x89, 0x31, 0x45, 0x5a, 0x47, 
+	0xfe, 0x9f, 0xc5, 0x5d, 0x52, 0x95, 0x18, 0xc1, 
+	0xc4, 0xc9, 0xff, 0x75, 0xff, 0x71, 0xfe, 0xe5, 
+	0x5a, 0x45, 0xfe, 0xa3, 0xfe, 0x4f, 0xf6, 0x0b, 
+	0x21, 0x01, 0xb5, 0xad, 0x52, 0x03, 0xff, 0x31, 
+	0xfe, 0xe3, 0x72, 0xc5, 0x4a, 0x53, 0xd5, 0x49, 
+	0xc2, 0xc5, 0xd2, 0xc5, 0xa4, 0x07, 0xfe, 0x51, 
+	0xe3, 0x45, 0xd3, 0x05, 0xfe, 0xa1, 0x92, 0x03, 
+	0xfe, 0x9d, 0xfe, 0x9b, 0xdd, 0x89, 0x7b, 0x05, 
+	0xee, 0x0b, 0xc6, 0x31, 0xfe, 0x4d, 0x62, 0x89, 
+	0xfe, 0xe1, 0xff, 0x2b, 0x20, 0xc1, 0x9b, 0xc1, 
+	0x62, 0x87, 0x94, 0xa5, 0xdd, 0xdd, 0xfe, 0xe7, 
+	0xdd, 0x49, 0x18, 0x81, 0x62, 0x45, 0xed, 0xc9, 
+	0x8c, 0x63, 0x10, 0x81, 0x39, 0x41, 0x41, 0x81, 
+	0x73, 0x9d, 0x84, 0x21, 0x10, 0x85, 0x21, 0x09, 
+	0x62, 0x85, 0xcd, 0x09, 0xfe, 0x55, 0xfe, 0xeb, 
+	0xce, 0x73, 0x52, 0x05, 0xff, 0x2f, 0xff, 0xb7, 
+	0x9c, 0xe6, 
 };
 
 Gfx b_new_slope_vcorner_ci8_aligner[] = {gsSPEndDisplayList()};
@@ -13389,8 +13394,8 @@ u8 b_new_slope_vcorner_ci8[] = {
 	
 };
 
-Gfx b_new_slope_vcorner_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_slope_vcorner_ci8_pal_rgba16[] = {
+Gfx b_new_slope_vcorner_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_slope_vcorner_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0xb5, 
 	0xc6, 0x31, 0x21, 0x09, 0xce, 0x73, 0x5a, 0xd7, 
@@ -13532,8 +13537,8 @@ u8 b_utriangle_ci8[] = {
 	
 };
 
-Gfx b_utriangle_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_utriangle_ci8_pal_rgba16[] = {
+Gfx b_utriangle_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_utriangle_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x10, 0x85, 
 	0x4a, 0x53, 0x6b, 0x5b, 0x84, 0x21, 0x94, 0xa5, 
@@ -13677,8 +13682,8 @@ u8 b_kuppa_the_quick_ci8[] = {
 	
 };
 
-Gfx b_kuppa_the_quick_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_kuppa_the_quick_ci8_pal_rgba16[] = {
+Gfx b_kuppa_the_quick_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_kuppa_the_quick_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xb5, 0xad, 
 	0x84, 0x21, 0x9c, 0xe7, 0x5a, 0xd7, 0x00, 0x01, 
@@ -13834,8 +13839,8 @@ u8 b_bbox_small_ci8[] = {
 	
 };
 
-Gfx b_bbox_small_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_bbox_small_ci8_pal_rgba16[] = {
+Gfx b_bbox_small_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_bbox_small_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x00, 0x01, 
 	0xc4, 0x01, 0xbb, 0xc1, 0xab, 0x81, 0xd4, 0x41, 
@@ -13978,8 +13983,8 @@ u8 b_timed_corkbox_ci8[] = {
 	
 };
 
-Gfx b_timed_corkbox_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_timed_corkbox_ci8_pal_rgba16[] = {
+Gfx b_timed_corkbox_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_timed_corkbox_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x00, 0x01, 
 	0xdc, 0x81, 0xd4, 0x41, 0x9b, 0x01, 0xc4, 0x01, 
@@ -14120,8 +14125,8 @@ u8 b_crazybox2_ci8[] = {
 	
 };
 
-Gfx b_crazybox2_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_crazybox2_ci8_pal_rgba16[] = {
+Gfx b_crazybox2_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_crazybox2_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x00, 0x01, 
 	0xdc, 0x81, 0xd4, 0x41, 0xc4, 0x01, 0xcc, 0x01, 
@@ -14264,8 +14269,8 @@ u8 b_new_gentle_slope_ci8[] = {
 	
 };
 
-Gfx b_new_gentle_slope_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_gentle_slope_ci8_pal_rgba16[] = {
+Gfx b_new_gentle_slope_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_gentle_slope_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xbd, 0xef, 
 	0x52, 0x95, 0x4a, 0x53, 0x8c, 0x63, 0xad, 0x6b, 
@@ -14409,8 +14414,8 @@ u8 b_new_gentle_slope_2_ci8[] = {
 	
 };
 
-Gfx b_new_gentle_slope_2_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_gentle_slope_2_ci8_pal_rgba16[] = {
+Gfx b_new_gentle_slope_2_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_gentle_slope_2_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0xb5, 
 	0xbd, 0xef, 0x21, 0x09, 0x84, 0x21, 0xb5, 0xad, 
@@ -14555,8 +14560,8 @@ u8 b_new_fire_bro_ci8[] = {
 	
 };
 
-Gfx b_new_fire_bro_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_new_fire_bro_ci8_pal_rgba16[] = {
+Gfx b_new_fire_bro_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_new_fire_bro_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0x4d, 0x7e, 
 	0xf7, 0xbd, 0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 
 	0x45, 0x7e, 0x9c, 0xe7, 0x63, 0x19, 0x31, 0x8d, 
@@ -14718,8 +14723,8 @@ u8 b_ice_bully_boss_ci8[] = {
 	
 };
 
-Gfx b_ice_bully_boss_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_ice_bully_boss_ci8_pal_rgba16[] = {
+Gfx b_ice_bully_boss_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_ice_bully_boss_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0x21, 0x09, 0x10, 0x85, 
 	0xef, 0x7b, 0x6b, 0x5b, 0x00, 0x01, 0xf7, 0x5b, 
@@ -14890,8 +14895,8 @@ u8 b_ice_bully_ci8[] = {
 	
 };
 
-Gfx b_ice_bully_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_ice_bully_ci8_pal_rgba16[] = {
+Gfx b_ice_bully_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_ice_bully_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0x21, 0x09, 0x10, 0x85, 
 	0xef, 0x7b, 0x6b, 0x5b, 0x00, 0x01, 0xf7, 0x5b, 
@@ -15057,8 +15062,8 @@ u8 b_wdw_diamond_ci8[] = {
 	
 };
 
-Gfx b_wdw_diamond_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_wdw_diamond_ci8_pal_rgba16[] = {
+Gfx b_wdw_diamond_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_wdw_diamond_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xa5, 0x29, 
 	0x43, 0x51, 0x31, 0xdb, 0x33, 0x4d, 0x4f, 0x13, 
@@ -15223,8 +15228,8 @@ u8 b_sign_ci8[] = {
 	
 };
 
-Gfx b_sign_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_sign_ci8_pal_rgba16[] = {
+Gfx b_sign_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_sign_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xc6, 0x31, 
 	0x5a, 0xd7, 0x00, 0x01, 0x63, 0x19, 0x61, 0xc1, 
@@ -15368,8 +15373,8 @@ u8 b_pink_bobomb_ci8[] = {
 	
 };
 
-Gfx b_pink_bobomb_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_pink_bobomb_ci8_pal_rgba16[] = {
+Gfx b_pink_bobomb_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_pink_bobomb_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x9c, 0xe7, 
 	0x6b, 0x5b, 0x7b, 0xdf, 0x00, 0x01, 0x18, 0xc7, 
@@ -15526,8 +15531,8 @@ u8 b_onoff_switch_ci8[] = {
 	
 };
 
-Gfx b_onoff_switch_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_onoff_switch_ci8_pal_rgba16[] = {
+Gfx b_onoff_switch_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_onoff_switch_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0x94, 0xa5, 0x6b, 0x5b, 0x39, 0xcf, 0x4a, 0x53, 
@@ -15675,8 +15680,8 @@ u8 b_onoff_block_ci8[] = {
 	
 };
 
-Gfx b_onoff_block_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_onoff_block_ci8_pal_rgba16[] = {
+Gfx b_onoff_block_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_onoff_block_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x84, 0x21, 
 	0x00, 0x01, 0xfc, 0xc1, 0x92, 0xc1, 0xd8, 0x09, 
@@ -15817,8 +15822,8 @@ u8 b_wood_platform_ci8[] = {
 	
 };
 
-Gfx b_wood_platform_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_wood_platform_ci8_pal_rgba16[] = {
+Gfx b_wood_platform_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_wood_platform_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xad, 0x6b, 
 	0x39, 0xcf, 0x00, 0x01, 0x4a, 0x53, 0x8b, 0x11, 
@@ -15960,8 +15965,8 @@ u8 b_newmetalbox_ci8[] = {
 	
 };
 
-Gfx b_newmetalbox_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_newmetalbox_ci8_pal_rgba16[] = {
+Gfx b_newmetalbox_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_newmetalbox_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x63, 0x18, 
 	0x52, 0x94, 0x73, 0x9c, 0x42, 0x12, 0x63, 0x5a, 
@@ -16107,8 +16112,8 @@ u8 b_showrunner_ci8[] = {
 	
 };
 
-Gfx b_showrunner_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_showrunner_ci8_pal_rgba16[] = {
+Gfx b_showrunner_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_showrunner_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0x13, 0x63, 0x00, 0x01, 0x69, 0x01, 0xe7, 0x39, 
 	0xef, 0x7b, 0x0a, 0x59, 0x09, 0xd3, 0xde, 0xf7, 
@@ -16269,8 +16274,8 @@ u8 b_crowbar_ci8[] = {
 	
 };
 
-Gfx b_crowbar_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_crowbar_ci8_pal_rgba16[] = {
+Gfx b_crowbar_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_crowbar_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x73, 0x9d, 
 	0x18, 0xc7, 0x00, 0x01, 0x29, 0x4b, 0x94, 0xa5, 
@@ -16431,8 +16436,8 @@ u8 b_bulletmask_ci8[] = {
 	
 };
 
-Gfx b_bulletmask_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_bulletmask_ci8_pal_rgba16[] = {
+Gfx b_bulletmask_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_bulletmask_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xc6, 0x31, 
 	0x52, 0x95, 0x31, 0x8d, 0x63, 0x19, 0x9c, 0xe7, 
@@ -16586,8 +16591,8 @@ u8 b_toad_ci8[] = {
 	
 };
 
-Gfx b_toad_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_toad_ci8_pal_rgba16[] = {
+Gfx b_toad_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_toad_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
 	0x73, 0x9d, 0x18, 0xc7, 0x00, 0x01, 0x7b, 0xdf, 
@@ -16745,8 +16750,8 @@ u8 b_tuxie_ci8[] = {
 	
 };
 
-Gfx b_tuxie_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_tuxie_ci8_pal_rgba16[] = {
+Gfx b_tuxie_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_tuxie_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xce, 0xee, 
 	0xce, 0xec, 0xd7, 0x2e, 0xdf, 0x2e, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0xee, 
@@ -16907,8 +16912,8 @@ u8 b_ukiki_ci8[] = {
 	
 };
 
-Gfx b_ukiki_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_ukiki_ci8_pal_rgba16[] = {
+Gfx b_ukiki_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_ukiki_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xd6, 0xb5, 
 	0x7b, 0xdf, 0x5a, 0xd7, 0x73, 0x9d, 0xad, 0x6b, 
@@ -17076,8 +17081,8 @@ u8 b_moleman_ci8[] = {
 	
 };
 
-Gfx b_moleman_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_moleman_ci8_pal_rgba16[] = {
+Gfx b_moleman_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_moleman_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xad, 0x6b, 
 	0x52, 0x95, 0x10, 0x85, 0x00, 0x01, 0x21, 0x09, 
@@ -17246,8 +17251,8 @@ u8 b_cobie_ci8[] = {
 	
 };
 
-Gfx b_cobie_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_cobie_ci8_pal_rgba16[] = {
+Gfx b_cobie_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_cobie_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0x93, 0x58, 
 	0x8b, 0x18, 0x9b, 0x9c, 0xf7, 0xbd, 0xe7, 0x39, 
 	0xde, 0xf7, 0x4a, 0x53, 0x00, 0x01, 0xef, 0x7b, 
@@ -17424,8 +17429,8 @@ u8 b_conveyor_ci8[] = {
 	
 };
 
-Gfx b_conveyor_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_conveyor_ci8_pal_rgba16[] = {
+Gfx b_conveyor_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_conveyor_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xc6, 0x31, 
 	0x5a, 0xd7, 0x00, 0x01, 0x63, 0x19, 0x52, 0x95, 
@@ -17576,8 +17581,8 @@ u8 b_timed_block_ci8[] = {
 	
 };
 
-Gfx b_timed_block_ci8_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 b_timed_block_ci8_pal_rgba16[] = {
+Gfx b_timed_block_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_timed_block_pal_rgba16[] = {
 	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
 	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0x84, 0x21, 
 	0x00, 0x01, 0xfc, 0xc1, 0x92, 0xc1, 0xe6, 0x41, 
@@ -17585,15 +17590,459 @@ u8 b_timed_block_ci8_pal_rgba16[] = {
 	0x9c, 0xe6, 
 };
 
+Gfx b_isc_ci8_aligner[] = {gsSPEndDisplayList()};
+u8 b_isc_ci8[] = {
+	0x00, 0x00, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x04, 0x06, 
+	0x03, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x01, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x06, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x03, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x04, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x07, 0x08, 0x09, 0x09, 0x08, 
+	0x07, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x0a, 0x0b, 0x09, 0x0c, 0x0d, 0x0e, 0x0e, 0x0d, 
+	0x0c, 0x09, 0x0b, 0x0a, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x0e, 0x0f, 0x0c, 
+	0x09, 0x0b, 0x0a, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x0a, 0x0b, 0x09, 0x0c, 0x0f, 0x0e, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x09, 0x10, 0x0d, 
+	0x0a, 0x11, 0x07, 0x0d, 0x0f, 0x12, 0x0b, 0x13, 
+	0x08, 0x14, 0x15, 0x16, 0x09, 0x17, 0x18, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x18, 0x19, 0x09, 
+	0x16, 0x15, 0x10, 0x08, 0x13, 0x0b, 0x12, 0x0f, 
+	0x0d, 0x07, 0x11, 0x0a, 0x11, 0x1a, 0x1b, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x16, 0x12, 0x1c, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x1c, 0x12, 0x0c, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x10, 0x07, 0x13, 
+	0x10, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x10, 0x13, 0x0f, 0x13, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x12, 0x12, 0x05, 
+	0x0c, 0x12, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x12, 0x15, 0x05, 0x13, 0x0f, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x0d, 0x10, 0x05, 
+	0x0e, 0x09, 0x11, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x11, 0x09, 0x0e, 0x05, 0x0c, 0x0a, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x0a, 0x16, 0x05, 
+	0x05, 0x11, 0x09, 0x0e, 0x05, 0x05, 0x05, 0x05, 
+	0x0e, 0x09, 0x11, 0x05, 0x05, 0x1b, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x1b, 0x05, 
+	0x05, 0x05, 0x12, 0x15, 0x05, 0x05, 0x05, 0x05, 
+	0x0c, 0x12, 0x05, 0x05, 0x12, 0x1a, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x1a, 
+	0x0b, 0x0e, 0x05, 0x10, 0x13, 0x05, 0x05, 0x13, 
+	0x10, 0x05, 0x0d, 0x1a, 0x08, 0x0e, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x0e, 
+	0x0b, 0x1d, 0x0b, 0x0a, 0x1c, 0x0d, 0x0d, 0x1c, 
+	0x11, 0x0c, 0x0c, 0x11, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x0e, 0x0b, 0x1d, 0x08, 0x1a, 0x1a, 0x14, 
+	0x1a, 0x0d, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x0e, 0x0b, 0x09, 0x1a, 0x12, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x04, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x06, 0x03, 0x00, 0x00, 0x00, 0x00, 
+	0x04, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x03, 0x04, 0x00, 0x00, 0x00, 0x00, 
+	0x0d, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x06, 0x02, 0x07, 0x00, 0x00, 0x00, 0x00, 
+	0x0b, 0x0a, 0x02, 0x03, 0x06, 0x04, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x04, 
+	0x03, 0x02, 0x0a, 0x0b, 0x00, 0x00, 0x00, 0x00, 
+	0x0b, 0x0b, 0x07, 0x04, 0x03, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x03, 
+	0x04, 0x0d, 0x0b, 0x0b, 0x00, 0x00, 0x00, 0x00, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x00, 0x00, 0x00, 0x00, 
+	0x1e, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x1e, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x1e, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 
+	0x0b, 0x0b, 0x1e, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x1e, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 
+	0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 0x0b, 
+	0x0b, 0x1e, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	
+};
+
+Gfx b_isc_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_isc_pal_rgba16[] = {
+	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
+	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xbd, 0xef, 
+	0x8c, 0x63, 0x4a, 0x53, 0xce, 0x73, 0x9c, 0xe7, 
+	0x6b, 0x5b, 0xb5, 0xad, 0xd6, 0xb5, 0xad, 0x6b, 
+	0x84, 0x21, 0xc6, 0x31, 0xa5, 0x29, 0x94, 0xa5, 
+	0x7b, 0xdf, 0x73, 0x9d, 0x63, 0x19, 0x21, 0x09, 
+	0x10, 0x85, 0x18, 0xc7, 0x52, 0x95, 0x39, 0xcf, 
+	0x5a, 0xd7, 0x42, 0x11, 0x9c, 0xe6, 
+};
+
+Gfx b_secreticon_ci8_aligner[] = {gsSPEndDisplayList()};
+u8 b_secreticon_ci8[] = {
+	0x00, 0x00, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x04, 0x06, 
+	0x03, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x01, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x06, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x03, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x07, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x04, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x09, 0x0a, 0x09, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x08, 
+	0x0b, 0x05, 0x05, 0x05, 0x05, 0x0c, 0x0d, 0x0c, 
+	0x05, 0x05, 0x05, 0x05, 0x0b, 0x08, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x0e, 
+	0x0f, 0x10, 0x05, 0x05, 0x07, 0x11, 0x12, 0x11, 
+	0x07, 0x05, 0x05, 0x10, 0x0f, 0x0e, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x13, 0x14, 0x15, 0x0b, 0x09, 0x16, 0x17, 0x16, 
+	0x09, 0x0b, 0x15, 0x14, 0x13, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x0e, 0x18, 0x16, 0x19, 0x0c, 0x1a, 0x1b, 0x1a, 
+	0x0c, 0x19, 0x16, 0x18, 0x0e, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x13, 0x12, 0x1a, 0x1c, 0x1b, 0x1b, 0x1b, 
+	0x1c, 0x1a, 0x12, 0x13, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x0e, 0x1d, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x1d, 0x0e, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x0e, 0x13, 0x1c, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x1c, 0x13, 0x0e, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x0e, 0x13, 
+	0x1d, 0x12, 0x17, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x17, 0x12, 0x1d, 0x13, 0x0e, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x08, 0x0a, 0x0d, 0x1e, 
+	0x17, 0x17, 0x17, 0x17, 0x1b, 0x1b, 0x17, 0x17, 
+	0x17, 0x17, 0x17, 0x17, 0x17, 0x1e, 0x0d, 0x0a, 
+	0x08, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x0e, 0x13, 
+	0x1f, 0x12, 0x17, 0x17, 0x1b, 0x1b, 0x17, 0x17, 
+	0x17, 0x17, 0x17, 0x12, 0x1f, 0x13, 0x0e, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x0e, 0x13, 0x20, 0x17, 0x1b, 0x1b, 0x17, 0x17, 
+	0x17, 0x17, 0x20, 0x13, 0x0e, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x0e, 0x1f, 0x17, 0x1b, 0x1b, 0x17, 0x17, 
+	0x17, 0x17, 0x1f, 0x0e, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x13, 0x1e, 0x1a, 0x1c, 0x1b, 0x17, 0x17, 
+	0x20, 0x1a, 0x1e, 0x13, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x0e, 0x18, 0x16, 0x19, 0x0c, 0x1a, 0x17, 0x1a, 
+	0x0c, 0x19, 0x16, 0x18, 0x0e, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x13, 0x14, 0x15, 0x0b, 0x09, 0x16, 0x17, 0x16, 
+	0x09, 0x0b, 0x15, 0x14, 0x13, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x0e, 
+	0x0f, 0x10, 0x05, 0x05, 0x07, 0x11, 0x1e, 0x18, 
+	0x07, 0x05, 0x05, 0x10, 0x0f, 0x0e, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x08, 
+	0x0b, 0x05, 0x05, 0x05, 0x05, 0x0c, 0x0d, 0x0c, 
+	0x05, 0x05, 0x05, 0x05, 0x0b, 0x08, 0x05, 0x05, 
+	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x04, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x09, 0x0a, 0x09, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x06, 0x03, 0x00, 0x00, 0x00, 0x00, 
+	0x04, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x07, 0x08, 0x07, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x03, 0x04, 0x00, 0x00, 0x00, 0x00, 
+	0x21, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x06, 0x02, 0x10, 0x00, 0x00, 0x00, 0x00, 
+	0x22, 0x07, 0x02, 0x03, 0x06, 0x04, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x04, 
+	0x03, 0x02, 0x07, 0x22, 0x00, 0x00, 0x00, 0x00, 
+	0x22, 0x22, 0x10, 0x04, 0x03, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x03, 
+	0x04, 0x21, 0x22, 0x22, 0x00, 0x00, 0x00, 0x00, 
+	0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 
+	0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 
+	0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 
+	0x22, 0x22, 0x22, 0x22, 0x00, 0x00, 0x00, 0x00, 
+	0x23, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 
+	0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 
+	0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 
+	0x22, 0x22, 0x22, 0x23, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x23, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 
+	0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 
+	0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 
+	0x22, 0x22, 0x23, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x23, 0x22, 0x22, 0x22, 0x22, 0x22, 
+	0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 
+	0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 
+	0x22, 0x23, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	
+};
+
+Gfx b_secreticon_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_secreticon_pal_rgba16[] = {
+	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
+	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
+	0xad, 0x6b, 0xa5, 0x29, 0x42, 0x11, 0xd6, 0xb5, 
+	0x63, 0x19, 0x40, 0xc1, 0xc6, 0x31, 0x4a, 0x53, 
+	0xbd, 0xef, 0x59, 0x01, 0xc2, 0x81, 0x73, 0x9d, 
+	0x00, 0x01, 0x84, 0x21, 0xa2, 0x01, 0xeb, 0x01, 
+	0x51, 0x01, 0x4a, 0x11, 0xd2, 0xc1, 0xf3, 0x01, 
+	0x71, 0x81, 0x61, 0x41, 0xc2, 0x41, 0x61, 0x01, 
+	0x71, 0x41, 0xb5, 0xad, 0x9c, 0xe7, 0x9c, 0xe6, 
+	
+};
+
+Gfx b_secretsstar2_ci8_aligner[] = {gsSPEndDisplayList()};
+u8 b_secretsstar2_ci8[] = {
+	0x00, 0x00, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x04, 0x06, 
+	0x03, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x01, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x06, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x07, 0x07, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x03, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x08, 0x08, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x04, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x09, 0x09, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x07, 0x0a, 0x0a, 0x0b, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x08, 0x0c, 0x0c, 0x0d, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x09, 0x0e, 0x0f, 0x09, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x0b, 0x10, 0x11, 0x12, 0x10, 
+	0x0b, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x0d, 0x13, 0x11, 0x11, 0x13, 
+	0x0d, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x14, 0x15, 0x16, 0x16, 0x17, 
+	0x17, 0x17, 0x17, 0x18, 0x0e, 0x11, 0x11, 0x0e, 
+	0x18, 0x16, 0x16, 0x16, 0x16, 0x16, 0x16, 0x15, 
+	0x14, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x07, 0x09, 0x19, 0x1a, 
+	0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 
+	0x11, 0x11, 0x11, 0x11, 0x1a, 0x19, 0x09, 0x07, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x1b, 0x1c, 
+	0x0e, 0x11, 0x11, 0x1d, 0x1e, 0x11, 0x11, 0x1e, 
+	0x1d, 0x11, 0x11, 0x0e, 0x1c, 0x1b, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x1f, 
+	0x20, 0x21, 0x11, 0x0e, 0x16, 0x11, 0x11, 0x16, 
+	0x0e, 0x12, 0x22, 0x23, 0x24, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x0b, 0x25, 0x13, 0x0f, 0x16, 0x11, 0x11, 0x16, 
+	0x0f, 0x26, 0x25, 0x0b, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x14, 0x27, 0x11, 0x0f, 0x11, 0x11, 0x0f, 
+	0x11, 0x27, 0x14, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x05, 0x28, 0x14, 0x29, 0x14, 
+	0x28, 0x14, 0x2a, 0x11, 0x11, 0x11, 0x11, 0x11, 
+	0x11, 0x2b, 0x2c, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x28, 0x2d, 0x2e, 0x2d, 0x2e, 
+	0x2d, 0x28, 0x1a, 0x11, 0x2f, 0x30, 0x30, 0x2f, 
+	0x11, 0x1a, 0x31, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x14, 0x2e, 0x2d, 0x2d, 0x2d, 
+	0x2e, 0x32, 0x11, 0x33, 0x34, 0x14, 0x14, 0x34, 
+	0x33, 0x11, 0x19, 0x14, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x29, 0x2d, 0x2d, 0x2d, 0x2d, 
+	0x2d, 0x29, 0x19, 0x35, 0x0b, 0x05, 0x05, 0x07, 
+	0x09, 0x19, 0x33, 0x2c, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x14, 0x2e, 0x2d, 0x2d, 0x2d, 
+	0x2e, 0x14, 0x1b, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x1b, 0x36, 0x37, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x05, 0x05, 0x28, 0x2d, 0x2e, 0x2d, 0x2e, 
+	0x2d, 0x28, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x1f, 0x38, 0x1f, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x04, 0x02, 0x00, 0x00, 0x00, 0x00, 
+	0x02, 0x04, 0x05, 0x05, 0x28, 0x14, 0x29, 0x14, 
+	0x28, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x0b, 0x14, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x06, 0x03, 0x00, 0x00, 0x00, 0x00, 
+	0x04, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x03, 0x04, 0x00, 0x00, 0x00, 0x00, 
+	0x14, 0x02, 0x06, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x06, 0x02, 0x1f, 0x00, 0x00, 0x00, 0x00, 
+	0x1b, 0x07, 0x02, 0x03, 0x06, 0x04, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 
+	0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x04, 
+	0x03, 0x02, 0x07, 0x1b, 0x00, 0x00, 0x00, 0x00, 
+	0x1b, 0x1b, 0x1f, 0x04, 0x03, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 
+	0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x03, 
+	0x04, 0x14, 0x1b, 0x1b, 0x00, 0x00, 0x00, 0x00, 
+	0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x1b, 0x1b, 0x00, 0x00, 0x00, 0x00, 
+	0x39, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x1b, 0x39, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x39, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x39, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x39, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 0x1b, 
+	0x1b, 0x39, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	
+};
+
+Gfx b_secretsstar2_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 b_secretsstar2_pal_rgba16[] = {
+	0x00, 0x00, 0xff, 0xfe, 0xff, 0xff, 0xf7, 0xbd, 
+	0xe7, 0x39, 0xde, 0xf7, 0xef, 0x7b, 0xce, 0x73, 
+	0xa5, 0x29, 0x6b, 0x5b, 0x52, 0x41, 0xd6, 0xb5, 
+	0xa4, 0x41, 0xad, 0x6b, 0xd5, 0xc1, 0xd5, 0x81, 
+	0x4a, 0x01, 0xf6, 0x81, 0xee, 0x81, 0x9c, 0x41, 
+	0xb5, 0xad, 0x39, 0xcf, 0x00, 0x01, 0x10, 0x81, 
+	0x39, 0x81, 0x8b, 0xc1, 0xee, 0x41, 0x9c, 0xe7, 
+	0x5a, 0x41, 0xb5, 0x01, 0x21, 0x01, 0xbd, 0xef, 
+	0x52, 0x53, 0xac, 0xc1, 0xac, 0x81, 0x52, 0x93, 
+	0xc6, 0x31, 0x7b, 0xdf, 0x9c, 0x01, 0x94, 0x01, 
+	0x82, 0xcf, 0x38, 0xc1, 0xcd, 0x81, 0xc5, 0x41, 
+	0x84, 0x21, 0xeb, 0x01, 0x91, 0xc1, 0xde, 0x01, 
+	0x6a, 0xc1, 0x39, 0xc9, 0x49, 0xc1, 0xbd, 0x01, 
+	0x4a, 0x0f, 0x73, 0x9d, 0x41, 0xc1, 0x31, 0x8d, 
+	0x4a, 0x53, 0x9c, 0xe6, 
+};
+
 Vtx b_btn_mesh_vtx_cull[8] = {
-	{{ {-16, -272, 0}, 0, {-16, -16}, {0, 0, 0, 0} }},
-	{{ {-16, -272, 0}, 0, {-16, -16}, {0, 0, 0, 0} }},
-	{{ {-16, 16, 0}, 0, {-16, -16}, {0, 0, 0, 0} }},
-	{{ {-16, 16, 0}, 0, {-16, -16}, {0, 0, 0, 0} }},
-	{{ {688, -272, 0}, 0, {-16, -16}, {0, 0, 0, 0} }},
-	{{ {688, -272, 0}, 0, {-16, -16}, {0, 0, 0, 0} }},
-	{{ {688, 16, 0}, 0, {-16, -16}, {0, 0, 0, 0} }},
-	{{ {688, 16, 0}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {-16, -272, 0}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-16, -272, 0}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-16, 16, 0}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-16, 16, 0}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {688, -272, 0}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {688, -272, 0}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {688, 16, 0}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {688, 16, 0}, 0, {0, 0}, {0, 0, 0, 0} }},
 };
 
 Vtx b_btn_mesh_vtx_0[4] = {
@@ -18052,10 +18501,10 @@ Gfx b_btn_mesh_tri_34[] = {
 };
 
 Vtx b_btn_mesh_vtx_35[4] = {
-	{{ {240, -144, 0}, 0, {-16, 1008}, {0, 0, 127, 255} }},
-	{{ {272, -144, 0}, 0, {1008, 1008}, {0, 0, 127, 255} }},
-	{{ {272, -112, 0}, 0, {1008, -16}, {0, 0, 127, 255} }},
-	{{ {240, -112, 0}, 0, {-16, -16}, {0, 0, 127, 255} }},
+	{{ {368, -112, 0}, 0, {-16, 1008}, {0, 0, 127, 255} }},
+	{{ {400, -112, 0}, 0, {1008, 1008}, {0, 0, 127, 255} }},
+	{{ {400, -80, 0}, 0, {1008, -16}, {0, 0, 127, 255} }},
+	{{ {368, -80, 0}, 0, {-16, -16}, {0, 0, 127, 255} }},
 };
 
 Gfx b_btn_mesh_tri_35[] = {
@@ -18065,10 +18514,10 @@ Gfx b_btn_mesh_tri_35[] = {
 };
 
 Vtx b_btn_mesh_vtx_36[4] = {
-	{{ {368, -112, 0}, 0, {-16, 1008}, {0, 0, 127, 255} }},
-	{{ {400, -112, 0}, 0, {1008, 1008}, {0, 0, 127, 255} }},
-	{{ {400, -80, 0}, 0, {1008, -16}, {0, 0, 127, 255} }},
-	{{ {368, -80, 0}, 0, {-16, -16}, {0, 0, 127, 255} }},
+	{{ {240, -144, 0}, 0, {-16, 1008}, {0, 0, 127, 255} }},
+	{{ {272, -144, 0}, 0, {1008, 1008}, {0, 0, 127, 255} }},
+	{{ {272, -112, 0}, 0, {1008, -16}, {0, 0, 127, 255} }},
+	{{ {240, -112, 0}, 0, {-16, -16}, {0, 0, 127, 255} }},
 };
 
 Gfx b_btn_mesh_tri_36[] = {
@@ -18702,10 +19151,10 @@ Gfx b_btn_mesh_tri_84[] = {
 };
 
 Vtx b_btn_mesh_vtx_85[4] = {
-	{{ {624, -80, 0}, 0, {-16, 1008}, {0, 0, 127, 255} }},
-	{{ {656, -80, 0}, 0, {1008, 1008}, {0, 0, 127, 255} }},
-	{{ {656, -48, 0}, 0, {1008, -16}, {0, 0, 127, 255} }},
-	{{ {624, -48, 0}, 0, {-16, -16}, {0, 0, 127, 255} }},
+	{{ {176, -176, 0}, 0, {-16, 1008}, {0, 0, 127, 255} }},
+	{{ {208, -176, 0}, 0, {1008, 1008}, {0, 0, 127, 255} }},
+	{{ {208, -144, 0}, 0, {1008, -16}, {0, 0, 127, 255} }},
+	{{ {176, -144, 0}, 0, {-16, -16}, {0, 0, 127, 255} }},
 };
 
 Gfx b_btn_mesh_tri_85[] = {
@@ -18715,10 +19164,10 @@ Gfx b_btn_mesh_tri_85[] = {
 };
 
 Vtx b_btn_mesh_vtx_86[4] = {
-	{{ {176, -176, 0}, 0, {-16, 1008}, {0, 0, 127, 255} }},
-	{{ {208, -176, 0}, 0, {1008, 1008}, {0, 0, 127, 255} }},
-	{{ {208, -144, 0}, 0, {1008, -16}, {0, 0, 127, 255} }},
-	{{ {176, -144, 0}, 0, {-16, -16}, {0, 0, 127, 255} }},
+	{{ {624, -80, 0}, 0, {-16, 1008}, {0, 0, 127, 255} }},
+	{{ {656, -80, 0}, 0, {1008, 1008}, {0, 0, 127, 255} }},
+	{{ {656, -48, 0}, 0, {1008, -16}, {0, 0, 127, 255} }},
+	{{ {624, -48, 0}, 0, {-16, -16}, {0, 0, 127, 255} }},
 };
 
 Gfx b_btn_mesh_tri_86[] = {
@@ -19091,18 +19540,56 @@ Gfx b_btn_mesh_tri_114[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx b_btn_mesh_vtx_115[4] = {
+	{{ {624, -48, 0}, 0, {-16, 1008}, {0, 0, 127, 255} }},
+	{{ {656, -48, 0}, 0, {1008, 1008}, {0, 0, 127, 255} }},
+	{{ {656, -16, 0}, 0, {1008, -16}, {0, 0, 127, 255} }},
+	{{ {624, -16, 0}, 0, {-16, -16}, {0, 0, 127, 255} }},
+};
+
+Gfx b_btn_mesh_tri_115[] = {
+	gsSPVertex(b_btn_mesh_vtx_115 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx b_btn_mesh_vtx_116[4] = {
+	{{ {592, -112, 0}, 0, {-16, 1008}, {0, 0, 127, 255} }},
+	{{ {624, -112, 0}, 0, {1008, 1008}, {0, 0, 127, 255} }},
+	{{ {624, -80, 0}, 0, {1008, -16}, {0, 0, 127, 255} }},
+	{{ {592, -80, 0}, 0, {-16, -16}, {0, 0, 127, 255} }},
+};
+
+Gfx b_btn_mesh_tri_116[] = {
+	gsSPVertex(b_btn_mesh_vtx_116 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx b_btn_mesh_vtx_117[4] = {
+	{{ {624, -112, 0}, 0, {-16, 1008}, {0, 0, 127, 255} }},
+	{{ {656, -112, 0}, 0, {1008, 1008}, {0, 0, 127, 255} }},
+	{{ {656, -80, 0}, 0, {1008, -16}, {0, 0, 127, 255} }},
+	{{ {624, -80, 0}, 0, {-16, -16}, {0, 0, 127, 255} }},
+};
+
+Gfx b_btn_mesh_tri_117[] = {
+	gsSPVertex(b_btn_mesh_vtx_117 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
 Gfx mat_b_btn_check[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_Checkmark2_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 73),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_Checkmark2_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 73),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_Checkmark2_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19110,24 +19597,23 @@ Gfx mat_b_btn_check[] = {
 };
 
 Gfx mat_revert_b_btn_check[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_save[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_save2_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 28),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_save2_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 28),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_save2_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19135,24 +19621,23 @@ Gfx mat_b_btn_save[] = {
 };
 
 Gfx mat_revert_b_btn_save[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_settings[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_settings_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 33),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_settings_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 33),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_settings_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19160,24 +19645,23 @@ Gfx mat_b_btn_settings[] = {
 };
 
 Gfx mat_revert_b_btn_settings[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_slope[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_slope_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 30),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_slope_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 30),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_slope_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19185,24 +19669,23 @@ Gfx mat_b_btn_slope[] = {
 };
 
 Gfx mat_revert_b_btn_slope[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_troll[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_intangible_tile_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 30),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_intangible_tile_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 30),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_intangible_tile_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19210,24 +19693,23 @@ Gfx mat_b_btn_troll[] = {
 };
 
 Gfx mat_revert_b_btn_troll[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_star[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_star_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 57),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_star_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 57),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_star_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19235,24 +19717,23 @@ Gfx mat_b_btn_star[] = {
 };
 
 Gfx mat_revert_b_btn_star[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_goomba[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_goombutton_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 67),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_goombutton_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 67),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_goombutton_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19260,24 +19741,23 @@ Gfx mat_b_btn_goomba[] = {
 };
 
 Gfx mat_revert_b_btn_goomba[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_coin[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_coin_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 50),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_coin_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 50),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_coin_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19285,24 +19765,23 @@ Gfx mat_b_btn_coin[] = {
 };
 
 Gfx mat_revert_b_btn_coin[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_blank[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_ButtonRLI_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 11),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_ButtonRLI_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 11),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_ButtonRLI_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19310,24 +19789,23 @@ Gfx mat_b_btn_blank[] = {
 };
 
 Gfx mat_revert_b_btn_blank[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_corner[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_slope_corner_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 27),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_slope_corner_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 27),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_slope_corner_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19335,24 +19813,23 @@ Gfx mat_b_btn_corner[] = {
 };
 
 Gfx mat_revert_b_btn_corner[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_icorner[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_icorner_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 30),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_icorner_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 30),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_icorner_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19360,24 +19837,23 @@ Gfx mat_b_btn_icorner[] = {
 };
 
 Gfx mat_revert_b_btn_icorner[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_greencoin[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_green_coin_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 40),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_green_coin_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 40),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_green_coin_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19385,24 +19861,23 @@ Gfx mat_b_btn_greencoin[] = {
 };
 
 Gfx mat_revert_b_btn_greencoin[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_bluecoin[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_blue_coin_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 44),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_blue_coin_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 44),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_blue_coin_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19410,24 +19885,23 @@ Gfx mat_b_btn_bluecoin[] = {
 };
 
 Gfx mat_revert_b_btn_bluecoin[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_bcs[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bcs_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 52),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bcs_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 52),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_bcs_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19435,24 +19909,23 @@ Gfx mat_b_btn_bcs[] = {
 };
 
 Gfx mat_revert_b_btn_bcs[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_redcoin[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_red_coin_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 39),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_red_coin_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 39),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_red_coin_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19460,24 +19933,23 @@ Gfx mat_b_btn_redcoin[] = {
 };
 
 Gfx mat_revert_b_btn_redcoin[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_rcs[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_redcoinstar_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 61),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_redcoinstar_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 61),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_redcoinstar_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19485,24 +19957,23 @@ Gfx mat_b_btn_rcs[] = {
 };
 
 Gfx mat_revert_b_btn_rcs[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_noteblock[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_noteblock_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 27),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_noteblock_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 27),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_noteblock_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19510,24 +19981,23 @@ Gfx mat_b_btn_noteblock[] = {
 };
 
 Gfx mat_revert_b_btn_noteblock[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_cull[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_cull2_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 58),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_cull2_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 58),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_cull2_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19535,24 +20005,23 @@ Gfx mat_b_btn_cull[] = {
 };
 
 Gfx mat_revert_b_btn_cull[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_podoboo[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_podoboo_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 66),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_podoboo_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 66),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_podoboo_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19560,24 +20029,23 @@ Gfx mat_b_btn_podoboo[] = {
 };
 
 Gfx mat_revert_b_btn_podoboo[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_rex[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_rex_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 80),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_rex_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 80),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_rex_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19585,24 +20053,23 @@ Gfx mat_b_btn_rex[] = {
 };
 
 Gfx mat_revert_b_btn_rex[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_bully[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bully_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 54),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bully_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 54),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_bully_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19610,24 +20077,23 @@ Gfx mat_b_btn_bully[] = {
 };
 
 Gfx mat_revert_b_btn_bully[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_tree[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_tree_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 79),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_tree_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 79),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_tree_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19635,24 +20101,23 @@ Gfx mat_b_btn_tree[] = {
 };
 
 Gfx mat_revert_b_btn_tree[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_bobomb[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bobomb_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 44),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bobomb_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 44),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_bobomb_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19660,24 +20125,23 @@ Gfx mat_b_btn_bobomb[] = {
 };
 
 Gfx mat_revert_b_btn_bobomb[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_excla[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_excla_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 13),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_excla_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 13),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_excla_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19685,24 +20149,23 @@ Gfx mat_b_btn_excla[] = {
 };
 
 Gfx mat_revert_b_btn_excla[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_chuckya[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_chuckya_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 81),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_chuckya_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 81),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_chuckya_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19710,24 +20173,23 @@ Gfx mat_b_btn_chuckya[] = {
 };
 
 Gfx mat_revert_b_btn_chuckya[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_spawn[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_spawn_location_2_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 66),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_spawn_location_2_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 66),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_spawn_location_2_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19735,24 +20197,23 @@ Gfx mat_b_btn_spawn[] = {
 };
 
 Gfx mat_revert_b_btn_spawn[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_phantasm[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_phantasm_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 109),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_phantasm_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 109),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_phantasm_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19760,24 +20221,23 @@ Gfx mat_b_btn_phantasm[] = {
 };
 
 Gfx mat_revert_b_btn_phantasm[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_pipe[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_pipe_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 17),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_pipe_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 17),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_pipe_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19785,24 +20245,23 @@ Gfx mat_b_btn_pipe[] = {
 };
 
 Gfx mat_revert_b_btn_pipe[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_badge[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_badge_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 60),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_badge_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 60),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_badge_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19810,24 +20269,23 @@ Gfx mat_b_btn_badge[] = {
 };
 
 Gfx mat_revert_b_btn_badge[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_water[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_water2_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 44),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_water2_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 44),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_water2_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19835,24 +20293,23 @@ Gfx mat_b_btn_water[] = {
 };
 
 Gfx mat_revert_b_btn_water[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_fence[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_fence_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 56),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_fence_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 56),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_fence_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19860,24 +20317,23 @@ Gfx mat_b_btn_fence[] = {
 };
 
 Gfx mat_revert_b_btn_fence[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_checker[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_cheker_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 53),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_cheker_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 53),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_cheker_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19885,24 +20341,23 @@ Gfx mat_b_btn_checker[] = {
 };
 
 Gfx mat_revert_b_btn_checker[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_bball[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bbal_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 30),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bbal_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 30),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_bbal_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19910,24 +20365,23 @@ Gfx mat_b_btn_bball[] = {
 };
 
 Gfx mat_revert_b_btn_bball[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_kuppa[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_kuppa_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 67),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_kuppa_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 67),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_kuppa_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19935,24 +20389,23 @@ Gfx mat_b_btn_kuppa[] = {
 };
 
 Gfx mat_revert_b_btn_kuppa[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_sideslope[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_vertical_slope_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 22),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_vertical_slope_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 22),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_vertical_slope_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -19960,49 +20413,23 @@ Gfx mat_b_btn_sideslope[] = {
 };
 
 Gfx mat_revert_b_btn_sideslope[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
-	gsDPSetTextureLUT(G_TT_NONE),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_b_btn_purpleswitch[] = {
 	gsDPPipeSync(),
-	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_purpleswitch_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 21),
-	gsDPLoadSync(),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_purpleswitch_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
-	gsDPLoadBlock(7, 0, 0, 511, 512),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
-	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_revert_b_btn_purpleswitch[] = {
-	gsDPPipeSync(),
-	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_corkbox[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_corkbox_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 26),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_corkbox_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 26),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_corkbox_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20010,24 +20437,47 @@ Gfx mat_b_btn_corkbox[] = {
 };
 
 Gfx mat_revert_b_btn_corkbox[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
+	gsDPSetTextureLUT(G_TT_NONE),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_b_btn_purpleswitch[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
+	gsDPSetTextureLUT(G_TT_RGBA16),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_purpleswitch_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 21),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_purpleswitch_ci8),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 511, 512),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_b_btn_purpleswitch[] = {
+	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_slabtile[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_slab_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 30),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_slab_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 30),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_slab_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20035,24 +20485,23 @@ Gfx mat_b_btn_slabtile[] = {
 };
 
 Gfx mat_revert_b_btn_slabtile[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_tile[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_full_tile_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 31),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_full_tile_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 31),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_full_tile_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20060,24 +20509,23 @@ Gfx mat_b_btn_tile[] = {
 };
 
 Gfx mat_revert_b_btn_tile[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_vslab[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_vertical_slab_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 31),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_vertical_slab_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 31),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_vertical_slab_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20085,24 +20533,23 @@ Gfx mat_b_btn_vslab[] = {
 };
 
 Gfx mat_revert_b_btn_vslab[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_heart[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_heart_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 46),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_heart_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 46),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_heart_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20110,24 +20557,23 @@ Gfx mat_b_btn_heart[] = {
 };
 
 Gfx mat_revert_b_btn_heart[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_cformation[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_coin_formation_new_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 58),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_coin_formation_new_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 58),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_coin_formation_new_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20135,24 +20581,23 @@ Gfx mat_b_btn_cformation[] = {
 };
 
 Gfx mat_revert_b_btn_cformation[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_bars[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bars_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 13),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bars_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 13),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_bars_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20160,24 +20605,23 @@ Gfx mat_b_btn_bars[] = {
 };
 
 Gfx mat_revert_b_btn_bars[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_thwomp[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_thwomp_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 41),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_thwomp_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 41),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_thwomp_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20185,24 +20629,23 @@ Gfx mat_b_btn_thwomp[] = {
 };
 
 Gfx mat_revert_b_btn_thwomp[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_pole[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_pole_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 14),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_pole_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 14),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_pole_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20210,24 +20653,23 @@ Gfx mat_b_btn_pole[] = {
 };
 
 Gfx mat_revert_b_btn_pole[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_whomp[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_whomp_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 64),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_whomp_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 64),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_whomp_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20235,24 +20677,23 @@ Gfx mat_b_btn_whomp[] = {
 };
 
 Gfx mat_revert_b_btn_whomp[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_bill[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_bullet_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 81),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_bullet_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 81),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_bullet_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20260,24 +20701,23 @@ Gfx mat_b_btn_bill[] = {
 };
 
 Gfx mat_revert_b_btn_bill[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_lakitu[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_lakitu_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 56),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_lakitu_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 56),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_lakitu_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20285,24 +20725,23 @@ Gfx mat_b_btn_lakitu[] = {
 };
 
 Gfx mat_revert_b_btn_lakitu[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_flyguy[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_flyguy_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 71),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_flyguy_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 71),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_flyguy_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20310,24 +20749,23 @@ Gfx mat_b_btn_flyguy[] = {
 };
 
 Gfx mat_revert_b_btn_flyguy[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_snufit[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_snuffit_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 57),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_snuffit_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 57),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_snuffit_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20335,24 +20773,23 @@ Gfx mat_b_btn_snufit[] = {
 };
 
 Gfx mat_revert_b_btn_snufit[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_boo[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_boo_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 41),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_boo_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 41),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_boo_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20360,24 +20797,23 @@ Gfx mat_b_btn_boo[] = {
 };
 
 Gfx mat_revert_b_btn_boo[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_mri[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_mri_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 26),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_mri_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 26),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_mri_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20385,24 +20821,23 @@ Gfx mat_b_btn_mri[] = {
 };
 
 Gfx mat_revert_b_btn_mri[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_plant[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_deeplant_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 102),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_deeplant_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 102),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_deeplant_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20410,24 +20845,23 @@ Gfx mat_b_btn_plant[] = {
 };
 
 Gfx mat_revert_b_btn_plant[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_spindrift[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_spindrift_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 131),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_spindrift_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 131),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_spindrift_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20435,24 +20869,23 @@ Gfx mat_b_btn_spindrift[] = {
 };
 
 Gfx mat_revert_b_btn_spindrift[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_blizzard[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_mrblizzard_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 55),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_mrblizzard_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 55),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_mrblizzard_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20460,24 +20893,23 @@ Gfx mat_b_btn_blizzard[] = {
 };
 
 Gfx mat_revert_b_btn_blizzard[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_heaveho[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_heaveho_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 86),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_heaveho_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 86),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_heaveho_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20485,24 +20917,23 @@ Gfx mat_b_btn_heaveho[] = {
 };
 
 Gfx mat_revert_b_btn_heaveho[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_bbomb[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bomb_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 48),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bomb_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 48),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_bomb_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20510,24 +20941,23 @@ Gfx mat_b_btn_bbomb[] = {
 };
 
 Gfx mat_revert_b_btn_bbomb[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_grindel[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_grindel_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 38),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_grindel_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 38),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_grindel_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20535,24 +20965,23 @@ Gfx mat_b_btn_grindel[] = {
 };
 
 Gfx mat_revert_b_btn_grindel[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_moneybag[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_moneybag_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 113),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_moneybag_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 113),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_moneybag_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20560,24 +20989,23 @@ Gfx mat_b_btn_moneybag[] = {
 };
 
 Gfx mat_revert_b_btn_moneybag[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_scuttlebug[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_scuttlebug_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 136),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_scuttlebug_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 136),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_scuttlebug_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20585,24 +21013,23 @@ Gfx mat_b_btn_scuttlebug[] = {
 };
 
 Gfx mat_revert_b_btn_scuttlebug[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_crablet[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_crablet_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 78),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_crablet_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 78),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_crablet_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20610,24 +21037,23 @@ Gfx mat_b_btn_crablet[] = {
 };
 
 Gfx mat_revert_b_btn_crablet[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_firebar[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_firebar_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 49),
-	gsDPLoadSync(),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_firebar_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_firespinner2_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 68),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_firespinner2_ci8),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20635,24 +21061,23 @@ Gfx mat_b_btn_firebar[] = {
 };
 
 Gfx mat_revert_b_btn_firebar[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_amp[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_amp_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 138),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_amp_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 138),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_amp_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20660,24 +21085,23 @@ Gfx mat_b_btn_amp[] = {
 };
 
 Gfx mat_revert_b_btn_amp[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_firespitter[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_firespitter_new_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 41),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_firespitter_new_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 41),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_firespitter_new_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20685,24 +21109,23 @@ Gfx mat_b_btn_firespitter[] = {
 };
 
 Gfx mat_revert_b_btn_firespitter[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_flamethrower[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_flamethrower_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 55),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_flamethrower_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 55),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_flamethrower_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20710,24 +21133,23 @@ Gfx mat_b_btn_flamethrower[] = {
 };
 
 Gfx mat_revert_b_btn_flamethrower[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_hammerbro[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_hammer_bro_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 87),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_hammer_bro_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 87),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_hammer_bro_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20735,24 +21157,23 @@ Gfx mat_b_btn_hammerbro[] = {
 };
 
 Gfx mat_revert_b_btn_hammerbro[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_camera[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_camera_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 63),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_camera_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 63),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_camera_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20760,24 +21181,23 @@ Gfx mat_b_btn_camera[] = {
 };
 
 Gfx mat_revert_b_btn_camera[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_motos[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_portrait_motos_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 54),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_portrait_motos_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 54),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_portrait_motos_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20785,24 +21205,23 @@ Gfx mat_b_btn_motos[] = {
 };
 
 Gfx mat_revert_b_btn_motos[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_skeeter[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_skeeter_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 75),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_skeeter_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 75),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_skeeter_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20810,24 +21229,23 @@ Gfx mat_b_btn_skeeter[] = {
 };
 
 Gfx mat_revert_b_btn_skeeter[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_chicken[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_chicken_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 85),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_chicken_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 85),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_chicken_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20835,24 +21253,23 @@ Gfx mat_b_btn_chicken[] = {
 };
 
 Gfx mat_revert_b_btn_chicken[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_fire_red[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_flame_red_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 74),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_flame_red_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 74),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_flame_red_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20860,24 +21277,23 @@ Gfx mat_b_btn_fire_red[] = {
 };
 
 Gfx mat_revert_b_btn_fire_red[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_fire_blue[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_flame_blue_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 79),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_flame_blue_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 79),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_flame_blue_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20885,24 +21301,23 @@ Gfx mat_b_btn_fire_blue[] = {
 };
 
 Gfx mat_revert_b_btn_fire_blue[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_uslope[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_flippedslope_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 30),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_flippedslope_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 30),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_flippedslope_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20910,24 +21325,23 @@ Gfx mat_b_btn_uslope[] = {
 };
 
 Gfx mat_revert_b_btn_uslope[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_uslab[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_uslab_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 29),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_uslab_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 29),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_uslab_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20935,24 +21349,23 @@ Gfx mat_b_btn_uslab[] = {
 };
 
 Gfx mat_revert_b_btn_uslab[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_ucorner[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_ucorner_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 29),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_ucorner_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 29),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_ucorner_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20960,24 +21373,23 @@ Gfx mat_b_btn_ucorner[] = {
 };
 
 Gfx mat_revert_b_btn_ucorner[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_uicorner[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_uicorner_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 30),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_uicorner_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 30),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_uicorner_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -20985,24 +21397,23 @@ Gfx mat_b_btn_uicorner[] = {
 };
 
 Gfx mat_revert_b_btn_uicorner[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_goomba_s[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_goomba_small_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 70),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_goomba_small_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 70),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_goomba_small_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21010,24 +21421,23 @@ Gfx mat_b_btn_goomba_s[] = {
 };
 
 Gfx mat_revert_b_btn_goomba_s[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_goomba_b[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_goomba_big_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 70),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_goomba_big_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 70),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_goomba_big_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21035,24 +21445,23 @@ Gfx mat_b_btn_goomba_b[] = {
 };
 
 Gfx mat_revert_b_btn_goomba_b[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_plant_b[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_plant_big_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 103),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_plant_big_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 103),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_plant_big_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21060,24 +21469,23 @@ Gfx mat_b_btn_plant_b[] = {
 };
 
 Gfx mat_revert_b_btn_plant_b[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_plant_s[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_plant_small_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 104),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_plant_small_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 104),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_plant_small_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21085,24 +21493,23 @@ Gfx mat_b_btn_plant_s[] = {
 };
 
 Gfx mat_revert_b_btn_plant_s[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_boss_kb[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_kingbobomb_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 87),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_kingbobomb_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 87),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_kingbobomb_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21110,24 +21517,23 @@ Gfx mat_b_btn_boss_kb[] = {
 };
 
 Gfx mat_revert_b_btn_boss_kb[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_boss_whomp[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_whomp_boss_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 90),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_whomp_boss_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 90),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_whomp_boss_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21135,24 +21541,23 @@ Gfx mat_b_btn_boss_whomp[] = {
 };
 
 Gfx mat_revert_b_btn_boss_whomp[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_boss_boo[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_boo_boss_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 67),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_boo_boss_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 67),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_boo_boss_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21160,24 +21565,23 @@ Gfx mat_b_btn_boss_boo[] = {
 };
 
 Gfx mat_revert_b_btn_boss_boo[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_boss_bully[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bully_boss_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 76),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bully_boss_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 76),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_bully_boss_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21185,24 +21589,23 @@ Gfx mat_b_btn_boss_bully[] = {
 };
 
 Gfx mat_revert_b_btn_boss_bully[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_boss_bowser[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bowser_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 125),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bowser_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 125),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_bowser_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21210,49 +21613,23 @@ Gfx mat_b_btn_boss_bowser[] = {
 };
 
 Gfx mat_revert_b_btn_boss_bowser[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
-	gsDPSetTextureLUT(G_TT_NONE),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_b_btn_pokey[] = {
 	gsDPPipeSync(),
-	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_pokey_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 84),
-	gsDPLoadSync(),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_pokey_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
-	gsDPLoadBlock(7, 0, 0, 511, 512),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
-	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_revert_b_btn_pokey[] = {
-	gsDPPipeSync(),
-	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_boss_wiggler[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_wigger_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 81),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_wigger_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 81),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_wigger_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21260,24 +21637,47 @@ Gfx mat_b_btn_boss_wiggler[] = {
 };
 
 Gfx mat_revert_b_btn_boss_wiggler[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
+	gsDPSetTextureLUT(G_TT_NONE),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_b_btn_pokey[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
+	gsDPSetTextureLUT(G_TT_RGBA16),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_pokey_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 84),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_pokey_ci8),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 511, 512),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_b_btn_pokey[] = {
+	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_triangle[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_slope_vcorner_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 22),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_slope_vcorner_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 22),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_slope_vcorner_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21285,24 +21685,23 @@ Gfx mat_b_btn_triangle[] = {
 };
 
 Gfx mat_revert_b_btn_triangle[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_utriangle[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_utriangle_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 29),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_utriangle_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 29),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_utriangle_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21310,24 +21709,23 @@ Gfx mat_b_btn_utriangle[] = {
 };
 
 Gfx mat_revert_b_btn_utriangle[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_kuppaq[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_kuppa_the_quick_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 78),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_kuppa_the_quick_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 78),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_kuppa_the_quick_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21335,24 +21733,23 @@ Gfx mat_b_btn_kuppaq[] = {
 };
 
 Gfx mat_revert_b_btn_kuppaq[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_sbox[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bbox_small_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 26),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bbox_small_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 26),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_bbox_small_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21360,24 +21757,23 @@ Gfx mat_b_btn_sbox[] = {
 };
 
 Gfx mat_revert_b_btn_sbox[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_tbox[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_timed_corkbox_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 18),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_timed_corkbox_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 18),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_timed_corkbox_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21385,24 +21781,23 @@ Gfx mat_b_btn_tbox[] = {
 };
 
 Gfx mat_revert_b_btn_tbox[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_cbox[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_crazybox2_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 26),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_crazybox2_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 26),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_crazybox2_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21410,24 +21805,23 @@ Gfx mat_b_btn_cbox[] = {
 };
 
 Gfx mat_revert_b_btn_cbox[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_ugs[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_gentle_slope_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 29),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_gentle_slope_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 29),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_gentle_slope_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21435,24 +21829,23 @@ Gfx mat_b_btn_ugs[] = {
 };
 
 Gfx mat_revert_b_btn_ugs[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_lgs[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_gentle_slope_2_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 31),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_gentle_slope_2_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 31),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_gentle_slope_2_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21460,24 +21853,23 @@ Gfx mat_b_btn_lgs[] = {
 };
 
 Gfx mat_revert_b_btn_lgs[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_firebro[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_fire_bro_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 99),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_new_fire_bro_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 99),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_new_fire_bro_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21485,24 +21877,23 @@ Gfx mat_b_btn_firebro[] = {
 };
 
 Gfx mat_revert_b_btn_firebro[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_boss_chillbully[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_ice_bully_boss_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 135),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_ice_bully_boss_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 135),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_ice_bully_boss_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21510,24 +21901,23 @@ Gfx mat_b_btn_boss_chillbully[] = {
 };
 
 Gfx mat_revert_b_btn_boss_chillbully[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_chillbully[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_ice_bully_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 116),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_ice_bully_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 116),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_ice_bully_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21535,24 +21925,23 @@ Gfx mat_b_btn_chillbully[] = {
 };
 
 Gfx mat_revert_b_btn_chillbully[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_water_diamond[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_wdw_diamond_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 114),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_wdw_diamond_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 114),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_wdw_diamond_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21560,24 +21949,23 @@ Gfx mat_b_btn_water_diamond[] = {
 };
 
 Gfx mat_revert_b_btn_water_diamond[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_sign[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_sign_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 28),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_sign_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 28),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_sign_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21585,24 +21973,23 @@ Gfx mat_b_btn_sign[] = {
 };
 
 Gfx mat_revert_b_btn_sign[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_buddy[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_pink_bobomb_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 79),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_pink_bobomb_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 79),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_pink_bobomb_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21610,24 +21997,23 @@ Gfx mat_b_btn_buddy[] = {
 };
 
 Gfx mat_revert_b_btn_buddy[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_switch[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_onoff_switch_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 43),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_onoff_switch_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 43),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_onoff_switch_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21635,24 +22021,23 @@ Gfx mat_b_btn_switch[] = {
 };
 
 Gfx mat_revert_b_btn_switch[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_block[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_onoff_block_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 17),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_onoff_block_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 17),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_onoff_block_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21660,24 +22045,23 @@ Gfx mat_b_btn_block[] = {
 };
 
 Gfx mat_revert_b_btn_block[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_woodplat[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_wood_platform_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 21),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_wood_platform_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 21),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_wood_platform_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21685,24 +22069,23 @@ Gfx mat_b_btn_woodplat[] = {
 };
 
 Gfx mat_revert_b_btn_woodplat[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_rfbox[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_newmetalbox_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 35),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_newmetalbox_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 35),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_newmetalbox_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21710,24 +22093,23 @@ Gfx mat_b_btn_rfbox[] = {
 };
 
 Gfx mat_revert_b_btn_rfbox[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_showrunner[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_showrunner_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 96),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_showrunner_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 96),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_showrunner_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21735,24 +22117,23 @@ Gfx mat_b_btn_showrunner[] = {
 };
 
 Gfx mat_revert_b_btn_showrunner[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_pipebar[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_crowbar_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 95),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_crowbar_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 95),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_crowbar_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21760,24 +22141,23 @@ Gfx mat_b_btn_pipebar[] = {
 };
 
 Gfx mat_revert_b_btn_pipebar[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_mask[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bulletmask_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 70),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_bulletmask_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 70),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_bulletmask_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21785,24 +22165,23 @@ Gfx mat_b_btn_mask[] = {
 };
 
 Gfx mat_revert_b_btn_mask[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_toad[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_toad_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 83),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_toad_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 83),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_toad_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21810,24 +22189,23 @@ Gfx mat_b_btn_toad[] = {
 };
 
 Gfx mat_revert_b_btn_toad[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_tuxie[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_tuxie_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 96),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_tuxie_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 96),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_tuxie_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21835,24 +22213,23 @@ Gfx mat_b_btn_tuxie[] = {
 };
 
 Gfx mat_revert_b_btn_tuxie[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_ukiki[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_ukiki_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 125),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_ukiki_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 125),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_ukiki_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21860,24 +22237,23 @@ Gfx mat_b_btn_ukiki[] = {
 };
 
 Gfx mat_revert_b_btn_ukiki[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_moleman[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_moleman_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 127),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_moleman_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 127),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_moleman_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21885,24 +22261,23 @@ Gfx mat_b_btn_moleman[] = {
 };
 
 Gfx mat_revert_b_btn_moleman[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_cobie[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_cobie_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 160),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_cobie_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 160),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_cobie_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21910,24 +22285,23 @@ Gfx mat_b_btn_cobie[] = {
 };
 
 Gfx mat_revert_b_btn_cobie[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_conveyor[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_conveyor_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 56),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_conveyor_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 56),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_conveyor_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21935,24 +22309,23 @@ Gfx mat_b_btn_conveyor[] = {
 };
 
 Gfx mat_revert_b_btn_conveyor[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
 Gfx mat_b_btn_tblock[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
-	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_timed_block_ci8_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(7, 16),
-	gsDPLoadSync(),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_timed_block_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 16),
 	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_timed_block_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
@@ -21960,8 +22333,80 @@ Gfx mat_b_btn_tblock[] = {
 };
 
 Gfx mat_revert_b_btn_tblock[] = {
-	gsDPPipeSync(),
 	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
+	gsDPSetTextureLUT(G_TT_NONE),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_b_btn_isc[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
+	gsDPSetTextureLUT(G_TT_RGBA16),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_isc_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 30),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_isc_ci8),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 511, 512),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_b_btn_isc[] = {
+	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
+	gsDPSetTextureLUT(G_TT_NONE),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_b_btn_trigger[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
+	gsDPSetTextureLUT(G_TT_RGBA16),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_secreticon_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 35),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_secreticon_ci8),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 511, 512),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_b_btn_trigger[] = {
+	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
+	gsDPSetTextureLUT(G_TT_NONE),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_b_btn_triggerstar[] = {
+	gsSPGeometryMode(G_ZBUFFER | G_CULL_BACK, 0),
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0, ENVIRONMENT, 0, TEXEL0, 0, 0, 0, 0, TEXEL0),
+	gsDPSetTextureLUT(G_TT_RGBA16),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, b_secretsstar2_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 57),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, b_secretsstar2_ci8),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 511, 512),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_b_btn_triggerstar[] = {
+	gsSPGeometryMode(0, G_ZBUFFER | G_CULL_BACK),
+	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
@@ -22076,12 +22521,12 @@ Gfx b_btn_mesh[] = {
 	gsSPDisplayList(mat_b_btn_sideslope),
 	gsSPDisplayList(b_btn_mesh_tri_34),
 	gsSPDisplayList(mat_revert_b_btn_sideslope),
-	gsSPDisplayList(mat_b_btn_purpleswitch),
-	gsSPDisplayList(b_btn_mesh_tri_35),
-	gsSPDisplayList(mat_revert_b_btn_purpleswitch),
 	gsSPDisplayList(mat_b_btn_corkbox),
-	gsSPDisplayList(b_btn_mesh_tri_36),
+	gsSPDisplayList(b_btn_mesh_tri_35),
 	gsSPDisplayList(mat_revert_b_btn_corkbox),
+	gsSPDisplayList(mat_b_btn_purpleswitch),
+	gsSPDisplayList(b_btn_mesh_tri_36),
+	gsSPDisplayList(mat_revert_b_btn_purpleswitch),
 	gsSPDisplayList(mat_b_btn_slabtile),
 	gsSPDisplayList(b_btn_mesh_tri_37),
 	gsSPDisplayList(mat_revert_b_btn_slabtile),
@@ -22226,12 +22671,12 @@ Gfx b_btn_mesh[] = {
 	gsSPDisplayList(mat_b_btn_boss_bowser),
 	gsSPDisplayList(b_btn_mesh_tri_84),
 	gsSPDisplayList(mat_revert_b_btn_boss_bowser),
-	gsSPDisplayList(mat_b_btn_pokey),
-	gsSPDisplayList(b_btn_mesh_tri_85),
-	gsSPDisplayList(mat_revert_b_btn_pokey),
 	gsSPDisplayList(mat_b_btn_boss_wiggler),
-	gsSPDisplayList(b_btn_mesh_tri_86),
+	gsSPDisplayList(b_btn_mesh_tri_85),
 	gsSPDisplayList(mat_revert_b_btn_boss_wiggler),
+	gsSPDisplayList(mat_b_btn_pokey),
+	gsSPDisplayList(b_btn_mesh_tri_86),
+	gsSPDisplayList(mat_revert_b_btn_pokey),
 	gsSPDisplayList(mat_b_btn_triangle),
 	gsSPDisplayList(b_btn_mesh_tri_87),
 	gsSPDisplayList(mat_revert_b_btn_triangle),
@@ -22316,6 +22761,15 @@ Gfx b_btn_mesh[] = {
 	gsSPDisplayList(mat_b_btn_tblock),
 	gsSPDisplayList(b_btn_mesh_tri_114),
 	gsSPDisplayList(mat_revert_b_btn_tblock),
+	gsSPDisplayList(mat_b_btn_isc),
+	gsSPDisplayList(b_btn_mesh_tri_115),
+	gsSPDisplayList(mat_revert_b_btn_isc),
+	gsSPDisplayList(mat_b_btn_trigger),
+	gsSPDisplayList(b_btn_mesh_tri_116),
+	gsSPDisplayList(mat_revert_b_btn_trigger),
+	gsSPDisplayList(mat_b_btn_triggerstar),
+	gsSPDisplayList(b_btn_mesh_tri_117),
+	gsSPDisplayList(mat_revert_b_btn_triggerstar),
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPClearGeometryMode(G_TEXTURE_GEN),

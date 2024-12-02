@@ -568,7 +568,7 @@ struct mb64_terrain_info mb64_terrain_info_list[] = {
     {NULL, NULL, &mb64_terrain_dicorner},
     {"Sloped Corner", mat_b_btn_triangle, &mb64_terrain_scorner},
     {NULL, NULL, &mb64_terrain_dscorner},
-    {"Inverted Sloped Corner", mat_b_btn_triangle, &mb64_terrain_iscorner},
+    {"Inverted Sloped Corner", mat_b_btn_isc, &mb64_terrain_iscorner},
     {NULL, NULL, &mb64_terrain_discorner},
     {"Upper Gentle Slope", mat_b_btn_ugs, &mb64_terrain_ugentle},
     {NULL, NULL, &mb64_terrain_dugentle},
@@ -1605,8 +1605,8 @@ struct mb64_object_info mb64_object_type_list[] = {
 /* OBJECT_TYPE_COBIE */         {"Cobie",                   mat_b_btn_cobie,        bhvCobie,          0,           MODEL_MAKER_COBIE,         OBJ_TYPE_HAS_DIALOG,     OBJ_OCCUPY_INNER, 0, 0, 1.0f, cobie2_anims, NULL, SOUND_ACTION_READ_SIGN},
 /* OBJECT_TYPE_CONVEYOR */      {"Conveyor",                mat_b_btn_conveyor,     bhvConveyor,       0,           MODEL_MAKER_CONVEYOR_HALF, 0,                       OBJ_OCCUPY_FULL,  0, 0, 1.0f, NULL, df_conveyor, SOUND_OBJ_HEAVEHO_PREVIEW},
 /* OBJECT_TYPE_TIMED_BLOCK */   {"Inverted",                mat_b_btn_tblock,       bhvTimedBlock,     0,           MODEL_MAKER_BLOCK_OFF,     0,                       OBJ_OCCUPY_OUTER, 0, 0, 1.0f, NULL, df_timedblock, SOUND_GENERAL2_SWITCH_TICK_FAST},
-/* OBJECT_TYPE_TRIGGER */       {"Star Trigger",            mat_b_btn_star,         bhvStaticObject,   TILE_SIZE/2, MODEL_MAKER_IMBUE_TRIGGER, OBJ_TYPE_BILLBOARD,      OBJ_OCCUPY_INNER, 0, 0, 1.0f, NULL, NULL, SOUND_MENU_COLLECT_SECRET},
-/* OBJECT_TYPE_TRIGGER_STAR */  {"Star Triggers",           mat_b_btn_rcs,          bhvHiddenStar,     TILE_SIZE/2, MODEL_TRANSPARENT_STAR,    OBJ_TYPE_STAR,           OBJ_OCCUPY_INNER, 0, 0, 1.0f, NULL, df_star, SOUND_MENU_STAR_SOUND | SOUND_VIBRATO},
+/* OBJECT_TYPE_TRIGGER */       {"Star Trigger",            mat_b_btn_trigger,      bhvStaticObject,   TILE_SIZE/2, MODEL_MAKER_IMBUE_TRIGGER, OBJ_TYPE_BILLBOARD,      OBJ_OCCUPY_INNER, 0, 0, 1.0f, NULL, NULL, SOUND_MENU_COLLECT_SECRET},
+/* OBJECT_TYPE_TRIGGER_STAR */  {"Star Triggers",           mat_b_btn_triggerstar,  bhvHiddenStar,     TILE_SIZE/2, MODEL_TRANSPARENT_STAR,    OBJ_TYPE_STAR,           OBJ_OCCUPY_INNER, 0, 0, 1.0f, NULL, df_star, SOUND_MENU_STAR_SOUND | SOUND_VIBRATO},
 };
 
 //behparam2 strings
