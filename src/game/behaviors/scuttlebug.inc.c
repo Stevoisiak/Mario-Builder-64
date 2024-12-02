@@ -228,7 +228,6 @@ void bhv_scuttlebug_loop(void) {
             o->oForwardVel = 5.0f;
             if (!o->oScuttlebugIsAtttacking) {
                 o->oScuttlebugTimer = 0;
-                o->oAngleToMario;
                 if ((abs_angle_diff(o->oAngleToMario, o->oMoveAngleYaw) < 0x2000) && (o->oDistanceToMario < 1000.0f)) {
                     o->oScuttlebugIsAtttacking = TRUE;
                     o->oVelY = 50.0f;
@@ -349,8 +348,6 @@ void throw_hammer(void) {
 //SOUND_OBJ_KOOPA_DAMAGE
 
 void bhv_hammer_bro_loop(void) {
-    struct Object *hammer;
-
     if (o->oBehParams2ndByte == 1) {
         o->oAnimState = 1;
     }

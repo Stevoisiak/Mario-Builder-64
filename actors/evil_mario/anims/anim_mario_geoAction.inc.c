@@ -1,4 +1,4 @@
-static const u16 evil_mario_anim_mario_geoAction_values[] = {
+static const s16 evil_mario_anim_mario_geoAction_values[] = {
 	0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
 	0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
 	0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
@@ -606,7 +606,7 @@ static const u16 evil_mario_anim_mario_geoAction_indices[] = {
 	
 };
 
-static const struct Animation evil_mario_anim_mario_geoAction[] = {
+static const struct Animation evil_mario_anim_mario_geoAction = {
 	0,
 	0,
 	0,

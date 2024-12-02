@@ -16,8 +16,9 @@ enum ObjCollisionFlags {
     OBJ_COL_FLAGS_LANDED    = (OBJ_COL_FLAG_GROUNDED | OBJ_COL_FLAG_NO_Y_VEL)
 };
 
-extern void spawn_orange_number(s8 behParam, s16 relX, s16 relY, s16 relZ);
-extern s32 obj_check_if_facing_toward_angle(u32 base, u32 goal, s16 range);
+void spawn_orange_number(s8 behParam, s16 relX, s16 relY, s16 relZ);
+s32 obj_check_if_facing_toward_angle(u32 base, u32 goal, s16 range);
+void obj_spawn_yellow_coins(struct Object *obj, s8 nCoins);
 
 //! Lots of these are duplicates
 void set_yoshi_as_not_dead(void);
@@ -101,6 +102,7 @@ void bhv_bobomb_explosion_bubble_init(void);
 void bhv_bobomb_explosion_bubble_loop(void);
 void bhv_respawner_loop(void);
 void create_respawner(ModelID32 model, const BehaviorScript *behToSpawn, s32 minSpawnDist);
+void cur_obj_trigger_respawner(void);
 void bhv_small_bully_init(void);
 void bhv_big_bully_init(void);
 void bully_check_mario_collision(void);
@@ -175,5 +177,6 @@ void bhv_free_bowling_ball_loop(void); /* likely unused */
 void bhv_rr_cruiser_wing_init(void);
 void bhv_rr_cruiser_wing_loop(void);
 void spawn_default_star(f32 x, f32 y, f32 z);
+void star_trigger_activated(void);
 
 #endif // OBJ_BEHAVIORS_H

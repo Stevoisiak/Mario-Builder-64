@@ -225,32 +225,6 @@ static struct Surface *read_surface_data(TerrainData *vertexData, TerrainData **
     return surface;
 }
 
-#ifndef ALL_SURFACES_HAVE_FORCE
-/**
- * Returns whether a surface has exertion/moves Mario
- * based on the surface type.
- */
-static s32 surface_has_force(s32 surfaceType) {
-    s32 hasForce = FALSE;
-
-    switch (surfaceType) {
-        case SURFACE_0004: // Unused
-        case SURFACE_FLOWING_WATER:
-        // case SURFACE_DEEP_MOVING_QUICKSAND:
-        // case SURFACE_SHALLOW_MOVING_QUICKSAND:
-        // case SURFACE_MOVING_QUICKSAND:
-        case SURFACE_HORIZONTAL_WIND:
-        case SURFACE_INSTANT_MOVING_QUICKSAND:
-            hasForce = TRUE;
-            break;
-
-        default:
-            break;
-    }
-    return hasForce;
-}
-#endif
-
 s32 surf_has_no_cam_collision(s32 surfaceType) {
     switch (surfaceType) {
         case SURFACE_NO_CAM_COLLISION:
@@ -271,21 +245,13 @@ s32 surf_has_no_cam_collision(s32 surfaceType) {
  * Load in the surfaces for a given surface type. This includes setting the flags,
  * exertion, and room.
  */
-static void load_static_surfaces(TerrainData **data, TerrainData *vertexData, s32 surfaceType, RoomData **surfaceRooms) {
+static void load_static_surfaces(TerrainData **data, TerrainData *vertexData, s32 surfaceType) {
     s32 i;
     struct Surface *surface;
-    RoomData room = 0;
-#ifndef ALL_SURFACES_HAVE_FORCE
-    s16 hasForce = surface_has_force(surfaceType);
-#endif
 
     s32 numSurfaces = *(*data)++;
 
     for (i = 0; i < numSurfaces; i++) {
-        if (*surfaceRooms != NULL) {
-            room = *(*surfaceRooms)++;
-        }
-
         surface = read_surface_data(vertexData, data, FALSE);
         if (surface != NULL) {
             surface->type = surfaceType;
@@ -341,68 +307,11 @@ void alloc_surface_pools(void) {
     reset_red_coins_collected();
 }
 
-#ifdef NO_SEGMENTED_MEMORY
-/**
- * Get the size of the terrain data, to get the correct size when copying later.
- */
-u32 get_area_terrain_size(TerrainData *data) {
-    TerrainData *startPos = data;
-    s32 end = FALSE;
-    TerrainData terrainLoadType;
-    s32 numVertices;
-    s32 numRegions;
-    s32 numSurfaces;
-#ifndef ALL_SURFACES_HAVE_FORCE
-    TerrainData hasForce;
-#endif
-
-    while (!end) {
-        terrainLoadType = *data++;
-
-        switch (terrainLoadType) {
-            case TERRAIN_LOAD_VERTICES:
-                numVertices = *data++;
-                data += 3 * numVertices;
-                break;
-
-            case TERRAIN_LOAD_OBJECTS:
-                data += get_special_objects_size(data);
-                break;
-
-            case TERRAIN_LOAD_ENVIRONMENT:
-                numRegions = *data++;
-                data += 6 * numRegions;
-                break;
-
-            case TERRAIN_LOAD_CONTINUE:
-                continue;
-
-            case TERRAIN_LOAD_END:
-                end = TRUE;
-                break;
-
-            default:
-                numSurfaces = *data++;
-#ifdef ALL_SURFACES_HAVE_FORCE
-                data += 4 * numSurfaces;
-#else
-                hasForce = surface_has_force(terrainLoadType);
-                data += (3 + hasForce) * numSurfaces;
-#endif
-                break;
-        }
-    }
-
-    return data - startPos;
-}
-#endif
-
-
 /**
  * Process the level file, loading in vertices, surfaces, some objects, and environmental
  * boxes (water, gas, JRB fog).
  */
-void load_area_terrain(s32 index, TerrainData *data, RoomData *surfaceRooms, s16 *macroObjects) {
+void load_area_terrain(s32 index, TerrainData *data) {
     PUPPYPRINT_GET_SNAPSHOT();
     s32 terrainLoadType;
     TerrainData *vertexData = NULL;
@@ -422,7 +331,7 @@ void load_area_terrain(s32 index, TerrainData *data, RoomData *surfaceRooms, s16
         terrainLoadType = *data++;
 
         if (TERRAIN_LOAD_IS_SURFACE_TYPE_LOW(terrainLoadType)) {
-            load_static_surfaces(&data, vertexData, terrainLoadType, &surfaceRooms);
+            load_static_surfaces(&data, vertexData, terrainLoadType);
         } else if (terrainLoadType == TERRAIN_LOAD_VERTICES) {
             vertexData = read_vertex_data(&data);
         // } else if (terrainLoadType == TERRAIN_LOAD_OBJECTS) {
@@ -434,7 +343,7 @@ void load_area_terrain(s32 index, TerrainData *data, RoomData *surfaceRooms, s16
         } else if (terrainLoadType == TERRAIN_LOAD_END) {
             break;
         } else if (TERRAIN_LOAD_IS_SURFACE_TYPE_HIGH(terrainLoadType)) {
-            load_static_surfaces(&data, vertexData, terrainLoadType, &surfaceRooms);
+            load_static_surfaces(&data, vertexData, terrainLoadType);
             continue;
         }
     }
@@ -505,14 +414,6 @@ void load_object_surfaces(TerrainData **data, TerrainData *vertexData, u32 dynam
 
     s32 surfaceType = *(*data)++;
     s32 numSurfaces = *(*data)++;
-
-#ifndef ALL_SURFACES_HAVE_FORCE
-    TerrainData hasForce = surface_has_force(surfaceType);
-#endif
-
-    // The DDD warp is initially loaded at the origin and moved to the proper
-    // position in paintings.c and doesn't update its room, so set it here.
-    //RoomData room = (o->behavior == segmented_to_virtual(bhvDddWarp)) ? 5 : 0;
 
     for (i = 0; i < numSurfaces; i++) {
         struct Surface *surface = read_surface_data(vertexData, data, dynamic);

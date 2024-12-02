@@ -685,32 +685,6 @@ static void level_cmd_set_terrain_data(void) {
     sCurrentCmd = CMD_NEXT;
 }
 
-static void level_cmd_set_rooms(void) {
-    if (sCurrAreaIndex != -1) {
-        gAreas[sCurrAreaIndex].surfaceRooms = segmented_to_virtual(CMD_GET(void *, 4));
-    }
-    sCurrentCmd = CMD_NEXT;
-}
-
-static void level_cmd_set_macro_objects(void) {
-    if (sCurrAreaIndex != -1) {
-#ifndef NO_SEGMENTED_MEMORY
-        gAreas[sCurrAreaIndex].macroObjects = segmented_to_virtual(CMD_GET(void *, 4));
-#else
-        // The game modifies the macro object data (for example marking coins as taken),
-        // so it must be reset when the level reloads.
-        MacroObject *data = segmented_to_virtual(CMD_GET(void *, 4));
-        s32 len = 0;
-        while (data[len++] != MACRO_OBJECT_END()) {
-            len += 4;
-        }
-        gAreas[sCurrAreaIndex].macroObjects = alloc_only_pool_alloc(sLevelPool, len * sizeof(MacroObject));
-        memcpy(gAreas[sCurrAreaIndex].macroObjects, data, len * sizeof(MacroObject));
-#endif
-    }
-    sCurrentCmd = CMD_NEXT;
-}
-
 static void level_cmd_load_area(void) {
     s16 areaIndex = CMD_GET(u8, 2);
 
@@ -1037,7 +1011,6 @@ static void (*LevelScriptJumpTable[])(void) = {
     /*LEVEL_CMD_UNLOAD_MARIO_AREA           */ level_cmd_unload_mario_area,
     /*LEVEL_CMD_UPDATE_OBJECTS              */ level_cmd_update_objects,
     /*LEVEL_CMD_SET_TERRAIN_DATA            */ level_cmd_set_terrain_data,
-    /*LEVEL_CMD_SET_ROOMS                   */ level_cmd_set_rooms,
     /*LEVEL_CMD_SHOW_DIALOG                 */ level_cmd_show_dialog,
     /*LEVEL_CMD_SET_TERRAIN_TYPE            */ level_cmd_set_terrain_type,
     /*LEVEL_CMD_NOP                         */ level_cmd_nop,
@@ -1047,7 +1020,6 @@ static void (*LevelScriptJumpTable[])(void) = {
     /*LEVEL_CMD_SET_MUSIC                   */ level_cmd_set_music,
     /*LEVEL_CMD_SET_MENU_MUSIC              */ level_cmd_set_menu_music,
     /*LEVEL_CMD_FADEOUT_MUSIC               */ level_cmd_fadeout_music,
-    /*LEVEL_CMD_SET_MACRO_OBJECTS           */ level_cmd_set_macro_objects,
     /*LEVEL_CMD_3A                          */ level_cmd_3A,
     /*LEVEL_CMD_CREATE_WHIRLPOOL            */ level_cmd_create_whirlpool,
     /*LEVEL_CMD_GET_OR_SET_VAR              */ level_cmd_get_or_set_var,

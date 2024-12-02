@@ -70,12 +70,12 @@ Gfx *bicon_table[] = {
     b23_Plane_mesh
 };
 
-Gfx *geo_badge_material(s32 callContext, struct GraphNode *node, void *context) {
+Gfx *geo_badge_material(s32 callContext, struct GraphNode *node, UNUSED void *context) {
     Gfx *dlStart, *dlHead;
     struct Object *obj;
     struct GraphNodeGenerated *currentGraphNode;
 
-    currentGraphNode = node;
+    currentGraphNode = (struct GraphNodeGenerated *)node;
 
     if (callContext == GEO_CONTEXT_RENDER) {
         obj = (struct Object *) gCurGraphNodeObject;
@@ -89,16 +89,17 @@ Gfx *geo_badge_material(s32 callContext, struct GraphNode *node, void *context) 
         gSPDisplayList(dlHead++,bicon_table[obj->oBehParams2ndByte]);
         gSPGeometryMode(dlHead++, 0, G_ZBUFFER);
         gSPEndDisplayList(dlHead++);
+        return dlStart;
     }
-    return dlStart;
+    return NULL;
 }
 
-Gfx *geo_imbue_marker_color(s32 callContext, struct GraphNode *node, void *context) {
+Gfx *geo_imbue_marker_color(s32 callContext, struct GraphNode *node, UNUSED void *context) {
     Gfx *dlStart, *dlHead;
     struct Object *obj;
     struct GraphNodeGenerated *currentGraphNode;
 
-    currentGraphNode = node;
+    currentGraphNode = (struct GraphNodeGenerated *)node;
 
     if (callContext == GEO_CONTEXT_RENDER) {
         obj = (struct Object *) gCurGraphNodeObject;
@@ -109,8 +110,9 @@ Gfx *geo_imbue_marker_color(s32 callContext, struct GraphNode *node, void *conte
         u32 col = obj->oExtraVariable1;
         gDPSetPrimColor(dlHead++, 0,0,(col >> 24),(col >> 16) & 0xFF,(col >> 8) & 0xFF, col & 0xFF);
         gSPEndDisplayList(dlHead++);
+        return dlStart;
     }
-    return dlStart;
+    return NULL;
 }
 
 u8 number_text[15];
@@ -131,7 +133,7 @@ u8 c12[] = {COSTUME12};
 u8 c13[] = {COSTUME13};
 u8 c14[] = {COSTUME14};
 u8 c15[] = {COSTUME15};
-u8 *costume_text[] = { {c1},{c2},{c3},{c4},{c5},{c6},{c7},{c8},{c9},{c10},{c11},{c12},{c13},{c14},{c15}};
+u8 *costume_text[] = { c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15};
 
 
 u8 b1[] = {BADGE1};
@@ -159,8 +161,8 @@ u8 b22[] = {BADGE22};
 u8 b23[] = {BADGE23};
 u8 b24[] = {BADGE24};
 
-u8 *badgenames[] = { {b1},{b2},{b3},{b4},{b5},{b6},{b7},{b8},{b9},{b10},{b11},
-{b13},{b14},{b15},{b16},{b17},{b18},{b19},{b20},{b21},{b22},{b23},{b24}
+u8 *badgenames[] = { b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,
+b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24
 };
 
 u8 b1d[] = {BADGE1D};
@@ -187,31 +189,31 @@ u8 b21d[] = {BADGE21D};
 u8 b22d[] = {BADGE22D};
 u8 b23d[] = {BADGE23D};
 u8 b24d[] = {BADGE24D};
-u8 *badgedescs[] = { {b1d},{b2d},{b3d},{b4d},{b5d},{b6d},{b7d},{b8d},{b9d},{b10d},{b11d},
-{b13d},{b14d},{b15d},{b16d},{b17d},{b18d},{b19d},{b20d},{b21d},{b22d},{b23d},{b24d} };
+u8 *badgedescs[] = { b1d,b2d,b3d,b4d,b5d,b6d,b7d,b8d,b9d,b10d,b11d,
+b13d,b14d,b15d,b16d,b17d,b18d,b19d,b20d,b21d,b22d,b23d,b24d };
 
-u8 txt_on[] = {TEXT_OPTION_ON};
-u8 txt_off[] = {TEXT_OPTION_OFF};
+// u8 txt_on[] = {TEXT_OPTION_ON};
+// u8 txt_off[] = {TEXT_OPTION_OFF};
 
-u8 txt_warp[] = {TEXT_WARPTOLEVEL};
+// u8 txt_warp[] = {TEXT_WARPTOLEVEL};
 
-u8 txt_prog1[] = {TEXT_PROGRESS_1};
-u8 txt_prog2[] = {TEXT_PROGRESS_2};
+// u8 txt_prog1[] = {TEXT_PROGRESS_1};
+// u8 txt_prog2[] = {TEXT_PROGRESS_2};
 
-u8 magictext[] = {MAGICTEXT};
-u8 cheattext[] = {CHEATTEXT};
-u8 optiontext[] = {OPTIONTEXT};
-u8 magictext_c[] = {MAGICCOST};
-u8 tab1[] = {TAB1};
-u8 tab2[] = {TAB2};
-u8 tab3[] = {TAB3};
-u8 tab4[] = {TAB4};
-u8 tab5[] = {TAB5};
-u8 tab6[] = {TAB6};
-u8 *tabs[] = { {tab1},{tab2},{tab3},{tab4},{tab5},{tab6} };
-u8 tablist[] = {0,0,0,0,0};
-u8 tablist_count = 0;
-u16 progress_table[12];
+// u8 magictext[] = {MAGICTEXT};
+// u8 cheattext[] = {CHEATTEXT};
+// u8 optiontext[] = {OPTIONTEXT};
+// u8 magictext_c[] = {MAGICCOST};
+// u8 tab1[] = {TAB1};
+// u8 tab2[] = {TAB2};
+// u8 tab3[] = {TAB3};
+// u8 tab4[] = {TAB4};
+// u8 tab5[] = {TAB5};
+// u8 tab6[] = {TAB6};
+// u8 *tabs[] = { {tab1},{tab2},{tab3},{tab4},{tab5},{tab6} };
+// u8 tablist[] = {0,0,0,0,0};
+// u8 tablist_count = 0;
+// u16 progress_table[12];
 
 // u8 upgradetext[] = {TEXT_UPGRADE};
 // u8 upgradeyes[] = {TEXT_UPGRADE_YES};
@@ -711,14 +713,9 @@ void print_generic_string(s16 x, s16 y, const u8 *str) {
 }
 
 extern u8 mb64_ascii_lut[];
-void print_generic_string_ascii(s16 x, s16 y, const u8 *str) {
+void print_generic_string_ascii(s16 x, s16 y, const char *str) {
     s32 strPos = 0;
     u8 lineNum = 1;
-
-    s16 colorLoop;
-    ColorRGBA rgbaColors = { 0x00, 0x00, 0x00, 0x00 };
-    u8 customColor = 0;
-    u8 diffTmp     = 0;
 
     create_dl_translation_matrix(MENU_MTX_PUSH, x, y, 0.0f);
 
@@ -734,8 +731,8 @@ void print_generic_string_ascii(s16 x, s16 y, const u8 *str) {
                 lineNum++;
             break;
             default:
-                render_generic_char(mb64_ascii_lut[str[strPos]]);
-                create_dl_translation_matrix(MENU_MTX_NOPUSH, gDialogCharWidths[mb64_ascii_lut[str[strPos]]], 0.0f, 0.0f);
+                render_generic_char(mb64_ascii_lut[(u8)str[strPos]]);
+                create_dl_translation_matrix(MENU_MTX_NOPUSH, gDialogCharWidths[mb64_ascii_lut[(u8)str[strPos]]], 0.0f, 0.0f);
             break;
         }
         strPos++;
@@ -744,15 +741,10 @@ void print_generic_string_ascii(s16 x, s16 y, const u8 *str) {
     gSPPopMatrix(gDisplayListHead++, G_MTX_MODELVIEW);
 }
 
-void print_generic_string_ascii_nofileext(s16 x, s16 y, const u8 *str) {
+void print_generic_string_ascii_nofileext(s16 x, s16 y, const char *str) {
     //this function uses '.' as a null terminator for printing file names
     s32 strPos = 0;
     u8 lineNum = 1;
-
-    s16 colorLoop;
-    ColorRGBA rgbaColors = { 0x00, 0x00, 0x00, 0x00 };
-    u8 customColor = 0;
-    u8 diffTmp     = 0;
 
     create_dl_translation_matrix(MENU_MTX_PUSH, x, y, 0.0f);
 
@@ -768,8 +760,8 @@ void print_generic_string_ascii_nofileext(s16 x, s16 y, const u8 *str) {
                 lineNum++;
             break;
             default:
-                render_generic_char(mb64_ascii_lut[str[strPos]]);
-                create_dl_translation_matrix(MENU_MTX_NOPUSH, gDialogCharWidths[mb64_ascii_lut[str[strPos]]], 0.0f, 0.0f);
+                render_generic_char(mb64_ascii_lut[(u8)str[strPos]]);
+                create_dl_translation_matrix(MENU_MTX_NOPUSH, gDialogCharWidths[mb64_ascii_lut[(u8)str[strPos]]], 0.0f, 0.0f);
             break;
         }
         strPos++;
@@ -2157,10 +2149,10 @@ extern u8 mb64_lopt_coinstar;
 #define LEVEL_STAT_X 85+(level_stats_offset*13)
 #define LEVEL_STAT_Y 130
 void render_pause_my_score_coins(void) {
-    u8 textCourse[] = { TEXT_COURSE };
-    u8 textMyScore[] = { TEXT_MY_SCORE };
-    u8 textStar[] = { TEXT_STAR };
-    u8 textUnfilledStar[] = { TEXT_UNFILLED_STAR };
+    // u8 textCourse[] = { TEXT_COURSE };
+    // u8 textMyScore[] = { TEXT_MY_SCORE };
+    // u8 textStar[] = { TEXT_STAR };
+    // u8 textUnfilledStar[] = { TEXT_UNFILLED_STAR };
 
     u8 current_stars = mb64_play_stars;
     u8 max_stars = mb64_play_stars_max;
@@ -2295,7 +2287,7 @@ void render_pause_camera_options(s16 x, s16 y, s8 *index, s16 xIndex) {
 void render_pause_course_options(s16 x, s16 y, s8 *index, s16 yIndex) {
     u8 textContinue[] = { TEXT_CONTINUE };
     u8 textExitCourse[] = { TEXT_EXIT_COURSE };
-    u8 textCameraAngleR[] = { TEXT_CAMERA_ANGLE_R };
+    // u8 textCameraAngleR[] = { TEXT_CAMERA_ANGLE_R };
 
     handle_menu_scrolling(MENU_SCROLL_VERTICAL, index, 1, 2);
 
@@ -2350,7 +2342,7 @@ void render_empty_box(s16 x, s16 y) {
 }
 
 void highlight_last_course_complete_stars(void) {
-    u8 doneCourseIndex;
+    // u8 doneCourseIndex;
 
     // if (gLastCompletedCourseNum == COURSE_NONE) {
     //     doneCourseIndex = COURSE_NUM_TO_INDEX(COURSE_MIN);
@@ -2362,7 +2354,7 @@ void highlight_last_course_complete_stars(void) {
     //     }
     // }
 
-    gDialogLineNum = doneCourseIndex;
+    // gDialogLineNum = doneCourseIndex;
 }
 
 void print_hud_pause_colorful_str(void) {
@@ -2396,7 +2388,7 @@ void print_hud_pause_colorful_str(void) {
 //     LEVEL_RR,
 // };
 
-void render_pause_castle_course_stars(s16 x, s16 y, s16 fileIndex, s16 courseIndex) {
+// void render_pause_castle_course_stars(s16 x, s16 y, s16 fileIndex, s16 courseIndex) {
     // s16 hasStar = 0;
 
     // u8 str[COURSE_STAGES_COUNT * 2];
@@ -2434,7 +2426,7 @@ void render_pause_castle_course_stars(s16 x, s16 y, s16 fileIndex, s16 courseInd
     // str[nextStar * 2] = DIALOG_CHAR_TERMINATOR;
 
     // print_generic_string(x + 14, y + 13, str);
-}
+// }
 
 void render_pause_castle_main_strings(s16 x, s16 y) {
     void **courseNameTbl = segmented_to_virtual(languageTable[gInGameLanguage][1]);
@@ -2479,42 +2471,31 @@ void render_pause_castle_main_strings(s16 x, s16 y) {
     gSPDisplayList(gDisplayListHead++, dl_ia_text_begin);
     gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, gDialogTextAlpha);
 
-    if (gDialogLineNum <= COURSE_NUM_TO_INDEX(COURSE_STAGES_MAX)) { // Main courses
-        courseName = segmented_to_virtual(courseNameTbl[gDialogLineNum]);
-        render_pause_castle_course_stars(x, y, gCurrSaveFileNum - 1, gDialogLineNum);
-        print_generic_string(x + 34, y - 5, textCoin);
+    courseName = segmented_to_virtual(courseNameTbl[gDialogLineNum]);
+    // render_pause_castle_course_stars(x, y, gCurrSaveFileNum - 1, gDialogLineNum);
+    print_generic_string(x + 34, y - 5, textCoin);
 
-        int_to_str(save_file_get_course_coin_score(gCurrSaveFileNum - 1, gDialogLineNum), strVal);
-        print_generic_string(x + 54, y - 5, strVal);
+    int_to_str(save_file_get_course_coin_score(gCurrSaveFileNum - 1, gDialogLineNum), strVal);
+    print_generic_string(x + 54, y - 5, strVal);
 
-        //only render if not on agamemnon
-        // if (save_file_get_progression() != PROG_ON_AGAMEMNON) {
-        //     //render the "press A to go to level" thing
-        //     gDPSetEnvColor(gDisplayListHead++, 0, 0, 0, gDialogTextAlpha);
-        //     print_generic_string(x-18, y-46, txt_warp);
-        //     gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, gDialogTextAlpha);
-        //     print_generic_string(x-17, y-45, txt_warp);
+    //only render if not on agamemnon
+    // if (save_file_get_progression() != PROG_ON_AGAMEMNON) {
+    //     //render the "press A to go to level" thing
+    //     gDPSetEnvColor(gDisplayListHead++, 0, 0, 0, gDialogTextAlpha);
+    //     print_generic_string(x-18, y-46, txt_warp);
+    //     gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, gDialogTextAlpha);
+    //     print_generic_string(x-17, y-45, txt_warp);
 
-        //     if (gPlayer1Controller->buttonPressed & A_BUTTON) {
-        //         level_set_transition(0, 0);
-        //         play_sound(SOUND_MENU_PAUSE_CLOSE, gGlobalSoundSource);
-        //         gMenuMode = -1;
-        //         gDialogBoxState = DIALOG_STATE_OPENING;
+    //     if (gPlayer1Controller->buttonPressed & A_BUTTON) {
+    //         level_set_transition(0, 0);
+    //         play_sound(SOUND_MENU_PAUSE_CLOSE, gGlobalSoundSource);
+    //         gMenuMode = -1;
+    //         gDialogBoxState = DIALOG_STATE_OPENING;
 
-        //         initiate_warp(MainCourseWarpTable[gDialogLineNum], 1, 0x0A, 0);
-        //         fade_into_special_warp(0, 0);
-        //     }
-        // }
-    } else { // Castle secret stars
-        // u8 textStarX[] = { TEXT_STAR_X };
-        // courseName = segmented_to_virtual(courseNameTbl[COURSE_MAX]);
-        // print_generic_string(x + 40, y + 13, textStarX);
-        // int_to_str(save_file_get_total_star_count(gCurrSaveFileNum - 1,
-        //                                           COURSE_NUM_TO_INDEX(COURSE_BONUS_STAGES),
-        //                                           COURSE_NUM_TO_INDEX(COURSE_MAX)),
-        //                                           strVal);
-        // print_generic_string(x + 60, y + 13, strVal);
-    }
+    //         initiate_warp(MainCourseWarpTable[gDialogLineNum], 1, 0x0A, 0);
+    //         fade_into_special_warp(0, 0);
+    //     }
+    // }
 
     print_generic_string(x - 9, y + 30, courseName);
 
@@ -2531,11 +2512,9 @@ s8 gHudFlash = HUD_FLASH_NONE;
 #define btxoff 50
 
 void draw_mb64_pause_badges(void) {
-    s16 index;
     s8 soffset;
     u16 i;
     f32 sine = sins(menu_sintimer);
-    s8 tab;
     menu_sintimer += 1200;
 
     //CONTROL
@@ -2621,17 +2600,17 @@ void draw_mb64_pause_badges(void) {
     }
 }
 
-void add_tab(u8 tab_to_add) {
-    if (tablist_count < 5) {
-        tablist[tablist_count] = tab_to_add;
-        tablist_count++;
-    }
+// void add_tab(u8 tab_to_add) {
+//     if (tablist_count < 5) {
+//         tablist[tablist_count] = tab_to_add;
+//         tablist_count++;
+//     }
 
-}
+// }
 
-void build_tabs(void) {
-    tablist_count = 0;
-    add_tab(0);
+// void build_tabs(void) {
+//     tablist_count = 0;
+//     add_tab(0);
     /*
     //add the magic tab if wearing wizard hat or cheat enabled
     if ((gMarioState->Cheats & (1 << 3))||(0)) {
@@ -2662,12 +2641,12 @@ void build_tabs(void) {
         }
     }  BTCM OG */
 
-    if (save_file_get_badge_equip() != 0) {
-        add_tab(1); //only show badge tab when having badges
-    }
+//     if (save_file_get_badge_equip() != 0) {
+//         add_tab(1); //only show badge tab when having badges
+//     }
 
-    add_tab(3);
-}
+//     add_tab(3);
+// }
 
 #define total_spells 3
 #define vpxo 70

@@ -14,13 +14,6 @@ static struct ObjectHitbox sBooGivingStarHitbox = {
     /* hurtboxHeight:     */ 60,
 };
 
-// Relative positions
-static s16 sCourtyardBooTripletPositions[][3] = {
-    { 0, 50, 0 },
-    { 210, 110, 210 },
-    { -210, 70, -210 },
-};
-
 static void boo_stop(void) {
     o->oForwardVel = 0.0f;
     o->oVelY = 0.0f;

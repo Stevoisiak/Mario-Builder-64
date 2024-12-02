@@ -48,24 +48,14 @@ void exclamation_box_act_init(void) {
     }*/
 }
 
-static s32 sCapSaveFlags[] = {
-    SAVE_FLAG_HAVE_WING_CAP,
-    SAVE_FLAG_HAVE_METAL_CAP,
-    SAVE_FLAG_HAVE_VANISH_CAP,
-    SAVE_FLAG_HAVE_YELLOW
-};
-
 void exclamation_box_act_outline(void) {
     cur_obj_become_intangible();
     if (o->oTimer == 0) {
         spawn_object(o, MODEL_EXCLAMATION_POINT, bhvRotatingExclamationMark);
         cur_obj_set_model(MODEL_EXCLAMATION_BOX_OUTLINE);
     }
-    // if ((save_file_get_flags() & sCapSaveFlags[o->oBehParams2ndByte])
-    //  || (GET_BPARAM1(o->oBehParams) != EXCLAMATION_BOX_BP1_NEEDS_SWITCH)) {
-        o->oAction = EXCLAMATION_BOX_ACT_ACTIVE;
-        cur_obj_set_model(MODEL_EXCLAMATION_BOX);
-    // }
+    o->oAction = EXCLAMATION_BOX_ACT_ACTIVE;
+    cur_obj_set_model(MODEL_EXCLAMATION_BOX);
 }
 
 void exclamation_box_act_active(void) {
@@ -111,7 +101,7 @@ void exclamation_box_act_scaling(void) {
     }
 }
 
-void exclamation_box_spawn_contents(struct ExclamationBoxContents *contentsList, u8 boxType) {
+void exclamation_box_spawn_contents(u8 boxType) {
     struct Object *contentsObj = NULL;
     
     if (o->oImbue != IMBUE_NONE) {
@@ -134,7 +124,7 @@ void exclamation_box_spawn_contents(struct ExclamationBoxContents *contentsList,
 }
 
 void exclamation_box_act_explode(void) {
-    exclamation_box_spawn_contents(mb64_exclamation_box_contents, o->oBehParams2ndByte);
+    exclamation_box_spawn_contents(o->oBehParams2ndByte);
     spawn_mist_particles_variable(0, 0, 46.0f);
     if (mb64_lopt_game == MB64_GAME_BTCM) {
         spawn_triangle_break_particles(10, MODEL_CARTOON_STAR, 0.3f, o->oAnimState);

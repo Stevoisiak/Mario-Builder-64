@@ -3610,13 +3610,13 @@ const BehaviorScript bhvPersistentPreviewObject[] = {
     GOTO(bhvPreviewObject + 1),
 };
 
-extern void bhv_boss(void);
-const BehaviorScript bhvBoss[] = {
-    BEGIN(OBJ_LIST_DEFAULT),
-    OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
-    CALL_NATIVE(bhv_boss),
-    BREAK(),
-};
+// extern void bhv_boss(void);
+// const BehaviorScript bhvBoss[] = {
+//     BEGIN(OBJ_LIST_DEFAULT),
+//     OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+//     CALL_NATIVE(bhv_boss),
+//     BREAK(),
+// };
 
 // const BehaviorScript bhvTrash[] = {
 //     BEGIN(OBJ_LIST_DEFAULT),
@@ -3717,7 +3717,7 @@ const BehaviorScript bhvSparkleParticleSpawner[] = {
     DEACTIVATE(),
 };
 
-extern bhv_scuttlebug_normal_loop();
+extern void bhv_scuttlebug_normal_loop();
 const BehaviorScript bhvScuttlebug[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_LONG(oFlags, (OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_COMPUTE_ANGLE_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_ACTIVATES_FLOOR_SWITCH)),

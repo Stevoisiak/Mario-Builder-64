@@ -1988,6 +1988,7 @@ s32 lvl_init_menu_values_and_cursor_pos(UNUSED s32 arg, UNUSED s32 unused) {
     load_level_files_from_sd_card();
 
     play_music(SEQ_PLAYER_LEVEL, SEQUENCE_ARGS(4, SEQ_MENU_FILE_SELECT), 0);
+    return 0;
 }
 
 // /**

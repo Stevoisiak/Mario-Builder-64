@@ -55,7 +55,6 @@ enum LevelCommands {
     /*0x2C*/ LEVEL_CMD_UNLOAD_MARIO_AREA,
     /*0x2D*/ LEVEL_CMD_UPDATE_OBJECTS,
     /*0x2E*/ LEVEL_CMD_SET_TERRAIN_DATA,
-    /*0x2F*/ LEVEL_CMD_SET_ROOMS,
     /*0x30*/ LEVEL_CMD_SHOW_DIALOG,
     /*0x31*/ LEVEL_CMD_SET_TERRAIN_TYPE,
     /*0x32*/ LEVEL_CMD_NOP,
@@ -65,7 +64,6 @@ enum LevelCommands {
     /*0x36*/ LEVEL_CMD_SET_MUSIC,
     /*0x37*/ LEVEL_CMD_SET_MENU_MUSIC,
     /*0x38*/ LEVEL_CMD_FADEOUT_MUSIC,
-    /*0x39*/ LEVEL_CMD_SET_MACRO_OBJECTS,
     /*0x3A*/ LEVEL_CMD_3A,
     /*0x3B*/ LEVEL_CMD_CREATE_WHIRLPOOL,
     /*0x3C*/ LEVEL_CMD_GET_OR_SET_VAR,
@@ -396,10 +394,6 @@ enum WarpCheckpointFlags {
     CMD_BBH(LEVEL_CMD_SET_TERRAIN_DATA, 0x08, 0x0000), \
     CMD_PTR(terrainData)
 
-#define ROOMS(surfaceRooms) \
-    CMD_BBH(LEVEL_CMD_SET_ROOMS, 0x08, 0x0000), \
-    CMD_PTR(surfaceRooms)
-
 #define SHOW_DIALOG(index, dialogId) \
     CMD_BBBB(LEVEL_CMD_SHOW_DIALOG, 0x04, index, dialogId)
 
@@ -449,10 +443,6 @@ enum WarpCheckpointFlags {
 
 #define SET_ECHO(console, emulator) \
     CMD_BBBB(LEVEL_CMD_SET_ECHO, 0x04, console, emulator)
-
-#define MACRO_OBJECTS(objList) \
-    CMD_BBH(LEVEL_CMD_SET_MACRO_OBJECTS, 0x08, 0x0000), \
-    CMD_PTR(objList)
 
 // unused
 #define CMD3A(unk2, unk4, unk6, unk8, unk10) \

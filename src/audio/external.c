@@ -86,8 +86,6 @@ enum DialogSpeakers {
     YOSHI
 };
 
-#define _ 0xFF
-
 s32 sDialogSpeakerVoice[] = {
     SOUND_OBJ_UKIKI_CHATTER_LONG,
     SOUND_OBJ_BIG_PENGUIN_YELL,
@@ -1674,12 +1672,8 @@ static void func_8031F96C(u8 player) {
 extern u8 mb64_lopt_seq[5];
 void process_level_music_dynamics(void) {
     u16 tempBits;
-    u8 condIndex;
-    u8 i, j;
-    s16 conditionValues[8];
-    u8 conditionTypes[8];
+    u8 i;
     s16 dur1, dur2;
-    u16 bit;
 
     func_8031F96C(0);
     func_8031F96C(2);

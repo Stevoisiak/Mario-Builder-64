@@ -630,25 +630,6 @@ s32 obj_flicker_and_disappear(struct Object *obj, s16 lifeSpan) {
 }
 
 /**
- * Checks if a given room is Mario's current room, even if on an object.
- */
-s32 current_mario_room_check(RoomData room) {
-    s32 result;
-
-    // Since object surfaces have room 0, this tests if the surface is an
-    // object first and uses the last room if so.
-    if (gMarioCurrentRoom == 0) {
-        return room == sPrevCheckMarioRoom;
-    } else {
-        result = room == gMarioCurrentRoom;
-
-        sPrevCheckMarioRoom = gMarioCurrentRoom;
-    }
-
-    return result;
-}
-
-/**
  * Triggers dialog when Mario is facing an object and controls it while in the dialog.
  */
 s32 trigger_obj_dialog_when_facing(s32 *inDialog, s16 dialogID, f32 dist, s32 actionArg) {

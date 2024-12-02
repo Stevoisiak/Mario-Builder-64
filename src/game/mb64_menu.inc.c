@@ -454,6 +454,7 @@ char *mb64_custom_get_menu_name(s32 index) {
         case 2: return "Iron Meshes";
         case 3: return "Water";
     }
+    return NULL;
 }
 
 // Set mb64_lopt_seq_album and mb64_lopt_seq_song based on mb64_lopt_seq
@@ -722,8 +723,8 @@ void custom_theme_draw_block(f32 xpos, f32 ypos, s32 index) {
 }
 
 void custom_theme_draw_mat_selector(f32 xPos, f32 yPos, s32 startIndex, u8 *outputVar) {
-    u8 tmpCategory;
-    u8 tmpMaterial;
+    u8 tmpCategory = 0;
+    u8 tmpMaterial = 0;
     get_category_and_mat_from_mat(&tmpCategory, &tmpMaterial, *outputVar);
     u8 oldCategory = tmpCategory;
 

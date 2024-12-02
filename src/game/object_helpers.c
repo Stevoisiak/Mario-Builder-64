@@ -152,27 +152,26 @@ Gfx *geo_switch_anim_state(s32 callContext, struct GraphNode *node, UNUSED void 
 }
 
 Gfx *geo_switch_area(s32 callContext, struct GraphNode *node, UNUSED void *context) {
-    struct GraphNodeSwitchCase *switchCase = (struct GraphNodeSwitchCase *) node;
-    RoomData room;
+    // struct GraphNodeSwitchCase *switchCase = (struct GraphNodeSwitchCase *) node;
 
-    if (callContext == GEO_CONTEXT_RENDER && gMarioObject != NULL) {
-        room = get_room_at_pos(
-            gMarioObject->oPosX,
-            gMarioObject->oPosY,
-            gMarioObject->oPosZ
-        );
+    // if (callContext == GEO_CONTEXT_RENDER && gMarioObject != NULL) {
+    //     room = get_room_at_pos(
+    //         gMarioObject->oPosX,
+    //         gMarioObject->oPosY,
+    //         gMarioObject->oPosZ
+    //     );
 
-        print_debug_top_down_objectinfo("areainfo %d", room);
+    //     print_debug_top_down_objectinfo("areainfo %d", room);
 
-        if (room > 0) {
-            gMarioCurrentRoom = room;
-            switchCase->selectedCase = (room - 1);
-        }
-    } else {
-        switchCase->selectedCase = 0;
-    }
+    //     if (room > 0) {
+    //         gMarioCurrentRoom = room;
+    //         switchCase->selectedCase = (room - 1);
+    //     }
+    // } else {
+    //     switchCase->selectedCase = 0;
+    // }
 
-    return NULL;
+    // return NULL;
 }
 
 void obj_update_pos_from_parent_transformation(Mat4 a0, struct Object *a1) {
@@ -2476,8 +2475,8 @@ s32 obj_attacked_by_object(struct Object *obj, s32 attackType) {
         default:
             return FALSE;
     }
-    obj->oInteractStatus |= INT_STATUS_WAS_ATTACKED | INT_STATUS_INTERACTED
-                         | INT_STATUS_ATTACKED_BY_OBJECT + attackType;
+    obj->oInteractStatus |= (INT_STATUS_WAS_ATTACKED | INT_STATUS_INTERACTED
+                         | INT_STATUS_ATTACKED_BY_OBJECT) + attackType;
     return TRUE;
 }
 

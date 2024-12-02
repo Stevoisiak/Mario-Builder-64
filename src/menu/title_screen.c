@@ -23,20 +23,20 @@
  * and a level select used for testing purposes.
  */
 
-#define STUB_LEVEL(textname, _1, _2, _3, _4, _5, _6, _7, _8) textname,
-#define DEFINE_LEVEL(textname, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10) textname,
+// #define STUB_LEVEL(textname, _1, _2, _3, _4, _5, _6, _7, _8) textname,
+// #define DEFINE_LEVEL(textname, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10) textname,
 
-static char sLevelSelectStageNames[64][16] = {
-    #include "levels/level_defines.h"
-};
-#undef STUB_LEVEL
-#undef DEFINE_LEVEL
+// static char sLevelSelectStageNames[64][16] = {
+//     #include "levels/level_defines.h"
+// };
+// #undef STUB_LEVEL
+// #undef DEFINE_LEVEL
 
-static u16 sDemoCountdown = 0;
+// static u16 sDemoCountdown = 0;
 // static s16 sPlayMarioGreeting = TRUE; // unused
 // static s16 sPlayMarioGameOver = TRUE;
 
-#define PRESS_START_DEMO_TIMER 800
+// #define PRESS_START_DEMO_TIMER 800
 
 /**
  * Run the demo timer on the PRESS START screen after a number of frames.

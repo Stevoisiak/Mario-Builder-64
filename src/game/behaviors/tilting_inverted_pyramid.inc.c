@@ -6129,22 +6129,22 @@ void bhv_warp_pipe_init(void) {
     // }
 }
 
-void bhv_boss(void) {
-    struct Object * baws;
-    switch(o->oBehParams2ndByte) {
-        case 0:
-            baws = spawn_object(o,MODEL_KINGBOMB_MAKER,bhvKingBobomb);
-        break;
-        case 1:
-            baws = spawn_object(o,MODEL_WHOMP_MAKER,bhvWhompKingBoss);
-        break;
-        case 3:
-            baws = spawn_object(o,MODEL_WIGGLER_HEAD,bhvWigglerHead);
-        break;
-    }
-    baws->oBehParams = o->oBehParams;
-    mark_obj_for_deletion(o);
-}
+// void bhv_boss(void) {
+//     struct Object * baws;
+//     switch(o->oBehParams2ndByte) {
+//         case 0:
+//             baws = spawn_object(o,MODEL_KINGBOMB_MAKER,bhvKingBobomb);
+//         break;
+//         case 1:
+//             baws = spawn_object(o,MODEL_WHOMP_MAKER,bhvWhompKingBoss);
+//         break;
+//         case 3:
+//             baws = spawn_object(o,MODEL_WIGGLER_HEAD,bhvWigglerHead);
+//         break;
+//     }
+//     baws->oBehParams = o->oBehParams;
+//     mark_obj_for_deletion(o);
+// }
 
 void bhv_onoffswitch_falling(void) {
     o->oVelY -= 4.f;
@@ -6323,19 +6323,18 @@ void bhv_woodplat_loop(void) {
     Vec3f oldPos;
     vec3f_copy(oldPos, &o->prevObj->oPosVec);
     vec3f_copy(&o->prevObj->oPosVec,&o->oPosVec);
-    vec3f_copy(&o->header.gfx.pos,oldPos);
+    vec3f_copy(o->header.gfx.pos,oldPos);
     
     struct Object *curPlat = o;
     while (curPlat->oWoodPlatAbovePlatform) {
-        vec3f_copy(&curPlat->oWoodPlatAbovePlatform->oPosVec,&curPlat->header.gfx.pos);
+        vec3f_copy(&curPlat->oWoodPlatAbovePlatform->oPosVec,curPlat->header.gfx.pos);
         curPlat = curPlat->oWoodPlatAbovePlatform;
         curPlat->oPosY += 256.f;
-        vec3f_copy(&curPlat->header.gfx.pos,&curPlat->oPosVec);
+        vec3f_copy(curPlat->header.gfx.pos,&curPlat->oPosVec);
     }
 }
 
 void bhv_woodplat_col_init(void) {
-    struct Object *curPlat = o->prevObj;
     f32 height = woodplat_get_stack_height(o->prevObj);
     o->oCollisionDistance = height;
 

@@ -49,6 +49,8 @@ s32 f32_find_wall_collision(f32 *xPtr, f32 *yPtr, f32 *zPtr, f32 offsetY, f32 ra
 s32 find_wall_collisions(struct WallCollisionData *colData);
 void resolve_and_return_wall_collisions(Vec3f pos, f32 offset, f32 radius, struct WallCollisionData *collisionData);
 f32 find_ceil(f32 posX, f32 posY, f32 posZ, struct Surface **pceil);
+void get_surface_normal_oo(f32 normal[4], struct Surface *surf);
+void get_surface_normal(f32 normal[3], struct Surface *surf);
 
 // Finds the ceiling from a vec3f and a minimum height (with 2 unit vertical buffer).
 ALWAYS_INLINE f32 find_mario_ceil(Vec3f pos, f32 height, struct Surface **ceil) {

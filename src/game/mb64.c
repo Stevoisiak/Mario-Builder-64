@@ -2484,7 +2484,7 @@ void generate_object_preview(void) {
 
         s32 curImbue = mb64_object_data[i].imbue;
         if ((curImbue != IMBUE_NONE)&&(!mb64_prepare_level_screenshot)) {
-            int badgeid;
+            int badgeid = 0;
             if (curImbue >= IMBUE_BADGE_BASE) {
                 badgeid = curImbue - IMBUE_BADGE_BASE;
                 curImbue = IMBUE_BADGE_BASE;
@@ -2727,7 +2727,7 @@ void delete_object(s8 pos[3], s32 index) {
     generate_object_preview();
 }
 
-u32 place_number_spawner_check(s8 pos[3], s32 spawnerType, s32 objType, s32 objImbue) {
+void place_number_spawner_check(s8 pos[3], s32 spawnerType, s32 objType, s32 objImbue) {
     s32 objectCount = 0;
     s32 hasSpawner = FALSE;
     for (s32 i = 0; i < mb64_object_count; i++) {
@@ -3477,15 +3477,15 @@ s32 snap_cursor(void) {
 }
 
 // Wrap cursor to other side of level if out of bounds
-s32 wrap_cursor(void) {
+void wrap_cursor(void) {
     s32 gridmax = mb64_grid_min + mb64_grid_size - 1;
     s32 gridymax = (mb64_curr_boundary & MB64_BOUNDARY_CEILING) ? mb64_lopt_boundary_height-1 : 63;
-    if (mb64_cursor_pos[0] < mb64_grid_min) {mb64_cursor_pos[0] = gridmax; return TRUE;}
-    if (mb64_cursor_pos[0] > gridmax) {mb64_cursor_pos[0] = mb64_grid_min; return TRUE;}
-    if (mb64_cursor_pos[2] < mb64_grid_min) {mb64_cursor_pos[2] = gridmax; return TRUE;}
-    if (mb64_cursor_pos[2] > gridmax) {mb64_cursor_pos[2] = mb64_grid_min; return TRUE;}
-    if (mb64_cursor_pos[1] < 0) {mb64_cursor_pos[1] = gridymax; return TRUE;}
-    if (mb64_cursor_pos[1] > gridymax) {mb64_cursor_pos[1] = 0; return TRUE;}
+    if (mb64_cursor_pos[0] < mb64_grid_min) {mb64_cursor_pos[0] = gridmax; return;}
+    if (mb64_cursor_pos[0] > gridmax) {mb64_cursor_pos[0] = mb64_grid_min; return;}
+    if (mb64_cursor_pos[2] < mb64_grid_min) {mb64_cursor_pos[2] = gridmax; return;}
+    if (mb64_cursor_pos[2] > gridmax) {mb64_cursor_pos[2] = mb64_grid_min; return;}
+    if (mb64_cursor_pos[1] < 0) {mb64_cursor_pos[1] = gridymax; return;}
+    if (mb64_cursor_pos[1] > gridymax) {mb64_cursor_pos[1] = 0; return;}
 }
 
 extern void play_sound_cbutton_side(void);
