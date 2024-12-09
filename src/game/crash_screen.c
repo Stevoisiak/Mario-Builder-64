@@ -396,8 +396,6 @@ extern void stop_sounds_in_continuous_banks(void);
 extern void read_controller_inputs(s32 threadID);
 extern struct SequenceQueueItem sBackgroundMusicQueue[6];
 
-char backup_filename[] = {"bak.up.mb64"};
-
 void thread2_crash_screen(UNUSED void *arg) {
     OSMesg mesg;
     OSThread *thread = NULL;
@@ -433,10 +431,6 @@ void thread2_crash_screen(UNUSED void *arg) {
             }
             read_controller_inputs(THREAD_2_CRASH_SCREEN);
             draw_crash_screen(thread);
-
-            //make a level backup
-            //bcopy(&backup_filename,&mb64_file_name,sizeof(backup_filename));
-            //save_level();
         }
     }
 }

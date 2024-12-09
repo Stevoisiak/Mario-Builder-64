@@ -742,32 +742,11 @@ void print_generic_string_ascii(s16 x, s16 y, const char *str) {
 }
 
 void print_generic_string_ascii_nofileext(s16 x, s16 y, const char *str) {
-    //this function uses '.' as a null terminator for printing file names
-    s32 strPos = 0;
-    u8 lineNum = 1;
-
-    create_dl_translation_matrix(MENU_MTX_PUSH, x, y, 0.0f);
-
-    while ((str[strPos] != '.')&&(str[strPos] != 0)) {
-        switch(str[strPos]) {
-            case ' ':
-            case '_':
-                create_dl_translation_matrix(MENU_MTX_NOPUSH, CHAR_WIDTH_SPACE, 0.0f, 0.0f);
-            break;
-            case '\n':
-                gSPPopMatrix(gDisplayListHead++, G_MTX_MODELVIEW);
-                create_dl_translation_matrix(MENU_MTX_PUSH, x, y - (lineNum * MAX_STRING_WIDTH), 0.0f);
-                lineNum++;
-            break;
-            default:
-                render_generic_char(mb64_ascii_lut[(u8)str[strPos]]);
-                create_dl_translation_matrix(MENU_MTX_NOPUSH, gDialogCharWidths[mb64_ascii_lut[(u8)str[strPos]]], 0.0f, 0.0f);
-            break;
-        }
-        strPos++;
-    }
-
-    gSPPopMatrix(gDisplayListHead++, G_MTX_MODELVIEW);
+    // This function assumes that the string has the correct file extension
+    char buf[MAX_FILE_NAME_SIZE];
+    strcpy(buf, str);
+    buf[strlen(str) - 5] = '\0';
+    print_generic_string_ascii(x, y, buf);
 }
 
 
