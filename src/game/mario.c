@@ -2112,6 +2112,9 @@ void throw_crowbar(void) {
         crowbar->oFriction = 1.0f;
         gMarioState->powerup &= ~1;
         crowbar->oFaceAnglePitch = 0x4000;
+        if (gMarioState->action == ACT_SIDE_FLIP_LAND || gMarioState->action == ACT_SIDE_FLIP_LAND_STOP) {
+            crowbar->oMoveAngleYaw += 0x8000;
+        }
     }
 }
 
