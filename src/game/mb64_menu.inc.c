@@ -1425,7 +1425,6 @@ struct mb64_info_entry mb64_v1_1_changelog[] = {
     {"- Wooden Platforms form a stack when placed vertically", 0},
     {"- Bowling Balls can destroy boxes and kill enemies", 0},
     {"- Throwable and Crazy Boxes respawn after being broken", 0},
-    {"- Throwable Boxes can no longer break Reinforced Boxes", 0},
     {"- Using a Noteblock no longer forces you to drop objects", 0},
     {"    or stop riding a shell", 0},
     {"- Koopa the Quick respawns after losing the race", 0},

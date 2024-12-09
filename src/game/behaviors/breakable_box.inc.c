@@ -114,9 +114,6 @@ s32 cur_obj_was_attacked_not_by_mario(void) {
     if ((o->oInteractStatus & INT_STATUS_INTERACTED)
         && (o->oInteractStatus & INT_STATUS_WAS_ATTACKED)
         && (gMarioState->interactObj != o)) {
-        if (o->collidedObjs[0]->behavior == segmented_to_virtual(bhvBreakableBoxSmall)) {
-            return FALSE;
-        }
         return TRUE;
     }
 
