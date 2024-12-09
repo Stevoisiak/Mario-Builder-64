@@ -1758,7 +1758,8 @@ void render_mb64_mm_menu(char * strlist[], char *title, u8 ct) {
     gSPPopMatrix(gDisplayListHead++, G_MTX_MODELVIEW);
 
     if ((mb64_mm_state == MM_MAIN) || (mb64_mm_state == MM_MAIN_LIMITED)) {
-       print_maker_string_ascii(115, 177 + mb64_menu_title_vels[0], "By: Rovertronic & Arthurtilly", MB64_TEXT_WHITE);
+        print_maker_string_ascii(243, 188 + mb64_menu_title_vels[0], "v1.1 ALPHA", MB64_TEXT_WHITE);
+        print_maker_string_ascii_centered(160, 175 + mb64_menu_title_vels[0], "By: Rovertronic & Arthurtilly", MB64_TEXT_WHITE);
     }
 
     for (s32 i=0; i<ct; i++) {
