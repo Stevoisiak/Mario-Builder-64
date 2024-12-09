@@ -2689,7 +2689,9 @@ void cur_obj_interact_with_noteblock(void) {
 
         noteblock_interacting->oTimer = 0;
         noteblock_interacting->oVelY = 50.0f;
-        cur_obj_play_sound_2(SOUND_GENERAL_CRAZY_BOX_BOING_SLOW);
+        if (dist_between_objects(noteblock_interacting, gMarioObject) < MB64_DRAWDIST_LOW) {
+            cur_obj_play_sound_2(SOUND_GENERAL_CRAZY_BOX_BOING_SLOW);
+        }
     }
 }
 
