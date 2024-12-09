@@ -117,8 +117,9 @@ void bhv_goomba_init(void) {
 
     o->oDrawingDistance = sGoombaProperties[o->oGoombaSize].drawDistance;
     o->oDamageOrCoinValue = sGoombaProperties[o->oGoombaSize].damage;
+    o->oWallHitboxRadius = 40.f * o->oGoombaScale;
 
-    o->oGravity = -8.0f / 3.0f * o->oGoombaScale;
+    o->oGravity = -4.f;
 
 #ifdef FLOOMBAS
     if (o->oIsFloomba) {
@@ -138,11 +139,12 @@ void bhv_goomba_init(void) {
  * Enter the jump action and set initial y velocity.
  */
 static void goomba_begin_jump(void) {
+    if (!(o->oMoveFlags & OBJ_MOVE_ON_GROUND)) return;
     cur_obj_play_sound_2(SOUND_OBJ_GOOMBA_ALERT);
 
     o->oAction = GOOMBA_ACT_JUMP;
     o->oForwardVel = 0.0f;
-    o->oVelY = 50.0f / 3.0f * o->oGoombaScale;
+    o->oVelY = 25.f;
 
     if (o->oQuicksandDepth > 0) {
         // Quicksand will stunt their jumps heavily
