@@ -1134,6 +1134,7 @@ void exit_level(void) {
         gCameraMovementFlags &= ~CAM_MOVE_PAUSE_SCREEN;
         mb64_level_action = MB64_LA_BUILD;
     } else {
+        func_80321080(1); // clear background music (i think)
         fade_into_special_warp(WARP_SPECIAL_MARIO_HEAD_REGULAR, 0); // reset game
     }
 }
