@@ -6091,6 +6091,7 @@ void bhv_badge(void) {
             }
             if ((detect_object_hitbox_overlap(gMarioObject, o))&&(gMarioState->action != ACT_LVUP_DANCE)) {
                 o->oAction++;
+                set_camera_mode(gMarioState->area->camera, gMarioState->area->camera->defMode, 1);
                 mario_stop_riding_object(gMarioState);
                 save_file_set_badge_equip(1 << o->oBehParams2ndByte);
 

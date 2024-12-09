@@ -1472,7 +1472,8 @@ struct mb64_info_entry mb64_v1_1_changelog[] = {
     {"- Glitchy bully physics in midair and on snow/ice", 0},
     {"- Bug allowing unlimited stars to be placed", 0},
     {"- Failure to load levels on some flashcarts", 0},
-    {"- String overflow glitches in file and author names", 0},
+    {"- String overflow glitches in level and author names", 0},
+    {"- Periods not being allowed in level names",0},
     {"- Bad handling of invalid level files", 0},
     {"- Level files corrupting if the vertex limit is exceeded", 0},
     {"- Broken menus with widescreen viewport hack enabled",0},
@@ -1483,6 +1484,7 @@ struct mb64_info_entry mb64_v1_1_changelog[] = {
     {"- Exiting on a moving platform not resetting inertia",0},
     {"- HUD issues with the air bubble and rocket fuel meters",0},
     {"- Spinning around when flying after sliding down a pole", 0},
+    {"- Broken camera when collecting a badge while flying", 0},
     {"- Countless minor physics and AI fixes", 0},
     {NULL, 0},
 };
