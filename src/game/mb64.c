@@ -272,7 +272,7 @@ u32 coords_in_range(s8 pos[3]) {
 
 s32 tile_sanity_check(void) {
     if (mb64_tile_count >= MB64_TILE_POOL_SIZE) {
-        mb64_show_error_message("Tile limit reached! (max 15,000)");
+        mb64_show_error_message("Tile limit reached! (max 20,000)");
         return FALSE;
     }
     if (mb64_vtx_total >= MB64_VTX_SIZE - 100) {
@@ -282,8 +282,10 @@ s32 tile_sanity_check(void) {
         }
     }
     if (mb64_gfx_total >= MB64_GFX_SIZE - 100) {
-        mb64_show_error_message("Graphics pool is full!");
-        return FALSE;
+        if (mb64_id_selection != TILE_TYPE_CULL) {
+            mb64_show_error_message("Warning: Mesh data pool full!");
+            return FALSE;
+        }
     }
 
     return TRUE;

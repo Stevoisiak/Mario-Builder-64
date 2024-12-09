@@ -963,11 +963,15 @@ void draw_mb64_settings_system(f32 xoff, f32 yoff) {
     int obj_perc = ((f32)mb64_object_limit_count/(f32)MB64_MAX_OBJS)*100.0f;
     sprintf(strbuf,"Vertices: %d/50k (%d%%)",mb64_vtx_total, vtx_perc);
     print_maker_string_ascii(20+xoff+3*mb64_menu_list_offsets[2], 110+yoff,strbuf,MB64_TEXT_WHITE);
-    sprintf(strbuf,"Tiles:    %d/15k (%d%%)",mb64_tile_count, tile_perc);
+    sprintf(strbuf,"Tiles:    %d/20k (%d%%)",mb64_tile_count, tile_perc);
     print_maker_string_ascii(20+xoff+3*mb64_menu_list_offsets[2], 95+yoff,strbuf,MB64_TEXT_WHITE);
 
     sprintf(strbuf,"Objs:  %d/512 (%d%%)",mb64_object_limit_count, obj_perc);
     print_maker_string_ascii(305+xoff+3*mb64_menu_list_offsets[2]-get_string_width_ascii(strbuf), 95+yoff,strbuf,MB64_TEXT_WHITE);
+
+    // int gfx_perc = ((f32)mb64_gfx_total/(f32)MB64_GFX_SIZE)*100.0f;
+    // sprintf(strbuf,"Gfx: %d/20k (%d%%)",mb64_gfx_total, gfx_perc);
+    // print_maker_string_ascii(305+xoff+3*mb64_menu_list_offsets[2]-get_string_width_ascii(strbuf), 110+yoff,strbuf,MB64_TEXT_WHITE);
 
     if ((gPlayer1Controller->buttonPressed & A_BUTTON) && MB64_SETTINGS_MENU_IS_STILL) {
         switch (mb64_menu_index) {
@@ -1374,8 +1378,8 @@ struct mb64_info_entry mb64_v1_1_changelog[] = {
     {"Major Changes", 1},
     {"", 0},
     {"- Increased vertex limit from 40,000 to 50,000", 0},
-    {"- Increased tile limit from 10,000 to 15,000", 0},
-    {"- Optimized vertex count of levels by up to 25%", 0},
+    {"- Increased tile limit from 10,000 to 20,000", 0},
+    {"- Optimized vertex generation by up to 25%", 0},
     {"- New boundary type: Interior",0},
     {"- New object: On-Off Conveyor",0},
     {"- New object: Inverted Timed Box",0},

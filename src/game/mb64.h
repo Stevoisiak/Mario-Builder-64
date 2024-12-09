@@ -2,8 +2,8 @@
 #define mb64_h
 #include "libcart/ff/ff.h"
 
-#define MB64_TILE_POOL_SIZE 15000
-#define MB64_GFX_SIZE 15000
+#define MB64_TILE_POOL_SIZE 20000
+#define MB64_GFX_SIZE 20000
 #define MB64_VTX_SIZE 50000
 
 #define MB64_MAX_OBJS 512
