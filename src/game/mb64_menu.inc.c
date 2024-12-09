@@ -1471,6 +1471,7 @@ struct mb64_info_entry mb64_v1_1_changelog[] = {
     {"- Broken boss music with multiple bosses",0},
     {"- Exiting on a moving platform not resetting inertia",0},
     {"- HUD issues with the air bubble and rocket fuel meters",0},
+    {"- Spinning around when flying after sliding down a pole", 0},
     {"- Countless minor physics and AI fixes", 0},
     {NULL, 0},
 };

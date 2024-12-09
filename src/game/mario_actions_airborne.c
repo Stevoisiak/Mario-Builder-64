@@ -878,6 +878,7 @@ s32 act_dive(struct MarioState *m) {
 
     m->actionTimer++;
     if ((mb64_lopt_game == MB64_GAME_BTCM)&&(m->flags & MARIO_WING_CAP)&&(m->faceAngle[0] < -0x443)&&(m->actionTimer > 12)) {
+        m->angleVel[1] = 0;
         set_mario_action(m, ACT_FLYING, 0);
     }
 
@@ -1821,6 +1822,7 @@ s32 act_shot_from_cannon(struct MarioState *m) {
     }
 
     if ((m->flags & MARIO_WING_CAP) && m->vel[1] < 0.0f) {
+        m->angleVel[1] = 0;
         set_mario_action(m, ACT_FLYING, 0);
     }
 
@@ -2033,6 +2035,7 @@ s32 act_flying_triple_jump(struct MarioState *m) {
             mario_set_forward_vel(m, 32.0f);
         }
 
+        m->angleVel[1] = 0;
         set_mario_action(m, ACT_FLYING, 1);
     }
 
