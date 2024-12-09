@@ -173,6 +173,7 @@ u8 mb64_global_scissor_bottom = SCREEN_HEIGHT;
 u8 mb64_curr_settings_menu = 0; // Index of current page in the Settings menu
 u8 mb64_curr_custom_tab = 0; // Index of current tab in Edit Custom Theme menu
 u8 mb64_custom_theme_menu_open = FALSE; // If custom theme menu is currently in use
+u8 mb64_disable_menu_inputs = FALSE;
 
 void full_menu_reset() {
     bzero(mb64_menu_button_vels, sizeof(mb64_menu_button_vels));
@@ -194,6 +195,7 @@ void full_menu_reset() {
     mb64_konami_code_cur_index = 0;
     mb64_custom_theme_menu_open = FALSE;
     mb64_greyed_text = FALSE;
+    mb64_disable_menu_inputs = FALSE;
     animate_list_reset();
     animate_toolbar_reset();
 }
@@ -978,6 +980,7 @@ void draw_mb64_settings_system(f32 xoff, f32 yoff) {
                     mb64_mm_state = MM_MAIN_LIMITED;
                 }
                 fade_into_special_warp(WARP_SPECIAL_MARIO_HEAD_REGULAR, 0); // reset game
+                mb64_disable_menu_inputs = TRUE;
                 break;
             case 1: // play level
                 if (mount_success == FR_OK) {
@@ -989,6 +992,7 @@ void draw_mb64_settings_system(f32 xoff, f32 yoff) {
                 level_trigger_warp(gMarioState, WARP_OP_LOOK_UP);
                 sSourceWarpNodeId = 0x0A;
                 play_sound(SOUND_MENU_STAR_SOUND_LETS_A_GO, gGlobalSoundSource);
+                mb64_disable_menu_inputs = TRUE;
                 break;
         }
     }
@@ -1024,6 +1028,14 @@ void draw_mb64_menu(void) {
             gSPPopMatrix(gDisplayListHead++, G_MTX_MODELVIEW);
         }
         gSPDisplayList(gDisplayListHead++, &mat_revert_b_btn_check);
+    }
+
+    if (mb64_disable_menu_inputs) {
+        gPlayer1Controller->buttonPressed = 0;
+        gPlayer1Controller->buttonDown = 0;
+        gPlayer1Controller->rawStickX = 0;
+        gPlayer1Controller->rawStickY = 0;
+        mb64_joystick = 0;
     }
 
     //TOOLBOX
