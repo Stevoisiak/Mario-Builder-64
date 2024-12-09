@@ -514,7 +514,9 @@ void df_crowbar(s32 context) {
         o->oFaceAnglePitch = 0x1A00;
     } else {
         o->oFaceAngleYaw = 0x400 * gGlobalTimer;
-        if (!(gGlobalTimer & 3)) spawn_object(o, MODEL_NONE, bhvSparkleSpawn);
+        f32 dist;
+        vec3f_get_dist(&o->oPosVec, mb64_camera_pos, &dist);
+        if ((dist < MB64_DRAWDIST_LOW) && !(gGlobalTimer & 3)) spawn_object(o, MODEL_NONE, bhvSparkleSpawn);
     }
 }
 
