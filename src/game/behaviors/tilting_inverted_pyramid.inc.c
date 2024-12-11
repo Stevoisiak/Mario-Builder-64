@@ -6270,7 +6270,6 @@ void bhv_woodplat_init(void) {
         o->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MAKER_FATPLAT];
         bhv_woodplat_check_above();
     }
-    o->oTimer = 0;
 }
 
 void bhv_woodplat_loop(void) {
@@ -6278,7 +6277,7 @@ void bhv_woodplat_loop(void) {
     if (o->oWoodPlatIsStacked) {
         return;
     }
-    if (o->oTimer == 0) {
+    if (o->oTimer == 1) {
         o->prevObj = spawn_object(o, MODEL_NONE, bhvWoodPlatCol);
         o->prevObj->prevObj = o;
         vec3f_copy(&o->prevObj->oPosVec,&o->oPosVec);

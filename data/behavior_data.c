@@ -9472,6 +9472,7 @@ const BehaviorScript bhvWoodPlat[] = {
     OR_LONG(oFlags, (OBJ_FLAG_SIMPLE_WALL_CHECKS | OBJ_FLAG_ACTIVE_FROM_AFAR | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_ACTIVATES_FLOOR_SWITCH | OBJ_FLAG_IMMUNE_TO_FLOOR_DEATH)),
     SET_HOME(),
     CALL_NATIVE(bhv_woodplat_init),
+    DELAY(1),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_woodplat_loop),
     END_LOOP(),
