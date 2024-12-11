@@ -6314,6 +6314,9 @@ void bhv_woodplat_loop(void) {
     cur_obj_move_standard(-20);
 
     if (cur_obj_die_if_on_death_barrier(MB64_STAR_HEIGHT)) {
+        if (!o->oWoodPlatIsStacked) {
+            o->prevObj->activeFlags = ACTIVE_FLAG_DEACTIVATED;
+        }
         struct Object *curPlat = o;
         do {
             curPlat->activeFlags = ACTIVE_FLAG_DEACTIVATED;
