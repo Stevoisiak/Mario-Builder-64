@@ -57,9 +57,9 @@ static s32 obj_is_rendering_enabled(void) {
     }
 }
 
-static s16 obj_get_pitch_from_vel(void) {
+/* static s16 obj_get_pitch_from_vel(void) {
     return -atan2s(o->oForwardVel, o->oVelY);
-}
+} */
 
 /**
  * Show dialog proposing a race.
@@ -68,7 +68,7 @@ static s16 obj_get_pitch_from_vel(void) {
  * If the player declines the race, then disable time stop and allow Mario to
  * move again.
  */
-static s32 obj_update_race_proposition_dialog(s16 dialogID) {
+/* static s32 obj_update_race_proposition_dialog(s16 dialogID) {
     s32 dialogResponse = cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP,
         (DIALOG_FLAG_TURN_TO_MARIO | DIALOG_FLAG_TIME_STOP_ENABLED), CUTSCENE_RACE_DIALOG, dialogID);
 
@@ -78,30 +78,30 @@ static s32 obj_update_race_proposition_dialog(s16 dialogID) {
     }
 
     return dialogResponse;
-}
+} */
 
-static void obj_set_dist_from_home(f32 distFromHome) {
+/* static void obj_set_dist_from_home(f32 distFromHome) {
     o->oPosX = o->oHomeX + distFromHome * coss(o->oMoveAngleYaw);
     o->oPosZ = o->oHomeZ + distFromHome * sins(o->oMoveAngleYaw);
-}
+} */
 
-static s32 obj_is_near_to_and_facing_mario(f32 maxDist, s16 maxAngleDiff) {
+/* static s32 obj_is_near_to_and_facing_mario(f32 maxDist, s16 maxAngleDiff) {
     if (o->oDistanceToMario < maxDist
         && abs_angle_diff(o->oMoveAngleYaw, o->oAngleToMario) < maxAngleDiff) {
         return TRUE;
     }
     return FALSE;
-}
+} */
 
-static void obj_perform_position_op(s32 op) {
+/* static void obj_perform_position_op(s32 op) {
     switch (op) {
         case POS_OP_SAVE_POSITION:    vec3f_copy(sObjSavedPos, &o->oPosVec); break;
         case POS_OP_COMPUTE_VELOCITY: vec3f_diff(&o->oVelVec, &o->oPosVec, sObjSavedPos); break;
         case POS_OP_RESTORE_POSITION: vec3f_copy(&o->oPosVec, sObjSavedPos); break;
     }
-}
+} */
 
-static void cur_obj_spin_all_dimensions(f32 pitchSpeed, f32 rollSpeed) {
+/* static void cur_obj_spin_all_dimensions(f32 pitchSpeed, f32 rollSpeed) {
     f32 pitch, yaw, roll;
     f32 c, s;
     f32 px, pz, ny, nz, nx;
@@ -147,18 +147,18 @@ static void cur_obj_spin_all_dimensions(f32 pitchSpeed, f32 rollSpeed) {
         o->oGraphYOffset = yaw - ny;
         o->oPosZ = o->oHomeZ + pz - nz;
     }
-}
+} */
 
-static void obj_rotate_yaw_and_bounce_off_walls(s16 targetYaw, s16 turnAmount) {
+/* static void obj_rotate_yaw_and_bounce_off_walls(s16 targetYaw, s16 turnAmount) {
     if (o->oMoveFlags & OBJ_MOVE_HIT_WALL) {
         targetYaw = cur_obj_reflect_move_angle_off_wall();
     }
     cur_obj_rotate_yaw_toward(targetYaw, turnAmount);
-}
+} */
 
-static s16 obj_get_pitch_to_home(f32 latDistToHome) {
+/* static s16 obj_get_pitch_to_home(f32 latDistToHome) {
     return atan2s(latDistToHome, o->oPosY - o->oHomeY);
-}
+} */
 
 static void obj_compute_vel_from_move_pitch(f32 speed) {
     o->oForwardVel = speed * coss(o->oMoveAnglePitch);
@@ -204,13 +204,13 @@ static s32 cur_obj_init_anim_check_frame(s32 animIndex, s32 frame) {
     return cur_obj_check_anim_frame(frame);
 }
 
-static s32 cur_obj_set_anim_if_at_end(s32 animIndex) {
+/* static s32 cur_obj_set_anim_if_at_end(s32 animIndex) {
     if (cur_obj_check_if_at_animation_end()) {
         cur_obj_init_animation_with_sound(animIndex);
         return TRUE;
     }
     return FALSE;
-}
+} */
 
 static s32 cur_obj_play_sound_at_anim_range(s8 startFrame1, s8 startFrame2, u32 sound) {
     s32 rangeLength = o->header.gfx.animInfo.animAccel / 0x10000;
@@ -313,19 +313,19 @@ static s32 obj_smooth_turn(s16 *angleVel, s32 *angle, s16 targetAngle, f32 targe
     return (s16)(*angle) == targetAngle;
 }
 
-static void obj_roll_to_match_yaw_turn(s16 targetYaw, s16 maxRoll, s16 rollSpeed) {
+/* static void obj_roll_to_match_yaw_turn(s16 targetYaw, s16 maxRoll, s16 rollSpeed) {
     s16 targetRoll = o->oMoveAngleYaw - targetYaw;
     clamp_s16(&targetRoll, -maxRoll, maxRoll);
     obj_face_roll_approach(targetRoll, rollSpeed);
-}
+} */
 
 static s16 random_linear_offset(s16 base, s16 range) {
     return base + (s16)(range * random_float());
 }
 
-static s16 random_mod_offset(s16 base, s16 step, s16 mod) {
+/* static s16 random_mod_offset(s16 base, s16 step, s16 mod) {
     return base + step * (random_u16() % mod);
-}
+} */
 
 static s16 obj_random_fixed_turn(s16 delta) {
     return o->oMoveAngleYaw + (s16) random_sign() * delta;
@@ -357,7 +357,7 @@ static s32 obj_grow_then_shrink(f32 *scaleVel, f32 shootFireScale, f32 endScale)
     return 0;
 }
 
-static s32 oscillate_toward(s32 *value, f32 *vel, s32 target, f32 velCloseToZero, f32 accel, f32 slowdown) {
+/* static s32 oscillate_toward(s32 *value, f32 *vel, s32 target, f32 velCloseToZero, f32 accel, f32 slowdown) {
     s32 startValue = *value;
     *value += (s32) *vel;
 
@@ -380,7 +380,7 @@ static s32 oscillate_toward(s32 *value, f32 *vel, s32 target, f32 velCloseToZero
 
     return FALSE;
 }
-
+ */
 static void obj_update_blinking(s32 *blinkTimer, s16 baseCycleLength, s16 cycleLengthRange,
                                 s16 blinkLength) {
     if (*blinkTimer != 0) {

@@ -327,7 +327,7 @@ static void platform_on_track_act_fall(void) {
 /**
  * Control the rocking of the ski lift.
  */
-static void platform_on_track_rock_ski_lift(void) {
+/* static void platform_on_track_rock_ski_lift(void) {
     s32 targetRoll = 0;
 
     o->oFaceAngleRoll += (s32) o->oPlatformOnTrackSkiLiftRollVel;
@@ -339,14 +339,14 @@ static void platform_on_track_rock_ski_lift(void) {
     }
 
     oscillate_toward(
-        /* value          */ &o->oFaceAngleRoll,
-        /* vel            */ &o->oPlatformOnTrackSkiLiftRollVel,
-        /* target         */ targetRoll,
-        /* velCloseToZero */ 5.0f,
-        /* accel          */ 6.0f,
-        /* slowdown       */ 1.5f);
+        &o->oFaceAngleRoll,                 // value
+        &o->oPlatformOnTrackSkiLiftRollVel, // vel
+        targetRoll,                         // target
+        5.0f,                               // velCloseToZero
+        6.0f,                               // accel
+        1.5f);                              //slowdown
     clamp_f32(&o->oPlatformOnTrackSkiLiftRollVel, -100.0f, 100.0f);
-}
+} */
 
 /**
  * Update function for bhvPlatformOnTrack.
