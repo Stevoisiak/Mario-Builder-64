@@ -520,25 +520,25 @@ static Gfx *make_gfx_mario_alpha(struct GraphNodeGenerated *node, s16 alpha) {
 
 /**
  * Sets the correct blend mode and color for mirror Mario.
- */
-Gfx *geo_mirror_mario_set_alpha(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx) {
-    Gfx *gfx = NULL;
-    struct GraphNodeGenerated *asGenerated = (struct GraphNodeGenerated *) node;
-    struct MarioBodyState *bodyState = &gBodyStates[asGenerated->parameter];
-    s16 alpha;
+//  */
+// Gfx *geo_mirror_mario_set_alpha(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx) {
+//     Gfx *gfx = NULL;
+//     struct GraphNodeGenerated *asGenerated = (struct GraphNodeGenerated *) node;
+//     struct MarioBodyState *bodyState = &gBodyStates[asGenerated->parameter];
+//     s16 alpha;
 
-    if (callContext == GEO_CONTEXT_RENDER) {
-        alpha = (bodyState->modelState & MODEL_STATE_ALPHA) ? (bodyState->modelState & MODEL_STATE_MASK) : 0xFF;
-#ifdef PUPPYCAM
-        if (alpha > gPuppyCam.opacity) {
-            alpha = gPuppyCam.opacity;
-            bodyState->modelState |= MODEL_STATE_NOISE_ALPHA;
-        }
-#endif
-        gfx = make_gfx_mario_alpha(asGenerated, alpha);
-    }
-    return gfx;
-}
+//     if (callContext == GEO_CONTEXT_RENDER) {
+//         alpha = (bodyState->modelState & MODEL_STATE_ALPHA) ? (bodyState->modelState & MODEL_STATE_MASK) : 0xFF;
+// #ifdef PUPPYCAM
+//         if (alpha > gPuppyCam.opacity) {
+//             alpha = gPuppyCam.opacity;
+//             bodyState->modelState |= MODEL_STATE_NOISE_ALPHA;
+//         }
+// #endif
+//         gfx = make_gfx_mario_alpha(asGenerated, alpha);
+//     }
+//     return gfx;
+// }
 
 /**
  * Determines if Mario is standing or running for the level of detail of his model.
@@ -593,6 +593,10 @@ Gfx *geo_mario_tilt_torso(s32 callContext, struct GraphNode *node, UNUSED Mat4 *
 
     if (callContext == GEO_CONTEXT_RENDER) {
         struct GraphNodeRotation *rotNode = (struct GraphNodeRotation *) node->next;
+
+        if (gCurGraphNodeObject != &gMarioObject->header.gfx) {
+            return NULL;
+        }
 
         if (action != ACT_BUTT_SLIDE && action != ACT_HOLD_BUTT_SLIDE && action != ACT_WALKING
             && action != ACT_RIDING_SHELL_GROUND) {
@@ -678,6 +682,10 @@ Gfx *geo_switch_mario_hand(s32 callContext, struct GraphNode *node, UNUSED Mat4 
     struct MarioBodyState *bodyState = &gBodyStates[0];
 
     if (callContext == GEO_CONTEXT_RENDER) {
+        if (gCurGraphNodeObject != &gMarioObject->header.gfx) {
+            switchCase->selectedCase = MARIO_HAND_FISTS;
+            return NULL;
+        }
         if (bodyState->handState == MARIO_HAND_FISTS) {
             // switch between fists (0) and open (1)
             switchCase->selectedCase = ((bodyState->action & ACT_FLAG_SWIMMING_OR_FLYING) != 0);
@@ -696,7 +704,7 @@ Gfx *geo_switch_mario_hand(s32 callContext, struct GraphNode *node, UNUSED Mat4 
         if (gMarioState->powerup & 1) {
             switchCase->selectedCase = MARIO_HAND_RIGHT_CROWBAR;
         }
-        if ((mb64_lopt_game == MB64_GAME_BTCM)&&(gMarioState->flags & MARIO_WING_CAP)&&(gCurGraphNodeObject == &gMarioObject->header.gfx)) {
+        if ((mb64_lopt_game == MB64_GAME_BTCM)&&(gMarioState->flags & MARIO_WING_CAP)) {
             switchCase->selectedCase = MARIO_HAND_RIGHT_WING;
         }
 
@@ -757,7 +765,7 @@ Gfx *geo_switch_mario_cap_effect(s32 callContext, struct GraphNode *node, UNUSED
     if (callContext == GEO_CONTEXT_RENDER) {
         switchCase->selectedCase = bodyState->modelState >> 8;
 
-        if ((gCurGraphNodeObject != &gMarioObject->header.gfx)&&(gCurGraphNodeObject != &gMirrorMario)) {
+        if ((gCurGraphNodeObject != &gMarioObject->header.gfx)) {
             switchCase->selectedCase = MODEL_STATE_METAL >> 8;
         }
 
@@ -774,7 +782,7 @@ Gfx *geo_switch_mario_cap_effect(s32 callContext, struct GraphNode *node, UNUSED
 
         if ((gMarioState->CostumeID == 14) && (!(gMarioState->flags & MARIO_VANISH_CAP))) { // phat asm
             switchCase->selectedCase = MODEL_STATE_METAL >> 8;
-            if ((gCurGraphNodeObject != &gMarioObject->header.gfx)&&(gCurGraphNodeObject != &gMirrorMario)) {
+            if ((gCurGraphNodeObject != &gMarioObject->header.gfx)) {
                 switchCase->selectedCase = 0;
             }
             if (obj_has_behavior(gCurGraphNodeObject,bhvCurrPreviewObject)&&(mb64_toolbar_index == 7)) {
@@ -808,8 +816,9 @@ Gfx *geo_switch_mario_cap_on_off(s32 callContext, struct GraphNode *node, UNUSED
             }
             next = next->next;
         }
-        if (obj_has_behavior(gCurGraphNodeObject,bhvCurrPreviewObject)||obj_has_behavior(gCurGraphNodeObject,bhvPreviewObject)) {
+        if ((gCurGraphNodeObject != &gMarioObject->header.gfx) || obj_has_behavior(gCurGraphNodeObject,bhvCurrPreviewObject)||obj_has_behavior(gCurGraphNodeObject,bhvPreviewObject)) {
             switchCase->selectedCase = 0;
+            return NULL;
         }
         //WARIO
         if (gMarioState->CostumeID == 4) {
@@ -848,7 +857,7 @@ Gfx *geo_switch_mario_cap_on_off(s32 callContext, struct GraphNode *node, UNUSED
 
         if (gMarioState->powerup & 2) {
             switchCase->selectedCase = 8;
-            }
+        }
     }
 
     return NULL;
@@ -920,74 +929,74 @@ Gfx *geo_switch_mario_hand_grab_pos(s32 callContext, struct GraphNode *node, Mat
  * Geo node that creates a clone of Mario's geo node and updates it to becomes
  * a mirror image of the player.
  */
-Gfx *geo_render_mirror_mario(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx) {
-    f32 mirroredX;
-    struct Object *mario = gMarioStates[0].marioObj;
+// Gfx *geo_render_mirror_mario(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx) {
+//     f32 mirroredX;
+//     struct Object *mario = gMarioStates[0].marioObj;
 
 
-    switch (callContext) {
-        case GEO_CONTEXT_CREATE:
-            init_graph_node_object(NULL, &gMirrorMario, NULL, gVec3fZero, gVec3sZero, gVec3fOne);
-            break;
-        case GEO_CONTEXT_AREA_LOAD:
-            geo_add_child(node, &gMirrorMario.node);
-            break;
-        case GEO_CONTEXT_AREA_UNLOAD:
-            geo_remove_child(&gMirrorMario.node);
-            break;
-        case GEO_CONTEXT_RENDER:
-                // TODO: Is this a geo layout copy or a graph node copy?
-            if (MetalAppear == FALSE) {
-                gMirrorMario.sharedChild = mario->header.gfx.sharedChild;
-                gMirrorMario.areaIndex = mario->header.gfx.areaIndex;
-                vec3s_copy(gMirrorMario.angle, mario->header.gfx.angle);
-                vec3f_copy(gMirrorMario.pos, mario->header.gfx.pos);
-                vec3f_copy(gMirrorMario.scale, mario->header.gfx.scale);
+//     switch (callContext) {
+//         case GEO_CONTEXT_CREATE:
+//             init_graph_node_object(NULL, &gMirrorMario, NULL, gVec3fZero, gVec3sZero, gVec3fOne);
+//             break;
+//         case GEO_CONTEXT_AREA_LOAD:
+//             geo_add_child(node, &gMirrorMario.node);
+//             break;
+//         case GEO_CONTEXT_AREA_UNLOAD:
+//             geo_remove_child(&gMirrorMario.node);
+//             break;
+//         case GEO_CONTEXT_RENDER:
+//                 // TODO: Is this a geo layout copy or a graph node copy?
+//             if (MetalAppear == FALSE) {
+//                 gMirrorMario.sharedChild = mario->header.gfx.sharedChild;
+//                 gMirrorMario.areaIndex = mario->header.gfx.areaIndex;
+//                 vec3s_copy(gMirrorMario.angle, mario->header.gfx.angle);
+//                 vec3f_copy(gMirrorMario.pos, mario->header.gfx.pos);
+//                 vec3f_copy(gMirrorMario.scale, mario->header.gfx.scale);
 
-                gMirrorMario.animInfo = mario->header.gfx.animInfo;
-                mirroredX = CASTLE_MIRROR_X - gMirrorMario.pos[0];
-                gMirrorMario.pos[0] = mirroredX + CASTLE_MIRROR_X;
-                gMirrorMario.angle[1] = -gMirrorMario.angle[1];
-                gMirrorMario.scale[0] *= -1.0f;
+//                 gMirrorMario.animInfo = mario->header.gfx.animInfo;
+//                 mirroredX = CASTLE_MIRROR_X - gMirrorMario.pos[0];
+//                 gMirrorMario.pos[0] = mirroredX + CASTLE_MIRROR_X;
+//                 gMirrorMario.angle[1] = -gMirrorMario.angle[1];
+//                 gMirrorMario.scale[0] *= -1.0f;
 
-                ((struct GraphNode *) &gMirrorMario)->flags |= GRAPH_RENDER_ACTIVE;
-            } else {
-                gMirrorMario.sharedChild = mario->header.gfx.sharedChild;
-                gMirrorMario.areaIndex = mario->header.gfx.areaIndex;
+//                 ((struct GraphNode *) &gMirrorMario)->flags |= GRAPH_RENDER_ACTIVE;
+//             } else {
+//                 gMirrorMario.sharedChild = mario->header.gfx.sharedChild;
+//                 gMirrorMario.areaIndex = mario->header.gfx.areaIndex;
 
-                gMirrorMario.animInfo = mario->header.gfx.animInfo;
-                gMirrorMario.pos[1] = -500.0f;
-                gMirrorMario.angle[1] = -gMirrorMario.angle[1];
-                gMirrorMario.scale[0] *= -1.0f;
+//                 gMirrorMario.animInfo = mario->header.gfx.animInfo;
+//                 gMirrorMario.pos[1] = -500.0f;
+//                 gMirrorMario.angle[1] = -gMirrorMario.angle[1];
+//                 gMirrorMario.scale[0] *= -1.0f;
                 
-                ((struct GraphNode *) &gMirrorMario)->flags &= ~GRAPH_RENDER_ACTIVE;
-            }
-            break;
-    }
-    return NULL;
-}
+//                 ((struct GraphNode *) &gMirrorMario)->flags &= ~GRAPH_RENDER_ACTIVE;
+//             }
+//             break;
+//     }
+//     return NULL;
+// }
 
-/**
- * Since Mirror Mario has an x scale of -1, the mesh becomes inside out.
- * This node corrects that by changing the culling mode accordingly.
- */
-Gfx *geo_mirror_mario_backface_culling(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx) {
-    struct GraphNodeGenerated *asGenerated = (struct GraphNodeGenerated *) node;
-    Gfx *gfx = NULL;
+// /**
+//  * Since Mirror Mario has an x scale of -1, the mesh becomes inside out.
+//  * This node corrects that by changing the culling mode accordingly.
+//  */
+// Gfx *geo_mirror_mario_backface_culling(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx) {
+//     struct GraphNodeGenerated *asGenerated = (struct GraphNodeGenerated *) node;
+//     Gfx *gfx = NULL;
 
-    if (callContext == GEO_CONTEXT_RENDER && gCurGraphNodeObject == &gMirrorMario) {
-        gfx = alloc_display_list(3 * sizeof(*gfx));
+//     if (callContext == GEO_CONTEXT_RENDER && gCurGraphNodeObject == &gMirrorMario) {
+//         gfx = alloc_display_list(3 * sizeof(*gfx));
 
-        if (asGenerated->parameter == 0) {
-            gSPClearGeometryMode(&gfx[0], G_CULL_BACK);
-            gSPSetGeometryMode(&gfx[1], G_CULL_FRONT);
-            gSPEndDisplayList(&gfx[2]);
-        } else {
-            gSPClearGeometryMode(&gfx[0], G_CULL_FRONT);
-            gSPSetGeometryMode(&gfx[1], G_CULL_BACK);
-            gSPEndDisplayList(&gfx[2]);
-        }
-        SET_GRAPH_NODE_LAYER(asGenerated->fnNode.node.flags, LAYER_OPAQUE);
-    }
-    return gfx;
-}
+//         if (asGenerated->parameter == 0) {
+//             gSPClearGeometryMode(&gfx[0], G_CULL_BACK);
+//             gSPSetGeometryMode(&gfx[1], G_CULL_FRONT);
+//             gSPEndDisplayList(&gfx[2]);
+//         } else {
+//             gSPClearGeometryMode(&gfx[0], G_CULL_FRONT);
+//             gSPSetGeometryMode(&gfx[1], G_CULL_BACK);
+//             gSPEndDisplayList(&gfx[2]);
+//         }
+//         SET_GRAPH_NODE_LAYER(asGenerated->fnNode.node.flags, LAYER_OPAQUE);
+//     }
+//     return gfx;
+// }
