@@ -734,7 +734,7 @@ void apply_gravity(struct MarioState *m) {
             m->vel[1] = -75.0f;
         }
 
-        if (((m->flags & MARIO_WING_CAP) || (save_file_get_badge_equip() & (1 << BADGE_SLOWFALL))) && m->vel[1] < 0.0f && (m->input & INPUT_A_DOWN)) {
+        if (((m->flags & MARIO_FLYING_CAP) || (save_file_get_badge_equip() & (1 << BADGE_SLOWFALL))) && m->vel[1] < 0.0f && (m->input & INPUT_A_DOWN)) {
             slowfall(m, 4.f, -75.f);
         }
     }

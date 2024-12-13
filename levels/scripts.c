@@ -285,6 +285,7 @@ const LevelScript script_func_mb64_theme_btcm[] = {
     LOAD_MODEL_FROM_GEO(MODEL_BADGE, badge_geo),
     LOAD_MODEL_FROM_GEO(MODEL_MARIOS_METAL_CAP,        vanetalc_geo),
     LOAD_MODEL_FROM_GEO(MODEL_MARIOS_WING_CAP,         rocket_boot_geo),
+    // LOAD_MODEL_FROM_GEO(MODEL_V_MARIOS_WING_CAP,         marios_wing_cap_geo), // FIXME: Crashes when loading level
     LOAD_MODEL_FROM_GEO(MODEL_EXCLAMATION_BOX,         exclamation_box_geo),
     LOAD_MODEL_FROM_GEO(MODEL_PODOBOO,  podoboo_geo),
     LOAD_MODEL_FROM_GEO(MODEL_GREEN_COIN,    green_coin_geo),

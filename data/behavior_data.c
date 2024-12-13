@@ -5486,6 +5486,16 @@ const BehaviorScript bhvVanishCap[] = {
     END_LOOP(),
 };
 
+const BehaviorScript bhvRocketBoots[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_LONG(oFlags, (OBJ_FLAG_COMPUTE_ANGLE_TO_MARIO | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_SILHOUETTE)),
+    SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_LOW),
+    CALL_NATIVE(bhv_wing_cap_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_wing_vanish_cap_loop),
+    END_LOOP(),
+};
+
 const BehaviorScript bhvStar[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO)),

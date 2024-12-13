@@ -696,7 +696,7 @@ Gfx *geo_switch_mario_hand(s32 callContext, struct GraphNode *node, UNUSED Mat4 
         if (gMarioState->powerup & 1) {
             switchCase->selectedCase = MARIO_HAND_RIGHT_CROWBAR;
         }
-        if ((mb64_lopt_game == MB64_GAME_BTCM)&&(gMarioState->flags & MARIO_WING_CAP)&&(gCurGraphNodeObject == &gMarioObject->header.gfx)) {
+        if ((gMarioState->flags & MARIO_ROCKET_BOOTS)&&(gCurGraphNodeObject == &gMarioObject->header.gfx)) {
             switchCase->selectedCase = MARIO_HAND_RIGHT_WING;
         }
 
@@ -761,7 +761,7 @@ Gfx *geo_switch_mario_cap_effect(s32 callContext, struct GraphNode *node, UNUSED
             switchCase->selectedCase = MODEL_STATE_METAL >> 8;
         }
 
-        if ((mb64_lopt_game == MB64_GAME_BTCM)&&(gMarioState->flags & MARIO_WING_CAP)&&(gCurGraphNodeObject == &gMarioObject->header.gfx)) {
+        if ((gMarioState->flags & MARIO_ROCKET_BOOTS)&&(gCurGraphNodeObject == &gMarioObject->header.gfx)) {
             switchCase->selectedCase = 4;
             if (gMarioState->flags & MARIO_VANISH_CAP) {
                 switchCase->selectedCase = bodyState->modelState >> 8;

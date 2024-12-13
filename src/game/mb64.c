@@ -3891,6 +3891,7 @@ void sb_loop(void) {
                 switch(mb64_toolbar_index) {
                     case 7: // save and test
                         // Tile Check
+                        ;
                         u32 type = get_grid_tile(mb64_cursor_pos)->type;
                         if (type != TILE_TYPE_EMPTY && type != TILE_TYPE_WATER) {
                             u32 tileFlags = get_tile_occupy_flags(type);

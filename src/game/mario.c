@@ -1107,7 +1107,7 @@ s32 set_jump_from_landing(struct MarioState *m) {
                 case ACT_DOUBLE_JUMP_LAND:
                     // If Mario has a wing cap, he ignores the typical speed
                     // requirement for a triple jump.
-                    if (m->flags & MARIO_WING_CAP) {
+                    if (m->flags & MARIO_FLYING_CAP) {
                         set_mario_action(m, ACT_FLYING_TRIPLE_JUMP, 0);
                     } else if (m->forwardVel > 20.0f) {
                         set_mario_action(m, ACT_TRIPLE_JUMP, 0);
@@ -1810,7 +1810,7 @@ u32 update_and_return_cap_flags(struct MarioState *m) {
         }
 
         if (gMarioState->RFuel < 1) {
-            m->flags &= ~(MARIO_WING_CAP);
+            m->flags &= ~(MARIO_ROCKET_BOOTS);
         }
 
         return flags;
@@ -2220,7 +2220,7 @@ s32 execute_mario_action(UNUSED struct Object *obj) {
     }
     if (gMarioState->Cheats & (1 << 4)) {//infinite rocket boots
         gMarioState->RFuel=100;
-        gMarioState->flags |= MARIO_WING_CAP;
+        gMarioState->flags |= MARIO_ROCKET_BOOTS;
     }
     
     //print_text_fmt_int(110, 56, "MEM %d", sPoolFreeSpace);

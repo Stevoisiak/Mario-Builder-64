@@ -112,7 +112,7 @@ void worm_loop(void) {
         break;
         case 2:
             gMarioState->RFuel = 100;
-            gMarioState->flags |= MARIO_WING_CAP;
+            gMarioState->flags |= MARIO_ROCKET_BOOTS;
 
             //pursue target
             vec3f_copy(&WormTarget,&gMarioState->pos);

@@ -391,24 +391,22 @@ void update_flying(struct MarioState *m) {
 
     gMarioState->SFuel ++;
 
-    if (mb64_lopt_game == MB64_GAME_BTCM) {
-        if ((gMarioState->SFuel > 12)&&(gMarioState->RFuel > 0)) {
-            gMarioState->RFuel --;
-            gMarioState->SFuel = 0;
-            }
-
-        //FUEL
-        if (gPlayer1Controller->buttonDown & B_BUTTON) {
-
-            gMarioState->SFuel += 4;
-
-            if (m->forwardVel < 70.0f) {
-                m->forwardVel += 3.5f;
-            }//
-            spawn_object(m->marioObj, MODEL_RED_FLAME, bhvKoopaShellFlame);
-            play_sound(SOUND_GENERAL_DONUT_PLATFORM_EXPLOSION, m->marioObj->header.gfx.cameraToObject);
-            cur_obj_shake_screen(SHAKE_POS_SMALL);
+    if ((gMarioState->SFuel > 12)&&(gMarioState->RFuel > 0)) {
+        gMarioState->RFuel --;
+        gMarioState->SFuel = 0;
         }
+
+    //FUEL
+    if ((gPlayer1Controller->buttonDown & B_BUTTON) && gMarioState->flags & MARIO_ROCKET_BOOTS) {
+
+        gMarioState->SFuel += 4;
+
+        if (m->forwardVel < 70.0f) {
+            m->forwardVel += 3.5f;
+        }//
+        spawn_object(m->marioObj, MODEL_RED_FLAME, bhvKoopaShellFlame);
+        play_sound(SOUND_GENERAL_DONUT_PLATFORM_EXPLOSION, m->marioObj->header.gfx.cameraToObject);
+        cur_obj_shake_screen(SHAKE_POS_SMALL);
     }
 }
 
@@ -877,7 +875,7 @@ s32 act_dive(struct MarioState *m) {
     update_air_without_turn(m);
 
     m->actionTimer++;
-    if ((mb64_lopt_game == MB64_GAME_BTCM)&&(m->flags & MARIO_WING_CAP)&&(m->faceAngle[0] < -0x443)&&(m->actionTimer > 12)) {
+    if ((m->flags & MARIO_ROCKET_BOOTS)&&(m->faceAngle[0] < -0x443)&&(m->actionTimer > 12)) {
         m->angleVel[1] = 0;
         set_mario_action(m, ACT_FLYING, 0);
     }
@@ -1821,7 +1819,7 @@ s32 act_shot_from_cannon(struct MarioState *m) {
             break;
     }
 
-    if ((m->flags & MARIO_WING_CAP) && m->vel[1] < 0.0f) {
+    if ((m->flags & MARIO_FLYING_CAP) && m->vel[1] < 0.0f) {
         m->angleVel[1] = 0;
         set_mario_action(m, ACT_FLYING, 0);
     }
@@ -1849,7 +1847,7 @@ s32 act_flying(struct MarioState *m) {
         return set_mario_action(m, ACT_GROUND_POUND, 1);
     }
 
-    if (!(m->flags & MARIO_WING_CAP)) {
+    if (!(m->flags & MARIO_FLYING_CAP)) {
         if (m->area->camera->mode == FLYING_CAMERA_MODE) {
             set_camera_mode(m->area->camera, m->area->camera->defMode, 1);
         }

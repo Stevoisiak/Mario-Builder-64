@@ -358,7 +358,7 @@ void bhv_crowbar_power_loop() {
 
             // Crowbar and rocket boots incompatible
             if (power == 1) {
-                gMarioState->flags &= ~MARIO_WING_CAP;
+                gMarioState->flags &= ~MARIO_ROCKET_BOOTS;
                 gMarioState->RFuel = 0;
             } else {
                 bullet_fuel = 60;

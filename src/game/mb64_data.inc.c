@@ -1391,8 +1391,8 @@ struct mb64_custom_theme mb64_curr_custom_theme;
 #define WATER_TEX() (mb64_water_texs[mb64_theme_table[mb64_lopt_theme].water])
 
 struct ExclamationBoxContents sExclamationBoxContents_btcm[] = {
-    { 0, MODEL_MARIOS_WING_CAP,  bhvWingCap,           0, TRUE,  0},
-    { 0, MODEL_MARIOS_METAL_CAP, bhvVanishCap,         2, TRUE,  0},
+    { 0, MODEL_MARIOS_WING_CAP,  bhvRocketBoots,       0, TRUE,  0},
+    { 0, MODEL_MARIOS_METAL_CAP, bhvWingCap,           2, TRUE,  0},
     { 0, MODEL_KOOPA_SHELL,      bhvKoopaShell,        3, TRUE,  0},
     { 0, MODEL_GREEN_COIN,       bhvGreenGetsSpawned,  4, FALSE, 3},
     { 0, MODEL_YELLOW_COIN,      bhvSingleCoinGetsSpawned,  4, FALSE, 1},
