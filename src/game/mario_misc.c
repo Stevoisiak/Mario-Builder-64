@@ -520,25 +520,25 @@ static Gfx *make_gfx_mario_alpha(struct GraphNodeGenerated *node, s16 alpha) {
 
 /**
  * Sets the correct blend mode and color for mirror Mario.
-//  */
-// Gfx *geo_mirror_mario_set_alpha(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx) {
-//     Gfx *gfx = NULL;
-//     struct GraphNodeGenerated *asGenerated = (struct GraphNodeGenerated *) node;
-//     struct MarioBodyState *bodyState = &gBodyStates[asGenerated->parameter];
-//     s16 alpha;
+ */
+Gfx *geo_mirror_mario_set_alpha(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx) {
+    Gfx *gfx = NULL;
+    struct GraphNodeGenerated *asGenerated = (struct GraphNodeGenerated *) node;
+    struct MarioBodyState *bodyState = &gBodyStates[asGenerated->parameter];
+    s16 alpha;
 
-//     if (callContext == GEO_CONTEXT_RENDER) {
-//         alpha = (bodyState->modelState & MODEL_STATE_ALPHA) ? (bodyState->modelState & MODEL_STATE_MASK) : 0xFF;
-// #ifdef PUPPYCAM
-//         if (alpha > gPuppyCam.opacity) {
-//             alpha = gPuppyCam.opacity;
-//             bodyState->modelState |= MODEL_STATE_NOISE_ALPHA;
-//         }
-// #endif
-//         gfx = make_gfx_mario_alpha(asGenerated, alpha);
-//     }
-//     return gfx;
-// }
+    if (callContext == GEO_CONTEXT_RENDER) {
+        alpha = (bodyState->modelState & MODEL_STATE_ALPHA) ? (bodyState->modelState & MODEL_STATE_MASK) : 0xFF;
+#ifdef PUPPYCAM
+        if (alpha > gPuppyCam.opacity) {
+            alpha = gPuppyCam.opacity;
+            bodyState->modelState |= MODEL_STATE_NOISE_ALPHA;
+        }
+#endif
+        gfx = make_gfx_mario_alpha(asGenerated, alpha);
+    }
+    return gfx;
+}
 
 /**
  * Determines if Mario is standing or running for the level of detail of his model.

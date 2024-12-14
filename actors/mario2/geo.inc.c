@@ -673,6 +673,7 @@ const GeoLayout mario2_geo[] = {
    GEO_OPEN_NODE(),
       GEO_SCALE(0x00, 16384),
       GEO_OPEN_NODE(),
+         GEO_ASM(0, geo_mirror_mario_set_alpha),
          GEO_SWITCH_CASE(0, geo_switch_mario_stand_run),
          GEO_OPEN_NODE(),
             GEO_BRANCH(1, mario_geo_load_body),
