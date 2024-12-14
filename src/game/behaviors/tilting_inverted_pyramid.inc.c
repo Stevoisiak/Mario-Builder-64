@@ -6388,10 +6388,13 @@ void bhv_conveyor_loop(void) {
             s32 shape = o->oBehParams2ndByte & 0x3;
             if (shape < 2) return;
             s32 targetModel = MODEL_MAKER_CONVEYOR_SLOPE;
+            const void *targetCol = conveyor_slope_collision;
             if ((shape == 2 && mb64_play_onoff) || (shape == 3 && !mb64_play_onoff)) {
                 targetModel = MODEL_MAKER_CONVEYOR_DSLOPE;
+                targetCol = conveyor_dslope_collision;
             } 
             cur_obj_set_model(targetModel);
+            o->collisionData = segmented_to_virtual(targetCol);
         }
     }
 }
