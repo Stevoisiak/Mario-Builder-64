@@ -816,7 +816,9 @@ Gfx *geo_switch_mario_cap_on_off(s32 callContext, struct GraphNode *node, UNUSED
             }
             next = next->next;
         }
-        if ((gCurGraphNodeObject != &gMarioObject->header.gfx) || obj_has_behavior(gCurGraphNodeObject,bhvCurrPreviewObject)||obj_has_behavior(gCurGraphNodeObject,bhvPreviewObject)) {
+        if (obj_has_behavior(gCurGraphNodeObject,bhvCurrPreviewObject) && (mb64_toolbar_index == 7)) {
+            switchCase->selectedCase = 0;
+        } else if ((gCurGraphNodeObject != &gMarioObject->header.gfx)) {
             switchCase->selectedCase = 0;
             return NULL;
         }
