@@ -6159,8 +6159,11 @@ void bhv_onoffswitch_falling(void) {
         o->oPosY = floorHeight;
         o->oVelY = 0.f;
         o->oExtraVariable1 = 0;
-        remove_object_from_physics_list(o);
-        if (o->oFloor->type == SURFACE_DEATH_PLANE) o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
+        if (o->oFloor->type == SURFACE_DEATH_PLANE) {
+            o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
+        } else {
+            remove_object_from_physics_list(o);
+        }
     }
 }
 
