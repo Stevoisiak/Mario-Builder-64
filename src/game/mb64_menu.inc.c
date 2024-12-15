@@ -1992,7 +1992,7 @@ s32 mb64_main_menu(void) {
                     mb64_mm_state = MM_MAIN;
 
                     //set mb64_username to author in sram config
-                    bcopy(&mb64_sram_configuration.author,&mb64_username,sizeof(mb64_username));
+                    strncpy(&mb64_username, &mb64_sram_configuration.author, MAX_USERNAME_SIZE);
                     mb64_has_username = TRUE;
                 } else {
                     //no author file detected, prompt user to enter an author name
@@ -2369,8 +2369,7 @@ s32 mb64_main_menu(void) {
                     case KXM_AUTHOR:
                     case KXM_CHANGE_AUTHOR:
                         strncpy(&mb64_username,&mb64_mm_keyboard_input,MAX_USERNAME_SIZE);
-
-                        bcopy(&mb64_username,&mb64_sram_configuration.author,sizeof(mb64_sram_configuration.author));
+                        strncpy(&mb64_sram_configuration.author, &mb64_username, MAX_USERNAME_SIZE);
                         if (gSramProbe != 0) {
                             nuPiWriteSram(0, &mb64_sram_configuration, ALIGN8(sizeof(mb64_sram_configuration)));
                         }
@@ -2588,9 +2587,8 @@ s32 draw_mb64_pause_menu(void) {
             if (mb64_save.author[0] != 0) {
 
                 create_dl_translation_matrix(MENU_MTX_PUSH, 160, 0, 0);
-                create_dl_scale_matrix(MENU_MTX_PUSH, 1.5f, 1.5f, 0.f);
+                create_dl_scale_matrix(MENU_MTX_NOPUSH, 1.5f, 1.5f, 0.f);
                 print_generic_string_ascii_centered_nofileext(0,134,mb64_file_name);
-                gSPPopMatrix(gDisplayListHead++, G_MTX_MODELVIEW);
                 gSPPopMatrix(gDisplayListHead++, G_MTX_MODELVIEW);
 
                 sprintf(stringBuf,"%s%s","By: ",mb64_save.author);

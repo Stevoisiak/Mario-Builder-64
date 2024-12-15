@@ -186,7 +186,7 @@ u8 mb64_has_username = FALSE;
 
 u8 mb64_num_vertices_cached = 0;
 u8 mb64_num_tris_cached = 0;
-u8 mb64_cached_tris[32][3];
+u8 mb64_cached_tris[64][3];
 s16 mb64_tip_timer = 0;
 
 struct CachedVertexInfo {
@@ -634,7 +634,7 @@ void display_cached_tris(void) {
 }
 
 void check_cached_tris(void) {
-    if (mb64_num_vertices_cached > 28) {
+    if (mb64_num_vertices_cached > 28 || mb64_num_tris_cached > 62) {
         display_cached_tris();
     }
 }

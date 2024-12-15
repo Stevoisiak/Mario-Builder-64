@@ -2213,15 +2213,15 @@ void render_pause_my_score_coins(void) {
     */
 
 
-    gSPDisplayList(gDisplayListHead++, dl_ia_text_begin);
-    if (mb64_save.author[0] != 0) {
-        print_generic_string_ascii_nofileext(SECRET_LVL_NAME_X, 160+8, mb64_file_name);
-        print_generic_string_ascii_nofileext(SECRET_LVL_NAME_X, 160-8, "By:");
-        print_generic_string_ascii_nofileext(SECRET_LVL_NAME_X+18, 160-8, mb64_save.author);
-    } else {
-        print_generic_string_ascii_nofileext(SECRET_LVL_NAME_X, 157, mb64_file_name);
-    }
-    gSPDisplayList(gDisplayListHead++, dl_ia_text_end);
+    // gSPDisplayList(gDisplayListHead++, dl_ia_text_begin);
+    // if (mb64_save.author[0] != 0) {
+    //     print_generic_string_ascii_nofileext(SECRET_LVL_NAME_X, 160+8, mb64_file_name);
+    //     print_generic_string_ascii_nofileext(SECRET_LVL_NAME_X, 160-8, "By:");
+    //     print_generic_string_ascii_nofileext(SECRET_LVL_NAME_X+18, 160-8, mb64_save.author);
+    // } else {
+    //     print_generic_string_ascii_nofileext(SECRET_LVL_NAME_X, 157, mb64_file_name);
+    // }
+    // gSPDisplayList(gDisplayListHead++, dl_ia_text_end);
 }
 
 #define TXT1_X 3
