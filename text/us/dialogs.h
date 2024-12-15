@@ -139,7 +139,7 @@ Would you like to Save?\n\
 \n\
 //Yes////No"))
 
-DEFINE_DIALOG(DIALOG_013, 1, 3, 30, 200, _("\
+DEFINE_DIALOG(DIALOG_013, 1, 3, 95, 180, _("\
 You've collected every\n\
 star in the level!\n\
 Congratulations!\n\
