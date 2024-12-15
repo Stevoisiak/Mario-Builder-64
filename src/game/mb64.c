@@ -2235,13 +2235,13 @@ void block_ceil_collision(f32 x, f32 y, f32 z) {
     mb64_build_collision_type = 2;
 
     pos[0] = COL_POS_TO_GRID(x);
-    pos[1] = COL_POS_TO_GRID(y-5);
+    pos[1] = COL_POS_TO_GRID(y-5) + 1;
     pos[2] = COL_POS_TO_GRID(z);
 
     begin_block_collision();
 
     generate_block_collision(pos);
-    pos[1]++;
+    pos[1]--;
     generate_block_collision(pos);
 
     end_block_collision();

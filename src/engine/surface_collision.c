@@ -223,10 +223,6 @@ static s32 find_wall_collisions_from_list(struct SurfaceNode *surfaceNode, struc
             data->walls[data->numWalls++] = surf;
         }
         numCols++;
-
-        if (gCollisionFlags & COLLISION_FLAG_RETURN_FIRST) {
-            break;
-        }
     }
 
     data->x = pos[0];
@@ -298,7 +294,7 @@ s32 find_wall_collisions(struct WallCollisionData *colData) {
     node = gBlockSurfaces[SPATIAL_PARTITION_WALLS];
     numCollisions += find_wall_collisions_from_list(node, colData);
 
-    gCollisionFlags &= ~(COLLISION_FLAG_RETURN_FIRST | COLLISION_FLAG_INCLUDE_INTANGIBLE | COLLISION_FLAG_SHORT_FLOOR_CHECK);
+    gCollisionFlags &= ~(COLLISION_FLAG_INCLUDE_INTANGIBLE | COLLISION_FLAG_SHORT_FLOOR_CHECK);
 #ifdef VANILLA_DEBUG
     // Increment the debug tracker.
     gNumCalls.wall++;
@@ -415,7 +411,7 @@ static struct Surface *find_ceil_from_list(struct SurfaceNode *surfaceNode, s32 
 
         // Exit the loop if it's not possible for another ceiling to be closer
         // to the original point, or if COLLISION_FLAG_RETURN_FIRST.
-        if (height == y || (gCollisionFlags & COLLISION_FLAG_RETURN_FIRST)) break;
+        if (height == y) break;
     }
     return ceil;
 }
@@ -465,7 +461,7 @@ f32 find_ceil(f32 posX, f32 posY, f32 posZ, struct Surface **pceil) {
     }
 
     // To prevent accidentally leaving the floor tangible, stop checking for it.
-    gCollisionFlags &= ~(COLLISION_FLAG_RETURN_FIRST | COLLISION_FLAG_INCLUDE_INTANGIBLE | COLLISION_FLAG_SHORT_FLOOR_CHECK);
+    gCollisionFlags &= ~(COLLISION_FLAG_INCLUDE_INTANGIBLE | COLLISION_FLAG_SHORT_FLOOR_CHECK);
 
     // Return the ceiling.
     *pceil = ceil;
@@ -557,7 +553,7 @@ static struct Surface *find_floor_from_list(struct SurfaceNode *surfaceNode, s32
 
         // Exit the loop if it's not possible for another floor to be closer
         // to the original point, or if COLLISION_FLAG_RETURN_FIRST.
-        if ((height == bufferY) || (gCollisionFlags & COLLISION_FLAG_RETURN_FIRST)) break;
+        if (height == bufferY) break;
     }
     return floor;
 }
@@ -645,7 +641,7 @@ f32 find_floor(f32 xPos, f32 yPos, f32 zPos, struct Surface **pfloor) {
     }
 
     // To prevent accidentally leaving the floor tangible, stop checking for it.
-    gCollisionFlags &= ~(COLLISION_FLAG_RETURN_FIRST | COLLISION_FLAG_INCLUDE_INTANGIBLE | COLLISION_FLAG_SHORT_FLOOR_CHECK);
+    gCollisionFlags &= ~(COLLISION_FLAG_INCLUDE_INTANGIBLE | COLLISION_FLAG_SHORT_FLOOR_CHECK);
     // If a floor was missed, increment the debug counter.
     if (floor == NULL) {
         gNumFindFloorMisses++;
