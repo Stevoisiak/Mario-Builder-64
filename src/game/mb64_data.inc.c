@@ -803,10 +803,10 @@ enum mb64_materials {
     MB64_MAT_CRYSTAL,
     MB64_MAT_VP_SCREEN,
 
-    MB64_MATLIST_END,
+    MB64_MATLIST_TRANSPARENT_END,
 
     // Retro
-    MB64_MAT_RETRO_GROUND = MB64_MATLIST_END,
+    MB64_MAT_RETRO_GROUND = MB64_MATLIST_TRANSPARENT_END,
     MB64_MAT_RETRO_BRICKS,
     MB64_MAT_RETRO_TREETOP,
     MB64_MAT_RETRO_TREEPLAT,
@@ -818,8 +818,10 @@ enum mb64_materials {
     MB64_MAT_RETRO_LAVA,
     MB64_MAT_RETRO_UNDERWATERGROUND,
 
+    MB64_MATLIST_END,
+
     // Minecraft
-    MB64_MAT_MC_DIRT,
+    MB64_MAT_MC_DIRT = MB64_MATLIST_END,
     MB64_MAT_MC_GRASS,
     MB64_MAT_MC_COBBLESTONE,
     MB64_MAT_MC_STONE,
@@ -845,6 +847,7 @@ u8 mb64_matlist[] = {
     MB64_MATLIST_METAL_END,
     MB64_MATLIST_BUILDING_END,
     MB64_MATLIST_HAZARD_END,
+    MB64_MATLIST_TRANSPARENT_END,
     MB64_MATLIST_END,
 };
 char *mb64_matlist_names[] = {
@@ -858,6 +861,7 @@ char *mb64_matlist_names[] = {
     "Other",
     "Hazards",
     "Transparent",
+    "Retro",
 };
 
 struct mb64_material mb64_mat_table[] = {
@@ -1014,17 +1018,17 @@ struct mb64_material mb64_mat_table[] = {
     {mat_maker_MakerScreen,  MAT_DECAL,       TRUE,  SURFACE_DEFAULT,       "Screen"},       // MB64_MAT_VP_SCREEN
 
     // Retro
-    {mat_maker_MakerRetroGround,     MAT_OPAQUE, TRUE, SURFACE_NOT_SLIPPERY, NULL}, // MB64_MAT_RETRO_GROUND
-    {mat_maker_MakerRetroBrick,      MAT_OPAQUE, TRUE, SURFACE_DEFAULT,      NULL}, // MB64_MAT_RETRO_BRICKS
-    {mat_maker_MakerRetroTreeTop,    MAT_OPAQUE, TRUE, SURFACE_GRASS,        NULL}, // MB64_MAT_RETRO_TREETOP
-    {mat_maker_MakerRetroTree,       MAT_OPAQUE, TRUE, SURFACE_DEFAULT,      NULL}, // MB64_MAT_RETRO_TREEPLAT
-    {mat_maker_MakerRetroBlock,      MAT_OPAQUE, TRUE, SURFACE_NOT_SLIPPERY, NULL}, // MB64_MAT_RETRO_BLOCK
-    {mat_maker_MakerRetroBGround,    MAT_OPAQUE, TRUE, SURFACE_NOT_SLIPPERY, NULL}, // MB64_MAT_RETRO_BLUEGROUND
-    {mat_maker_MakerRetroBBrick,     MAT_OPAQUE, TRUE, SURFACE_DEFAULT,      NULL}, // MB64_MAT_RETRO_BLUEBRICKS
-    {mat_maker_MakerRetroBBlock,     MAT_OPAQUE, TRUE, SURFACE_NOT_SLIPPERY, NULL}, // MB64_MAT_RETRO_BLUEBLOCK
-    {mat_maker_MakerRetroWBrick,     MAT_OPAQUE, TRUE, SURFACE_DEFAULT,      NULL}, // MB64_MAT_RETRO_WHITEBRICK
-    {mat_maker_MakerRetroLava,       MAT_OPAQUE, TRUE, SURFACE_BURNING,      NULL}, // MB64_MAT_RETRO_LAVA
-    {mat_maker_MakerRetroUnderwater, MAT_OPAQUE, TRUE, SURFACE_NOT_SLIPPERY, NULL}, // MB64_MAT_RETRO_UNDERWATERGROUND
+    {mat_maker_MakerRetroGround,     MAT_OPAQUE, TRUE, SURFACE_NOT_SLIPPERY, "NES Ground (Red)"},   // MB64_MAT_RETRO_GROUND
+    {mat_maker_MakerRetroBrick,      MAT_OPAQUE, TRUE, SURFACE_DEFAULT,      "NES Brick (Red)"},    // MB64_MAT_RETRO_BRICKS
+    {mat_maker_MakerRetroTreeTop,    MAT_OPAQUE, TRUE, SURFACE_GRASS,        "NES Tree"},           // MB64_MAT_RETRO_TREETOP
+    {mat_maker_MakerRetroTree,       MAT_OPAQUE, TRUE, SURFACE_DEFAULT,      "NES Wood"},           // MB64_MAT_RETRO_TREEPLAT
+    {mat_maker_MakerRetroBlock,      MAT_OPAQUE, TRUE, SURFACE_NOT_SLIPPERY, "NES Block (Red)"},    // MB64_MAT_RETRO_BLOCK
+    {mat_maker_MakerRetroBGround,    MAT_OPAQUE, TRUE, SURFACE_NOT_SLIPPERY, "NES Ground (Blue)"},  // MB64_MAT_RETRO_BLUEGROUND
+    {mat_maker_MakerRetroBBrick,     MAT_OPAQUE, TRUE, SURFACE_DEFAULT,      "NES Brick (Blue)"},   // MB64_MAT_RETRO_BLUEBRICKS
+    {mat_maker_MakerRetroBBlock,     MAT_OPAQUE, TRUE, SURFACE_NOT_SLIPPERY, "NES Block (Blue)"},   // MB64_MAT_RETRO_BLUEBLOCK
+    {mat_maker_MakerRetroWBrick,     MAT_OPAQUE, TRUE, SURFACE_DEFAULT,      "NES Brick (White)"},  // MB64_MAT_RETRO_WHITEBRICK
+    {mat_maker_MakerRetroLava,       MAT_OPAQUE, TRUE, SURFACE_BURNING,      "NES Lava"},           // MB64_MAT_RETRO_LAVA
+    {mat_maker_MakerRetroUnderwater, MAT_OPAQUE, TRUE, SURFACE_NOT_SLIPPERY, "NES Seafloor"}, // MB64_MAT_RETRO_UNDERWATERGROUND
 
     // Minecraft
     {mat_maker_MakerMCDirt,        MAT_OPAQUE, TRUE, SURFACE_NOT_SLIPPERY, NULL}, // MB64_MAT_MC_DIRT

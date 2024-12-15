@@ -1426,6 +1426,7 @@ struct mb64_info_entry mb64_v1_1_changelog[] = {
     {"", 0},
     {"- Ability to hide help text in screenshot mode", 0},
     {"- Custom Theme menu shows slipperiness of current tile", 0},
+    {"- Custom Theme menu allows selecting Retro tiles", 0},
     {"- Display the current number of placed objects in the", 0},
     {"    editor when placing Stars or Red Coins", 0},
     {"- Objects now have shadows in the editor", 0},
