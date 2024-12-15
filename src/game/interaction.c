@@ -1612,73 +1612,55 @@ u32 interact_hoot(struct MarioState *m, UNUSED u32 interactType, struct Object *
     return FALSE;
 }
 
+// Called when Mario touches a cap powerup
 u32 interact_cap(struct MarioState *m, UNUSED u32 interactType, struct Object *obj) {
     u32 capFlag = get_mario_cap_flag(obj);
     u16 capMusic = 0;
     u16 capTime = 0;
 
+    if (m->action != ACT_GETTING_BLOWN && capFlag != 0) {
+        m->interactObj = obj;
+        obj->oInteractStatus = INT_STATUS_INTERACTED;
 
-    if (mb64_lopt_game == MB64_GAME_BTCM) {
-        //BEYOND THE CURSED MIRROR INTERACTION
-        if (m->action != ACT_GETTING_BLOWN && capFlag != 0) {
-            m->interactObj = obj;
-            obj->oInteractStatus = INT_STATUS_INTERACTED;
+        m->flags &= ~MARIO_CAP_ON_HEAD & ~MARIO_CAP_IN_HAND;
+        // m->flags |= capFlag;
 
-            m->flags &= ~MARIO_CAP_ON_HEAD & ~MARIO_CAP_IN_HAND;
-            // m->flags |= capFlag;
-
-            switch (capFlag) {
-                case MARIO_VANISH_CAP: 
+        switch (capFlag) {
+            case MARIO_VANISH_CAP: 
+                if (mb64_lopt_game == MB64_GAME_BTCM) {
+                    // Cursed Mirror: Vanetal Cap
                     m->flags |= (MARIO_METAL_CAP|MARIO_VANISH_CAP);
-                    capTime = 600;
-                    if (capTime > m->capTimer) {
-                        m->capTimer = capTime;
-                    }
-                    break;
-                case MARIO_WING_CAP:
-                    m->flags |= MARIO_WING_CAP;
-                    gMarioState->RFuel = 100;
+                } else {
+                    // Vanilla SM64: Vanish Cap
+                    m->flags |= MARIO_VANISH_CAP;
+                }
+                capTime = 600;
+                if (capTime > m->capTimer) {
+                    m->capTimer = capTime;
+                }
+                break;
+            case MARIO_METAL_CAP:
+                m->flags |= MARIO_METAL_CAP;
+                capTime = 600;
+                if (capTime > m->capTimer) {
+                    m->capTimer = capTime;
+                }
+                play_cap_music(SEQUENCE_ARGS(4, SEQ_EVENT_METAL_CAP));
+                break;
+            case MARIO_WING_CAP:
+                m->flags |= MARIO_WING_CAP;
 
+                if (mb64_lopt_game == MB64_GAME_BTCM) {
+                    // Cursed Mirror: Rocket Boots
+                    gMarioState->RFuel = 100;
                     gMarioState->powerup &= ~1;
                     struct Object *thrownCrowbar = cur_obj_nearest_object_with_behavior(bhvCrowbarThrow);
                     if (thrownCrowbar) {
                         mark_obj_for_deletion(thrownCrowbar);
                     }
                     break;
-            }
-            m->flags |= MARIO_CAP_ON_HEAD;
-            play_sound(SOUND_MENU_STAR_SOUND, m->marioObj->header.gfx.cameraToObject);
-            play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.cameraToObject);
-
-        return TRUE;
-        }
-    } else {
-        //VANILLA CAP INTERACTION
-        if (m->action != ACT_GETTING_BLOWN && capFlag != 0) {
-            m->interactObj = obj;
-            obj->oInteractStatus = INT_STATUS_INTERACTED;
-
-            m->flags &= ~MARIO_CAP_ON_HEAD & ~MARIO_CAP_IN_HAND;
-            // m->flags |= capFlag;
-
-            switch (capFlag) {
-                case MARIO_VANISH_CAP: 
-                    m->flags |= MARIO_VANISH_CAP;
-                    capTime = 600;
-                    if (capTime > m->capTimer) {
-                        m->capTimer = capTime;
-                    }
-                    play_cap_music(SEQUENCE_ARGS(4, SEQ_EVENT_POWERUP));
-                    break;
-                case MARIO_METAL_CAP:
-                    m->flags |= MARIO_METAL_CAP;
-                    capTime = 600;
-                    if (capTime > m->capTimer) {
-                        m->capTimer = capTime;
-                    }
-                    play_cap_music(SEQUENCE_ARGS(4, SEQ_EVENT_METAL_CAP));
-                    break;
-                case MARIO_WING_CAP:
+                } else {
+                    // Vanilla SM64: Wing Cap
                     play_cap_music(SEQUENCE_ARGS(4, SEQ_EVENT_POWERUP));
                     m->flags |= MARIO_WING_CAP;
                     capTime = 1800;
@@ -1686,15 +1668,13 @@ u32 interact_cap(struct MarioState *m, UNUSED u32 interactType, struct Object *o
                         m->capTimer = capTime;
                     }
                     break;
-            }
-            m->flags |= MARIO_CAP_ON_HEAD;
-            play_sound(SOUND_MENU_STAR_SOUND, m->marioObj->header.gfx.cameraToObject);
-            play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.cameraToObject);
-
-        return TRUE;
+                }
         }
+        m->flags |= MARIO_CAP_ON_HEAD;
+        play_sound(SOUND_MENU_STAR_SOUND, m->marioObj->header.gfx.cameraToObject);
+        play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.cameraToObject);
+        return TRUE;
     }
-
     return FALSE;
 }
 
