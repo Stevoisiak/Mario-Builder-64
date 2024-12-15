@@ -3889,7 +3889,7 @@ void sb_loop(void) {
             if (gPlayer1Controller->buttonPressed & A_BUTTON || 
                 ((gPlayer1Controller->buttonPressed & START_BUTTON) && (mb64_toolbar_index >= 7))) {
                 switch(mb64_toolbar_index) {
-                    case 7: // save and test
+                    case 7:; // save and test
                         // Tile Check
                         u32 type = get_grid_tile(mb64_cursor_pos)->type;
                         if (type != TILE_TYPE_EMPTY && type != TILE_TYPE_WATER) {
