@@ -189,11 +189,6 @@ u8 mb64_num_tris_cached = 0;
 u8 mb64_cached_tris[64][3];
 s16 mb64_tip_timer = 0;
 
-struct CachedVertexInfo {
-    s8 n[3];
-};
-struct CachedVertexInfo mb64_cached_vertex_data[32];
-
 struct ExclamationBoxContents *mb64_exclamation_box_contents;
 
 #include "src/game/mb64_display_funcs.inc.c"
@@ -741,11 +736,11 @@ void generate_trajectory_gfx(void) {
     gSPEndDisplayList(&mb64_curr_gfx[mb64_gfx_index]);
 }
 
-s32 find_duplicate_vertex(s32 vx, s32 vy, s32 vz, s32 n0, s32 n1, s32 n2, s16 u, s16 v) {
+s32 find_duplicate_vertex(s32 vx, s32 vy, s32 vz, u8 n0, u8 n1, u8 n2, s16 u, s16 v) {
     for (int i = 0; i < mb64_num_vertices_cached; i++) {
         if (mb64_curr_vtx[i].v.ob[0] == vx && mb64_curr_vtx[i].v.ob[1] == vy && mb64_curr_vtx[i].v.ob[2] == vz) {
             if (mb64_curr_vtx[i].v.tc[0] == u && mb64_curr_vtx[i].v.tc[1] == v) {
-                if (mb64_cached_vertex_data[i].n[0] == n0 && mb64_cached_vertex_data[i].n[1] == n1 && mb64_cached_vertex_data[i].n[2] == n2) {
+                if (mb64_curr_vtx[i].v.cn[0] == n0 && mb64_curr_vtx[i].v.cn[1] == n1 && mb64_curr_vtx[i].v.cn[2] == n2) {
                     return i;
                 }
             }
@@ -852,9 +847,6 @@ void render_poly(struct mb64_terrain_poly *poly, s8 pos[3], u32 rot) {
             vertexIndices[i] = vert;
             continue;
         }
-        mb64_cached_vertex_data[mb64_num_vertices_cached + i].n[0] = n[0];
-        mb64_cached_vertex_data[mb64_num_vertices_cached + i].n[1] = n[1];
-        mb64_cached_vertex_data[mb64_num_vertices_cached + i].n[2] = n[2];
 
         make_vertex(mb64_curr_vtx, mb64_num_vertices_cached + numNewVertices, x, y, z,
             u, v,
