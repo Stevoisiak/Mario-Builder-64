@@ -191,7 +191,7 @@ void apply_platform_displacement(struct PlatformDisplacementInfo *displaceInfo, 
 		return;
 	}
 
-	if (gMarioPlatform->behavior == segmented_to_virtual(bhvConveyor)) {
+	if (platform->behavior == segmented_to_virtual(bhvConveyor)) {
 		apply_conveyor_displacement();
 		return;
 	}
