@@ -812,7 +812,7 @@ void render_hud_keys(void) {
  #define HUD_TIMER_MODERN_OFFSET -100
 void render_hud_timer(void) {
     Texture *(*hudLUT)[58] = segmented_to_virtual(&main_hud_lut);
-    u16 timerValFrames = gHudDisplay.timer;
+    u32 timerValFrames = gHudDisplay.timer;
     if (mb64_sram_configuration.option_flags & (1<<OPT_SPEEDRUNTIMER)) {
         timerValFrames = mb64_play_speedrun_timer;
     }
@@ -824,11 +824,6 @@ void render_hud_timer(void) {
     s8 minxoffset = 0;
     if (timerMins > 9) {
         minxoffset = -14;
-    }
-    if (timerMins > 99) {
-        timerMins = 99;
-        timerSecs = 0;
-        timerFracSecs = 0;
     }
 /*
 #if MULTILANG
@@ -847,6 +842,7 @@ void render_hud_timer(void) {
         print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(37)+HUD_TIMER_MODERN_OFFSET, HUD_TOP_Y, "%d", timerFracSecs);
 
         gSPDisplayList(gDisplayListHead++, dl_hud_img_begin);
+        render_hud_tex_lut(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(81)+HUD_TIMER_MODERN_OFFSET, 8, (*hudLUT)[GLYPH_APOSTROPHE]);
         render_hud_tex_lut(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(46)+HUD_TIMER_MODERN_OFFSET, 8, (*hudLUT)[GLYPH_DOUBLE_QUOTE]);
         gSPDisplayList(gDisplayListHead++, dl_hud_img_end);
     } else {
