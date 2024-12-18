@@ -823,7 +823,7 @@ void render_hud_timer(void) {
 
     s8 minxoffset = 0;
     if (timerMins > 9) {
-        minxoffset = -14;
+        minxoffset = -12;
     }
 /*
 #if MULTILANG
