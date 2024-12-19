@@ -732,7 +732,6 @@ void koopa_the_quick_reset(void) {
  * Update function for koopa the quick.
  */
 static void koopa_the_quick_update(void) {
-    cur_obj_update_floor_and_walls();
     obj_update_blinking(&o->oKoopaBlinkTimer, 10, 15, 3);
 
     switch (o->oAction) {
@@ -763,6 +762,7 @@ static void koopa_the_quick_update(void) {
         o->parentObj->oKoopaRaceEndpointKoopaFinished = TRUE;
     }
 
+    cur_obj_update_floor_and_walls();
     cur_obj_push_mario_away_from_cylinder(140.0f, 300.0f);
     cur_obj_move_standard(-78);
     if (o->oFloorType == SURFACE_DEATH_PLANE && o->oPosY < o->oFloorHeight + 100.f) {
