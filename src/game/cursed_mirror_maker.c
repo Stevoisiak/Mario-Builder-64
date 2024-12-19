@@ -249,9 +249,12 @@ u8 cmm_grid_min = 0;
 u8 cmm_grid_size = 64;
 
 u32 coords_in_range(s8 pos[3]) {
+    // Allow placing & deleting tiles out of bounds
+    /*
     if (pos[0] < cmm_grid_min || pos[0] > cmm_grid_min + cmm_grid_size - 1) return FALSE;
     if (pos[1] < 0 || pos[1] > 63) return FALSE;
     if (pos[2] < cmm_grid_min || pos[2] > cmm_grid_min + cmm_grid_size - 1) return FALSE;
+    */
     return TRUE;
 }
 
@@ -3113,11 +3116,14 @@ u32 main_cursor_logic(u32 joystick) {
     }
     cmm_camera_rot_offset = (cmm_camera_rot_offset % 4)+4;
 
+    // Allow cursor to move out of bounds
+    /*
     if (cursorMoved) {
         cmm_cursor_pos[0] = ((cmm_cursor_pos[0] - cmm_grid_min + cmm_grid_size) % cmm_grid_size) + cmm_grid_min;
         cmm_cursor_pos[2] = ((cmm_cursor_pos[2] - cmm_grid_min + cmm_grid_size) % cmm_grid_size) + cmm_grid_min;
         cmm_cursor_pos[1]=(cmm_cursor_pos[1]+64)%64;
     }
+    */
 
     //camera zooming
     if (gPlayer1Controller->buttonPressed & D_JPAD) {
