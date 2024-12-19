@@ -2170,7 +2170,8 @@ s32 execute_mario_action(UNUSED struct Object *obj) {
     }
 
     // Run the speedrun timer every frame while he's active
-    if ((mb64_play_stars != mb64_play_stars_max) || (mb64_play_stars_max == 0)) {
+    if (((mb64_play_stars != mb64_play_stars_max) || (mb64_play_stars_max == 0))
+        && (mb64_play_speedrun_timer < MB64_SPEEDRUN_TIMER_MAX)) {
         mb64_play_speedrun_timer++;
     }
 
