@@ -1630,7 +1630,7 @@ static void cur_obj_update_floor_and_resolve_wall_collisions(s16 steepSlopeDegre
     add_obj_to_physics_list(o);
     if (o->activeFlags & ACTIVE_FLAG_FAR_AWAY) {
         cur_obj_update_floor();
-        o->oMoveFlags &= ~(OBJ_MOVE_HIT_WALL | OBJ_MOVE_MASK_IN_WATER);
+        o->oMoveFlags &= ~OBJ_MOVE_HIT_WALL;
 
         if (o->oPosY > o->oFloorHeight) {
             o->oMoveFlags |= OBJ_MOVE_IN_AIR;
