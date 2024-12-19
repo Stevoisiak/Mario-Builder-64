@@ -2792,6 +2792,12 @@ void place_object(s8 pos[3]) {
         mb64_object_data[mb64_object_count].bparam = 0;
     }
 
+    if (mb64_id_selection == OBJECT_TYPE_MONEYBAG) {
+        mb64_object_data[mb64_object_count].imbue = IMBUE_THREE_COINS;
+    } else if (mb64_id_selection == OBJECT_TYPE_BOO) {
+        mb64_object_data[mb64_object_count].imbue = IMBUE_ONE_COIN;
+    }
+
     mb64_object_count++;
 
     play_place_sound(mb64_object_type_list[mb64_id_selection].soundBits);
