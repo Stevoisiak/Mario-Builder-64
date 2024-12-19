@@ -9411,6 +9411,7 @@ const BehaviorScript bhvBadge[] = {
     SET_INT(oIntangibleTimer, 0),
     SET_HITBOX_WITH_OFFSET(/*Radius*/ 100, /*Height*/ 120, /*Downwards offset*/ 60),
     BILLBOARD(),
+    DELAY(1), // allows star trigger star time to count triggers
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_badge),
     END_LOOP(),
