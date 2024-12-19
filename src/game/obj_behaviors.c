@@ -289,6 +289,7 @@ void calc_new_obj_vel_and_pos_y_underwater(struct Surface *objFloor, f32 floorY,
     f32 floor_nX = normal[0];
     f32 floor_nY = normal[1];
     f32 floor_nZ = normal[2];
+    f32 objFriction = 0.8f;
 
     f32 netYAccel = (1.0f - o->oBuoyancy) * (-1.0f * o->oGravity);
     o->oVelY -= netYAccel;
@@ -328,22 +329,26 @@ void calc_new_obj_vel_and_pos_y_underwater(struct Surface *objFloor, f32 floorY,
         if (o->oFloor->type == SURFACE_SWITCH) velm = 0.f; // hack to make switches not impede movement
         objVelX += floor_nX * velm;
         objVelZ += floor_nZ * velm;
-    }
 
-    if (objVelX < 0.1f && objVelX > -0.1f) objVelX = 0;
-    if (objVelZ < 0.1f && objVelZ > -0.1f) objVelZ = 0;
+        if (objVelX < 0.1f && objVelX > -0.1f) objVelX = 0;
+        if (objVelZ < 0.1f && objVelZ > -0.1f) objVelZ = 0;
 
-    if (o->oVelY < 0.1f && o->oVelY > -0.1f) {
-        o->oVelY = 0;
-    }
+        if (o->oVelY < 0.1f && o->oVelY > -0.1f) {
+            o->oVelY = 0;
+        }
 
-    if (objVelX != 0 || objVelZ != 0) {
-        o->oMoveAngleYaw = atan2s(objVelZ, objVelX);
+        if (objVelX != 0 || objVelZ != 0) {
+            o->oMoveAngleYaw = atan2s(objVelZ, objVelX);
+        }
+
+        f32 floorFriction;
+        calc_obj_friction(&floorFriction, floor_nY);
+        objFriction *= floorFriction;
     }
 
     // Decreases both vertical velocity and forward velocity. Likely so that skips above
     // don't loop infinitely.
-    o->oForwardVel = sqrtf(sqr(objVelX) + sqr(objVelZ)) * 0.8f;
+    o->oForwardVel = sqrtf(sqr(objVelX) + sqr(objVelZ)) * objFriction;
     o->oVelY *= 0.8f;
 }
 
