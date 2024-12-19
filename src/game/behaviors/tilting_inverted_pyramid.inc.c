@@ -1260,6 +1260,7 @@ void noteblock_function(void) {
             o->oTimer = 0;
             o->oVelY = 50.0f;
             cur_obj_play_sound_2(SOUND_GENERAL_CRAZY_BOX_BOING_SLOW);
+            reset_mario_pitch(gMarioState);
 
             if (gMarioState->heldObj != NULL) {
                 if (gMarioState->heldObj->behavior == segmented_to_virtual(bhvJumpingBox)) {
