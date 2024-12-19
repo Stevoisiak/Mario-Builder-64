@@ -1289,6 +1289,9 @@ struct cmm_credits_entry cmm_credits[] = {
     {"By Rovertronic & Arthurtilly",0},
     {"2024",0},
     {"",0},
+    {"Unofficial 1.0 bugfix",1},
+    {"By Stevoisiak"},
+    {"",0},
     {"Tile Systems, Code Refactor, Textures",1},
     {"Arthurtilly",0},
     {"",0},
@@ -1521,7 +1524,9 @@ void render_cmm_mm_menu(char * strlist[], char *title, u8 ct) {
     gSPPopMatrix(gDisplayListHead++, G_MTX_MODELVIEW);
 
     if ((cmm_mm_state == MM_MAIN) || (cmm_mm_state == MM_MAIN_LIMITED)) {
-       print_maker_string_ascii(115, 177 + cmm_menu_title_vels[0], "By: Rovertronic & Arthurtilly", 0);
+        print_maker_string_ascii(243, 188 + cmm_menu_title_vels[0], "v1.0 bugfix", 0);
+        print_maker_string_ascii_centered(160, 175 + cmm_menu_title_vels[0], "By: Rovertronic & Arthurtilly", 0);
+        print_maker_string_ascii_centered(160, 20 + cmm_menu_title_vels[0], "Unofficial bugfix by Stevoisiak", 0);
     }
 
     for (s32 i=0; i<ct; i++) {
