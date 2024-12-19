@@ -6171,11 +6171,11 @@ void bhv_onoffswitch_falling(void) {
 }
 
 void bhv_onoffswitch(void) {
-    if (o->header.gfx.scale[1] > 0.11f) {
-        load_object_collision_model();
-    }
     if (o->oExtraVariable1) {
         bhv_onoffswitch_falling();
+    }
+    if (o->header.gfx.scale[1] > 0.11f) {
+        load_object_collision_model();
     }
     switch(o->oAction) {
         case 0: // init
