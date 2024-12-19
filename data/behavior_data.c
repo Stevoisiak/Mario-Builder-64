@@ -7542,7 +7542,6 @@ const BehaviorScript bhvNoteblock[] = {
     DELAY(1),
     BEGIN_LOOP(),
         CALL_NATIVE(noteblock_function),
-        CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
