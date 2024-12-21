@@ -535,14 +535,8 @@ static void obj_set_squished_action(void) {
 }
 
 static s32 obj_die_if_above_lava_and_health_non_positive(void) {
-    // Check water
-    if (o->oMoveFlags & OBJ_MOVE_MASK_IN_WATER) {
-        if (o->oGravity + o->oBuoyancy > 0.0f
-            || mb64_get_water_level(o->oPosX, o->oPosY, o->oPosZ) - o->oPosY < 10.0f) {
-            return FALSE;
-        }
     // Check lava
-    } else if (!((o->oMoveFlags & (OBJ_MOVE_ABOVE_LAVA))&&(o->oMoveFlags & (OBJ_MOVE_ON_GROUND|OBJ_MOVE_BOUNCE))) ) {
+    if (!((o->oMoveFlags & (OBJ_MOVE_ABOVE_LAVA))&&(o->oMoveFlags & (OBJ_MOVE_ON_GROUND|OBJ_MOVE_BOUNCE))) ) {
         return FALSE;
     }
 
