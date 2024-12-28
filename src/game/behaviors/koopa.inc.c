@@ -598,18 +598,6 @@ static void koopa_the_quick_act_race(void) {
                 case KOOPA_THE_QUICK_SUB_ACT_RUN:
                     koopa_the_quick_animate_footsteps();
 
-                    if (
-                        o->parentObj->oKoopaRaceEndpointRaceStatus != KOOPA_RACE_ENDPOINT_STATUS_KOOPA_WON
-                        && o->oDistanceToMario > 1500.0f
-                        && (o->oPathedPrevWaypointFlags & WAYPOINT_MASK_00FF) < 28
-                    ) {
-                        // Move faster if mario has already finished the race or
-                        // cheated by shooting from cannon
-                        o->oKoopaAgility = 6.0f;
-                    } else {
-                        o->oKoopaAgility = 4.0f;
-                    }
-
                     obj_forward_vel_approach(o->oKoopaAgility * 6.0f * downhillSteepness,
                                              o->oKoopaAgility * 0.1f);
 
