@@ -1818,6 +1818,10 @@ Gfx *geo_switch_bowser_eyes(s32 callContext, struct GraphNode *node, UNUSED Mat4
         if (gCurGraphNodeHeldObject != NULL) {
             obj = gCurGraphNodeHeldObject->objNode;
         }
+        if (obj->behavior != segmented_to_virtual(bhvBowser)) {
+            switchCase->selectedCase = BOWSER_EYES_OPEN;
+            return NULL;
+        }
         if (obj->oBowserEyesShut) { // eyes closed, blinking
             switchCase->selectedCase = BOWSER_EYES_CLOSED;
         } else { // eyes open, handle eye looking direction
