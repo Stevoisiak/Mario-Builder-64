@@ -66,7 +66,7 @@ void bhv_star_spawn_loop(void) {
     switch (o->oAction) {
         case SPAWN_STAR_WAIT_FOR_CUTSCENE:;
             s32 cutsceneType = (o->oBehParams2ndByte == SPAWN_STAR_ARC_CUTSCENE_BP_DEFAULT_STAR) ? CUTSCENE_STAR_SPAWN : CUTSCENE_RED_COIN_STAR_SPAWN;
-            if (cutscene_object(CUTSCENE_STAR_SPAWN, o) == 1) {
+            if (cutscene_object(cutsceneType, o) == 1) {
                 set_time_stop_flags(TIME_STOP_ENABLED | TIME_STOP_MARIO_AND_DOORS);
                 o->activeFlags |= ACTIVE_FLAG_INITIATED_TIME_STOP;
                 cur_obj_unhide();
