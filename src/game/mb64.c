@@ -3774,6 +3774,24 @@ char *get_button_str(u32 buttonId) {
     return mb64_terrain_info_list[mb64_ui_buttons[buttonId].id].name;
 }
 
+void update_id_selection(void) {
+    struct mb64_ui_button_type *curBtn = &mb64_ui_buttons[mb64_toolbar[mb64_toolbar_index]];
+    if (curBtn->multiObj) {
+        mb64_id_selection = curBtn->idList[mb64_param_selection];
+    } else {
+        mb64_id_selection = curBtn->id;
+    }
+    mb64_place_mode = curBtn->placeMode;
+
+    if (mb64_upsidedown_tile) {
+        if ((mb64_id_selection < TILE_END_OF_FLIPPABLE)&&(mb64_place_mode == MB64_PM_TILE)) {
+            mb64_id_selection = (mb64_id_selection & ~1) | 1;
+        } else {
+            mb64_upsidedown_tile = FALSE;
+        }
+    }
+}
+
 int gLTrigBuff = FALSE;
 int gRTrigBuff = FALSE;
 
@@ -3801,7 +3819,6 @@ void sb_loop(void) {
     if ((mb64_menu_state != MB64_MAKE_PLAY) && mb64_tip_timer) {
         if (!(--mb64_tip_timer)) mb64_show_tip();
     }
-    struct mb64_ui_button_type *curBtn;
 
     switch(mb64_menu_state) {
         case MB64_MAKE_MAIN:
@@ -3867,21 +3884,7 @@ void sb_loop(void) {
                 }
             }
 
-            curBtn = &mb64_ui_buttons[mb64_toolbar[mb64_toolbar_index]];
-            if (curBtn->multiObj) {
-                mb64_id_selection = curBtn->idList[mb64_param_selection];
-            } else {
-                mb64_id_selection = curBtn->id;
-            }
-            mb64_place_mode = curBtn->placeMode;
-
-            if (mb64_upsidedown_tile) {
-                if ((mb64_id_selection < TILE_END_OF_FLIPPABLE)&&(mb64_place_mode == MB64_PM_TILE)) {
-                    mb64_id_selection = (mb64_id_selection & ~1) | 1;
-                } else {
-                    mb64_upsidedown_tile = FALSE;
-                }
-            }
+            update_id_selection();
 
             //Single A press
             if (gPlayer1Controller->buttonPressed & A_BUTTON || 
@@ -4041,13 +4044,8 @@ void sb_loop(void) {
                 play_sound(SOUND_MENU_MESSAGE_NEXT_PAGE, gGlobalSoundSource);
             }
             mb64_toolbar_index = (mb64_toolbar_index+7)%7;
-            curBtn = &mb64_ui_buttons[mb64_toolbar[mb64_toolbar_index]];
-            if (curBtn->multiObj) {
-                mb64_id_selection = curBtn->idList[mb64_param_selection];
-            } else {
-                mb64_id_selection = curBtn->id;
-            }
-            mb64_place_mode = curBtn->placeMode;
+
+            update_id_selection();
 
             if (mb64_ui_buttons[mb64_toolbox[mb64_toolbox_index]].multiObj) {
                 u32 selectedParam = mb64_toolbox_params[mb64_toolbox_index];
