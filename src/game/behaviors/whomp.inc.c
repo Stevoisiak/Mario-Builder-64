@@ -20,6 +20,8 @@ void whomp_real_init(void) {
 
 }
 
+#define WHOMP_PATROL_TIMER_MAX 466
+
 void whomp_init(void) {
     cur_obj_init_animation_with_accel_and_sound(0, 1.0f);
 
@@ -36,8 +38,7 @@ void whomp_init(void) {
             o->oPlayingBossMusic = TRUE;
         }
     } else {
-        o->oWhompHomeX = o->oPosX;
-        o->oWhompHomeZ = o->oPosZ;
+        o->oWhompPatrolTimer = WHOMP_PATROL_TIMER_MAX/2;
         o->oAction = 1;
     }
 
@@ -56,6 +57,7 @@ void whomp_turn(void) {
     } else {
         o->oForwardVel = 3.0f;
         if (o->oTimer > 42) {
+            o->oWhompPatrolTimer = 0;
             o->oAction = 1;
         }
     }
@@ -65,18 +67,17 @@ void whomp_turn(void) {
 
 void whomp_patrol(void) {
     s16 marioAngle = abs_angle_diff(o->oAngleToMario, o->oMoveAngleYaw);
-    f32 distWalked = sqrtf(sqr(o->oPosX - o->oWhompHomeX) + sqr(o->oPosZ - o->oWhompHomeZ));
-
-    f32 patrolDist = 700.0f;
 
     cur_obj_init_animation_with_accel_and_sound(0, 1.0f);
     o->oForwardVel = 3.0f;
+    o->oWhompPatrolTimer++;
 
-    if ((distWalked > patrolDist)||(o->oMoveFlags & (OBJ_MOVE_HIT_WALL | OBJ_MOVE_HIT_EDGE))) {
+    if ((o->oWhompPatrolTimer > WHOMP_PATROL_TIMER_MAX)||(o->oMoveFlags & (OBJ_MOVE_HIT_WALL | OBJ_MOVE_HIT_EDGE))) {
         o->oAction = 7;
     } else if (marioAngle < 0x2000) {
         if (o->oDistanceToMario < 1500.0f) {
             o->oForwardVel = 9.0f;
+            o->oWhompPatrolTimer += 2; // moves three times as fast, so increment timer by 3 overall
             cur_obj_init_animation_with_accel_and_sound(0, 3.0f);
         }
         if (o->oDistanceToMario < 300.0f) {

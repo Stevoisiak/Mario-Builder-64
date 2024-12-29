@@ -1244,8 +1244,7 @@
 
 /* Whomp */
 #define /*0x0F8*/ oWhompShakeVal OBJECT_FIELD_S32(0x1C)
-#define /*0x0FC*/ oWhompHomeX    OBJECT_FIELD_F32(0x1D)
-#define /*0x100*/ oWhompHomeZ    OBJECT_FIELD_F32(0x1E)
+#define /*0x0FC*/ oWhompPatrolTimer    OBJECT_FIELD_S32(0x1D)
 
 /* Wiggler */
 #define /*0x0F4*/ oWigglerFallThroughFloorsHeight OBJECT_FIELD_F32(0x1B)
