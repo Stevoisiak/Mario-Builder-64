@@ -17,6 +17,18 @@ void bhv_bobomb_anchor_mario_loop(void) {
     common_anchor_mario_behavior(50.0f, 50.0f, INT_STATUS_MARIO_DROPPED_BY_OBJ);
 }
 
+void king_bobomb_set_home_if_safe(void) {
+    if (!o->oFloor) return;
+    if (o->oFloorHeight < o->oPosY - 10.f) return;
+    if (SURFACE_IS_UNSAFE(o->oFloorType)) return;
+    if (o->oFloor->object != NULL) return;
+
+    vec3_copy(&o->oKingBobombHomeX,&o->oPosVec);
+    if (o->oImbue == IMBUE_STAR) return;
+
+    vec3_copy(&o->oHomeVec,&o->oPosVec);
+}
+
 void king_bobomb_act_inactive(void) { // act 0
     o->oForwardVel = 0.0f;
     o->oQuicksandDepthToDie = 0;
@@ -265,12 +277,16 @@ void king_bobomb_act_return_home(void) { // act 5
             o->oKingBobombIsJumping = TRUE;
 
             cur_obj_init_animation_and_extend_if_at_end(KING_BOBOMB_ANIM_JUMP);
-            o->oMoveAngleYaw = cur_obj_angle_to_home();
+            f32 dx = o->oKingBobombHomeX - o->oPosX;
+            f32 dz = o->oKingBobombHomeZ - o->oPosZ;
+            o->oMoveAngleYaw = atan2s(dz, dx);
 
-            if (o->oPosY < o->oHomeY) {
+            if (o->oPosY < o->oKingBobombHomeY) {
                 o->oVelY = 100.0f;
             } else {
-                arc_to_goal_pos(&o->oHomeX, &o->oPosVec, 100.0f, -4.0f);
+                Vec3f homePos;
+                vec3_copy(homePos, &o->oKingBobombHomeX);
+                arc_to_goal_pos(homePos, &o->oPosVec, 100.0f, -4.0f);
                 o->oSubAction++; // KING_BOBOMB_SUB_ACT_RETURN_HOME_LANDING
             }
             break;
@@ -279,7 +295,6 @@ void king_bobomb_act_return_home(void) { // act 5
             cur_obj_init_animation_and_extend_if_at_end(KING_BOBOMB_ANIM_JUMP);
 
             if (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) {
-                //o->oPosY = o->oHomeY;
                 o->oVelY = 0;
                 o->oForwardVel = 0;
                 o->oGravity = -4.0f;
@@ -357,7 +372,7 @@ struct SoundState sKingBobombSoundStates[] = {
 void king_bobomb_move(void) {
     cur_obj_update_floor_and_walls();
     cur_obj_move_standard(-78);
-    cur_obj_set_home_if_safe();
+    king_bobomb_set_home_if_safe();
 
     //if (is_obj_interacting_with_noteblock(0)) {
     //    if (o->oAction == KING_BOBOMB_ACT_ACTIVE || o->oAction == KING_BOBOMB_ACT_) {

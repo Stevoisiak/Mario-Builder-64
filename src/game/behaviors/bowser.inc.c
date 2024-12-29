@@ -471,9 +471,9 @@ s32 bowser_check_fallen_off_stage(void) {
  */
 void bowser_reset_fallen_off_stage(void) {
     if (bowser_check_fallen_off_stage()) {
-        o->oPosX = o->oHomeX;
-        o->oPosZ = o->oHomeZ;
-        o->oPosY = o->oHomeY + 2000.0f;
+        o->oPosX = o->oBowserHomeX;
+        o->oPosZ = o->oBowserHomeZ;
+        o->oPosY = o->oBowserHomeY + 2000.0f;
         o->oVelY = 0.0f;
         o->oForwardVel = 0.0f;
     }
@@ -1069,7 +1069,7 @@ void bowser_act_jump_onto_stage(void) {
 
         // Approach him back on stage
         case BOWSER_SUB_ACT_JUMP_ON_STAGE_LAND:
-            if (o->oPosY > o->oHomeY) {
+            if (o->oPosY > o->oBowserHomeY) {
                 o->oDragStrength = 0.0f;
                 if (distToCenter < 750.0f) {
                     o->oForwardVel = MIN(distToCenter / 10.f + 10.f, distToCenter);
@@ -1081,7 +1081,7 @@ void bowser_act_jump_onto_stage(void) {
                 } else {
                     o->oMoveAngleYaw = angleToCenter;
                 }
-            } else if ((o->oPosY < o->oHomeY - 100.f) && (o->oVelY > 0.f)) {
+            } else if ((o->oPosY < o->oBowserHomeY - 100.f) && (o->oVelY > 0.f)) {
                 o->oVelY = 130.f;
             }
             // Land on stage
