@@ -6336,6 +6336,7 @@ void bhv_woodplat_loop(void) {
     vec3f_copy(oldPos, &o->prevObj->oPosVec);
     vec3f_copy(&o->prevObj->oPosVec,&o->oPosVec);
     vec3f_copy(o->header.gfx.pos,oldPos);
+    vec3_copy(o->header.gfx.angle,&o->oFaceAngleVec);
     
     struct Object *curPlat = o;
     while (curPlat->oWoodPlatAbovePlatform) {
@@ -6343,6 +6344,7 @@ void bhv_woodplat_loop(void) {
         curPlat = curPlat->oWoodPlatAbovePlatform;
         curPlat->oPosY += 256.f;
         vec3f_copy(curPlat->header.gfx.pos,&curPlat->oPosVec);
+        vec3_copy(curPlat->header.gfx.angle,&curPlat->oFaceAngleVec);
     }
 }
 
