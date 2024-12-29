@@ -220,7 +220,7 @@ void mr_i_body_act_looking_at_mario(void) {
 
 void mr_i_body_act_idle(void) {
     s16 angleToMario = obj_angle_to_object(o, gMarioObject);
-    s16 angleDiffMoveYawToMario        = abs_angle_diff(o->oMoveAngleYaw, angleToMario);
+    s16 angleDiffMoveYawToMario = abs_angle_diff(o->oMoveAngleYaw, angleToMario);
 
     if (o->oTimer == 0) {
         cur_obj_become_tangible();
@@ -231,7 +231,7 @@ void mr_i_body_act_idle(void) {
     }
 
     if (angleDiffMoveYawToMario < 1024) {
-        if (o->oDistanceToMario < 1500.0f) {
+        if (o->oDistanceToMario < 1500.0f && ABS(o->oPosY - gMarioObject->oPosY) < 400.0f) {
             o->oAction = MR_I_BODY_ACT_LOOKING_AT_MARIO;
         }
     }
