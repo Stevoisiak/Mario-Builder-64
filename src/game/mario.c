@@ -2178,7 +2178,7 @@ s32 execute_mario_action(UNUSED struct Object *obj) {
         mario_decay++;
         if (mario_decay > 450) {
             mario_decay = 0;
-            gMarioState->hurtCounter += 4;
+            gMarioState->health -= 0x100;
         }
     }
 
