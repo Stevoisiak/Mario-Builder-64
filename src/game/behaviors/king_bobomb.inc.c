@@ -64,6 +64,7 @@ void king_bobomb_act_active(void) { // act 2
 
     if ((o->oFloorType == SURFACE_DEATH_PLANE) && (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND)) {
         o->oAction = KING_BOBOMB_ACT_RETURN_HOME;
+        return;
     }
 
     if (o->oKingBobombShouldStomp == 0) {
@@ -93,7 +94,7 @@ void king_bobomb_act_active(void) { // act 2
 
     if (cur_obj_check_grabbed_mario()) {
         o->oAction = KING_BOBOMB_ACT_GRABBED_MARIO;
-    } else if (o->oDistanceToMario > MB64_BOSS_DETRIGGER_DIST) {
+    } else if (o->oDistanceToMario > MB64_BOSS_DETRIGGER_DIST &&  (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND)) {
         o->oAction = KING_BOBOMB_ACT_INACTIVE;
         o->oPlayingBossMusic = FALSE;
         o->oKingBobombShouldStomp = 0;
