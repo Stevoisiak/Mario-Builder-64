@@ -23,8 +23,6 @@ void king_bobomb_act_inactive(void) { // act 0
 
     if (o->oSubAction == KING_BOBOMB_SUB_ACT_INACTIVE_INIT) {
         if (o->oTimer == 0) {
-            vec3f_copy(&o->oHomeVec, &o->oPosVec);
-
             cur_obj_become_intangible();
             gSecondCameraFocus = o;
             cur_obj_init_animation_with_sound(KING_BOBOMB_ANIM_IDLE);
@@ -197,21 +195,19 @@ void king_bobomb_act_hit_ground(void) { // act 6
 
 void king_bobomb_act_death(void) { // act 7
     cur_obj_init_animation_with_sound(KING_BOBOMB_ANIM_HIT_GROUND);
-    cur_obj_set_home_if_safe();
-    if (1) {
-        create_sound_spawner(SOUND_OBJ_KING_WHOMP_DEATH);
 
-        cur_obj_hide();
-        cur_obj_become_intangible();
+    create_sound_spawner(SOUND_OBJ_KING_WHOMP_DEATH);
 
-        spawn_mist_particles_variable(0, 0, 200.0f);
-        spawn_triangle_break_particles(20, MODEL_DIRT_ANIMATION, 3.0f, TINY_DIRT_PARTICLE_ANIM_STATE_YELLOW);
-        cur_obj_shake_screen(SHAKE_POS_SMALL);
+    cur_obj_hide();
+    cur_obj_become_intangible();
 
-        cur_obj_drop_imbued_object(MB64_STAR_HEIGHT);
+    spawn_mist_particles_variable(0, 0, 200.0f);
+    spawn_triangle_break_particles(20, MODEL_DIRT_ANIMATION, 3.0f, TINY_DIRT_PARTICLE_ANIM_STATE_YELLOW);
+    cur_obj_shake_screen(SHAKE_POS_SMALL);
 
-        o->oAction = KING_BOBOMB_ACT_STOP_MUSIC;
-    }
+    cur_obj_drop_imbued_object(MB64_STAR_HEIGHT);
+
+    o->oAction = KING_BOBOMB_ACT_STOP_MUSIC;
 }
 
 void king_bobomb_act_stop_music(void) { // act 8
@@ -360,8 +356,8 @@ struct SoundState sKingBobombSoundStates[] = {
 
 void king_bobomb_move(void) {
     cur_obj_update_floor_and_walls();
-    cur_obj_set_home_if_safe();
     cur_obj_move_standard(-78);
+    cur_obj_set_home_if_safe();
 
     //if (is_obj_interacting_with_noteblock(0)) {
     //    if (o->oAction == KING_BOBOMB_ACT_ACTIVE || o->oAction == KING_BOBOMB_ACT_) {

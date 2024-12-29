@@ -497,7 +497,7 @@ const BehaviorScript bhvKingBobomb[] = {
     SET_OBJ_PHYSICS(/*Wall hitbox radius*/ 30, /*Gravity*/ -400, /*Bounciness*/ -50, /*Drag strength*/ 1000, /*Friction*/ 1000, /*Buoyancy*/ 200, /*Unused*/ 0, 0),
     SET_INT(oIntangibleTimer, 0),
     SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_MEDIUM),
-    //SET_HOME(),
+    SET_HOME(),
     SPAWN_OBJ(/*Model*/ MODEL_NONE, /*Behavior*/ bhvBobombAnchorMario),
     SET_INT(oHealth, 3),
     SET_INT(oDamageOrCoinValue, 1),

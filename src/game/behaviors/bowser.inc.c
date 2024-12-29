@@ -37,6 +37,20 @@ void bowser_tail_anchor_thrown(void) {
     }
 }
 
+// modified version of cur_obj_set_home_if_safe
+// handles setting bowser's real home even if he has a star imbue
+void bowser_set_home_if_safe(void) {
+    if (!o->oFloor) return;
+    if (o->oFloorHeight < o->oPosY - 10.f) return;
+    if (SURFACE_IS_UNSAFE(o->oFloorType)) return;
+    if (o->oFloor->object != NULL) return;
+
+    vec3_copy(&o->oBowserHomeX,&o->oPosVec);
+    if (o->oImbue == IMBUE_STAR) return;
+
+    vec3_copy(&o->oHomeVec,&o->oPosVec);
+}
+
 /**
  * Makes the tail intangible so Mario can grab it
  */
@@ -323,7 +337,7 @@ void bowser_check_jump(void) {
  * Set actions (and attacks) for Bowser in "Bowser in the Dark World"
  */
 void bowser_bitdw_actions(void) {
-    cur_obj_set_home_if_safe();
+    bowser_set_home_if_safe();
     // Generate random float
     f32 rand = random_float();
     // Set attacks when Bowser Reacts
@@ -715,26 +729,23 @@ s32 bowser_land(void) {
 }
 
 /**
- * Makes Bowser do a second hop speed only in BitS
- */
-void bowser_short_second_hop(void) {
-    if (o->oBowserStatus & BOWSER_STATUS_BIG_JUMP) {
-        if (o->oBowserDistToCenter > 1000.0f) {
-            o->oForwardVel = 60.0f;
-        }
-    }
-}
-
-/**
  * Makes Bowser do a big jump
  */
 void bowser_act_big_jump(void) {
+    f32 dx = o->oBowserHomeX - o->oPosX;
+    f32 dz = o->oBowserHomeZ - o->oPosZ;
+    f32 distToCenter = sqrtf(sqr(dx) + sqr(dz));
+
     if (o->oSubAction == 0) {
         // Set jump animation
         if (bowser_set_anim_jump()) {
             // Set vel depending of the stage and status
             o->oVelY = 70.0f;
-            bowser_short_second_hop();
+            if (o->oBowserStatus & BOWSER_STATUS_BIG_JUMP) {
+                if (distToCenter > 1000.0f) {
+                    o->oForwardVel = 60.0f;
+                }
+            }
             o->oBowserTimer = 0;
             o->oSubAction++;
         }
@@ -1022,6 +1033,11 @@ void bowser_act_jump_onto_stage(void) {
     // Set status Jump
     o->oBowserStatus |= BOWSER_STATUS_BIG_JUMP;
 
+    f32 dx = o->oBowserHomeX - o->oPosX;
+    f32 dz = o->oBowserHomeZ - o->oPosZ;
+    s16 angleToCenter = atan2s(dz, dx);
+    f32 distToCenter = sqrtf(sqr(dx) + sqr(dz));
+
     switch (o->oSubAction) {
         // Stops Bowser and makes him invisible
         case BOWSER_SUB_ACT_JUMP_ON_STAGE_IDLE:
@@ -1040,7 +1056,7 @@ void bowser_act_jump_onto_stage(void) {
         case BOWSER_SUB_ACT_JUMP_ON_STAGE_START:
             cur_obj_init_animation_with_sound(BOWSER_ANIM_JUMP_START);
             if (cur_obj_check_anim_frame(11)) {
-                o->oMoveAngleYaw = o->oBowserAngleToCenter;
+                o->oMoveAngleYaw = angleToCenter;
                 o->oVelY = 130.0f;
                 o->oForwardVel = 50.f;
                 o->oBowserTargetOpacity = 255;
@@ -1055,15 +1071,15 @@ void bowser_act_jump_onto_stage(void) {
         case BOWSER_SUB_ACT_JUMP_ON_STAGE_LAND:
             if (o->oPosY > o->oHomeY) {
                 o->oDragStrength = 0.0f;
-                if (o->oBowserDistToCenter < 750.0f) {
-                    o->oForwardVel = MIN(o->oBowserDistToCenter / 10.f + 10.f, o->oBowserDistToCenter);
+                if (distToCenter < 750.0f) {
+                    o->oForwardVel = MIN(distToCenter / 10.f + 10.f, distToCenter);
                 } else {
                     cur_obj_forward_vel_approach_upward(150.0f, 5.0f);
                 }
-                if (ABS((s16)(o->oBowserAngleToCenter - o->oMoveAngleYaw)) > 0x3000) {
+                if (ABS((s16)(angleToCenter - o->oMoveAngleYaw)) > 0x3000) {
                     o->oForwardVel = 0;
                 } else {
-                    o->oMoveAngleYaw = o->oBowserAngleToCenter;
+                    o->oMoveAngleYaw = angleToCenter;
                 }
             } else if ((o->oPosY < o->oHomeY - 100.f) && (o->oVelY > 0.f)) {
                 o->oVelY = 130.f;
@@ -1137,7 +1153,6 @@ void bowser_fly_back_dead(void) {
     // More knockback in BitS
     o->oForwardVel = -200.0f;
     o->oVelY = 100.0f;
-    //o->oMoveAngleYaw = o->oBowserAngleToCenter + 0x8000;
     o->oBowserTimer = 0;
     o->oSubAction++; // BOWSER_SUB_ACT_DEAD_BOUNCE
 }
@@ -1298,7 +1313,7 @@ s32 bowser_dead_final_stage_ending(void) {
  * This action is divided in subaction functions
  */
 void bowser_act_dead(void) {
-    cur_obj_set_home_if_safe();
+    bowser_set_home_if_safe();
 
     switch (o->oSubAction) {
         case BOWSER_SUB_ACT_DEAD_FLY_BACK:
@@ -1596,8 +1611,6 @@ void bhv_bowser_loop(void) {
     s16 angleToMario;  // AngleToMario from Bowser's perspective
 
     // Set distance/angle values
-    o->oBowserDistToCenter = cur_obj_lateral_dist_to_home();
-    o->oBowserAngleToCenter = cur_obj_angle_to_home();
     angleToMario = abs_angle_diff(o->oMoveAngleYaw, o->oAngleToMario);
 
     // Reset Status
@@ -1658,7 +1671,6 @@ void bhv_bowser_init(void) {
     o->oOpacity = 255;
     o->oBowserTargetOpacity = 255;
     // Set health and rainbow light depending of the level
-    o->oBowserRainbowLight = FALSE;
     o->oHealth = 3;
     // Start camera event, this event is not defined so maybe
     // the "start arena" cutscene was originally called this way
@@ -1879,9 +1891,9 @@ Gfx *geo_bowser_transparency_and_rainbow(s32 callContext, struct GraphNode *node
         
         gDPSetEnvColor(gfxHead++, 255, 255, 255, objectOpacity);
         // If TRUE, clear lighting to give rainbow color
-        if (obj->oBowserRainbowLight) {
-            gSPClearGeometryMode(gfxHead++, G_LIGHTING);
-        }
+        // if (obj->oBowserRainbowLight) {
+        //     gSPClearGeometryMode(gfxHead++, G_LIGHTING);
+        // }
 
         gSPEndDisplayList(gfxHead);
 
