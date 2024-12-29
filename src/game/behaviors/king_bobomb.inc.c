@@ -282,7 +282,7 @@ void king_bobomb_act_return_home(void) { // act 5
             f32 dz = o->oKingBobombHomeZ - o->oPosZ;
             o->oMoveAngleYaw = atan2s(dz, dx);
 
-            if (o->oPosY < o->oKingBobombHomeY) {
+            if (o->oPosY < o->oKingBobombHomeY && o->oTimer < 60) {
                 o->oVelY = 100.0f;
             } else {
                 Vec3f homePos;
