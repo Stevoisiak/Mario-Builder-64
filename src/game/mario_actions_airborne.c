@@ -728,15 +728,17 @@ s32 act_wall_stick(struct MarioState *m) {
         return set_mario_action(m, ACT_FREEFALL, 0);
     }
 
-    if (m->wall->type == SURFACE_CONVEYOR) {
-        s16 angle = abs_angle_diff(obj_angle_to_object(m->wall->object,m->marioObj),m->wall->object->oFaceAngleYaw);
-        if (angle > 0x4000) {
-            m->pos[1] += 10.76f;
-        } else {
-            m->pos[1] -= 10.76f;
+    if (m->wall->object) {
+        if (m->wall->type == SURFACE_CONVEYOR) {
+            s16 angle = abs_angle_diff(obj_angle_to_object(m->wall->object,m->marioObj),m->wall->object->oFaceAngleYaw);
+            if (angle > 0x4000) {
+                m->pos[1] += 10.76f;
+            } else {
+                m->pos[1] -= 10.76f;
+            }
+        } else if (m->wall->object->behavior != segmented_to_virtual(bhvConveyor)) {
+            apply_platform_displacement(&sMarioDisplacementInfo, m->pos, &m->faceAngle[1], m->wall->object);
         }
-    } else if (m->wall->object != NULL) {
-        apply_platform_displacement(&sMarioDisplacementInfo, m->pos, &m->faceAngle[1], m->wall->object);
     }
 
     m->vel[0] = 0.0f;
