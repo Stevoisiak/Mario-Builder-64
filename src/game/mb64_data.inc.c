@@ -1412,7 +1412,7 @@ struct ExclamationBoxContents sExclamationBoxContents_vanilla[] = {
 
 enum {
     OBJECT_TYPE_SETTINGS,
-    OBJECT_TYPE_SCREENSHOT,
+    OBJECT_TYPE_1, // empty, used to be for screenshot
     OBJECT_TYPE_STAR,
     OBJECT_TYPE_RED_COIN_STAR,
     OBJECT_TYPE_GOOMBA,
@@ -1512,7 +1512,7 @@ enum {
 /*  Object Type                  Name                       Button GFX              Behavior           Y Offset     Model                      Flags                 Coins/Objs/Scale/Params  Anims   Display Func    Sound*/
 struct mb64_object_info mb64_object_type_list[] = {
 /* OBJECT_TYPE_SETTINGS */      {"Level Settings",          mat_b_btn_settings},
-/* OBJECT_TYPE_SCREENSHOT */    {"Take Screenshot",         mat_b_btn_camera},
+/* OBJECT_TYPE_1 */             {" ",                       mat_b_btn_settings}, // previously screenshot
 /* OBJECT_TYPE_STAR */          {"Normal",                  mat_b_btn_star,         bhvStar,           TILE_SIZE/2, MODEL_STAR,                OBJ_TYPE_STAR,           OBJ_OCCUPY_INNER, 0, 0, 1.0f, NULL, df_star, SOUND_MENU_STAR_SOUND | SOUND_VIBRATO},
 /* OBJECT_TYPE_RED_COIN_STAR */ {"Red Coins",               mat_b_btn_rcs,          bhvHiddenRedCoinStar, TILE_SIZE/2, MODEL_TRANSPARENT_STAR, OBJ_TYPE_STAR,           OBJ_OCCUPY_INNER, 0, 1, 1.0f, NULL, df_reds_marker, SOUND_MENU_STAR_SOUND | SOUND_VIBRATO},
 /* OBJECT_TYPE_GOOMBA */        {"Normal",                  mat_b_btn_goomba,       bhvGoomba,         0,           MODEL_GOOMBA,              OBJ_TYPE_IMBUABLE,       OBJ_OCCUPY_INNER, 1, 0, 1.5f, goomba_seg8_anims_0801DA4C, NULL, SOUND_OBJ_GOOMBA_PREVIEW},
@@ -1793,7 +1793,6 @@ enum {
     MB64_BUTTON_TRIGGER,
 };
 
-u8 mb64_settings_idlist[] = {OBJECT_TYPE_SETTINGS, OBJECT_TYPE_SCREENSHOT};
 u8 mb64_star_idlist[] = {OBJECT_TYPE_STAR, OBJECT_TYPE_RED_COIN_STAR, OBJECT_TYPE_TRIGGER_STAR};
 u8 mb64_goomba_idlist[] = {OBJECT_TYPE_GOOMBA, OBJECT_TYPE_BIG_GOOMBA, OBJECT_TYPE_TINY_GOOMBA};
 u8 mb64_piranha_idlist[] = {OBJECT_TYPE_PIRANHA_PLANT, OBJECT_TYPE_BIG_PIRANHA_PLANT, OBJECT_TYPE_TINY_PIRANHA_PLANT};
@@ -1812,7 +1811,7 @@ u8 mb64_timedbox_idlist[] = {OBJECT_TYPE_TIMED_BOX, OBJECT_TYPE_TIMEDBLOCK};
 u8 mb64_smallbox_idlist[] = {OBJECT_TYPE_BBOX_SMALL, OBJECT_TYPE_BBOX_CRAZY};
 
 struct mb64_ui_button_type mb64_ui_buttons[] = {
-/* MB64_BUTTON_SETTINGS */ {MB64_PM_OBJ,  TRUE,  2, mb64_settings_idlist,    "Options"},
+/* MB64_BUTTON_SETTINGS */ {MB64_PM_OBJ,  FALSE, 0, OBJECT_TYPE_SETTINGS,    NULL},
 /* MB64_BUTTON_TEST */     {MB64_PM_OBJ,  FALSE, 0, OBJECT_TYPE_TEST_MARIO,  NULL},
 /* MB64_BUTTON_TERRAIN */  {MB64_PM_TILE, FALSE, 0, TILE_TYPE_BLOCK,         NULL},
 /* MB64_BUTTON_SLOPE */    {MB64_PM_TILE, FALSE, 0, TILE_TYPE_SLOPE,         NULL},
@@ -2465,6 +2464,7 @@ char *mb64_settings_menu_names[] = {
 char *mb64_settings_system_buttons[] = {
     "Save & Quit",
     "Play Level",
+    "Set Level Thumbnail",
     //"Level Size:",
     //"Apply Size Change (Dangerous!)",
 };

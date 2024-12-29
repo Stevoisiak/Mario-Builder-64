@@ -3913,26 +3913,12 @@ void sb_loop(void) {
                         }
                         break;
                     case 8: // options
-                        switch (mb64_param_selection) {
-                            case 0: // settings menu
-                                mb64_menu_state = MB64_MAKE_SETTINGS;
-                                play_sound(SOUND_MENU_CLICK_FILE_SELECT, gGlobalSoundSource);
-                                mb64_menu_start_timer = 0;
-                                mb64_menu_end_timer = -1;
-                                mb64_menu_index = 0;
-                                animate_list_reset();
-                                break;
-                            case 1: // screenshot
-                                if (mount_success == FR_OK) {
-                                    freecam_camera_init();
-                                    generate_object_preview();
-                                    mb64_menu_state = MB64_MAKE_SCREENSHOT;
-                                    play_sound(SOUND_MENU_CLICK_CHANGE_VIEW, gGlobalSoundSource);
-                                } else {
-                                    play_sound(SOUND_MENU_CAMERA_BUZZ, gGlobalSoundSource);
-                                }
-                                break;
-                        }
+                        mb64_menu_state = MB64_MAKE_SETTINGS;
+                        play_sound(SOUND_MENU_CLICK_FILE_SELECT, gGlobalSoundSource);
+                        mb64_menu_start_timer = 0;
+                        mb64_menu_end_timer = -1;
+                        mb64_menu_index = 0;
+                        animate_list_reset();
                         break;
                     default: //everything else places
                         place_thing_action();

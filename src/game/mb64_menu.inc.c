@@ -555,10 +555,14 @@ void song_changed(void) {
 #define SCROLL_SETTINGS 14
 #define MB64_SETTINGS_MENU_IS_STILL  ((mb64_menu_scrolling[SCROLL_SETTINGS][0] == 0) && (mb64_menu_start_timer == -1))
 
-void draw_num_coins(f32 x, f32 y) {
+void draw_num_coins(f32 xoff, f32 yoff) {
     char buf[50];
     sprintf(buf, "Total Coins: %d", mb64_total_coin_count);
-    print_maker_string_ascii_centered(x, y, buf, 0);
+    print_maker_string_ascii(20+xoff, 95+yoff, buf, MB64_TEXT_WHITE);
+
+    sprintf(buf,"Total Objects:  %d/512",mb64_object_limit_count);
+    print_maker_string_ascii(305+xoff-get_string_width_ascii(buf), 95+yoff, buf, MB64_TEXT_WHITE);
+
 }
 
 void draw_mb64_settings_misc(f32 xoff, f32 yoff) {
@@ -568,7 +572,7 @@ void draw_mb64_settings_misc(f32 xoff, f32 yoff) {
         mb64_menu_option_animation(200+xoff+3*mb64_menu_list_offsets[i],154-(i*16)+yoff,60,&mb64_settings_misc_buttons[i],i,mb64_joystick);
     }
 
-    draw_num_coins(160+xoff, 95+yoff);
+    draw_num_coins(xoff, yoff);
 }
 
 void draw_mb64_settings_misc_vanilla(f32 xoff, f32 yoff) {
@@ -578,7 +582,7 @@ void draw_mb64_settings_misc_vanilla(f32 xoff, f32 yoff) {
         mb64_menu_option_animation(200+xoff+3*mb64_menu_list_offsets[i],154-(i*16)+yoff,60,&mb64_settings_misc_buttons_vanilla[i],i,mb64_joystick);
     }
 
-    draw_num_coins(160+xoff, 95+yoff);
+    draw_num_coins(xoff, yoff);
 }
 
 void draw_mb64_settings_boundary(f32 xoff, f32 yoff) {
@@ -953,25 +957,17 @@ void draw_mb64_settings_music(f32 xoff, f32 yoff) {
 extern u8 mb64_mm_state; //externing a variable in the same file that it's defined in? more likely than you think. how heinous.
 void draw_mb64_settings_system(f32 xoff, f32 yoff) {
     char strbuf[50];
-    animate_list_update(mb64_menu_list_offsets, 3, mb64_menu_index);
-    for (s32 i=0;i<2;i++) {
+    animate_list_update(mb64_menu_list_offsets, 4, mb64_menu_index);
+    for (s32 i=0;i<3;i++) {
         print_maker_string_ascii_centered(160+xoff+3*mb64_menu_list_offsets[i],160-(i*16)+yoff,mb64_settings_system_buttons[i],(i==mb64_menu_index));
     }
     
     int vtx_perc = ((f32)mb64_vtx_total/(f32)MB64_VTX_SIZE)*100.0f;
     int tile_perc = ((f32)mb64_tile_count/(f32)MB64_TILE_POOL_SIZE)*100.0f;
-    int obj_perc = ((f32)mb64_object_limit_count/(f32)MB64_MAX_OBJS)*100.0f;
     sprintf(strbuf,"Vertices: %d/50k (%d%%)",mb64_vtx_total, vtx_perc);
-    print_maker_string_ascii(20+xoff+3*mb64_menu_list_offsets[2], 110+yoff,strbuf,MB64_TEXT_WHITE);
-    sprintf(strbuf,"Tiles:    %d/20k (%d%%)",mb64_tile_count, tile_perc);
-    print_maker_string_ascii(20+xoff+3*mb64_menu_list_offsets[2], 95+yoff,strbuf,MB64_TEXT_WHITE);
-
-    sprintf(strbuf,"Objs:  %d/512 (%d%%)",mb64_object_limit_count, obj_perc);
-    print_maker_string_ascii(305+xoff+3*mb64_menu_list_offsets[2]-get_string_width_ascii(strbuf), 95+yoff,strbuf,MB64_TEXT_WHITE);
-
-    // int gfx_perc = ((f32)mb64_gfx_total/(f32)MB64_GFX_SIZE)*100.0f;
-    // sprintf(strbuf,"Gfx: %d/20k (%d%%)",mb64_gfx_total, gfx_perc);
-    // print_maker_string_ascii(305+xoff+3*mb64_menu_list_offsets[2]-get_string_width_ascii(strbuf), 110+yoff,strbuf,MB64_TEXT_WHITE);
+    print_maker_string_ascii(20+xoff, 95+yoff,strbuf,MB64_TEXT_WHITE);
+    sprintf(strbuf,"Tiles: %d/20k (%d%%)",mb64_tile_count, tile_perc);
+    print_maker_string_ascii(305+xoff-get_string_width_ascii(strbuf), 95+yoff,strbuf,MB64_TEXT_WHITE);
 
     if ((gPlayer1Controller->buttonPressed & A_BUTTON) && MB64_SETTINGS_MENU_IS_STILL) {
         switch (mb64_menu_index) {
@@ -997,6 +993,15 @@ void draw_mb64_settings_system(f32 xoff, f32 yoff) {
                 sSourceWarpNodeId = 0x0A;
                 play_sound(SOUND_MENU_STAR_SOUND_LETS_A_GO, gGlobalSoundSource);
                 mb64_disable_menu_inputs = TRUE;
+                break;
+            case 2: // take screenshot
+                if (mount_success == FR_OK) {
+                    freecam_camera_init();
+                    mb64_menu_state = MB64_MAKE_SCREENSHOT;
+                    play_sound(SOUND_MENU_CLICK_CHANGE_VIEW, gGlobalSoundSource);
+                } else {
+                    play_sound(SOUND_MENU_CAMERA_BUZZ, gGlobalSoundSource);
+                }
                 break;
         }
     }
@@ -1425,6 +1430,7 @@ struct mb64_info_entry mb64_v1_1_changelog[] = {
     {"Editor Tweaks", 1},
     {"", 0},
     {"- Ability to hide help text in screenshot mode", 0},
+    {"- Screenshot mode has been moved to the System menu", 0},
     {"- Custom Theme menu shows slipperiness of current tile", 0},
     {"- Display the current number of placed objects in the", 0},
     {"    editor when placing Stars or Red Coins", 0},
