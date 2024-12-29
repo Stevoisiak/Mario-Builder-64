@@ -1058,7 +1058,7 @@ void bowser_act_jump_onto_stage(void) {
             if (cur_obj_check_anim_frame(11)) {
                 o->oMoveAngleYaw = angleToCenter;
                 o->oVelY = 130.0f;
-                o->oForwardVel = 50.f;
+                o->oForwardVel = 30.f;
                 o->oBowserTargetOpacity = 255;
                 o->oBowserTimer = 0;
                 o->oSubAction++;
@@ -1680,6 +1680,7 @@ void bhv_bowser_init(void) {
     o->oBowserEyesTimer = 0;
     o->oBowserEyesShut = FALSE;
     o->oBowserShadow = TRUE;
+    vec3_copy(&o->oBowserHomeX, &o->oHomeVec);
 }
 
 Gfx *geo_update_body_rot_from_parent(s32 callContext, UNUSED struct GraphNode *node, Mat4 mtx) {

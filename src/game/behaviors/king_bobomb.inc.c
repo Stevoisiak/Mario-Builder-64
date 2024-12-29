@@ -46,6 +46,7 @@ void king_bobomb_act_inactive(void) { // act 0
 
         if (o->oDistanceToMario < MB64_BOSS_TRIGGER_DIST) {
             o->oSubAction++;
+            vec3_copy(&o->oKingBobombHomeX, &o->oHomeVec);
             //seq_player_lower_volume(SEQ_PLAYER_LEVEL, 60, 40);
         }
     } else {
@@ -271,43 +272,53 @@ s32 arc_to_goal_pos(Vec3f a0, Vec3f a1, f32 yVel, f32 gravity) {
 void king_bobomb_act_return_home(void) { // act 5
     switch (o->oSubAction) {
         case KING_BOBOMB_SUB_ACT_RETURN_HOME_JUMP:
+            f32 dx = o->oKingBobombHomeX - o->oPosX;
+            f32 dz = o->oKingBobombHomeZ - o->oPosZ;
             if (o->oTimer == 0) {
                 cur_obj_play_sound_2(SOUND_OBJ_KING_BOBOMB_JUMP);
+                o->oMoveAngleYaw = atan2s(dz, dx);
+                o->oForwardVel = 20.f;
+                o->oVelY = 100.f;
+                return;
             }
 
             o->oKingBobombIsJumping = TRUE;
 
             cur_obj_init_animation_and_extend_if_at_end(KING_BOBOMB_ANIM_JUMP);
-            f32 dx = o->oKingBobombHomeX - o->oPosX;
-            f32 dz = o->oKingBobombHomeZ - o->oPosZ;
-            o->oMoveAngleYaw = atan2s(dz, dx);
+            s16 angleToCenter = atan2s(dz, dx);
+            f32 distToCenter = sqrtf(sqr(dx) + sqr(dz));
 
-            if (o->oPosY < o->oKingBobombHomeY && o->oTimer < 60) {
-                o->oVelY = 100.0f;
-            } else {
-                Vec3f homePos;
-                vec3_copy(homePos, &o->oKingBobombHomeX);
-                arc_to_goal_pos(homePos, &o->oPosVec, 100.0f, -4.0f);
+            if (o->oPosY > o->oKingBobombHomeY) {
+                if (distToCenter < 750.0f) {
+                    o->oForwardVel = MIN(distToCenter / 10.f + 10.f, distToCenter);
+                } else {
+                    cur_obj_forward_vel_approach_upward(150.0f, 5.0f);
+                }
+                if (ABS((s16)(angleToCenter - o->oMoveAngleYaw)) > 0x3000) {
+                    o->oForwardVel = 0;
+                } else {
+                    o->oMoveAngleYaw = angleToCenter;
+                }
+            } else if ((o->oPosY < o->oKingBobombHomeY - 100.f) && (o->oVelY > 0.f)) {
+                o->oVelY = 100.f;
+            }
+            if (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) {
                 o->oSubAction++; // KING_BOBOMB_SUB_ACT_RETURN_HOME_LANDING
             }
             break;
 
         case KING_BOBOMB_SUB_ACT_RETURN_HOME_LANDING:
-            cur_obj_init_animation_and_extend_if_at_end(KING_BOBOMB_ANIM_JUMP);
+            o->oVelY = 0;
+            o->oForwardVel = 0;
+            o->oGravity = -4.0f;
 
-            if (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) {
-                o->oVelY = 0;
-                o->oForwardVel = 0;
-                o->oGravity = -4.0f;
+            o->oKingBobombIsJumping = FALSE;
 
-                o->oKingBobombIsJumping = FALSE;
+            cur_obj_init_animation_with_sound(KING_BOBOMB_ANIM_T_POSE);
+            cur_obj_play_sound_2(SOUND_OBJ_KING_BOBOMB);
+            cur_obj_shake_screen(SHAKE_POS_SMALL);
 
-                cur_obj_init_animation_with_sound(KING_BOBOMB_ANIM_T_POSE);
-                cur_obj_play_sound_2(SOUND_OBJ_KING_BOBOMB);
-                cur_obj_shake_screen(SHAKE_POS_SMALL);
-
-                o->oSubAction++; // KING_BOBOMB_SUB_ACT_RETURN_HOME_LANDING_END
-            }
+            o->oSubAction++; // KING_BOBOMB_SUB_ACT_RETURN_HOME_LANDING_END
 
             if (cur_obj_die_if_on_death_barrier(MB64_STAR_HEIGHT)) {
                 obj_drop_mario();
