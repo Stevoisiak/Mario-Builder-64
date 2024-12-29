@@ -291,6 +291,10 @@ void huge_goomba_weakly_attacked(void) {
         obj_die_if_health_non_positive();
         return;
     }
+    if (gMarioState->flags & MARIO_METAL_CAP) {
+        obj_die_if_health_non_positive();
+        return;
+    }
     o->oAction = GOOMBA_ACT_ATTACKED_MARIO;
 }
 
