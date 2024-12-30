@@ -277,7 +277,6 @@ void king_bobomb_act_return_home(void) { // act 5
             if (o->oTimer == 0) {
                 cur_obj_play_sound_2(SOUND_OBJ_KING_BOBOMB_JUMP);
                 o->oMoveAngleYaw = atan2s(dz, dx);
-                o->oForwardVel = 20.f;
                 o->oVelY = 100.f;
                 return;
             }
