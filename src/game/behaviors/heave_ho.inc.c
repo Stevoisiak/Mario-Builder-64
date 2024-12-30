@@ -128,10 +128,6 @@ void heave_ho_move(void) {
         cur_obj_play_sound_1(SOUND_AIR_HEAVEHO_MOVE);
     }
 
-    if (o->oAction != 0 && o->oMoveFlags & OBJ_MOVE_MASK_IN_WATER) {
-        o->oAction = 0;
-    }
-
     if (o->oInteractStatus & INT_STATUS_GRABBED_MARIO) {
         o->oInteractStatus = INT_STATUS_NONE;
         o->oHeaveHoThrowState = 1;
