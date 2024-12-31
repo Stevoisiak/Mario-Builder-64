@@ -1605,14 +1605,7 @@ void cur_obj_update_ceiling(void) {
     if (!ceil) return;
 
     if (o->oVelY >= 0.f) {
-        if ((o->oPosY + o->oVelY + o->hitboxHeight - o->hitboxDownOffset) > ceilHeight) {
-            // ugly code to avoid self ceiling checks on wood platforms
-            if (o->behavior == segmented_to_virtual(bhvWoodPlat)) {
-                if (ceil->object == o->prevObj) {
-                    return;
-                }
-            }
-            
+        if ((o->oPosY + o->oVelY + o->hitboxHeight - o->hitboxDownOffset) > ceilHeight) {            
             f32 targetYPos = ceilHeight - o->hitboxHeight + o->hitboxDownOffset;
             if (targetYPos > o->oFloorHeight) { // dont move into a floor
                 o->oPosY = targetYPos;
