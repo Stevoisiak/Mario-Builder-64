@@ -1600,7 +1600,7 @@ void cur_obj_update_floor(void) {
 
 void cur_obj_update_ceiling(void) {
     struct Surface *ceil;
-    f32 ceilHeight = find_ceil(o->oPosX, o->oPosY + 20.f, o->oPosZ, &ceil);
+    f32 ceilHeight = find_ceil(o->oPosX, o->oPosY + o->hitboxHeight - o->hitboxDownOffset - 50.f, o->oPosZ, &ceil);
 
     if (!ceil) return;
 
