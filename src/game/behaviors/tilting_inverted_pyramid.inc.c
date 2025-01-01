@@ -6274,6 +6274,7 @@ void bhv_woodplat_check_above(void) {
 void bhv_woodplat_init(void) {
     o->oWallHitboxRadius = 127.8f; // VERY EXACT, needs to be less than 127.9 for the .1 wall buffer lmfao
     o->hitboxDownOffset = 0.f;
+    o->oGravity = -4.f;
     if (o->oBehParams2ndByte == 1) {
         o->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MAKER_FATPLAT];
         bhv_woodplat_check_above();
@@ -6291,15 +6292,11 @@ void bhv_woodplat_loop(void) {
         vec3f_copy(&o->prevObj->oPosVec,&o->oPosVec);
         o->hitboxHeight = woodplat_get_stack_height(o);
     }
-    if (waterLevel < o->oPosY) {
-        // Air Behavior
-        o->oGravity = -4.0f;
-    } else {
+    if (waterLevel > o->oPosY) {
         // Underwater Behavior
         o->oVelY *= 0.9f;
-        if (waterLevel > o->oPosY) {
-            o->oGravity = CLAMP((waterLevel - 64.f - o->oPosY) * 0.1f, -2.0f, 2.0f);
-        }
+        f32 gravity = CLAMP((waterLevel - 64.f - o->oPosY) * 0.1f, -2.0f, 2.0f);
+        o->oVelY += 4 + gravity;
         if (gMarioPlatform == o->prevObj) {
             o->oVelY -= 1.f;
             if (gMarioState->action == ACT_GROUND_POUND_LAND) {
