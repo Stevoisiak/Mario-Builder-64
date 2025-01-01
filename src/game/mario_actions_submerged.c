@@ -1208,6 +1208,10 @@ static s32 act_metal_water_standing(struct MarioState *m) {
         return set_mario_action(m, ACT_METAL_WATER_WALKING, 0);
     }
 
+    if (m->input & INPUT_OFF_FLOOR) {
+        return set_mario_action(m, ACT_METAL_WATER_FALLING, 0);
+    }
+
     switch (m->actionState) {
         case ACT_STATE_IDLE_HEAD_LEFT:
             set_mario_animation(m, MARIO_ANIM_IDLE_HEAD_LEFT);
@@ -1249,6 +1253,10 @@ static s32 act_hold_metal_water_standing(struct MarioState *m) {
         return set_mario_action(m, ACT_HOLD_METAL_WATER_WALKING, 0);
     }
 
+    if (m->input & INPUT_OFF_FLOOR) {
+        return set_mario_action(m, ACT_HOLD_METAL_WATER_FALLING, 0);
+    }
+
     stop_and_set_height_to_floor(m);
     set_mario_animation(m, MARIO_ANIM_IDLE_WITH_LIGHT_OBJ);
     return FALSE;
@@ -1283,7 +1291,7 @@ static s32 act_metal_water_walking(struct MarioState *m) {
 
     switch (perform_ground_step(m)) {
         case GROUND_STEP_LEFT_GROUND:
-            set_mario_action(m, ACT_METAL_WATER_FALLING, 1);
+            set_mario_action(m, ACT_METAL_WATER_FALLING, 0);
             break;
 
         case GROUND_STEP_HIT_WALL:
@@ -1325,7 +1333,7 @@ static s32 act_hold_metal_water_walking(struct MarioState *m) {
 
     switch (perform_ground_step(m)) {
         case GROUND_STEP_LEFT_GROUND:
-            set_mario_action(m, ACT_HOLD_METAL_WATER_FALLING, 1);
+            set_mario_action(m, ACT_HOLD_METAL_WATER_FALLING, 0);
             break;
 
         case GROUND_STEP_HIT_WALL:
