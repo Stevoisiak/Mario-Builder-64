@@ -193,8 +193,6 @@ void bhv_fly_guy_update(void) {
 
     if (o->oMoveFlags & OBJ_MOVE_HIT_WALL) {
         o->oMoveAngleYaw = cur_obj_reflect_move_angle_off_wall();
-    } else if (o->oMoveFlags & OBJ_MOVE_MASK_IN_WATER) {
-        o->oVelY = 6.0f;
     }
 
     // Oscillate up and down

@@ -457,8 +457,9 @@ static void obj_die_if_health_non_positive(void) {
     s8 old_loot_coins = o->oNumLootCoins;
     s32 starheight = MB64_STAR_HEIGHT;
     if (o->oImbue == IMBUE_STAR) {
-        if (cur_obj_has_behavior(bhvRealFlyGuy)
-         || cur_obj_has_behavior(bhvEnemyLakitu)) {
+        if (cur_obj_has_behavior(bhvFlyGuy)
+         || cur_obj_has_behavior(bhvEnemyLakitu)
+         || cur_obj_has_behavior(bhvChicken)) {
             starheight = 0;
          } else if (cur_obj_has_behavior(bhvSnufit)) {
             starheight = MB64_STAR_HEIGHT - 128;
