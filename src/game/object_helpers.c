@@ -1278,6 +1278,7 @@ void cur_obj_move_y(f32 gravity, f32 bounciness, f32 buoyancy) {
             if (o->oPosY < o->oFloorHeight) {
                 o->oPosY = o->oFloorHeight;
                 o->oMoveFlags &= ~OBJ_MOVE_MASK_IN_WATER;
+                o->oMoveFlags |= OBJ_MOVE_LANDED;
             } else {
                 if ((o->oPosY - waterLevel) < buoyancy) { // Still at surface
                     o->oPosY = waterLevel;
