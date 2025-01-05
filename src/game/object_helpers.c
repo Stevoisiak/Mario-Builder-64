@@ -1156,14 +1156,8 @@ static void cur_obj_move_xz(f32 steepSlopeNormalY, s32 careAboutEdgesAndSteepSlo
 }
 
 static void cur_obj_move_update_underwater_flags(void) {
-    f32 decelY = (f32)(sqrtf(o->oVelY * o->oVelY) * (o->oDragStrength * 7.0f)) / 100.0L;
-
-    if (o->oVelY > 0) {
-        o->oVelY -= decelY;
-    } else {
-        o->oVelY += decelY;
-    }
     f32 floorOffset = ((o->oMoveFlags & OBJ_MOVE_UNDERWATER_ON_GROUND && (o->oVelY < 5.f)) ? 100.f : 0.f);
+    o->oMoveFlags &= ~(OBJ_MOVE_UNDERWATER_OFF_GROUND | OBJ_MOVE_UNDERWATER_ON_GROUND);
 
     if (o->oPosY < (o->oFloorHeight + floorOffset)) {
         o->oPosY = o->oFloorHeight;
@@ -1231,6 +1225,7 @@ static f32 cur_obj_move_y_and_get_water_level(f32 gravity, f32 buoyancy) {
     if (o->oVelY < -78.0f) {
         o->oVelY = -78.0f;
     }
+    if (o->oMoveFlags & OBJ_MOVE_MASK_IN_WATER) o->oVelY *= 0.8f;
 
     o->oPosY += o->oVelY;
     if (o->activeFlags & ACTIVE_FLAG_IGNORE_ENV_BOXES) {
@@ -1248,7 +1243,6 @@ void cur_obj_move_y(f32 gravity, f32 bounciness, f32 buoyancy) {
     if (o->oMoveFlags & OBJ_MOVE_AT_WATER_SURFACE) {
         if (o->oVelY > 5.0f) {
             o->oMoveFlags &= ~OBJ_MOVE_MASK_IN_WATER;
-            o->oMoveFlags |= OBJ_MOVE_LEAVING_WATER;
         }
     }
 
@@ -1275,18 +1269,15 @@ void cur_obj_move_y(f32 gravity, f32 bounciness, f32 buoyancy) {
         if (o->oPosY < waterLevel) {
             cur_obj_move_update_underwater_flags();
         } else {
+            o->oMoveFlags &= ~OBJ_MOVE_MASK_IN_WATER;
             if (o->oPosY < o->oFloorHeight) {
                 o->oPosY = o->oFloorHeight;
-                o->oMoveFlags &= ~OBJ_MOVE_MASK_IN_WATER;
                 o->oMoveFlags |= OBJ_MOVE_LANDED;
             } else {
                 if ((o->oPosY - waterLevel) < buoyancy) { // Still at surface
                     o->oPosY = waterLevel;
                     o->oVelY = 0.0f;
-                    o->oMoveFlags &= ~(OBJ_MOVE_UNDERWATER_OFF_GROUND | OBJ_MOVE_UNDERWATER_ON_GROUND);
                     o->oMoveFlags |= OBJ_MOVE_AT_WATER_SURFACE;
-                } else {
-                    o->oMoveFlags &= ~OBJ_MOVE_MASK_IN_WATER;
                 }
             }
         }

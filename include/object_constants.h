@@ -101,7 +101,7 @@ enum ObjMoveFlags {
     OBJ_MOVE_HIT_WALL                          = (1 <<  9), // 0x0200
     OBJ_MOVE_HIT_EDGE                          = (1 << 10), // 0x0400
     OBJ_MOVE_ABOVE_LAVA                        = (1 << 11), // 0x0800
-    OBJ_MOVE_LEAVING_WATER                     = (1 << 12), // 0x1000
+
     OBJ_MOVE_BOUNCE                            = (1 << 13), // 0x2000
     OBJ_MOVE_ABOVE_DEATH_BARRIER               = (1 << 14), // 0x4000
     OBJ_MOVE_UNUSED                            = (1 << 15), // 0x8000

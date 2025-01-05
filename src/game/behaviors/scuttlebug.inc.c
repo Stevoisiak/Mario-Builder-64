@@ -278,7 +278,7 @@ void bhv_scuttlebug_loop(void) {
 
         case 4:
             o->oForwardVel = -10.0f;
-            if (o->oMoveFlags & OBJ_MOVE_LANDED) {
+            if (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) {
                 o->oSubAction++;
                 o->oVelY = 0.0f;
                 o->oScuttlebugTimer = 0;
@@ -602,7 +602,7 @@ void bhv_scuttlebug_normal_loop(void) {
 
         case 4:
             o->oForwardVel = -10.0f;
-            if (o->oMoveFlags & OBJ_MOVE_LANDED) {
+            if (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) {
                 o->oSubAction++;
                 o->oVelY = 0.0f;
                 o->oScuttlebugTimer = 0;

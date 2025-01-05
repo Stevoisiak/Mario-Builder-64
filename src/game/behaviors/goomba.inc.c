@@ -139,7 +139,7 @@ void bhv_goomba_init(void) {
  * Enter the jump action and set initial y velocity.
  */
 static void goomba_begin_jump(void) {
-    if (!(o->oMoveFlags & OBJ_MOVE_ON_GROUND)) return;
+    if (!(o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND)) return;
     cur_obj_play_sound_2(SOUND_OBJ_GOOMBA_ALERT);
 
     o->oAction = GOOMBA_ACT_JUMP;
