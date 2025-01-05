@@ -1633,6 +1633,7 @@ u32 interact_cap(struct MarioState *m, UNUSED u32 interactType, struct Object *o
                 } else {
                     // Vanilla SM64: Vanish Cap
                     m->flags |= MARIO_VANISH_CAP;
+                    play_cap_music(SEQUENCE_ARGS(4, SEQ_EVENT_POWERUP));
                 }
                 capTime = 600;
                 if (capTime > m->capTimer) {
