@@ -425,7 +425,7 @@ void bhv_hammer_bro_loop(void) {
             //o->oForwardVel = 35.0f;
 
             if (o->oTimer > 5) {
-                if (o->oMoveFlags & 3) {
+                if (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) {
                     cur_obj_init_animation_with_sound(0);
                     o->oAction = 1;
                     o->oTimer = RandomMinMaxU16(0,30);
@@ -444,11 +444,6 @@ void bhv_hammer_bro_loop(void) {
         cur_obj_set_home_if_safe();
         cur_obj_move_standard(-50);
 
-        //TODO: Replace with generic handler
-        if (o->oMoveFlags & OBJ_MOVE_MASK_IN_WATER) {
-            o->oInteractStatus |= INT_STATUS_WAS_ATTACKED;
-            o->oInteractStatus |= INT_STATUS_INTERACTED;
-        }
         f32 floorY = find_floor_short(o->oPosX, o->oPosY, o->oPosZ, &sObjFloor);
         if (sObjFloor != NULL) {
             if ((floorY + 1.f > o->oPosY) && (SURFACE_IS_BURNING(sObjFloor->type))) {
