@@ -2830,7 +2830,7 @@ void cur_obj_set_home_if_safe(void) {
 }
 
 s32 cur_obj_die_if_on_death_barrier(s32 offset) {
-    if (o->oFloorType == SURFACE_DEATH_PLANE && o->oPosY < o->oFloorHeight + 100.f) {
+    if ((!o->oFloor) || (o->oFloorType == SURFACE_DEATH_PLANE && o->oPosY < o->oFloorHeight + 100.f)) {
         cur_obj_drop_imbued_object(offset);
         o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
         return TRUE;
