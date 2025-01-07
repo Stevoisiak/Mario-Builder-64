@@ -2762,8 +2762,9 @@ s32 is_cur_obj_interact_with_lava(u8 move_standard_or_object_step) {
 
 void cur_obj_interact_with_moving_platform(void) {
     if (o->activeFlags & ACTIVE_FLAG_FAR_AWAY) return;
-    o->oPosX += sInteractFloor->object->oDisplaceVec[0];
-    o->oPosZ += sInteractFloor->object->oDisplaceVec[2];
+    f32 newPosX, newPosZ;
+    newPosX = o->oPosX + sInteractFloor->object->oDisplaceVec[0];
+    newPosZ = o->oPosZ + sInteractFloor->object->oDisplaceVec[2];
 
     if (sInteractFloor->type == SURFACE_CONVEYOR) {
         struct Object * conveyor_interacting = sInteractFloor->object;
@@ -2776,12 +2777,16 @@ void cur_obj_interact_with_moving_platform(void) {
 		} else if (perpendicularDistance > 80.0f) {
 			currentAngle -= 0x2000;
 		}
-        o->oPosX += sins(currentAngle) * 10.76f;
-        o->oPosZ += coss(currentAngle) * 10.76f;
+        newPosX += sins(currentAngle) * 10.76f;
+        newPosZ += coss(currentAngle) * 10.76f;
     } else if (sInteractFloor->object->behavior == segmented_to_virtual(bhvWoodPlatCol)) {
         if (o->oFlags & OBJ_FLAG_ACTIVATES_FLOOR_SWITCH) {
             sInteractFloor->object->prevObj->oVelY -= 1.f;
         }
+    }
+    if (!is_outside_level_bounds(newPosX, newPosZ)) {
+        o->oPosX = newPosX;
+        o->oPosZ = newPosZ;
     }
 }
 
