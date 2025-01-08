@@ -18,6 +18,11 @@ void grindel_thwomp_act_falling(void) {
     if (o->oVelY > -80.0f) { //terminal velocity
         o->oVelY += -4.0f;
     }
+    f32 waterlevel = mb64_get_water_level(o->oPosX, o->oPosY, o->oPosZ);
+    if (o->oPosY < waterlevel) {
+        // Apply drag
+        o->oVelY *= 0.8f;
+    }
     o->oPosY += o->oVelY;
     o->oFloorHeight = find_floor_height_short(o->oPosX, o->oPosY+30.f, o->oPosZ);
     if (o->oPosY < o->oFloorHeight) {
