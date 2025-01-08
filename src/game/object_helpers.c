@@ -2597,7 +2597,9 @@ void cur_obj_spawn_star_at_y_offset(f32 targetX, f32 targetY, f32 targetZ, f32 o
     o->oPosY = objectPosY;
 }
 
-struct Surface * cur_obj_get_interact_floor(u8 move_standard_or_object_step) {
+struct Surface *sInteractFloor;
+
+void cur_obj_get_interact_floor(u8 move_standard_or_object_step) {
     struct Surface * floor = o->oFloor;
     u8 move_condition = (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND);
     if (move_standard_or_object_step) {
@@ -2607,9 +2609,10 @@ struct Surface * cur_obj_get_interact_floor(u8 move_standard_or_object_step) {
     }
 
     if ((floor != NULL) && (move_condition)) {
-        return floor;
+        sInteractFloor = floor;
+        return;
     }
-    return NULL;
+    sInteractFloor = NULL;
 }
 
 void obj_drop_mario(void) {
@@ -2656,12 +2659,10 @@ void arbritrary_death_coin_release(void) {
     }
 }
 
-struct Surface *sInteractFloor;
-
 s32 is_obj_interacting_with_noteblock(u8 move_standard_or_object_step) {
-    struct Surface * floor = cur_obj_get_interact_floor(move_standard_or_object_step);
+    cur_obj_get_interact_floor(move_standard_or_object_step);
 
-    if ((floor) && (floor->object != NULL) && obj_has_behavior(floor->object,bhvNoteblock)) {
+    if ((sInteractFloor) && (sInteractFloor->object != NULL) && obj_has_behavior(sInteractFloor->object,bhvNoteblock)) {
         return TRUE; // adachi true
     }
     return FALSE; // lightning gif
@@ -2741,9 +2742,9 @@ void cur_obj_interact_with_quicksand(void) {
 }
 
 void cur_obj_interact_with_lava(u8 move_standard_or_object_step) {
-    struct Surface * floor = cur_obj_get_interact_floor(move_standard_or_object_step);
+    cur_obj_get_interact_floor(move_standard_or_object_step);
 
-    if ((floor) && SURFACE_IS_BURNING(floor->type)) {
+    if ((sInteractFloor) && SURFACE_IS_BURNING(sInteractFloor->type)) {
         // drag is applied in the object step function
         arbritrary_death_coin_release();
         mark_obj_for_deletion(o);
@@ -2751,9 +2752,9 @@ void cur_obj_interact_with_lava(u8 move_standard_or_object_step) {
 }
 
 s32 is_cur_obj_interact_with_lava(u8 move_standard_or_object_step) {
-    struct Surface * floor = cur_obj_get_interact_floor(move_standard_or_object_step);
+    cur_obj_get_interact_floor(move_standard_or_object_step);
 
-    if ((floor) && SURFACE_IS_BURNING(floor->type)) {
+    if ((sInteractFloor) && SURFACE_IS_BURNING(sInteractFloor->type)) {
         // drag is applied in the object step function
         return TRUE;
     }
@@ -2791,7 +2792,7 @@ void cur_obj_interact_with_moving_platform(void) {
 }
 
 void cur_obj_floor_interactions(u8 move_standard_or_object_step) {
-    sInteractFloor = cur_obj_get_interact_floor(move_standard_or_object_step);
+    cur_obj_get_interact_floor(move_standard_or_object_step);
     if (!sInteractFloor) {
         return;
     }

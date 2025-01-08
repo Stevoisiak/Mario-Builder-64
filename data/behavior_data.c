@@ -1284,7 +1284,7 @@ const BehaviorScript bhvTriangleParticleSpawner[] = {
 extern void bhv_grindel_thwomp_init(void);
 const BehaviorScript bhvGrindel[] = {
     BEGIN(OBJ_LIST_DEFAULT),
-    OR_INT(oFlags, (OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW)),
+    OR_LONG(oFlags, (OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_ACTIVATES_FLOOR_SWITCH)),
     LOAD_COLLISION_DATA(ssl_seg7_collision_grindel),
     SET_HOME(),
     SET_INT(oAction, 1),
@@ -1298,7 +1298,7 @@ const BehaviorScript bhvGrindel[] = {
 const BehaviorScript bhvThwomp[] = {
     BEGIN(OBJ_LIST_DEFAULT),
     LOAD_COLLISION_DATA(thwomp_seg5_collision_0500B7D0),
-    OR_INT(oFlags, (OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW)),
+    OR_LONG(oFlags, (OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_ACTIVATES_FLOOR_SWITCH)),
     SET_HOME(),
     SET_INT(oAction, 1),
     SCALE(/*Unused*/ 0, /*Field*/ 150),

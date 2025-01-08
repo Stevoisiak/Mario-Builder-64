@@ -36,6 +36,9 @@ void grindel_thwomp_act_land(void) {
     if (o->oTimer == 0 && o->oDistanceToMario < 3000.0f) {
         cur_obj_shake_screen(SHAKE_POS_SMALL);
         cur_obj_play_sound_2(SOUND_OBJ_THWOMP);
+        o->oMoveFlags = OBJ_MOVE_LANDED;
+        cur_obj_get_interact_floor(0);
+        cur_obj_interact_with_floor_switch();
     }
     if (o->oTimer >= 10) {
         o->oAction = GRINDEL_THWOMP_ACT_ON_GROUND;
