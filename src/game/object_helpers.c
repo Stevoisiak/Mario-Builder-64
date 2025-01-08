@@ -1235,6 +1235,7 @@ static f32 cur_obj_move_y_and_get_water_level(f32 gravity, f32 buoyancy) {
     return mb64_get_water_level(o->oPosX, o->oPosY, o->oPosZ);
 }
 
+void obj_splash(f32 waterY, f32 objY);
 void cur_obj_move_y(f32 gravity, f32 bounciness, f32 buoyancy) {
     f32 waterLevel;
 
@@ -1256,11 +1257,6 @@ void cur_obj_move_y(f32 gravity, f32 bounciness, f32 buoyancy) {
         } else {
             o->oMoveFlags |= OBJ_MOVE_ENTERED_WATER;
             o->oMoveFlags &= ~OBJ_MOVE_MASK_ON_GROUND;
-            if (o->oWallHitboxRadius < 200.0f) {
-                cur_obj_play_sound_2(SOUND_OBJ_DIVING_INTO_WATER);
-            } else {
-                cur_obj_play_sound_2(SOUND_OBJ_DIVING_IN_WATER);
-            }
         }
     } else {
         o->oMoveFlags &= ~OBJ_MOVE_ENTERED_WATER;
@@ -1282,6 +1278,7 @@ void cur_obj_move_y(f32 gravity, f32 bounciness, f32 buoyancy) {
             }
         }
     }
+    obj_splash(waterLevel, o->oPosY);
 
     COND_BIT((!(o->oMoveFlags & (OBJ_MOVE_MASK_ON_GROUND | OBJ_MOVE_AT_WATER_SURFACE | OBJ_MOVE_UNDERWATER_OFF_GROUND))), o->oMoveFlags, OBJ_MOVE_IN_AIR);
 }

@@ -270,6 +270,8 @@ void bhv_bully_loop(void) {
             o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
             break;
     }
+
+    cur_obj_underwater_bubbles();
 }
 
 void big_bully_spawn_minion(s32 x, s32 y, s32 z, s16 yaw) {

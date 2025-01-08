@@ -690,6 +690,7 @@ void bhv_valve(void);
 void bhv_enemy_arena_spawner(void);
 void bhv_phono_init(void);
 void bhv_phono_loop(void);
+void cur_obj_underwater_bubbles(void);
 
 void bhv_preview_object_init(void);
 void bhv_preview_object_loop(void);

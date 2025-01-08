@@ -106,6 +106,10 @@ void bhv_pokey_body_part_update(void) {
                 o->oNumLootCoins = 0;
             }
 
+            if (o->oBehParams2ndByte == POKEY_PART_BP_HEAD) {
+                cur_obj_underwater_bubbles();
+            }
+
             // If the body part was attacked, then die. If the head was killed,
             // then die after a delay.
 

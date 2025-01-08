@@ -509,6 +509,7 @@ const BehaviorScript bhvKingBobomb[] = {
     SET_INT(oDamageOrCoinValue, 1),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_king_bobomb_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
         CALL_NATIVE(cur_obj_update_boss_music),
     END_LOOP(),
 };
@@ -734,6 +735,7 @@ const BehaviorScript bhvChuckya[] = {
     SET_HOME(),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_chuckya_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -1832,6 +1834,7 @@ const BehaviorScript bhvSpindrift[] = {
     SET_INT(oInteractionSubtype, INT_SUBTYPE_TWIRL_BOUNCE),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_spindrift_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -2086,6 +2089,7 @@ const BehaviorScript bhvHeaveHo[] = {
     SET_INT(oIntangibleTimer, 0),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_heave_ho_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -2275,6 +2279,7 @@ const BehaviorScript bhvBowser[] = {
     CALL_NATIVE(bhv_bowser_init),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_bowser_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
         CALL_NATIVE(cur_obj_update_boss_music),
     END_LOOP(),
 };
@@ -2892,6 +2897,7 @@ const BehaviorScript bhvPiranhaPlant[] = {
     CALL_NATIVE(bhv_piranha_plant_init),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_piranha_plant_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -3735,6 +3741,7 @@ const BehaviorScript bhvScuttlebug[] = {
     //CALL_NATIVE(bhv_init_room),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_scuttlebug_normal_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -3748,6 +3755,7 @@ const BehaviorScript bhvCrablet[] = {
     SET_HOME(),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_scuttlebug_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -4310,6 +4318,7 @@ const BehaviorScript bhvBobomb[] = {
     CALL_NATIVE(bhv_bobomb_init),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_bobomb_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -4979,6 +4988,7 @@ const BehaviorScript bhvMotos[] = {
     SET_HOME(),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_motos_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -5163,6 +5173,7 @@ const BehaviorScript bhvMoneybag[] = {
     CALL_NATIVE(bhv_moneybag_init),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_moneybag_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -5178,6 +5189,7 @@ const BehaviorScript bhvMoneybagHidden[] = {
     CALL_NATIVE(bhv_moneybag_hidden_init),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_moneybag_hidden_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -5707,6 +5719,7 @@ const BehaviorScript bhvCrowbarThrow[] = {
 
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_crowbar_attack_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -6043,6 +6056,7 @@ const BehaviorScript bhvKoopa[] = {
     CALL_NATIVE(bhv_koopa_init),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_koopa_update),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -6153,6 +6167,7 @@ const BehaviorScript bhvHammerBro[] = {
     SET_FLOAT(oGraphYOffset, 60),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_hammer_bro_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -6331,6 +6346,7 @@ const BehaviorScript bhvWigglerHead[] = {
     SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_MEDIUM),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_wiggler_update),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -6356,6 +6372,7 @@ const BehaviorScript bhvEnemyLakitu[] = {
     SET_OBJ_PHYSICS_AIR(/*Wall hitbox radius*/ 40),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_enemy_lakitu_update),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -6438,6 +6455,7 @@ const BehaviorScript bhvSpiny[] = {
     SET_OBJ_PHYSICS_DEFAULT(/*Wall hitbox radius*/ 40),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_spiny_update),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -6947,6 +6965,7 @@ const BehaviorScript bhvFirePiranhaPlant[] = {
     CALL_NATIVE(bhv_fire_piranha_plant_init),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_fire_piranha_plant_update),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -7003,6 +7022,7 @@ const BehaviorScript bhvSnufit[] = {
     BEGIN_LOOP(),
         SET_INT(oSnufitRecoil, 0),
         CALL_NATIVE(bhv_snufit_loop),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 
@@ -8159,6 +8179,7 @@ const BehaviorScript bhvShowrunner[] = {
     SET_HOME(),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_Showrunner),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
         CALL_NATIVE(cur_obj_update_boss_music),
     END_LOOP(),
 };
@@ -8564,6 +8585,7 @@ const BehaviorScript bhvPhantasm[] = {
     SET_HOME(),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_cosmic_phantasm),
+        CALL_NATIVE(cur_obj_underwater_bubbles),
     END_LOOP(),
 };
 

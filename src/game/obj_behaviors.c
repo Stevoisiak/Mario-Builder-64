@@ -369,20 +369,30 @@ void obj_update_pos_vel_xz(void) {
  * Generates splashes if at surface of water, entering water, or bubbles
  * if underwater.
  */
-void obj_splash(s32 waterY, s32 objY) {
-    u32 globalTimer = gGlobalTimer;
-
+void obj_splash(f32 waterY, f32 objY) {
     // Spawns waves if near surface of water and plays a noise if entering.
-    if ((f32)(waterY + 30) > o->oPosY && o->oPosY > (f32)(waterY - 30)) {
+    if ((waterY + 20) > o->oPosY && o->oPosY > (waterY - 60)) {
         spawn_object(o, MODEL_IDLE_WATER_WAVE, bhvObjectWaterWave);
 
         if (o->oVelY < -20.0f) {
-            cur_obj_play_sound_2(SOUND_OBJ_DIVING_INTO_WATER);
+            if (o->oWallHitboxRadius < 70.0f) {
+                cur_obj_play_sound_2(SOUND_OBJ_DIVING_INTO_WATER);
+            } else {
+                cur_obj_play_sound_2(SOUND_OBJ_DIVING_IN_WATER);
+            }
         }
     }
 
     // Spawns bubbles if underwater.
-    if ((objY + 50) < waterY && !(globalTimer & 31)) {
+    // if ((objY + 50) < waterY && !(gGlobalTimer & 31)) {
+    //     spawn_object(o, MODEL_WHITE_PARTICLE_SMALL, bhvObjectBubble);
+    // }
+}
+
+void cur_obj_underwater_bubbles() {
+    f32 waterlevel = mb64_get_water_level(o->oPosX, o->oPosY, o->oPosZ);
+    // Spawns bubbles if underwater.
+    if ((o->oPosY + 50) < waterlevel && !(gGlobalTimer & 31)) {
         spawn_object(o, MODEL_WHITE_PARTICLE_SMALL, bhvObjectBubble);
     }
 }

@@ -216,4 +216,5 @@ void bhv_fly_guy_update(void) {
 
     cur_obj_move_standard(78);
     obj_check_attacks(&sFlyGuyHitbox, o->oAction);
+    cur_obj_underwater_bubbles();
 }
