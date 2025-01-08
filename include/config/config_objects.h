@@ -18,6 +18,15 @@
 #define MB64_STAR_HEIGHT 384
 #define MB64_RESPAWN_DIST 2000.f
 
+#define MB64_GRAVITY_DEFAULT -400
+#define MB64_BOUNCINESS_DEFAULT -50
+#define MB64_DRAG_DEFAULT 1000
+#define MB64_FRICTION_DEFAULT 1000
+#define MB64_BUOYANCY_DEFAULT 200
+
+#define MB64_GRAVITY_DEFAULT_STEP 4.0f
+#define MB64_BUOYANCY_DEFAULT_STEP 1.4f
+
 /**
  * The distance from Mario at which coin formations spawn their coins. Vanilla is 2000.0f.
  * Set this to o->oDrawingDistance for a more reasonable range at the cost of performance.

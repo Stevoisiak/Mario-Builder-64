@@ -29,9 +29,9 @@ void bhv_small_bully_init(void) {
 
     cur_obj_init_animation(0);
     o->oBehParams2ndByte = BULLY_BP_SIZE_SMALL;
-    o->oGravity = 4.0f;
+    o->oGravity = MB64_GRAVITY_DEFAULT_STEP;
     o->oFriction = 0.91f;
-    o->oBuoyancy = 1.3f;
+    o->oBuoyancy = MB64_BUOYANCY_DEFAULT_STEP;
     o->oWallHitboxRadius = 50.f;
 
     obj_set_hitbox(o, &sSmallBullyHitbox);
@@ -41,9 +41,9 @@ void bhv_big_bully_init(void) {
     o->oQuicksandDepthToDie = 150;
     cur_obj_init_animation(0);
     o->oBehParams2ndByte = BULLY_BP_SIZE_BIG;
-    o->oGravity = 5.0f;
+    o->oGravity = MB64_GRAVITY_DEFAULT_STEP;
     o->oFriction = 0.93f;
-    o->oBuoyancy = 1.3f;
+    o->oBuoyancy = MB64_BUOYANCY_DEFAULT_STEP;
     o->oWallHitboxRadius = 100.f;
 
     obj_set_hitbox(o, &sBigBullyHitbox);

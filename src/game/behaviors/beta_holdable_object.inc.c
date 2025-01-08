@@ -12,9 +12,9 @@
  * Just sets various physics constants for the object.
  */
 void bhv_beta_holdable_object_init(void) {
-    o->oGravity = 2.5f;
+    o->oGravity = MB64_GRAVITY_DEFAULT_STEP;
     o->oFriction = 0.8f;
-    o->oBuoyancy = 1.3f;
+    o->oBuoyancy = MB64_BUOYANCY_DEFAULT_STEP;
 }
 
 /**

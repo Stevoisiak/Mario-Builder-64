@@ -163,7 +163,7 @@ void bhv_wing_vanish_cap_loop(void) {
 void bhv_metal_cap_init(void) {
     o->oGravity = 2.4f;
     o->oFriction = 0.999f;
-    o->oBuoyancy = 1.5f;
+    o->oBuoyancy = MB64_BUOYANCY_DEFAULT_STEP;
     o->oOpacity = 255;
 }
 

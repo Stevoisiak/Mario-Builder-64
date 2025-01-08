@@ -13,9 +13,9 @@ static struct ObjectHitbox sBobombHitbox = {
 };
 
 void bhv_bobomb_init(void) {
-    o->oGravity = 2.5f;
+    o->oGravity = MB64_GRAVITY_DEFAULT_STEP;
     o->oFriction = 0.8f;
-    o->oBuoyancy = 1.3f;
+    o->oBuoyancy = MB64_BUOYANCY_DEFAULT_STEP;
     o->oWallHitboxRadius = 65.f;
     o->oInteractionSubtype = INT_SUBTYPE_KICKABLE;
     o->oQuicksandDepthToDie = 55;
@@ -276,7 +276,7 @@ void bhv_bobomb_fuse_smoke_init(void) {
 void bhv_bobomb_buddy_init(void) {
     o->oGravity = 2.5f;
     o->oFriction = 0.8f;
-    o->oBuoyancy = 1.3f;
+    o->oBuoyancy = MB64_BUOYANCY_DEFAULT_STEP;
     o->oInteractionSubtype = INT_SUBTYPE_NPC;
 }
 

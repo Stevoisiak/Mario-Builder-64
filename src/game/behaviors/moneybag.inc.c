@@ -25,9 +25,9 @@ static struct ObjectHitbox sMoneybagHiddenHitbox = {
 };
 
 void bhv_moneybag_init(void) {
-    o->oGravity = 3.0f;
+    o->oGravity = MB64_GRAVITY_DEFAULT_STEP;
     o->oFriction = 1.0f;
-    o->oBuoyancy = 2.0f;
+    o->oBuoyancy = MB64_BUOYANCY_DEFAULT_STEP;
     o->oWallHitboxRadius = 120.0f;
     cur_obj_init_animation(0);
     o->oOpacity = 0;
@@ -306,9 +306,9 @@ void bhv_moneybag_hidden_loop(void) {
     cur_obj_scale(o->oMoneybagHiddenScale);
     o->oInteractStatus = INT_STATUS_NONE;
 
-    o->oGravity = 3.0f;
+    o->oGravity = MB64_GRAVITY_DEFAULT_STEP;
     o->oFriction = 1.0f;
-    o->oBuoyancy = 2.0f;
+    o->oBuoyancy = MB64_BUOYANCY_DEFAULT_STEP;
     o->oWallHitboxRadius = 120.0f;
     object_step();
     o->header.gfx.throwMatrix = NULL;

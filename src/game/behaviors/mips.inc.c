@@ -34,7 +34,7 @@ void bhv_mips_init(void) {
 
     o->oGravity = 15.0f;
     o->oFriction = 0.89f;
-    o->oBuoyancy = 1.2f;
+    o->oBuoyancy = MB64_BUOYANCY_DEFAULT_STEP;
 
     cur_obj_init_animation(0);
 }

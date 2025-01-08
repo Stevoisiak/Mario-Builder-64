@@ -6,9 +6,9 @@
 static s16 sYoshiHomeLocations[] = { 0, -5625, -1364, -5912, -1403, -4609, -1004, -5308 };
 
 void bhv_yoshi_init(void) {
-    o->oGravity = 2.0f;
+    o->oGravity = MB64_GRAVITY_DEFAULT_STEP;
     o->oFriction = 0.9f;
-    o->oBuoyancy = 1.3f;
+    o->oBuoyancy = MB64_BUOYANCY_DEFAULT_STEP;
     o->oInteractionSubtype = INT_SUBTYPE_NPC;
 
 #if !defined(ENABLE_VANILLA_LEVEL_SPECIFIC_CHECKS) || defined(UNLOCK_ALL)
