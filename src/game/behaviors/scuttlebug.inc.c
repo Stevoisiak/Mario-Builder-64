@@ -367,6 +367,9 @@ void bhv_hammer_bro_loop(void) {
 
         //LOOP
         if (o->oAction == 1) {
+            if (o->oDistanceToMario > 1500) {
+                o->oTimer = 0;
+            }
 
             if (o->oTimer > 40) {
                 cur_obj_init_animation_with_sound(2);
