@@ -62,14 +62,14 @@ struct ObjectHitbox sHammerBroHitbox = {
 
 struct ObjectHitbox sHammerHitbox = {
     /* interactType: */ INTERACT_DAMAGE,
-    /* downOffset: */ 0,
+    /* downOffset: */ 40,
     /* damageOrCoinValue: */ 2,
     /* health: */ 1,
     /* numLootCoins: */ 7,
     /* radius: */ 40,
-    /* height: */ 40,
+    /* height: */ 80,
     /* hurtboxRadius: */ 40,
-    /* hurtboxHeight: */ 40,
+    /* hurtboxHeight: */ 80,
 };
 
 // struct ObjectHitbox sCactusHitbox = {
@@ -476,16 +476,18 @@ void bhv_hammer_loop(void) {
     obj_set_hitbox(o, &sHammerHitbox);
     o->oFaceAnglePitch += 0x2000;
 
-    if ((o->oMoveFlags & 3)||(o->oTimer > 300)||(o->oMoveFlags & 0x200)) {
+
+    if (obj_attack_collided_from_other_object(o, ATTACK_FAST_ATTACK) || (o->oInteractStatus & INT_STATUS_INTERACTED) ||
+        (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) || (o->oTimer > 300) || (o->oMoveFlags & OBJ_MOVE_HIT_WALL)) {
         play_sound(SOUND_ACTION_METAL_STEP, gGlobalSoundSource);
         spawn_mist_particles();
         obj_mark_for_deletion(o);
-        }
+    }
 
     cur_obj_update_floor_and_walls();
     o->activeFlags &= ~ACTIVE_FLAG_FAR_AWAY;
     cur_obj_move_standard(50);
-    }
+}
 
 
 void bhv_firebroball_loop(void) {

@@ -6173,7 +6173,7 @@ const BehaviorScript bhvHammerBro[] = {
 };
 
 const BehaviorScript bhvHammer[] = {
-    BEGIN(OBJ_LIST_GENACTOR),
+    BEGIN(OBJ_LIST_DESTRUCTIVE),
     OR_INT(oFlags, (OBJ_FLAG_COMPUTE_ANGLE_TO_MARIO | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
     SET_OBJ_PHYSICS_DEFAULT(/*Wall hitbox radius*/ 80),
     SET_HOME(),
