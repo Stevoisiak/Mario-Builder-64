@@ -259,6 +259,7 @@ void bhv_ccm_touched_star_spawn_loop(void);
 void bhv_unused_poundable_platform(void);
 void bhv_beta_trampoline_top_loop(void);
 void bhv_beta_trampoline_spring_loop(void);
+void bhv_jumping_box_init(void);
 void bhv_jumping_box_loop(void);
 void bhv_boo_cage_loop(void);
 void bhv_bowser_key_loop(void);

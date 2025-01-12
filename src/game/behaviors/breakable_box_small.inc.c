@@ -19,6 +19,7 @@ void bhv_breakable_box_small_init(void) {
     o->oWallHitboxRadius = 50.0f;
     cur_obj_scale(0.31f);
     obj_set_hitbox(o, &sBreakableBoxSmallHitbox);
+    create_respawner(MODEL_BREAKABLE_BOX_SMALL, bhvBreakableBoxSmall, 0, 150, TRUE);
     o->oAnimState = BREAKABLE_BOX_ANIM_STATE_CORK_BOX;
 }
 
@@ -57,26 +58,12 @@ void small_breakable_box_act_move(void) {
             obj_spawn_yellow_coins(o, 3);
         }
         create_sound_spawner(SOUND_GENERAL_BREAK_BOX);
-        o->header.gfx.node.flags |= GRAPH_RENDER_INVISIBLE;
-        o->oBreakableBoxSmallReleased = TRUE;
-        o->oBreakableBoxSmallFramesSinceReleased = 900 - (5 * 30); // respawn after 5 seconds
-        o->oAction = 1; // empty action
         SET_BPARAM3(o->oBehParams, 1);
-        cur_obj_become_intangible();
+        cur_obj_trigger_respawner();
+        o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
     }
 
     obj_check_floor_death(collisionFlags, sObjFloor);
-}
-
-void breakable_box_small_respawn(void) {
-    struct Object *newbox = spawn_object(o, MODEL_BREAKABLE_BOX_SMALL, bhvBreakableBoxSmall);
-    newbox->oPosX = o->oHomeX;
-    newbox->oPosY = o->oHomeY;
-    newbox->oPosZ = o->oHomeZ;
-    newbox->oMoveAngleYaw = 0;
-    newbox->oBehParams = o->oBehParams;
-    spawn_mist_at_obj(newbox);
-    o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
 }
 
 void breakable_box_small_released_loop(void) {
@@ -89,7 +76,8 @@ void breakable_box_small_released_loop(void) {
 
     // Despawn, and create a corkbox respawner
     if (o->oBreakableBoxSmallFramesSinceReleased > 900) {
-        breakable_box_small_respawn();
+        cur_obj_trigger_respawner();
+        o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
     }
 }
 
@@ -101,12 +89,13 @@ void breakable_box_small_idle_loop(void) {
 
         case OBJ_ACT_LAVA_DEATH:
             if (obj_lava_death()) {
-                breakable_box_small_respawn();
+                cur_obj_trigger_respawner();
             }
             break;
 
         case OBJ_ACT_DEATH_PLANE_DEATH:
-            breakable_box_small_respawn();
+            cur_obj_trigger_respawner();
+            o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
             return;
     }
 

@@ -801,9 +801,11 @@
 #define /*0x110*/ oMrIBlinking            OBJECT_FIELD_S32(0x22)
 
 /* Object Respawner */
-#define /*0x0F4*/ oRespawnerModelToRespawn    OBJECT_FIELD_S32(0x1B)
-#define /*0x0F8*/ oRespawnerMinSpawnDist      OBJECT_FIELD_F32(0x1C)
-#define /*0x0FC*/ oRespawnerBehaviorToRespawn OBJECT_FIELD_CVPTR(0x1D)
+#define /*0x0F4*/ oRespawnerModel         OBJECT_FIELD_S32(0x1B)
+#define /*0x0F8*/ oRespawnerSpawnDist     OBJECT_FIELD_F32(0x1C)
+#define /*0x0FC*/ oRespawnerBehavior      OBJECT_FIELD_CVPTR(0x1D)
+#define /*0x100*/ oRespawnerTimer         OBJECT_FIELD_S16(0x1E, 0)
+#define /*0x104*/ oRespawnerMist          OBJECT_FIELD_S16(0x1E, 1)
 
 /* Orange Number */
 #define /*0x110*/ oOrangeNumberOffset OBJECT_FIELD_S32(0x22)

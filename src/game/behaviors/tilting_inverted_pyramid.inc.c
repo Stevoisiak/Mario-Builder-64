@@ -6275,6 +6275,7 @@ void bhv_woodplat_init(void) {
     o->oWallHitboxRadius = 127.8f; // VERY EXACT, needs to be less than 127.9 for the .1 wall buffer lmfao
     o->hitboxDownOffset = 0.f;
     o->oGravity = -4.f;
+    o->oBuoyancy = 0.f;
     if (o->oBehParams2ndByte == 1) {
         o->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MAKER_FATPLAT];
         bhv_woodplat_check_above();

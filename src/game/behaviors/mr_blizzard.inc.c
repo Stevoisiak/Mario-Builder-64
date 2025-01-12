@@ -45,7 +45,7 @@ void bhv_mr_blizzard_init(void) {
     o->oMrBlizzardGraphYOffset = -200.0f;
     o->oMrBlizzardHeldObj = NULL;
     o->oQuicksandDepthToDie = 0;
-    create_respawner(MODEL_MAKER_BLIZZARD, bhvMrBlizzard, MB64_RESPAWN_DIST);
+    create_respawner(MODEL_MAKER_BLIZZARD, bhvMrBlizzard, MB64_RESPAWN_DIST, 0, FALSE);
     cur_obj_hide();
 }
 

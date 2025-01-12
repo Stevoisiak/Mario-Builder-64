@@ -315,7 +315,7 @@ ObjActionFunc TablePiranhaPlantActions[] = {
 };
 
 void bhv_piranha_plant_init(void) {
-    create_respawner(MODEL_MAKER_PLANT, bhvPiranhaPlant, MB64_RESPAWN_DIST);
+    create_respawner(MODEL_MAKER_PLANT, bhvPiranhaPlant, MB64_RESPAWN_DIST, 0, FALSE);
 }
 
 /**

@@ -2149,6 +2149,7 @@ const BehaviorScript bhvJumpingBox[] = {
     SET_HOME(),
     SET_FLOAT(oWallHitboxRadius, 50),
     SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_MEDIUM),
+    CALL_NATIVE(bhv_jumping_box_init),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_jumping_box_loop),
     END_LOOP(),

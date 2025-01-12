@@ -5,32 +5,15 @@ struct ObjectHitbox sJumpingBoxHitbox = {
     /* downOffset:        */ 20,
     /* damageOrCoinValue: */ 0,
     /* health:            */ 1,
-    /* numLootCoins:      */ 5,
+    /* numLootCoins:      */ 0,
     /* radius:            */ 150,
     /* height:            */ 250,
     /* hurtboxRadius:     */ 150,
     /* hurtboxHeight:     */ 250,
 };
 
-void jumping_box_begin_respawn(void) {
-    spawn_mist_particles_variable(0, 0, 46.f);
-    cur_obj_become_intangible();
-    cur_obj_hide();
-    o->oAction = 1;
-    o->oHeldState = HELD_FREE;
-}
-
-void jumping_box_respawn(void) {
-    struct Object *newbox = spawn_object(o, MODEL_BREAKABLE_BOX_SMALL, bhvJumpingBox);
-    newbox->oPosX = o->oHomeX;
-    newbox->oPosY = o->oHomeY;
-    newbox->oPosZ = o->oHomeZ;
-    newbox->oFaceAngleYaw = 0;
-    newbox->oFaceAnglePitch = 0;
-    newbox->oFaceAngleRoll = 0;
-    newbox->oBehParams = o->oBehParams;
-    spawn_mist_at_obj(newbox);
-    o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
+void bhv_jumping_box_init(void) {
+    create_respawner(MODEL_BREAKABLE_BOX_SMALL, bhvJumpingBox, 0, 150, TRUE);
 }
 
 void jumping_box_act_0(void) {
@@ -45,27 +28,15 @@ void jumping_box_act_0(void) {
     }
 
     if (cur_obj_die_if_on_death_barrier(0)) {
-        jumping_box_respawn();
+        cur_obj_trigger_respawner();
+        o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
     }
 }
-
-void jumping_box_waiting_to_respawn(void) {
-    cur_obj_become_intangible();
-    cur_obj_hide();
-    if (o->oTimer > 5*30) {
-        jumping_box_respawn();
-    }
-}
-
-ObjActionFunc sJumpingBoxActions[] = {
-    jumping_box_act_0,
-    jumping_box_waiting_to_respawn,
-};
 
 void jumping_box_free_update(void) {
     cur_obj_scale(0.38f);
     obj_set_hitbox(o, &sJumpingBoxHitbox);
-    cur_obj_call_action_function(sJumpingBoxActions);
+    jumping_box_act_0();
 }
 
 void bhv_jumping_box_loop(void) {
@@ -84,21 +55,20 @@ void bhv_jumping_box_loop(void) {
             break;
 
         case HELD_DROPPED:
-            jumping_box_begin_respawn();
+            cur_obj_trigger_respawner();
+            o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
             break;
     }
 
     if (o->oInteractStatus & INT_STATUS_STOP_RIDING) {
         create_sound_spawner(SOUND_GENERAL_BREAK_BOX);
-
         spawn_triangle_break_particles(10, MODEL_DIRT_ANIMATION, 3.0f, TINY_DIRT_PARTICLE_ANIM_STATE_YELLOW);
         if (!GET_BPARAM3(o->oBehParams)) {
-            obj_spawn_loot_yellow_coins(o, o->oNumLootCoins, 20.0f);
+            obj_spawn_yellow_coins(o, 5);
         }
-        
         SET_BPARAM3(o->oBehParams, 1);
-
-        jumping_box_begin_respawn();
+        cur_obj_trigger_respawner();
+        o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
     }
 
     o->oInteractStatus = INT_STATUS_NONE;

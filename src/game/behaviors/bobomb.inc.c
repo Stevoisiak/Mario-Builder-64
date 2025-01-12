@@ -19,7 +19,7 @@ void bhv_bobomb_init(void) {
     o->oWallHitboxRadius = 65.f;
     o->oInteractionSubtype = INT_SUBTYPE_KICKABLE;
     o->oQuicksandDepthToDie = 55;
-    create_respawner(MODEL_BLACK_BOBOMB, bhvBobomb, MB64_RESPAWN_DIST);
+    create_respawner(MODEL_BLACK_BOBOMB, bhvBobomb, MB64_RESPAWN_DIST, 150, FALSE);
 }
 
 void bobomb_spawn_coin(s32 lava) {
@@ -48,14 +48,10 @@ void bobomb_act_explode(void) {
         explosion->oGraphYOffset += 100.0f;
 
         bobomb_spawn_coin(FALSE);
-    } else { // respawn after 5 seconds
+    } else { // respawn
         o->oBobombFuseLit = FALSE;
-        cur_obj_become_intangible();
-        cur_obj_hide();
-        if (o->oTimer > 5*30) {
-            cur_obj_trigger_respawner();
-            o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
-        }
+        cur_obj_trigger_respawner();
+        o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
     }
 }
 

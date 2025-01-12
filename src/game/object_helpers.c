@@ -2621,9 +2621,10 @@ void obj_drop_mario(void) {
 }
 
 void arbritrary_death_coin_release(void) {
+    cur_obj_trigger_respawner();
+
     if (cur_obj_has_behavior(bhvBobomb)) {
         bobomb_spawn_coin(FALSE);
-        cur_obj_trigger_respawner();
         return;
     }
 
