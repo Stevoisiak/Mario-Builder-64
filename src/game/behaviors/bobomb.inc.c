@@ -13,7 +13,7 @@ static struct ObjectHitbox sBobombHitbox = {
 };
 
 void bhv_bobomb_init(void) {
-    o->oGravity = MB64_GRAVITY_DEFAULT_STEP;
+    o->oGravity = 2.5f;
     o->oFriction = 0.8f;
     o->oBuoyancy = MB64_BUOYANCY_DEFAULT_STEP;
     o->oWallHitboxRadius = 65.f;
