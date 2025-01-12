@@ -202,7 +202,7 @@ void bhv_cosmic_phantasm(void) {
             switch(o->oSubAction) {
                 case 0:
                     o->oForwardVel = 0.f;
-                    if (o->oMoveFlags & OBJ_MOVE_ON_GROUND) {
+                    if (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) {
                         o->oSubAction = 2;
                         cur_obj_init_animation_with_sound(7);
                         o->oVelY = 0.0f;
