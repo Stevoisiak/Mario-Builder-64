@@ -38,7 +38,7 @@ static s16 sIntroFrameCounter;
 static s32 sTmCopyrightAlpha;
 
 
-u8 TitleState = 0;
+// u8 TitleState = 0;
 
 f32 logo_opacity = 0.0f;
 u8 rovert_logo_timer = 0;
@@ -54,14 +54,14 @@ Gfx *geo_intro_super_mario_64_logo(s32 callContext, struct GraphNode *node, UNUS
 
     if (callContext != GEO_CONTEXT_RENDER) {
         sIntroFrameCounter = 0;
-        TitleState = 0;
+        // TitleState = 0;
         logo_opacity = 0.0f;
         rovert_logo_timer = 0;
     } else if (callContext == GEO_CONTEXT_RENDER) {
 
-        if (TitleState == 0) {
-            return dl;
-        }
+        // if (TitleState == 0) {
+        //     return dl;
+        // }
 
         f32 *scaleTable1 = segmented_to_virtual(intro_seg7_table_scale_1);
         f32 *scaleTable2 = segmented_to_virtual(intro_seg7_table_scale_2);
@@ -127,9 +127,9 @@ Gfx *geo_title_screen2(s32 callContext, struct GraphNode *node, UNUSED void *con
         sIntroFrameCounter = 0;
     } else if (callContext == GEO_CONTEXT_RENDER) {
 
-        if (TitleState == 0) {
-            return displayList;
-        }
+        // if (TitleState == 0) {
+        //     return displayList;
+        // }
 
         graphNode->flags = (graphNode->flags & 0xFF) | 0x100;
         scaleMat = alloc_display_list(sizeof(*scaleMat));
@@ -211,9 +211,9 @@ Gfx *geo_title_screen3(s32 callContext, struct GraphNode *node, UNUSED void *con
         sIntroFrameCounter = 0;
     } else if (callContext == GEO_CONTEXT_RENDER) {
 
-        if (TitleState == 0) {
-            return displayList;
-        }
+        // if (TitleState == 0) {
+        //     return displayList;
+        // }
 
         graphNode->flags = (graphNode->flags & 0xFF) | 0x100;
         scaleMat = alloc_display_list(sizeof(*scaleMat));
@@ -254,42 +254,42 @@ Gfx *geo_title_screen3(s32 callContext, struct GraphNode *node, UNUSED void *con
     return displayList;
 }
 
-Gfx *geo_rovert_logo(s32 callContext, struct GraphNode *node, UNUSED void *context) {
-    Gfx *displayListIter = NULL;
-    Gfx *displayList = NULL;
-    Mtx *scaleMat;
+// Gfx *geo_rovert_logo(s32 callContext, struct GraphNode *node, UNUSED void *context) {
+//     Gfx *displayListIter = NULL;
+//     Gfx *displayList = NULL;
+//     Mtx *scaleMat;
 
-    if (callContext == GEO_CONTEXT_RENDER) {
-        scaleMat = alloc_display_list(sizeof(*scaleMat));
-        displayList = alloc_display_list(9 * sizeof(*displayList));
-        displayListIter = displayList;
+//     if (callContext == GEO_CONTEXT_RENDER) {
+//         scaleMat = alloc_display_list(sizeof(*scaleMat));
+//         displayList = alloc_display_list(9 * sizeof(*displayList));
+//         displayListIter = displayList;
 
-        if (rovert_logo_timer < 15) {
-            logo_opacity = lerp(logo_opacity,255.0f,0.2f);
-            }
+//         if (rovert_logo_timer < 15) {
+//             logo_opacity = lerp(logo_opacity,255.0f,0.2f);
+//             }
 
-        if (rovert_logo_timer > 45) {
-            logo_opacity = lerp(logo_opacity,0.0f,0.2f);
-            }
-        if (rovert_logo_timer == 70) {
-            TitleState = 1;
-        } else {
-            rovert_logo_timer++;
-        }
+//         if (rovert_logo_timer > 45) {
+//             logo_opacity = lerp(logo_opacity,0.0f,0.2f);
+//             }
+//         if (rovert_logo_timer == 70) {
+//             TitleState = 1;
+//         } else {
+//             rovert_logo_timer++;
+//         }
 
-        guScale(scaleMat, 2,2,2);
-        gSPMatrix(displayListIter++, scaleMat, G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH);
+//         guScale(scaleMat, 2,2,2);
+//         gSPMatrix(displayListIter++, scaleMat, G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH);
 
-        gDPSetEnvColor(displayListIter++, 255,255,255,logo_opacity);
-        gDPSetRenderMode(displayListIter++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2);
-        gSPDisplayList(displayListIter++, &rovert_logo_Plane_mesh);
+//         gDPSetEnvColor(displayListIter++, 255,255,255,logo_opacity);
+//         gDPSetRenderMode(displayListIter++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2);
+//         gSPDisplayList(displayListIter++, &rovert_logo_Plane_mesh);
 
-        gSPPopMatrix(displayListIter++, G_MTX_MODELVIEW);
-        gSPEndDisplayList(displayListIter);
-    }
+//         gSPPopMatrix(displayListIter++, G_MTX_MODELVIEW);
+//         gSPEndDisplayList(displayListIter);
+//     }
 
-    return displayList;
-}
+//     return displayList;
+// }
 
 //mirror_tr_mirror_004_mesh
 

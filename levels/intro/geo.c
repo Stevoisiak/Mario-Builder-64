@@ -55,7 +55,6 @@ const GeoLayout intro_geo_splash_screen[] = {
                GEO_ASM(0, geo_intro_super_mario_64_logo),
                GEO_ASM(0, geo_title_screen3),
                GEO_ASM(0, geo_title_screen2),
-               GEO_ASM(0, geo_rovert_logo),
 
             GEO_CLOSE_NODE(),
          GEO_CLOSE_NODE(),
