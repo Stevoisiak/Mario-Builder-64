@@ -2879,9 +2879,13 @@ s32 cur_obj_drop_imbued_object(s32 y_offset) {
     if (o->oImbue == IMBUE_NONE) return FALSE;
 
     if (o->oImbue == IMBUE_STAR) {
-        struct Surface *ptr;
-        f32 ceilY = find_ceil(o->oHomeX,o->oHomeY + 10.f,o->oHomeZ,&ptr);
-        spawn_default_star(o->oHomeX,MIN(o->oHomeY+y_offset, ceilY - 75.f),o->oHomeZ);
+        f32 ypos = o->oHomeY + y_offset;
+        if (!o->collisionData) {
+            struct Surface *ptr;
+            f32 ceilY = find_ceil(o->oHomeX,o->oHomeY + 10.f,o->oHomeZ,&ptr);
+            ypos = MIN(ceilY - 75.f, ypos);
+        }
+        spawn_default_star(o->oHomeX, ypos, o->oHomeZ);
         return TRUE;
     }
 
