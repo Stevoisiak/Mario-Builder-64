@@ -62,6 +62,10 @@ static f32 sWigglerSpeeds[] = { 8.0f, 40.0f, 30.0f, 16.0f };
  * attack.
  */
 void bhv_wiggler_body_part_update(void) {
+    if (o->parentObj->activeFlags == ACTIVE_FLAG_DEACTIVATED) {
+        mark_obj_for_deletion(o);
+        return;
+    }
     Vec3f d;
     struct ChainSegment *segment = &o->parentObj->oWigglerSegments[o->oBehParams2ndByte];
 
@@ -427,11 +431,6 @@ void bhv_wiggler_update(void) {
             // Wiggler surface interactions
             if (o->oFloor != NULL) {
                 if ((o->oFloorHeight + 1.f > o->oPosY)) {
-                    if ((o->oHealth > 1) && (o->oFloorType == SURFACE_DEATH_PLANE && o->oPosY < o->oFloorHeight + 100.f)) {
-                        o->oHealth = 1;
-                        cur_obj_drop_imbued_object(MB64_STAR_HEIGHT);
-                        o->header.gfx.node.flags |= GRAPH_RENDER_INVISIBLE;
-                    }
                     if (SURFACE_IS_BURNING(o->oFloorType)) {
                         // so hot boner!!
                         cur_obj_play_sound_2(SOUND_OBJ_WIGGLER_JUMP);
@@ -440,6 +439,7 @@ void bhv_wiggler_update(void) {
                     }
                 }
             }
+            cur_obj_die_if_on_death_barrier(MB64_STAR_HEIGHT);
 
             switch (o->oAction) {
                 case WIGGLER_ACT_WALK:
