@@ -394,6 +394,9 @@ void king_bobomb_move(void) {
     //}
 
     cur_obj_call_action_function(sKingBobombActions);
+    if (cur_obj_die_if_oob(MB64_STAR_HEIGHT)) {
+        obj_drop_mario();
+    }
     exec_anim_sound_state(sKingBobombSoundStates);
 }
 

@@ -2842,6 +2842,15 @@ s32 cur_obj_die_if_on_death_barrier(s32 offset) {
     return FALSE;
 }
 
+s32 cur_obj_die_if_oob(s32 offset) {
+    if (!o->oFloor) {
+        cur_obj_drop_imbued_object(offset);
+        o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
+        return TRUE;
+    }
+    return FALSE;
+}
+
 void spawn_mist_at_obj(struct Object *obj) {
     Vec3f oldPos;
     vec3f_copy(oldPos, &o->oPosVec);
@@ -2886,6 +2895,7 @@ s32 cur_obj_drop_imbued_object(s32 y_offset) {
             ypos = MIN(ceilY - 75.f, ypos);
         }
         spawn_default_star(o->oHomeX, ypos, o->oHomeZ);
+        o->oImbue = IMBUE_NONE;
         return TRUE;
     }
 
