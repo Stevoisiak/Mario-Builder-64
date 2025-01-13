@@ -1532,6 +1532,7 @@ void bowser_free_update(void) {
         }
     }
 
+    cur_obj_die_if_oob(MB64_STAR_HEIGHT);
     // Sound states for Bowser Animations
     exec_anim_sound_state(sBowserSoundStates);
 }
