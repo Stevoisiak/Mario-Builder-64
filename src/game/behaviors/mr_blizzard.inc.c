@@ -329,10 +329,7 @@ void bhv_mr_blizzard_update(void) {
     cur_obj_scale(o->oMrBlizzardScale);
     obj_check_attacks(&sMrBlizzardHitbox, o->oAction);
 
-    if (o->oFloorType == SURFACE_DEATH_PLANE && o->oPosY < o->oFloorHeight + 100.f) {
-        o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
-        cur_obj_trigger_respawner();
-    }
+    cur_obj_respawn_if_on_death_barrier();
 }
 
 /**

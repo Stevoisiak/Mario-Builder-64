@@ -326,9 +326,7 @@ void bhv_piranha_plant_loop(void) {
     cur_obj_set_home_if_safe();
     cur_obj_call_action_function(TablePiranhaPlantActions);
     cur_obj_move_standard(78);
-    if (o->oFloorType == SURFACE_DEATH_PLANE && o->oPosY < o->oFloorHeight + 100.f) {
-        o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
-        cur_obj_trigger_respawner();
+    if (cur_obj_respawn_if_on_death_barrier()) {
         o->prevObj->activeFlags = ACTIVE_FLAG_DEACTIVATED;
     }
     o->oInteractStatus = INT_STATUS_NONE;

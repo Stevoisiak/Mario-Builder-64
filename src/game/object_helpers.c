@@ -2833,6 +2833,8 @@ void cur_obj_set_home_if_safe(void) {
     vec3f_copy(&o->oHomeVec,&o->oPosVec);
 }
 
+// If the object is OoB or on the death barrier,
+// despawn and drop any imbued object
 s32 cur_obj_die_if_on_death_barrier(s32 offset) {
     if ((!o->oFloor) || (o->oFloorType == SURFACE_DEATH_PLANE && o->oPosY < o->oFloorHeight + 100.f)) {
         cur_obj_drop_imbued_object(offset);
@@ -2842,10 +2844,26 @@ s32 cur_obj_die_if_on_death_barrier(s32 offset) {
     return FALSE;
 }
 
+// If the object is OoB,
+// despawn and drop any imbued object
+// Used for King Bob-omb and Bowser
+// as they do not always die to the death barrier
 s32 cur_obj_die_if_oob(s32 offset) {
     if (!o->oFloor) {
         cur_obj_drop_imbued_object(offset);
         o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
+        return TRUE;
+    }
+    return FALSE;
+}
+
+// If the object is OoB or on the death barrier,
+// respawn the object
+// Used for Piranha Plant and Mr. Blizzard
+s32 cur_obj_respawn_if_on_death_barrier() {
+    if ((!o->oFloor) || (o->oFloorType == SURFACE_DEATH_PLANE && o->oPosY < o->oFloorHeight + 100.f)) {
+        o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
+        cur_obj_trigger_respawner();
         return TRUE;
     }
     return FALSE;
