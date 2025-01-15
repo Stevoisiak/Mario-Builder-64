@@ -387,6 +387,7 @@ static ObjActionFunc sBooActions[] = {
 };
 
 void bhv_boo_update_home(f32 yOffset) {
+    if (cur_obj_die_if_oob(MB64_STAR_HEIGHT-256)) return;
     if (!SURFACE_IS_UNSAFE(o->oFloorType) && !o->oFloor->object && (o->oPosY - o->oFloorHeight < yOffset) && (o->oImbue != IMBUE_STAR)) {
         vec3f_copy(&o->oHomeVec, &o->oPosVec);
         o->oHomeY = o->oFloorHeight;
