@@ -753,7 +753,7 @@ static void koopa_the_quick_update(void) {
     cur_obj_update_floor_and_walls();
     cur_obj_push_mario_away_from_cylinder(140.0f, 300.0f);
     cur_obj_move_standard(-78);
-    if (o->oFloorType == SURFACE_DEATH_PLANE && o->oPosY < o->oFloorHeight + 100.f) {
+    if ((!o->oFloor) || (o->oFloorType == SURFACE_DEATH_PLANE && o->oPosY < o->oFloorHeight + 100.f)) {
         stop_mb64_extra_music(1);
         level_control_timer(TIMER_CONTROL_HIDE);
         koopa_the_quick_reset();
