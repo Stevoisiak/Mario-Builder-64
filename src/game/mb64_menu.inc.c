@@ -1505,6 +1505,8 @@ struct mb64_info_entry mb64_v1_1_changelog[] = {
     {"- Spinning around when flying after sliding down a pole", 0},
     {"- Broken camera when collecting a badge while flying", 0},
     {"- Cosmic Phantasms copying model state from Mario", 0},
+    {"- Bouncing on noteblocks cancels star collection animation", 0},
+    {"- Bullies have no friction when pushed on slippery terrain", 0},
     {"- Countless minor physics and AI fixes", 0},
     {NULL, 0},
 };
