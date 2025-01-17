@@ -1624,11 +1624,12 @@ void update_mario_health(struct MarioState *m) {
             mario_remove_powerup();
         }
 
+        int marioIsSwimming = (m->action & ACT_FLAG_SWIMMING) && !(m->flags & MARIO_METAL_CAP);
         if (mb64_lopt_game == MB64_GAME_BTCM) {
             //AIR: BTCM Behavior
             //air doesn't exist if you have gills
             if (!(save_file_get_badge_equip() & (1<<BADGE_GILLS))) {
-                if ((m->pos[1] < m->waterLevel - 80)&&(((m->action & ACT_GROUP_MASK) == ACT_GROUP_SUBMERGED))) {
+                if ((m->pos[1] < m->waterLevel - 80) && marioIsSwimming) {
                     if (gMarioState->numAir > 0) {
                         gMarioState->numAir --;
                     }
@@ -1653,7 +1654,7 @@ void update_mario_health(struct MarioState *m) {
             }
 
             // Play a noise to alert the player when Mario is close to drowning.
-            if (((m->action & ACT_GROUP_MASK) == ACT_GROUP_SUBMERGED) && (gMarioState->numAir < 200)) {
+            if (marioIsSwimming && (gMarioState->numAir < 200)) {
                 play_sound(SOUND_MOVING_ALMOST_DROWNING, gGlobalSoundSource);
                 if (gRumblePakTimer == 0) {
                     gRumblePakTimer = 36;
@@ -1666,7 +1667,7 @@ void update_mario_health(struct MarioState *m) {
             }
         } else {
             //AIR: Vanilla Behavior
-            if ((m->action & ACT_FLAG_SWIMMING) && !(m->action & ACT_FLAG_INTANGIBLE)) {
+            if (marioIsSwimming && !(m->action & ACT_FLAG_INTANGIBLE)) {
                 terrainIsSnow = FALSE;
                 if ((m->pos[1] >= (m->waterLevel - 140)) && !terrainIsSnow) {
                     m->health += 0x1A;
