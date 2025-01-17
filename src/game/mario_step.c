@@ -429,24 +429,22 @@ s32 perform_ground_step(struct MarioState *m) {
 
 struct Surface *check_ledge_grab(struct MarioState *m, struct Surface *prevWall, struct Surface *wall, Vec3f intendedPos, Vec3f nextPos, Vec3f ledgePos, struct Surface **ledgeFloor) {
     if (m->vel[1] > 0.0f || wall == NULL) {
-        return NULL;
+        return prevWall;
     }
 
-    if (prevWall == NULL) {
-        prevWall = wall;
-    }
-
+    if (prevWall) {
     // Return the already grabbed wall if Mario is moving into it more than the newly tested wall.
-    if (hdot_surf(prevWall, m->vel) < hdot_surf(wall, m->vel)) {
-        wall = prevWall;
-    }
+        if (hdot_surf(prevWall, m->vel) < hdot_surf(wall, m->vel)) {
+            return prevWall;
+        }
 
-    // Only ledge grab if the wall displaced Mario in the opposite direction of his velocity.
-    // hdot(displacement, vel).
-    if (
-        ((nextPos[0] - intendedPos[0]) * m->vel[0]) + ((nextPos[2] - intendedPos[2]) * m->vel[2]) > 0.0f
-    ) {
-        wall = prevWall;
+        // Only ledge grab if the wall displaced Mario in the opposite direction of his velocity.
+        // hdot(displacement, vel).
+        if (
+            ((nextPos[0] - intendedPos[0]) * m->vel[0]) + ((nextPos[2] - intendedPos[2]) * m->vel[2]) > 0.0f
+        ) {
+            return prevWall;
+        }
     }
 
     Vec3f normal;
@@ -457,22 +455,22 @@ struct Surface *check_ledge_grab(struct MarioState *m, struct Surface *prevWall,
     ledgePos[1] = find_floor_short(ledgePos[0], nextPos[1] + 160.0f, ledgePos[2], ledgeFloor);
 
     struct Surface *ceil;
-    f32 ceilheight = find_mario_ceil(ledgePos, ledgePos[1]-30.0f, &ceil);
-    if ((ceil)&&(ABS(ceilheight-ledgePos[1]) < 10.0f)) {
-        return NULL;
+    f32 ceilheight = find_ceil(ledgePos[0], ledgePos[1]-30.0f, ledgePos[2], &ceil);
+    if ((ceil)&&(ABS(ceilheight-ledgePos[1]) < 80.0f)) {
+        return prevWall;
     }
 
     if (ledgeFloor == NULL
         || (*ledgeFloor) == NULL
         || ledgePos[1] < nextPos[1] + 100.0f
     ) {
-        return NULL;
+        return prevWall;
     }
 
     Vec3f normal2;
     get_surface_normal(normal2, *ledgeFloor);
     if (normal2[1] < COS25) {
-        return NULL;
+        return prevWall;
     }
 
     return wall;
