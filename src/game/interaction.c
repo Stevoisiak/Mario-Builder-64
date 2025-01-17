@@ -207,7 +207,7 @@ u32 determine_interaction(struct MarioState *m, struct Object *obj) {
             interaction = INT_SLIDE_KICK;
         } else if ((action & ACT_FLAG_RIDING_SHELL)&&(m->IsYoshi == FALSE)) {
             interaction = INT_FAST_ATTACK_OR_SHELL;
-        } else if (m->forwardVel <= -45.0f || 45.0f <= m->forwardVel) {
+        } else if (m->forwardVel <= -26.0f || 26.0f <= m->forwardVel) {
             interaction = INT_FAST_ATTACK_OR_SHELL;
         }
     }
