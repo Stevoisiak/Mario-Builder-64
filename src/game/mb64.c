@@ -2475,7 +2475,7 @@ void generate_object_preview(void) {
         }
 
         s32 curImbue = mb64_object_data[i].imbue;
-        if ((curImbue != IMBUE_NONE)&&(!mb64_prepare_level_screenshot)) {
+        if (curImbue != IMBUE_NONE) {
             int badgeid = 0;
             if (curImbue >= IMBUE_BADGE_BASE) {
                 badgeid = curImbue - IMBUE_BADGE_BASE;
@@ -2485,6 +2485,7 @@ void generate_object_preview(void) {
             struct Object * imbue_marker = spawn_object(o,imbue_table[curImbue].model,bhvPreviewObject);
             imbue_marker->oBehParams2ndByte = badgeid;
             imbue_marker->oExtraVariable1 = imbue_table[curImbue].color;
+            imbue_marker->oPreviewObjDisplayFunc = df_imbuemarker;
             imbue_marker->header.gfx.node.flags |= GRAPH_RENDER_BILLBOARD;
             imbue_marker->oPosX = GRID_TO_POS(pos[0]);
             imbue_marker->oPosY = GRID_TO_POS(pos[1]);

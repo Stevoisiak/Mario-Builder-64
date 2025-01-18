@@ -489,6 +489,14 @@ void df_timedbox(s32 context) {
     }
 }
 
+void df_imbuemarker(s32 context) {
+    if (mb64_prepare_level_screenshot) {
+        o->header.gfx.node.flags |= GRAPH_RENDER_INVISIBLE;
+    } else {
+        o->header.gfx.node.flags &= ~GRAPH_RENDER_INVISIBLE;
+    }
+}
+
 void df_button(s32 context) {
     if (context == MB64_DF_CONTEXT_INIT) {
         o->oAnimState = o->oBehParams2ndByte;
