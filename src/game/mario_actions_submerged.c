@@ -1542,22 +1542,14 @@ static s32 check_common_submerged_cancels(struct MarioState *m) {
     s16 waterHeight = m->waterLevel - 80;
     if (m->pos[1] > waterHeight) {
 
-        if (m->action == ACT_WATER_SHELL_SWIMMING && m->heldObj != NULL) {
+        if (m->action == ACT_WATER_SHELL_SWIMMING && m->heldObj) {
             //exit the water in a generic air shell state
-            if (m->heldObj != NULL) {
-                obj_mark_for_deletion(m->heldObj);
-                m->heldObj = NULL;
-            }
-            set_camera_mode(m->area->camera, m->area->camera->defMode, 1);
+            m->riddenObj = m->heldObj;
+            m->riddenObj->oAction = 1;
+            m->riddenObj->oHeldState = HELD_FREE;
+            m->heldObj = NULL;
 
-            if (m->riddenObj == NULL) {
-                m->interactObj = spawn_object(m->marioObj, MODEL_KOOPA_SHELL, bhvKoopaShell);
-                m->interactObj->oFaceAnglePitch = 0;
-                m->interactObj->oFaceAngleRoll = 0;
-                m->usedObj = m->interactObj;
-                m->riddenObj = m->interactObj;
-                attack_object(m->interactObj, 0x40);
-            }
+            set_camera_mode(m->area->camera, m->area->camera->defMode, 1);
 
             return set_mario_action(m, ACT_RIDING_SHELL_FALL, m->actionTimer);
         }

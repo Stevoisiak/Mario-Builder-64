@@ -302,15 +302,10 @@ static s32 perform_ground_quarter_step(struct MarioState *m, Vec3f nextPos) {
         return GROUND_STEP_HIT_WALL_STOP_QSTEPS;
     }
 
-    if (m->action & ACT_FLAG_RIDING_SHELL) {
+    if ((m->action & ACT_FLAG_RIDING_SHELL) && m->riddenObj) {
         if (m->pos[1] < waterLevel - 100) {
-            if (m->riddenObj != NULL) {
-                m->riddenObj->oInteractStatus = INT_STATUS_STOP_RIDING;
-                m->riddenObj = NULL;
-            }
-
-            m->usedObj = spawn_object(m->marioObj, MODEL_KOOPA_SHELL, bhvKoopaShell);
-            m->usedObj->oFlags |= OBJ_FLAG_HOLDABLE;
+            m->usedObj = m->riddenObj;
+            m->riddenObj = NULL;
             mario_grab_used_object(m);
             m->marioBodyState->grabPos = GRAB_POS_LIGHT_OBJ;
             set_mario_action(m, ACT_WATER_SHELL_SWIMMING, (u32)(s32)m->forwardVel);
