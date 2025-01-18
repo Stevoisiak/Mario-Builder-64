@@ -1245,7 +1245,7 @@ s32 set_water_plunge_action(struct MarioState *m) {
                 m->riddenObj = NULL;
             }
 
-            m->usedObj = spawn_object(m->marioObj, MODEL_KOOPA_SHELL, bhvKoopaShellUnderwater);
+            m->usedObj = spawn_object(m->marioObj, MODEL_KOOPA_SHELL, bhvKoopaShell);
             m->usedObj->oFlags |= OBJ_FLAG_HOLDABLE;
             mario_grab_used_object(m);
             m->marioBodyState->grabPos = GRAB_POS_LIGHT_OBJ;

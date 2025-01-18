@@ -867,13 +867,13 @@ const BehaviorScript bhvBulletBillCannon[] = {
 //     END_LOOP(),
 // };
 
-const BehaviorScript bhvKoopaShellUnderwater[] = {
-    BEGIN(OBJ_LIST_GENACTOR),
-    OR_LONG(oFlags, (OBJ_FLAG_HOLDABLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_SILHOUETTE)),
-    BEGIN_LOOP(),
-        CALL_NATIVE(bhv_koopa_shell_underwater_loop),
-    END_LOOP(),
-};
+// const BehaviorScript bhvKoopaShellUnderwater[] = {
+//     BEGIN(OBJ_LIST_GENACTOR),
+//     OR_LONG(oFlags, (OBJ_FLAG_HOLDABLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_SILHOUETTE)),
+//     BEGIN_LOOP(),
+//         CALL_NATIVE(bhv_koopa_shell_underwater_loop),
+//     END_LOOP(),
+// };
 
 const BehaviorScript bhvExitPodiumWarp[] = {
     // BEGIN(OBJ_LIST_SURFACE),
@@ -2838,7 +2838,7 @@ const BehaviorScript bhvLllRotatingHexFlame[] = {
 const BehaviorScript bhvKoopaShell[] = {
     BEGIN(OBJ_LIST_LEVEL),
     SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_LOW),
-    OR_LONG(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_SILHOUETTE | OBJ_FLAG_ACTIVATES_FLOOR_SWITCH | OBJ_FLAG_IMMUNE_TO_FLOOR_DEATH)), //! Silhouette doesn't show up in-game, due to combiner modes.
+    OR_LONG(oFlags, (OBJ_FLAG_HOLDABLE | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_SILHOUETTE | OBJ_FLAG_ACTIVATES_FLOOR_SWITCH | OBJ_FLAG_IMMUNE_TO_FLOOR_DEATH)), //! Silhouette doesn't show up in-game, due to combiner modes.
     SET_OBJ_PHYSICS_DEFAULT(/*Wall hitbox radius*/ 30),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_koopa_shell_loop),

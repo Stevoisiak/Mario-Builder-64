@@ -6,7 +6,7 @@ struct ObjectHitbox sKoopaShellHitbox = {
     .damageOrCoinValue = 4,
     .health            = 1,
     .numLootCoins      = 1,
-    .radius            = 50,
+    .radius            = 80,
     .height            = 50,
     .hurtboxRadius     = 50,
     .hurtboxHeight     = 50,
@@ -68,6 +68,22 @@ void bhv_koopa_shell_loop(void) {
     obj_set_hitbox(o, &sKoopaShellHitbox);
     cur_obj_scale(1.0f);
 
+    switch (o->oHeldState) {
+        case HELD_HELD:
+            cur_obj_unrender_set_action_and_anim(-1, 0);
+            return;
+        case HELD_THROWN:
+        case HELD_DROPPED:
+            spawn_mist_particles();
+            obj_mark_for_deletion(o);
+            return;
+    }
+
+    if (o->oInteractStatus & INT_STATUS_STOP_RIDING) {
+        spawn_mist_particles();
+        obj_mark_for_deletion(o);
+        return;
+    }
 
     switch (o->oAction) {
         case KOOPA_SHELL_ACT_MARIO_NOT_RIDING:
@@ -80,7 +96,9 @@ void bhv_koopa_shell_loop(void) {
 
             o->oFaceAngleYaw += 0x1000;
             cur_obj_move_standard(-20);
-            koopa_shell_spawn_sparkles(10.0f);
+            if (mb64_get_water_level(o->oPosX, o->oPosY, o->oPosZ) < o->oPosY) {
+                koopa_shell_spawn_sparkles(10.0f);
+            }
             check_shell_despawn();
             break;
 
@@ -98,9 +116,9 @@ void bhv_koopa_shell_loop(void) {
             obj_copy_pos(o, gMarioObject);
             floor = cur_obj_update_floor_height_and_get_floor();
 
-            if (absf(mb64_get_water_level(o->oPosX, o->oPosY, o->oPosZ) - o->oPosY) < 10.0f) {
+            if (ABS(mb64_get_water_level(o->oPosX, o->oPosY, o->oPosZ) - o->oPosY) < 10.0f) {
                 koopa_shell_spawn_water_drop();
-            } else if (absf(o->oPosY - o->oFloorHeight) < 5.0f) {
+            } else if (ABS(o->oPosY - o->oFloorHeight) < 5.0f) {
                 if (floor != NULL && SURFACE_IS_BURNING_SMOKE(floor->type)) {
                     bhv_koopa_shell_flame_spawn();
                 } else {

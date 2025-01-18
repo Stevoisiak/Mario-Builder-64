@@ -309,7 +309,7 @@ static s32 perform_ground_quarter_step(struct MarioState *m, Vec3f nextPos) {
                 m->riddenObj = NULL;
             }
 
-            m->usedObj = spawn_object(m->marioObj, MODEL_KOOPA_SHELL, bhvKoopaShellUnderwater);
+            m->usedObj = spawn_object(m->marioObj, MODEL_KOOPA_SHELL, bhvKoopaShell);
             m->usedObj->oFlags |= OBJ_FLAG_HOLDABLE;
             mario_grab_used_object(m);
             m->marioBodyState->grabPos = GRAB_POS_LIGHT_OBJ;

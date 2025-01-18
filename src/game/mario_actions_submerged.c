@@ -798,8 +798,14 @@ static s32 check_water_grab(struct MarioState *m) {
     //! Heave hos have the grabbable interaction type but are not normally
     // grabbable. Since water grabbing doesn't check the appropriate input flag,
     // you can use water grab to pick up heave ho.
+    struct Object *object = NULL;
     if (m->marioObj->collidedObjInteractTypes & INTERACT_GRABBABLE) {
-        struct Object *object = mario_get_collided_object(m, INTERACT_GRABBABLE);
+        object = mario_get_collided_object(m, INTERACT_GRABBABLE);
+    } else if (m->marioObj->collidedObjInteractTypes & INTERACT_KOOPA_SHELL) {
+        object = mario_get_collided_object(m, INTERACT_KOOPA_SHELL);
+    }
+
+    if (object) {
         if (object->oInteractionSubtype & INT_SUBTYPE_NOT_GRABBABLE) return FALSE;
         if (object->behavior == segmented_to_virtual(bhvBowser)) return FALSE;
         f32 dx = object->oPosX - m->pos[0];
@@ -876,7 +882,7 @@ static s32 act_water_punch(struct MarioState *m) {
         case ACT_STATE_WATER_PUNCH_PICK_UP:
             set_mario_animation(m, MARIO_ANIM_WATER_PICK_UP_OBJ);
             if (is_anim_at_end(m)) {
-                if (m->heldObj->behavior == segmented_to_virtual(bhvKoopaShellUnderwater)) {
+                if (m->heldObj->behavior == segmented_to_virtual(bhvKoopaShell)) {
                     play_shell_music();
                     set_mario_action(m, ACT_WATER_SHELL_SWIMMING, 0);
                 } else {
