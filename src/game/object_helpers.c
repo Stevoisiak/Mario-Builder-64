@@ -3039,7 +3039,8 @@ s32 cur_obj_should_load_collision(void) {
         collision_check_func = cur_obj_collision_check_cylinder;
     }
 
-    f32 marioRadius = (gMarioState->action & ACT_FLAG_SWIMMING) ? 110.f : 50.f;
+    // 70 is to make sure ledge grab checks still work
+    f32 marioRadius = (gMarioState->action & ACT_FLAG_SWIMMING) ? 110.f : 70.f;
     if (collision_check_func(&gMarioObject->oPosVec, 1000.0f, marioRadius, 160.f)) {
         return TRUE;
     }
