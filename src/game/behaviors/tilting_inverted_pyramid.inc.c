@@ -1255,27 +1255,39 @@ void noteblock_function(void) {
     o->oVelY *= 0.95f;
     o->header.gfx.throwMatrix = NULL;
 
-    if ((gMarioState->action != ACT_LVUP_DANCE)&&(gMarioState->action != ACT_STAR_DANCE_NO_EXIT)&&(gMarioState->health > 0x100)&&cur_obj_is_mario_on_platform()) {
+    if (!(gMarioState->action & ACT_FLAG_INTANGIBLE) &&
+        !(gMarioState->action & ACT_FLAG_SWIMMING) &&
+        (gMarioState->health > 0x100)&&cur_obj_is_mario_on_platform()) {
             // mario_stop_riding_and_holding(gMarioState);
             o->oTimer = 0;
             o->oVelY = 50.0f;
             cur_obj_play_sound_2(SOUND_GENERAL_CRAZY_BOX_BOING_SLOW);
             reset_mario_pitch(gMarioState);
 
+            u32 targetAction = ACT_DOUBLE_JUMP;
+            u32 targetSubaction = 0;
+            u32 metalMario = (gMarioState->action & ACT_FLAG_METAL_WATER);
+
             if (gMarioState->heldObj != NULL) {
                 if (gMarioState->heldObj->behavior == segmented_to_virtual(bhvJumpingBox)) {
-                    set_mario_action(gMarioState, ACT_CRAZY_BOX_BOUNCE, 2);
+                    targetAction = ACT_CRAZY_BOX_BOUNCE;
+                    targetSubaction = 2;
                 } else if (gMarioState->heldObj->behavior == segmented_to_virtual(bhvBreakableBoxSmall)) {
-                    set_mario_action(gMarioState, ACT_HOLD_JUMP, 0);
+                    if (metalMario) {
+                        targetAction = ACT_HOLD_METAL_WATER_JUMP;
+                    } else {
+                        targetAction = ACT_HOLD_JUMP;
+                    }
                 } else {
                     mario_stop_riding_and_holding(gMarioState);
-                    set_mario_action(gMarioState, ACT_DOUBLE_JUMP, 0);
                 }
             } else if (gMarioState->riddenObj != NULL) {
-                set_mario_action(gMarioState, ACT_RIDING_SHELL_JUMP, 0);
-            } else {
-                set_mario_action(gMarioState, ACT_DOUBLE_JUMP, 0);
+                targetAction = ACT_RIDING_SHELL_JUMP;
+            } else if (metalMario) {
+                targetAction = ACT_METAL_WATER_JUMP;
             }
+
+            set_mario_action(gMarioState, targetAction, targetSubaction);
 
             gMarioState->vel[1] = 95.0f;
             gMarioState->squishTimer = 0;
