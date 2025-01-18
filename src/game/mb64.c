@@ -2335,7 +2335,7 @@ void generate_boundary_collision(void) {
 
     mb64_curr_poly_vert_count = 4;
 
-    u32 deathsize = (mb64_curr_boundary & MB64_BOUNDARY_OUTER_FLOOR) ? mb64_grid_size : (mb64_grid_size + 16);
+    u32 deathsize = ((mb64_curr_boundary & MB64_BOUNDARY_OUTER_FLOOR) || (mb64_curr_boundary & MB64_BOUNDARY_CEILING))? mb64_grid_size : (mb64_grid_size + 16);
     mb64_curr_coltype = SURFACE_DEATH_PLANE;
     generate_boundary_quad_collision(floor_boundary, ARRAY_COUNT(floor_boundary), -40, -40, deathsize, FALSE);
 
