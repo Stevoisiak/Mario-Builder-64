@@ -372,9 +372,9 @@ void obj_update_pos_vel_xz(void) {
 void obj_splash(f32 waterY, f32 objY) {
     // Spawns waves if near surface of water and plays a noise if entering.
     if ((waterY + 20) > o->oPosY && o->oPosY > (waterY - 60)) {
-        spawn_object(o, MODEL_IDLE_WATER_WAVE, bhvObjectWaterWave);
 
         if (o->oVelY < -20.0f) {
+            spawn_object(o, MODEL_IDLE_WATER_WAVE, bhvObjectWaterWave);
             if (o->oWallHitboxRadius < 70.0f) {
                 cur_obj_play_sound_2(SOUND_OBJ_DIVING_INTO_WATER);
             } else {
