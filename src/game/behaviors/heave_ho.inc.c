@@ -34,6 +34,7 @@ void bhv_heave_ho_throw_mario_loop(void) {
     }
 }
 
+// Winding
 void heave_ho_act_1(void) {
     s32 i = 0;
 
@@ -42,7 +43,7 @@ void heave_ho_act_1(void) {
 
     while (TRUE) {
         if (sHeaveHoTimings[i][0] == -1) {
-            if (o->oDistanceToMario < 2500.f) {
+            if (o->oDistanceToMario < 2000.f) {
                 o->oAction = 2;
             } else {
                 o->oTimer = 0;
@@ -59,7 +60,11 @@ void heave_ho_act_1(void) {
     }
 }
 
+// Moving
 void heave_ho_act_2(void) {
+    if (o->oDistanceToMario > 2100.0f && o->oTimer < 150) {
+        o->oTimer = 150;
+    }
     if (o->oTimer > 150) {
         o->oHeaveHoTimedSpeed = (302 - o->oTimer) / 152.0f;
         if (o->oHeaveHoTimedSpeed < 0.1f) {
@@ -77,6 +82,7 @@ void heave_ho_act_2(void) {
     o->oMoveAngleYaw = approach_s16_symmetric(o->oMoveAngleYaw, o->oAngleToMario, angleVel);
 }
 
+// Throwing
 void heave_ho_act_3(void) {
     o->oForwardVel = 0.0f;
 
