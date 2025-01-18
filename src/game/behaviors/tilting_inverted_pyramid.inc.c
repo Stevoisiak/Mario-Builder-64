@@ -6299,6 +6299,7 @@ void bhv_woodplat_loop(void) {
     if (o->oWoodPlatIsStacked) {
         return;
     }
+    add_obj_to_physics_list(o);
     if (o->oTimer == 1) {
         o->prevObj = spawn_object(o, MODEL_NONE, bhvWoodPlatCol);
         o->prevObj->prevObj = o;
@@ -6317,7 +6318,8 @@ void bhv_woodplat_loop(void) {
             }
         }
     }
-    cur_obj_update_floor_and_walls();
+    cur_obj_update_floor();
+    cur_obj_update_ceiling();
 
     // This code is very hacky. Use higher wall checks when on an
     // upwards sloped conveyor in order to not get stuck on the wall of
@@ -6330,6 +6332,7 @@ void bhv_woodplat_loop(void) {
         o->oFlags |= OBJ_FLAG_SIMPLE_WALL_CHECKS;
     }
     cur_obj_move_standard(-20);
+    cur_obj_resolve_wall_collisions();
 
     if (cur_obj_die_if_on_death_barrier(MB64_STAR_HEIGHT)) {
         if (!o->oWoodPlatIsStacked) {
