@@ -2790,6 +2790,7 @@ void cur_obj_interact_with_moving_platform(void) {
 }
 
 void cur_obj_floor_interactions(u8 move_standard_or_object_step) {
+    if (o->oGravity == 0.f) return;
     cur_obj_get_interact_floor(move_standard_or_object_step);
     if (!sInteractFloor) {
         return;
