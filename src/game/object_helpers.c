@@ -1578,9 +1578,8 @@ void cur_obj_update_floor(void) {
     struct Surface *floor = cur_obj_update_floor_height_and_get_floor();
     o->oFloor = floor;
 
-    if (floor != NULL) {
-        SurfaceType floorType = floor->type;
-        o->oFloorType = floorType;
+    if (floor) {
+        o->oFloorType = floor->type;
     } else {
         o->oFloorType = SURFACE_DEFAULT;
     }
@@ -1618,12 +1617,22 @@ static void cur_obj_update_floor_and_resolve_wall_collisions(s16 steepSlopeDegre
             o->oMoveFlags |= OBJ_MOVE_IN_AIR;
         }
     } else {
+        f32 oldPosX = o->oPosX;
+        f32 oldPosZ = o->oPosZ;
+
         o->oMoveFlags &= ~OBJ_MOVE_HIT_WALL;
         if (cur_obj_resolve_wall_collisions()) {
             o->oMoveFlags |= OBJ_MOVE_HIT_WALL;
         }
 
         cur_obj_update_floor();
+
+        // Clipped OoB by a wall
+        if (!o->oFloor) {
+            o->oPosX = oldPosX;
+            o->oPosZ = oldPosZ;
+            cur_obj_update_floor();
+        }
 
         if (o->oPosY > o->oFloorHeight) {
             o->oMoveFlags |= OBJ_MOVE_IN_AIR;
