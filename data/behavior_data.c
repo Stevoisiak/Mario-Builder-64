@@ -6050,7 +6050,7 @@ const BehaviorScript bhvKoopa[] = {
     ANIMATE(KOOPA_ANIM_WALK),
     SET_HOME(),
     SET_FLOAT(oDrawingDistance, MB64_DRAWDIST_LOW),
-    SET_OBJ_PHYSICS_DEFAULT(/*Wall hitbox radius*/ 50),
+    SET_OBJ_PHYSICS(/*Wall hitbox radius*/ 50, /*Gravity*/ MB64_GRAVITY_DEFAULT, /*Bounciness*/ 0, /*Drag strength*/ 0, /*Friction*/ MB64_FRICTION_DEFAULT, /*Buoyancy*/ MB64_BUOYANCY_DEFAULT, /*Unused*/ 0, 0),
     SCALE(/*Unused*/ 0, /*Field*/ 150),
     SET_FLOAT(oKoopaAgility, 1),
     CALL_NATIVE(bhv_koopa_init),
