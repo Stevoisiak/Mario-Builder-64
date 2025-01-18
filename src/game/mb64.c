@@ -4021,6 +4021,17 @@ void sb_loop(void) {
                 }
                 play_sound(SOUND_MENU_MESSAGE_NEXT_PAGE, gGlobalSoundSource);
             }
+
+            // C button left and right: Change box
+            if (gPlayer1Controller->buttonPressed & (L_CBUTTONS | R_CBUTTONS)) {
+                if (mb64_toolbox_index % TOOLBOX_WIDTH >= TOOLBOX_PAGE_WIDTH) {
+                    mb64_toolbox_index -= TOOLBOX_PAGE_WIDTH;
+                } else {
+                    mb64_toolbox_index += TOOLBOX_PAGE_WIDTH;
+                }
+                play_sound(SOUND_MENU_MESSAGE_NEXT_PAGE, gGlobalSoundSource);
+            }
+
             mb64_toolbox_index = (mb64_toolbox_index+sizeof(mb64_toolbox))%sizeof(mb64_toolbox);
 
             if (mb64_toolbox_index % TOOLBOX_WIDTH >= TOOLBOX_PAGE_WIDTH) {
