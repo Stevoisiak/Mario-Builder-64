@@ -1243,7 +1243,11 @@ void mode_8_directions_camera(struct Camera *c) {
         // CEILING COLLISION
         // Standard camera raycast check for ceiling collision. No special shenanigans here!
         vec3f_copy(origin,gMarioState->pos);
-        origin[1] += 200.0f;
+        
+        origin[1] += 100.f;
+        if (!(gMarioState->action & ACT_FLAG_HANGING)) {
+            origin[1] += 100.f;
+        }
         vec3f_diff(camdir,c->pos,origin);
 
         fake_ray(origin, camdir, &surf, &hitpos, RAYCAST_FIND_CEIL);
@@ -1256,8 +1260,6 @@ void mode_8_directions_camera(struct Camera *c) {
         // More complex; If ray successful, set the camera position to the wall hit location
         // and push the camera inward if Mario is close to the wall.
 
-        vec3f_copy(origin,gMarioState->pos);
-        origin[1] += 200.0f;
         vec3f_diff(camdir,c->pos,origin);
 
         fake_ray(origin, camdir, &surf, &hitpos, RAYCAST_FIND_WALL);
