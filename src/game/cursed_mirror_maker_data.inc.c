@@ -749,10 +749,10 @@ enum cmm_materials {
     CMM_MAT_CRYSTAL,
     CMM_MAT_VP_SCREEN,
 
-    CMM_MATLIST_END,
+    CMM_MATLIST_TRANSPARENT_END,
 
     // Retro
-    CMM_MAT_RETRO_GROUND = CMM_MATLIST_END,
+    CMM_MAT_RETRO_GROUND = CMM_MATLIST_TRANSPARENT_END,
     CMM_MAT_RETRO_BRICKS,
     CMM_MAT_RETRO_TREETOP,
     CMM_MAT_RETRO_TREEPLAT,
@@ -764,8 +764,10 @@ enum cmm_materials {
     CMM_MAT_RETRO_LAVA,
     CMM_MAT_RETRO_UNDERWATERGROUND,
 
+    CMM_MATLIST_RETRO_END,
+
     // Minecraft
-    CMM_MAT_MC_DIRT,
+    CMM_MAT_MC_DIRT = CMM_MATLIST_RETRO_END,
     CMM_MAT_MC_GRASS,
     CMM_MAT_MC_COBBLESTONE,
     CMM_MAT_MC_STONE,
@@ -778,6 +780,8 @@ enum cmm_materials {
     CMM_MAT_MC_LAVA,
     CMM_MAT_MC_FLOWING_LAVA,
     CMM_MAT_MC_GLASS,
+
+    CMM_MATLIST_MINECRAFT_END,
 };
 
 u8 cmm_matlist[] = {
@@ -791,7 +795,9 @@ u8 cmm_matlist[] = {
     CMM_MATLIST_METAL_END,
     CMM_MATLIST_BUILDING_END,
     CMM_MATLIST_HAZARD_END,
-    CMM_MATLIST_END,
+    CMM_MATLIST_TRANSPARENT_END,
+    CMM_MATLIST_RETRO_END,
+    CMM_MATLIST_MINECRAFT_END,
 };
 char *cmm_matlist_names[] = {
     "Terrain",
@@ -804,6 +810,8 @@ char *cmm_matlist_names[] = {
     "Other",
     "Hazards",
     "Transparent",
+    "Retro",
+    "Minecraft",
 };
 
 struct cmm_material cmm_mat_table[] = {
@@ -960,32 +968,32 @@ struct cmm_material cmm_mat_table[] = {
     {mat_maker_MakerScreen,  MAT_DECAL,       SURFACE_DEFAULT,       "Screen"},       // CMM_MAT_VP_SCREEN
 
     // Retro
-    {mat_maker_MakerRetroGround,     0, SURFACE_NOT_SLIPPERY, NULL}, // CMM_MAT_RETRO_GROUND
-    {mat_maker_MakerRetroBrick,      0, SURFACE_DEFAULT,      NULL}, // CMM_MAT_RETRO_BRICKS
-    {mat_maker_MakerRetroTreeTop,    0, SURFACE_GRASS,        NULL}, // CMM_MAT_RETRO_TREETOP
-    {mat_maker_MakerRetroTree,       0, SURFACE_DEFAULT,      NULL}, // CMM_MAT_RETRO_TREEPLAT
-    {mat_maker_MakerRetroBlock,      0, SURFACE_NOT_SLIPPERY, NULL}, // CMM_MAT_RETRO_BLOCK
-    {mat_maker_MakerRetroBGround,    0, SURFACE_NOT_SLIPPERY, NULL}, // CMM_MAT_RETRO_BLUEGROUND
-    {mat_maker_MakerRetroBBrick,     0, SURFACE_DEFAULT,      NULL}, // CMM_MAT_RETRO_BLUEBRICKS
-    {mat_maker_MakerRetroBBlock,     0, SURFACE_NOT_SLIPPERY, NULL}, // CMM_MAT_RETRO_BLUEBLOCK
-    {mat_maker_MakerRetroWBrick,     0, SURFACE_DEFAULT,      NULL}, // CMM_MAT_RETRO_WHITEBRICK
-    {mat_maker_MakerRetroLava,       0, SURFACE_BURNING,      NULL}, // CMM_MAT_RETRO_LAVA
-    {mat_maker_MakerRetroUnderwater, 0, SURFACE_NOT_SLIPPERY, NULL}, // CMM_MAT_RETRO_UNDERWATERGROUND
+    {mat_maker_MakerRetroGround,     0, SURFACE_NOT_SLIPPERY, "Ground"},        // CMM_MAT_RETRO_GROUND
+    {mat_maker_MakerRetroBrick,      0, SURFACE_DEFAULT,      "Bricks"},   // CMM_MAT_RETRO_BRICKS
+    {mat_maker_MakerRetroTreeTop,    0, SURFACE_GRASS,        "Treetop"},          // CMM_MAT_RETRO_TREETOP
+    {mat_maker_MakerRetroTree,       0, SURFACE_DEFAULT,      "Tree"},          // CMM_MAT_RETRO_TREEPLAT
+    {mat_maker_MakerRetroBlock,      0, SURFACE_NOT_SLIPPERY, "Block"},   // CMM_MAT_RETRO_BLOCK
+    {mat_maker_MakerRetroBGround,    0, SURFACE_NOT_SLIPPERY, "Blue Ground"},        // CMM_MAT_RETRO_BLUEGROUND
+    {mat_maker_MakerRetroBBrick,     0, SURFACE_DEFAULT,      "Blue Bricks"},  // CMM_MAT_RETRO_BLUEBRICKS
+    {mat_maker_MakerRetroBBlock,     0, SURFACE_NOT_SLIPPERY, "Blue Block"},  // CMM_MAT_RETRO_BLUEBLOCK
+    {mat_maker_MakerRetroWBrick,     0, SURFACE_DEFAULT,      "White Bricks"}, // CMM_MAT_RETRO_WHITEBRICK
+    {mat_maker_MakerRetroLava,       0, SURFACE_BURNING,      "Lava"},          // CMM_MAT_RETRO_LAVA
+    {mat_maker_MakerRetroUnderwater, 0, SURFACE_NOT_SLIPPERY, "Underwater Tile"},      // CMM_MAT_RETRO_UNDERWATERGROUND
 
     // Minecraft
-    {mat_maker_MakerMCDirt,        0, SURFACE_NOT_SLIPPERY, NULL}, // CMM_MAT_MC_DIRT
-    {mat_maker_MakerMCGrassTop,    0, SURFACE_GRASS,        NULL}, // CMM_MAT_MC_GRASS
-    {mat_maker_MakerMCCobblestone, 0, SURFACE_NOT_SLIPPERY, NULL}, // CMM_MAT_MC_COBBLESTONE
-    {mat_maker_MakerMCStone,       0, SURFACE_DEFAULT,      NULL}, // CMM_MAT_MC_STONE
-    {mat_maker_MakerMCOakLogTop,   0, SURFACE_CREAKWOOD,    NULL}, // CMM_MAT_MC_OAK_LOG_TOP
-    {mat_maker_MakerMCOakLogSide,  0, SURFACE_CREAKWOOD,    NULL}, // CMM_MAT_MC_OAK_LOG_SIDE
-    {mat_maker_MakerMCOakLeaves,   MAT_CUTOUT,        SURFACE_GRASS,            NULL}, // CMM_MAT_MC_OAK_LEAVES
-    {mat_maker_MakerMCWoodPlanks,  0, SURFACE_CREAKWOOD,    NULL}, // CMM_MAT_MC_WOOD_PLANKS
-    {mat_maker_MakerMCSand,        0, SURFACE_SAND,         NULL}, // CMM_MAT_MC_SAND
-    {mat_maker_MakerMCBricks,      0, SURFACE_DEFAULT,      NULL}, // CMM_MAT_MC_BRICKS
-    {mat_maker_MakerMCLava,        0, SURFACE_BURNING,      NULL}, // CMM_MAT_MC_LAVA
-    {mat_maker_MakerMCFlowingLava, 0, SURFACE_BURNING,      NULL}, // CMM_MAT_MC_FLOWING_LAVA
-    {mat_maker_MakerMCGlass,       MAT_CUTOUT_NOCULL, SURFACE_VANISH_CAP_WALLS, NULL}, // CMM_MAT_MC_GLASS
+    {mat_maker_MakerMCDirt,        0, SURFACE_NOT_SLIPPERY, "Dirt"}, // CMM_MAT_MC_DIRT
+    {mat_maker_MakerMCGrassTop,    0, SURFACE_GRASS,        "Grass"}, // CMM_MAT_MC_GRASS
+    {mat_maker_MakerMCCobblestone, 0, SURFACE_NOT_SLIPPERY, "Cobblestone"}, // CMM_MAT_MC_COBBLESTONE
+    {mat_maker_MakerMCStone,       0, SURFACE_DEFAULT,      "Stone"}, // CMM_MAT_MC_STONE
+    {mat_maker_MakerMCOakLogTop,   0, SURFACE_CREAKWOOD,    "Oak Log (Top)"}, // CMM_MAT_MC_OAK_LOG_TOP
+    {mat_maker_MakerMCOakLogSide,  0, SURFACE_CREAKWOOD,    "Oak Log (Side)"}, // CMM_MAT_MC_OAK_LOG_SIDE
+    {mat_maker_MakerMCOakLeaves,   MAT_CUTOUT, SURFACE_GRASS,  "Oak Leaves"}, // CMM_MAT_MC_OAK_LEAVES
+    {mat_maker_MakerMCWoodPlanks,  0, SURFACE_CREAKWOOD,    "Oak Plank"}, // CMM_MAT_MC_WOOD_PLANKS
+    {mat_maker_MakerMCSand,        0, SURFACE_SAND,         "Sand"}, // CMM_MAT_MC_SAND
+    {mat_maker_MakerMCBricks,      0, SURFACE_DEFAULT,      "Bricks"}, // CMM_MAT_MC_BRICKS
+    {mat_maker_MakerMCLava,        0, SURFACE_BURNING,      "Lava"}, // CMM_MAT_MC_LAVA
+    {mat_maker_MakerMCFlowingLava, 0, SURFACE_BURNING,      "Flowing Lava"}, // CMM_MAT_MC_FLOWING_LAVA
+    {mat_maker_MakerMCGlass,       MAT_CUTOUT_NOCULL, SURFACE_VANISH_CAP_WALLS, "Glass"}, // CMM_MAT_MC_GLASS
 };
 
 u32 cmm_render_mode_table[] = {
@@ -2356,6 +2364,8 @@ char *cmm_fence_names[] = {
     "Rope",
     "Snowy (1)",
     "Snowy (2)",
+    "Retro",
+    "Minecraft",
 };
 
 char *cmm_bar_names[] = {
@@ -2368,11 +2378,15 @@ char *cmm_bar_names[] = {
     "Clock Grille",
     "Desert Grille",
     "Cage Bars",
+    "Retro",
+    "Minecraft",
 };
 
 char *cmm_water_names[] = {
     "Default",
     "Swampy",
+    "Retro",
+    "Minecraft",
 };
 
 struct cmm_settings_button cmm_settings_other_selectors[] = {
