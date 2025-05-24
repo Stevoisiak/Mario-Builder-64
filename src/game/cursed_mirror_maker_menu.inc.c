@@ -1527,6 +1527,7 @@ void render_cmm_mm_menu(char * strlist[], char *title, u8 ct) {
         print_maker_string_ascii(243, 188 + cmm_menu_title_vels[0], "v1.0", 0);
         print_maker_string_ascii_centered(160, 175 + cmm_menu_title_vels[0], "By: Rovertronic & Arthurtilly", 0);
         print_maker_string_ascii_centered(160, 20 + cmm_menu_title_vels[0], "Unofficial build by Stevoisiak", 0);
+        print_maker_string_ascii_centered(160, 5 + cmm_menu_title_vels[0], "(extra themes & no build limits)", 0);
     }
 
     for (s32 i=0; i<ct; i++) {

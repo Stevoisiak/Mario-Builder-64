@@ -249,9 +249,12 @@ u8 cmm_grid_min = 0;
 u8 cmm_grid_size = 64;
 
 u32 coords_in_range(s8 pos[3]) {
+    // Allow placing & deleting tiles out of bounds
+    /*
     if (pos[0] < cmm_grid_min || pos[0] > cmm_grid_min + cmm_grid_size - 1) return FALSE;
     if (pos[1] < 0 || pos[1] > 63) return FALSE;
     if (pos[2] < cmm_grid_min || pos[2] > cmm_grid_min + cmm_grid_size - 1) return FALSE;
+    */
     return TRUE;
 }
 
@@ -2548,7 +2551,7 @@ u8 joystick_direction(void) {
     return 0;
 }
 
-void imbue_action(void) {
+u8 imbue_action(void) {
     if (cmm_place_mode == CMM_PM_OBJ) {
         for (u32 i=0;i<cmm_object_count;i++) {
             if ((cmm_object_type_list[cmm_object_data[i].type].flags & OBJ_TYPE_IMBUABLE)&&(cmm_object_data[i].x == cmm_cursor_pos[0])&&(cmm_object_data[i].y == cmm_cursor_pos[1])&&(cmm_object_data[i].z == cmm_cursor_pos[2])&&(cmm_object_data[i].imbue == IMBUE_NONE)) {
@@ -2579,11 +2582,13 @@ void imbue_action(void) {
                 if (imbue_success) {
                     play_place_sound(SOUND_GENERAL_DOOR_INSERT_KEY | SOUND_VIBRATO);
                     generate_object_preview();
+                    return TRUE;
                 }
                 break;
             }
         }
     }
+    return FALSE;
 }
 
 void place_thing_action(void) {
@@ -2594,18 +2599,26 @@ void place_thing_action(void) {
         }
         return;
     }
+
+    u8 imbue_success;
+
     //tiles and objects share occupancy data
-    if (!get_occupy_data(cmm_cursor_pos)) {
+    if (get_occupy_data(cmm_cursor_pos)) {
+        imbue_success = imbue_action();
+    }
+    if (!imbue_success) {
         if (cmm_place_mode == CMM_PM_TILE) {
             //CMM_PM_TILE
-            if (tile_sanity_check()) {
+            //if (tile_sanity_check()) {
+            if (TRUE) {
                 place_occupy_data(cmm_cursor_pos);
                 place_tile(cmm_cursor_pos);
                 generate_terrain_gfx();
             }
         } else if (cmm_place_mode == CMM_PM_OBJ){
             //CMM_PM_OBJECT
-            if (object_sanity_check()) {
+            //if (object_sanity_check()) {
+            if (TRUE) {
                 place_occupy_data(cmm_cursor_pos);
                 place_object(cmm_cursor_pos);
                 generate_object_preview();
@@ -3113,11 +3126,14 @@ u32 main_cursor_logic(u32 joystick) {
     }
     cmm_camera_rot_offset = (cmm_camera_rot_offset % 4)+4;
 
+    // Allow cursor to move out of bounds
+    /*
     if (cursorMoved) {
         cmm_cursor_pos[0] = ((cmm_cursor_pos[0] - cmm_grid_min + cmm_grid_size) % cmm_grid_size) + cmm_grid_min;
         cmm_cursor_pos[2] = ((cmm_cursor_pos[2] - cmm_grid_min + cmm_grid_size) % cmm_grid_size) + cmm_grid_min;
         cmm_cursor_pos[1]=(cmm_cursor_pos[1]+64)%64;
     }
+    */
 
     //camera zooming
     if (gPlayer1Controller->buttonPressed & D_JPAD) {
