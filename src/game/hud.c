@@ -1032,16 +1032,16 @@ void render_hud(void) {
             //     break;
             // }
 
-             //Use this later for the star radar badge
-             if (save_file_get_badge_equip() & (1<<11)) {
-                 if (gMarioState->StarRadarExist == TRUE) {
-                     gMarioState->StarRadarExist = FALSE;
-                     print_text_fmt_int(gMarioState->ScreenPosX,gMarioState->ScreenPosY,"^",0);
+            // Star radar badge equipped  or Star Radar enabled in options
+            if ((save_file_get_badge_equip() & (1<<11)) || (cmm_sram_configuration.option_flags & (1<<OPT_STARRADAR))) {
+                if (gMarioState->StarRadarExist == TRUE) {
+                    gMarioState->StarRadarExist = FALSE;
+                    print_text_fmt_int(gMarioState->ScreenPosX,gMarioState->ScreenPosY,"^",0);
 
-                     //print_text_fmt_int(40,40,"%d",gMarioState->ScreenPosX);
-                     //print_text_fmt_int(40,80,"Y %d",gMarioState->ScreenPosY);
-                     }
-                 }
+                    //print_text_fmt_int(40,40,"%d",gMarioState->ScreenPosX);
+                    //print_text_fmt_int(40,80,"Y %d",gMarioState->ScreenPosY);
+                }
+            }
 
             if (hudDisplayFlags & HUD_DISPLAY_FLAG_STAR_COUNT) {
                 render_hud_stars();

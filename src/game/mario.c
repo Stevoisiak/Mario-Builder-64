@@ -2184,7 +2184,7 @@ s32 execute_mario_action(UNUSED struct Object *obj) {
 
     //toggle minimap
     if (gPlayer1Controller->buttonPressed & L_TRIG) {
-        gMarioState->Options ^= (1<<OPT_MINIMAP);
+        gMarioState->Options ^= (1<<OPT_STARRADAR);
     }
 
     //cheats

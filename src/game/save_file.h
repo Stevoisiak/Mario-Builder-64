@@ -57,9 +57,9 @@ enum Options {
     OPT_HUD,
     OPT_CAMCOL,
     OPT_HUDLAYOUT,
+    OPT_STARRADAR,
 
     //unused
-    OPT_MINIMAP,
     OPT_SAVE,
 };
 

@@ -2352,8 +2352,11 @@ char * cmm_pause_menu_buttons_options[] = {
     "Show HUD",
     "Lakitu Collision",
     "HUD Layout",
+    "Star Radar",
     "Return",
 };
+
+#define RETURN_OPTION_INDEX ARRAY_COUNT(cmm_pause_menu_buttons_options)-1
 
 void cmm_init_pause_menu(void) {
     cmm_menu_index = 0;
@@ -2474,21 +2477,24 @@ s32 draw_cmm_pause_menu(void) {
 
         case 1: //options
             xoff = (get_string_width_ascii(cmm_pause_menu_buttons_options[2])/2);
-            for (s32 i=0;i<5;i++) {
-                if (i!=4) {
+            for (s32 i=0;i<6;i++) {
+                if (i!=5) {
                     char * onoroff_string = ": OFF";
                     if (i==3) {
+                        // HUD Layout
                         onoroff_string = ": Vanilla";
                     }
                     if (cmm_sram_configuration.option_flags & (1<<i)) {
                         onoroff_string = ": ON";
                         if (i==3) {
+                            // HUD Layout
                             onoroff_string = ": Modern";
                         }
                     }
                     sprintf(stringBuf,"%s%s",cmm_pause_menu_buttons_options[i],onoroff_string);
                     print_generic_string_ascii(160-xoff ,160-(i*16),stringBuf);
                 } else {
+                    // Return
                     print_generic_string_ascii(160-xoff ,160-(i*16),cmm_pause_menu_buttons_options[i]);
                 }
             }
@@ -2513,7 +2519,7 @@ s32 draw_cmm_pause_menu(void) {
                     play_sound(SOUND_MENU_MESSAGE_NEXT_PAGE, gGlobalSoundSource);
                     break;
             }
-            cmm_menu_index = (cmm_menu_index + 5) % 5;
+            cmm_menu_index = (cmm_menu_index + 6) % 6;
 
             if (gPlayer1Controller->buttonPressed & (B_BUTTON)) {
                 cmm_pause_menu_state = 0;
@@ -2524,7 +2530,7 @@ s32 draw_cmm_pause_menu(void) {
                 }
             } else if (gPlayer1Controller->buttonPressed & (A_BUTTON|START_BUTTON)) {
                 switch(cmm_menu_index) {
-                    case 4:
+                    case RETURN_OPTION_INDEX:
                         cmm_elta = FALSE;
                         cmm_pause_menu_state = 0;
                         cmm_menu_index = 0;
